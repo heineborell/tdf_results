@@ -8,6 +8,7 @@ from bs4 import BeautifulSoup
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
+from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import Select, WebDriverWait
 
 # Set up options for headless Chrome
@@ -18,6 +19,7 @@ options.add_argument("--window-size=1920,1200")  # Define the window size of the
 
 # Initialize Chrome with the specified options
 driver = webdriver.Chrome(options=options)
+wait = WebDriverWait(driver, 20)
 
 driver.get("https://www.letour.fr/en/history")
 driver.implicitly_wait(10)
@@ -25,37 +27,16 @@ driver.implicitly_wait(10)
 year_dd = driver.find_element(By.CSS_SELECTOR, ".custom-select.custom-select--year")
 year_options = year_dd.find_elements(By.TAG_NAME, "option")
 
-stages_dd = driver.find_element(By.CSS_SELECTOR, ".custom-select.custom-select--expand")
+
+stages_dd = driver.find_element(By.ID, "stageSelect")
 stages = stages_dd.find_elements(By.TAG_NAME, "option")
-rank_table = driver.find_element(
-    By.CSS_SELECTOR, ".rankingTable.rtable.js-extend-target"
-)
-# rankings = rank_table.find_elements(By.TAG_NAME, "tr")
-# print(rankings)
+driver.implicitly_wait(10)
+# print(stages[3].get_attribute("text"))
 
-# gender_dd = driver.find_element(By.ID, "athlete_gender")
-# gender_options = gender_dd.find_elements(By.TAG_NAME, "option")
-#
-#
-# usa_lst = []
-#
-year_lst = []
-for year in year_options:
-    year_lst.append(year.get_attribute("text"))
-    # year.click()
-    # time.sleep(2)
-    # year_val = year.get_attribute("text")
-    # year_lst.append(year_val)
-print(year_lst)
 
-stages_lst = []
-for stage in stages:
-    stages_lst.append(stage.get_attribute("text"))
-    # year.click()
-    # time.sleep(2)
-    # year_val = year.get_attribute("text")
-    # year_lst.append(year_val)
-print(stages_lst)
+# stages_dd = driver.find_elements(By.CSS_SELECTOR, ".select-items")
+# stages = stages_dd[-2].find_elements(By.TAG_NAME, "div")
+#
 
 the_soup = BeautifulSoup(driver.page_source, "html.parser")
 
@@ -64,9 +45,25 @@ rankings = the_soup.find(
 )
 riders = rankings.findChildren("tr")[1:]
 
-print(riders[2].findChildren("td", attrs={"class": "is-alignCenter"}))
-
 names = the_soup.find_all("td", attrs={"class": "runner"})
+
+# year_lst = []
+# for year in year_options:
+#    year_lst.append(year.get_attribute("text"))
+#    # year.click()
+#    # time.sleep(2)
+#    # year_val = year.get_attribute("text")
+#    # year_lst.append(year_val)
+# print(year_lst)
+
+stages_lst = []
+for stage in stages:
+    wait.until(EC.element_to_be_clickable(stage)).click()
+    driver.implicitly_wait(10)
+    stage_val = stage.get_attribute("text")
+    stages_lst.append(stage_val)
+print(stages_lst)
+
 #
 name_lst = []
 for name in names:
