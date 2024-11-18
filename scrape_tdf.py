@@ -43,12 +43,13 @@ driver.implicitly_wait(10)
 
 the_soup = BeautifulSoup(driver.page_source, "html.parser")
 
-rankings = the_soup.find(
+rankings = the_soup.find_all(
     "table", attrs={"class": "rankingTable rtable js-extend-target"}
 )
-riders = rankings.findChildren("tr")[1:]
+riders = rankings[0].findChildren("tr")[1:]
 
 names = the_soup.find_all("td", attrs={"class": "runner"})
+print(riders)
 
 # year_lst = []
 # for year in year_options:
@@ -59,24 +60,24 @@ names = the_soup.find_all("td", attrs={"class": "runner"})
 #    # year_lst.append(year_val)
 # print(year_lst)
 
-stages_lst = []
-for stage in stages:
-    wait.until(EC.element_to_be_clickable(stage)).click()
-    driver.implicitly_wait(10)
-    stage_val = stage.get_attribute("text")
-    stages_lst.append(stage_val)
-print(stages_lst)
-
+# stages_lst = []
+# for stage in stages:
+#    wait.until(EC.element_to_be_clickable(stage)).click()
+#    driver.implicitly_wait(10)
+#    stage_val = stage.get_attribute("text")
+#    stages_lst.append(stage_val)
+# print(stages_lst)
 #
-name_lst = []
-for name in names:
-    name_lst.append(name.text.strip())  # rider names
-
-timing_lst = []
-for rider in riders:
-    timing_lst.append(
-        rider.findChildren("td", attrs={"class": "is-alignCenter"})[1].text
-    )  # riders attributes, index 1 is total time
-
-df = pd.DataFrame({"name": name_lst, "timing": timing_lst})
-print(df)
+##
+# name_lst = []
+# for name in names:
+#    name_lst.append(name.text.strip())  # rider names
+#
+# timing_lst = []
+# for rider in riders:
+#    timing_lst.append(
+#        rider.findChildren("td", attrs={"class": "is-alignCenter"})[1].text
+#    )  # riders attributes, index 1 is total time
+#
+# df = pd.DataFrame({"name": name_lst, "timing": timing_lst})
+# print(df)
