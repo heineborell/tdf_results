@@ -23,6 +23,9 @@ wait = WebDriverWait(driver, 20)
 
 driver.get("https://www.letour.fr/en/history")
 driver.implicitly_wait(10)
+# cookie accept
+wait.until(EC.presence_of_element_located((By.ID, "onetrust-accept-btn-handler")))
+driver.find_element(By.ID, "onetrust-accept-btn-handler").click()
 
 year_dd = driver.find_element(By.CSS_SELECTOR, ".custom-select.custom-select--year")
 year_options = year_dd.find_elements(By.TAG_NAME, "option")
