@@ -3,11 +3,13 @@ import os
 import re
 import time
 
+import numpy as np
 import pandas as pd
 from bs4 import BeautifulSoup
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
+from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import Select, WebDriverWait
 
@@ -62,9 +64,9 @@ for year in year_options:
     year_dd.click()
     # choose year
     year.click()
-    time.sleep(3)
+    time.sleep(2)
 
-    # choose individual drop down
+    # # choose individual drop down
     driver.find_element(
         By.XPATH,
         "//*[@id=" + str(year_lst[i]) + "]/div[3]/div[2]/div[1]/div[1]/div[2]/div[1]",
@@ -76,11 +78,12 @@ for year in year_options:
         + str(year_lst[i])
         + "]/div[3]/div[2]/div[1]/div[1]/div[2]/div[2]/div[2]",
     ).click()
+    time.sleep(2)
 
-    ## choose stage dropdown
+    # # choose stage dropdown
     # driver.find_element(
-    #    By.XPATH,
-    #    "//*[@id=" + str(year_lst[i]) + "]/div[3]/div[2]/div[1]/div[1]/div[1]/div[1]",
+    #     By.XPATH,
+    #     "//*[@id=" + str(year_lst[i]) + "]/div[3]/div[2]/div[1]/div[1]/div[1]/div[1]",
     # ).click()
 
     stages_dd = driver.find_element(By.ID, "stageSelect")
@@ -89,7 +92,7 @@ for year in year_options:
         for stage in stages_dd.find_elements(By.TAG_NAME, "option")
     ]
     print(stages)
-    for j in range(0, len(stages) - 18):
+    for j in range(0, len(stages) - 19):
         # choose stage
         print(j, "stage index")
         # again choose stage dropdown to choose new stage
@@ -106,117 +109,56 @@ for year in year_options:
             + "]/div[3]/div[2]/div[1]/div[1]/div[1]/div[2]/div"
             + str([j + 1]),
         ).click()
-        time.sleep(4)
+        time.sleep(2)
 
-        the_soup = BeautifulSoup(driver.page_source, "html.parser")
-
-        rankings = the_soup.find(
-            "table", attrs={"class": "rankingTable rtable js-extend-target"}
+        ## next table rankings button this has to be in the stage loop
+        wait.until(
+            EC.presence_of_element_located(
+                (
+                    By.XPATH,
+                    "//*[@id=" + str(year_lst[i]) + "]/div[3]/div[2]/div[1]/div[3]/a",
+                )
+            )
         )
-        riders = rankings.findChildren("tr")[1:]
+        driver.find_element(
+            By.XPATH, "//*[@id=" + str(year_lst[i]) + "]/div[3]/div[2]/div[1]/div[3]/a"
+        ).click()
+        time.sleep(2)
 
-        names = the_soup.find_all("td", attrs={"class": "runner"})
-
-        name_lst = []
-        for name in names:
-            name_lst.append(name.text.strip())  # rider names
-
-        print(name_lst)
-        print(len(name_lst))
-
-        timing_lst = []
-        for rider in riders:
-            timing_lst.append(
-                rider.findChildren("td", attrs={"class": "is-alignCenter"})[1].text
-            )  # riders attributes, index 1 is total time
-        df = pd.DataFrame(
-            {
-                "year": [year_lst[i] for _ in range(1, len(names) + 1)],
-                "stage": [stages[j] for _ in range(1, len(names) + 1)],
-                "name": name_lst,
-                "timing": timing_lst,
-            }
+        table = driver.find_element(
+            By.XPATH,
+            "//*[@id=" + str(year_lst[i]) + "]/div[3]/div[2]/div[1]/div[2]/table",
         )
-        print(df)
+        cyclists = table.find_elements(By.TAG_NAME, "tr")
+        ranking = np.zeros(3)
+        for cyclist in cyclists:
+            attrs = cyclist.find_elements(By.TAG_NAME, "td")
+            attr_list = []
+            for m, attr in enumerate(attrs):
+                if m == 1 or m == 2 or m == 3:
+                    attr_list.append(attr.text)
+            if len(attr_list) == 3:
+                ranking = np.vstack([ranking, attr_list])
+
+        print(ranking)
+    #
+    # df = pd.DataFrame(
+    #    {
+    #        "year": [year_lst[i] for _ in range(1, len(names) + 1)],
+    #        "stage": [stages[j] for _ in range(1, len(names) + 1)],
+    #        "name": name_lst,
+    #        "timing": timing_lst,
+    #    }
+    # )
+    # print(df)
 
     # year counter
+    # driver.find_element(By.TAG_NAME, "body").send_keys(Keys.HOME)
+    # driver.execute_script("scrollBy(0,450);")
+    # time.sleep(2)
+    html = driver.find_element(By.TAG_NAME, "html")
+    html.send_keys(Keys.PAGE_UP)
+    html.send_keys(Keys.PAGE_UP)
+    html.send_keys(Keys.PAGE_UP)
+    time.sleep(6)
     i = i + 1
-
-# for i in range(1, 5 + 1):
-#    wait.until(
-#        EC.presence_of_element_located(
-#            (
-#                By.XPATH,
-#                "/html/body/div[2]/main/div[1]/section[1]/div/div[1]/div/div/div/div[1]/div",
-#            )
-#        )
-#    )
-#    year_dd.click()
-#    year_xpath = "//html/body/div[2]/main/div[1]/section[1]/div/div[1]/div/div/div/div[1]/div/div[2]/"
-#    year_xpath = year_xpath + "div" + str([i])
-#    wait.until(EC.presence_of_element_located((By.XPATH, year_xpath)))
-#    driver.find_element(By.XPATH, year_xpath).click()
-#    time.sleep(2)
-
-# year_val = year.get_attribute("text")
-# year_lst.append(year_val)
-
-# wait.until(
-#    EC.presence_of_element_located(
-#        (
-#            By.XPATH,
-#            "/html/body/div[2]/main/div[1]/section[1]/div/div[2]/div[111]/div[3]/div[2]/div[1]/div[1]/div[1]",
-#        )
-#    )
-# )
-# stage_dd = driver.find_element(
-#    By.XPATH,
-#    "/html/body/div[2]/main/div[1]/section[1]/div/div[2]/div[111]/div[3]/div[2]/div[1]/div[1]/div[1]",
-# )
-# stage_dd.click()
-#
-# wait.until(
-#    EC.presence_of_element_located(
-#        (
-#            By.XPATH,
-#            "/html/body/div[2]/main/div[1]/section[1]/div/div[2]/div[111]/div[3]/div[2]/div[1]/div[1]/div[2]/div[1]",
-#        )
-#    )
-# )
-# ind_dd = driver.find_element(
-#    By.XPATH,
-#    "/html/body/div[2]/main/div[1]/section[1]/div/div[2]/div[111]/div[3]/div[2]/div[1]/div[1]/div[2]/div[1]",
-# )
-# ind_dd.click()
-
-# wait.until(
-#    EC.presence_of_element_located(
-#        (By.CSS_SELECTOR, ".select-selected.select-arrow-active")
-#    )
-# )
-
-# stages_dd = driver.find_element(
-#    "xpath", "//*[@id=2023]/div[3]/div[2]/div[1]/div[1]/div[1]/div[2]"
-# )
-
-# stages_dd = wait.until(
-#    EC.element_to_be_clickable(
-#        driver.find_element(By.CSS_SELECTOR, ".select-selected.select-arrow-active")
-#    )
-# ).click()
-# print(stages_dd)
-# stages = stages_dd.find_elements(By.TAG_NAME, "div")
-# print(len(stages))
-# driver.implicitly_wait(10)
-# print(stages[3].get_attribute("text"))
-
-
-# stages_lst = []
-# for stage in stages:
-#    wait.until(EC.element_to_be_clickable(stage)).click()
-#    driver.implicitly_wait(10)
-#    stage_val = stage.get_attribute("text")
-#    stages_lst.append(stage_val)
-# print(stages_lst)
-
-#

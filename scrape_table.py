@@ -7,6 +7,7 @@ import numpy as np
 import pandas as pd
 from bs4 import BeautifulSoup
 from selenium import webdriver
+from selenium.common.exceptions import NoSuchElementException, TimeoutException
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
@@ -29,42 +30,111 @@ driver.implicitly_wait(10)
 wait.until(EC.presence_of_element_located((By.ID, "onetrust-accept-btn-handler")))
 driver.find_element(By.ID, "onetrust-accept-btn-handler").click()
 
+
+year_dd = driver.find_element(
+    By.XPATH,
+    "/html/body/div[2]/main/div[1]/section[1]/div/div[1]/div/div/div/div[1]/div",
+)
+year_options = driver.find_elements(
+    By.XPATH,
+    "//html/body/div[2]/main/div[1]/section[1]/div/div[1]/div/div/div/div[1]/div/div[2]/div",
+)
+
+year_len = len(year_options)
+
+year_extr = driver.find_element(By.CSS_SELECTOR, ".custom-select.custom-select--year")
+year_lst = [
+    year.get_attribute("text")
+    for year in year_extr.find_elements(By.TAG_NAME, "option")
+]
+
+wait.until(
+    EC.presence_of_element_located(
+        (
+            By.XPATH,
+            "/html/body/div[2]/main/div[1]/section[1]/div/div[1]/div/div/div/div[1]/div",
+        )
+    )
+)
+# choose year dropdown
+year_dd.click()
+# choose year
+year_options[2].click()
+time.sleep(2)
+print("clicked year")
+
+
 # choose individual drop down
 driver.find_element(
     By.XPATH,
-    "//*[@id='2024']/div[3]/div[2]/div[1]/div[1]/div[2]/div[1]",
+    "//*[@id='2022']/div[3]/div[2]/div[1]/div[1]/div[2]/div[1]",
 ).click()
 # individual select
 driver.find_element(
     By.XPATH,
-    "//*[@id='2024']/div[3]/div[2]/div[1]/div[1]/div[2]/div[2]/div[2]",
+    "//*[@id='2022']/div[3]/div[2]/div[1]/div[1]/div[2]/div[2]/div[2]",
 ).click()
 time.sleep(2)
-# next table rankings button this has to be in the stage loop
-wait.until(
-    EC.presence_of_element_located(
-        (By.XPATH, '//*[@id="2024"]/div[3]/div[2]/div[1]/div[3]/a')
-    )
-)
-driver.find_element(By.XPATH, '//*[@id="2024"]/div[3]/div[2]/div[1]/div[3]/a').click()
+print("clicked individual")
+
+driver.find_element(
+    By.XPATH,
+    "//*[@id='2022']/div[3]/div[2]/div[1]/div[1]/div[1]/div[1]",
+).click()
+driver.find_element(
+    By.XPATH,
+    "//*[@id='2022']/div[3]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]",
+).click()
 time.sleep(2)
 
-table = driver.find_element(
-    By.XPATH, '//*[@id="2024"]/div[3]/div[2]/div[1]/div[2]/table'
-)
-cyclists = table.find_elements(By.TAG_NAME, "tr")
-ranking = np.zeros(3)
-for cyclist in cyclists:
-    attrs = cyclist.find_elements(By.TAG_NAME, "td")
-    attr_list = []
-    for i, attr in enumerate(attrs):
-        if i == 1 or i == 2 or i == 3:
-            attr_list.append(attr.text)
-    if len(attr_list) == 3:
-        ranking = np.vstack([ranking, attr_list])
+# next table rankings button this has to be in the stage loop
+try:
+    wait.until(
+        EC.presence_of_element_located(
+            (By.XPATH, '//*[@id="2022"]/div[3]/div[2]/div[1]/div[3]/a')
+        )
+    )
+except TimeoutException:
+    print("couldnt find next ranking click")
+else:
+    driver.find_element(
+        By.XPATH, '//*[@id="2022"]/div[3]/div[2]/div[1]/div[3]/a'
+    ).click()
+    time.sleep(2)
 
-print(ranking)
-print(ranking[1, 2])
+print("clicked stage ")
+try:
+    wait.until(
+        EC.presence_of_element_located(
+            (
+                By.XPATH,
+                "//*[@id='2022']/div[3]/div[2]/div[1]/div[2]/table",
+            )
+        )
+    )
+    table = driver.find_element(
+        By.XPATH, '//*[@id="2022"]/div[3]/div[2]/div[1]/div[2]/table'
+    )
+except TimeoutException:
+    print("Timeout: The element was not found within the specified time.")
+else:
+    print("element exists")
+    print(table.text)
+
+# cyclists = table.find_elements(By.TAG_NAME, "tr")
+# print(cyclists)
+# ranking = np.zeros(3)
+# for cyclist in cyclists:
+#    attrs = cyclist.find_elements(By.TAG_NAME, "td")
+#    attr_list = []
+#    for i, attr in enumerate(attrs):
+#        if i == 1 or i == 2 or i == 3:
+#            attr_list.append(attr.text)
+#    if len(attr_list) == 3:
+#        ranking = np.vstack([ranking, attr_list])
+#
+# print(ranking)
+# print(ranking[1, 2])
 # print(attr_list)
 
 # ranking = np.stack((ranking, attr_list))
