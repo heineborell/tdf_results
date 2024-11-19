@@ -1,0 +1,505 @@
+,year,date,stage,vertical_meters,profile_score,ps_25
+1,2001.0,07/07,Prologue | Dunkirk - Dunkirk (8.2 km),66,3,3
+2,2001.0,08/07,Stage 1 | Saint-Omer - Boulogne-sur-Mer (194.5 km),1885,60,25
+3,2001.0,09/07,Stage 2 | Calais - Antwerpen (220.5 km),1044,7,3
+4,2001.0,10/07,Stage 3 | Antwerpen - Seraing (198.5 km),2098,114,51
+5,2001.0,11/07,Stage 4 | Huy - Verdun (215 km),2901,87,26
+6,2001.0,12/07,Stage 5 (TTT) | Verdun - Bar-le-Duc (67 km),731,33,24
+7,2001.0,13/07,Stage 6 | Commercy - Strasbourg (211.5 km),2541,75,7
+8,2001.0,14/07,Stage 7 | Strasbourg - Colmar (162 km),3300,213,24
+9,2001.0,15/07,Stage 8 | Colmar - Pontarlier (222.5 km),2250,133,39
+10,2001.0,16/07,Stage 9 | Pontarlier - Aix-Les-Bains (185 km),2500,157,12
+11,2001.0,17/07,Stage 10 | Aix-Les-Bains - L'Alpe d'Huez (209 km),5864,431,213
+12,2001.0,18/07,Stage 11 (ITT) | Grenoble - Chamrousse (32 km),1863,327,313
+13,2001.0,20/07,Stage 12 | Perpignan - Ax-les-Thermes (166 km),4000,414,220
+14,2001.0,21/07,Stage 13 | Foix - Saint-Lary-Soulan (Pla d'Adet) (194 km),5500,599,260
+15,2001.0,22/07,Stage 14 | Tarbes - Luz Ardiden (141.5 km),5174,547,254
+16,2001.0,24/07,Stage 15 | Pau - Lavaur (232.5 km),3300,108,15
+17,2001.0,25/07,Stage 16 | Castelsarrasin - Sarran (227.5 km),3500,188,82
+18,2001.0,26/07,Stage 17 | Brive-la-Gaillarde - Montlucon (194 km),3000,123,24
+19,2001.0,27/07,Stage 18 (ITT) | Montlucon - Saint-Amand-Montrond (61 km),541,24,3
+20,2001.0,28/07,Stage 19 | Orleans - Evry (149.5 km),1022,22,11
+21,2001.0,29/07,Stage 20 | Corbeil-Essones - Paris (160.5 km),1873,26,5
+1,2002.0,06/07,Prologue | Luxembourg - Luxembourg (7 km),207,33,33
+2,2002.0,07/07,Stage 1 | Luxembourg - Luxembourg (192.5 km),3000,165,48
+3,2002.0,08/07,Stage 2 | Luxembourg - Saarbrücken (181 km),2860,99,30
+4,2002.0,09/07,Stage 3 | Metz - Reims (174.5 km),1351,21,3
+5,2002.0,10/07,Stage 4 (TTT) | Epernay - Château-Thierry (67.5 km),763,34,7
+6,2002.0,11/07,Stage 5 | Soissons - Rouen (195 km),1503,22,4
+7,2002.0,12/07,Stage 6 | Forges-les-Eaux - Alencon (199.5 km),2081,36,2
+8,2002.0,13/07,Stage 7 | Bagnoles De l'Orne - Avranches (176 km),2234,70,19
+9,2002.0,14/07,Stage 8 | Saint-Martin-de-Landelles - Plouay (217.5 km),2436,89,36
+10,2002.0,15/07,Stage 9 (ITT) | Lanester - Lorient (52 km),616,24,10
+11,2002.0,17/07,Stage 10 | Bazas - Pau (147 km),1183,54,21
+12,2002.0,18/07,Stage 11 | Pau - La Mongie (158 km),4000,393,205
+13,2002.0,19/07,Stage 12 | Lannemezan - Plateau de Beille (199.5 km),5000,557,286
+14,2002.0,20/07,Stage 13 | Lavelanet - Béziers (171 km),2180,62,9
+15,2002.0,21/07,Stage 14 | Lodève - Mont Ventoux (221 km),4000,380,313
+16,2002.0,23/07,Stage 15 | Vaison-le-Romaine - Les deux Alpes (226.5 km),4619,281,181
+17,2002.0,24/07,Stage 16 | Les Deux Alpes - La Plagne (179.5 km),5161,370,227
+18,2002.0,25/07,Stage 17 | Aime - Cluses (142 km),4000,382,96
+19,2002.0,26/07,Stage 18 | Cluses - Bourg-en-Bresse (176.5 km),3814,193,42
+20,2002.0,27/07,Stage 19 (ITT) | Regnier-Durette - Macon (50 km),857,63,26
+21,2002.0,28/07,Stage 20 | Melun - Paris (140 km),1423,16,4
+1,2003.0,05/07,Prologue | Paris - Paris (6.5 km),184,15,15
+2,2003.0,06/07,Stage 1 | Saint-Denis-Montgeron - Meaux (168 km),1476,31,10
+3,2003.0,07/07,Stage 2 | La Ferté-sous-Jouarre - Sedan (204.5 km),2461,73,28
+4,2003.0,08/07,Stage 3 | Charleville-Mézières - Saint-Dizier (167.5 km),1605,32,10
+5,2003.0,09/07,Stage 4 (TTT) | Joinville - Saint-Dizier (69 km),592,21,4
+6,2003.0,10/07,Stage 5 | Troyes - Nevers (196.5 km),2316,49,16
+7,2003.0,11/07,Stage 6 | Nevers - Lyon (230 km),2000,69,20
+8,2003.0,12/07,Stage 7 | Lyon - Morzine (230.5 km),4500,340,107
+9,2003.0,13/07,Stage 8 | Sallanches - L'Alpe d'Huez (219 km),5500,550,255
+10,2003.0,14/07,Stage 9 | Bourg d'Oisans - Gap (184.5 km),4500,314,61
+11,2003.0,15/07,Stage 10 | Gap - Marseille (219.5 km),2000,100,29
+12,2003.0,17/07,Stage 11 | Narbonne - Toulouse (153.5 km),1858,61,16
+13,2003.0,18/07,Stage 12 (ITT) | Gaillac - Cap Découverte (47 km),712,49,36
+14,2003.0,19/07,Stage 13 | Toulouse - Ax-3 Domaines (197.5 km),4000,496,189
+15,2003.0,20/07,Stage 14 | Saint-Girons - Loudenvielle-Le-Louron (191.5 km),5000,498,206
+16,2003.0,21/07,Stage 15 | Bagnères-de-Bigorre - Luz-Ardiden (159.5 km),4500,564,259
+17,2003.0,23/07,Stage 16 | Pau - Bayonne (197.5 km),4000,243,22
+18,2003.0,24/07,Stage 17 | Dax - Bordeaux (181 km),808,7,3
+19,2003.0,25/07,Stage 18 | Bordeaux - Saint-Maixent-l'Ecole (202.5 km),1678,16,3
+20,2003.0,26/07,Stage 19 (ITT) | Pornic - Nantes (49 km),395,12,10
+21,2003.0,27/07,Stage 20 | Ville d'Avray - Paris (152 km),757,7,2
+1,2004.0,03/07,Prologue | Liege - Liege (6.1 km),177,11,11
+2,2004.0,04/07,Stage 1 | Liege - Charleroi (202.5 km),2864,68,14
+3,2004.0,05/07,Stage 2 | Charleroi - Namur (197 km),1852,44,22
+4,2004.0,06/07,Stage 3 | Waterloo - Wasquehal (210 km),1615,18,4
+5,2004.0,07/07,Stage 4 (TTT) | Cambrai - Arras (64.5 km),653,11,3
+6,2004.0,08/07,Stage 5 | Amiens - Chartres (200.5 km),2026,37,6
+7,2004.0,09/07,Stage 6 | Bonneval - Angers (196 km),1398,19,4
+8,2004.0,10/07,Stage 7 | Châteaubriant - Saint-Brieuc (204.5 km),2306,52,20
+9,2004.0,11/07,Stage 8 | Lamballe - Quimper (168 km),2306,70,17
+10,2004.0,13/07,Stage 9 | Saint-Léonard-de-Noblat  - Guéret (160.5 km),2000,96,19
+11,2004.0,14/07,Stage 10 | Limoges - Saint-Flour (237 km),4500,258,24
+12,2004.0,15/07,Stage 11 | Saint-Flour - Figeac (164 km),3248,175,41
+13,2004.0,16/07,Stage 12 | Castelsarrasin - La Mongie (197.5 km),3867,344,195
+14,2004.0,17/07,Stage 13 | Lannemezan - Plateau de Beille (205.5 km),5500,560,281
+15,2004.0,18/07,Stage 14 | Carcassonne - Nîmes (192.5 km),1808,38,10
+16,2004.0,20/07,Stage 15 | Valréas - Villard de Lans (180.5 km),4818,367,182
+17,2004.0,21/07,Stage 16 (ITT) | Bourg d'Oisans - L'Alpe d'Huez (15.5 km),1384,249,249
+18,2004.0,22/07,Stage 17 | Bourg d'Oisans - Le Grand Bornand (204.5 km),6000,505,166
+19,2004.0,23/07,Stage 18 | Annemasse - Lons le Saunier (166.5 km),2500,167,19
+20,2004.0,24/07,Stage 19 (ITT) | Besançon - Besançon (55 km),1042,89,53
+21,2004.0,25/07,Stage 20 | Montereau - Paris (163 km),1453,25,9
+1,2005.0,02/07,Stage 1 (ITT) | Fromentine - Noirmoutier-en-l'Ile (19 km),27,0,0
+2,2005.0,03/07,Stage 2 | Challans - Les Essarts (182 km),432,1,0
+3,2005.0,04/07,Stage 3 | La Châtaigneraie - Tours (212 km),1465,19,3
+4,2005.0,05/07,Stage 4 (TTT) | Tours - Blois (67.5 km),355,7,7
+5,2005.0,06/07,Stage 5 | Chambord - Montargis (183 km),1018,6,1
+6,2005.0,07/07,Stage 6 | Troyes - Nancy (199 km),1750,41,25
+7,2005.0,08/07,Stage 7 | Lunéville - Karlsruhe (228 km),1314,12,0
+8,2005.0,09/07,Stage 8 | Pforzheim - Gérardmer (231 km),2493,100,51
+9,2005.0,10/07,Stage 9 | Gérardmer - Mulhouse (171 km),2805,94,1
+10,2005.0,12/07,Stage 10 | Brignoud - Courchevel - Altiport (181 km),4197,313,224
+11,2005.0,13/07,Stage 11 | Courchevel - Briançon (173 km),4280,261,1
+12,2005.0,14/07,Stage 12 | Briançon - Digne-les-Bains (187 km),3021,148,23
+13,2005.0,15/07,Stage 13 | Miramas - Montpellier (174 km),1117,12,2
+14,2005.0,16/07,Stage 14 | Agde - Ax-3 Domaines (174 km),4188,334,137
+15,2005.0,17/07,Stage 15 | Lézat-sur-Leze - Saint-Lary-Soulan (Pla d'Adet) (206 km),5633,489,238
+16,2005.0,19/07,Stage 16 | Mourenx - Pau (181 km),3560,150,25
+17,2005.0,20/07,Stage 17 | Pau - Revel (240 km),2830,92,24
+18,2005.0,21/07,Stage 18 | Albi - Mende (189 km),2947,157,101
+19,2005.0,22/07,Stage 19 | Issoire - Le Puy en Velay (154 km),2344,66,2
+20,2005.0,23/07,Stage 20 (ITT) | Saint-Etienne - Saint-Etienne (55 km),806,50,25
+21,2005.0,24/07,Stage 21 | Corbeil-Essonnes - Paris (144 km),851,7,0
+1,2006.0,01/07,Prologue | Strasbourg - Strasbourg (7.1 km),5,0,0
+2,2006.0,02/07,Stage 1 | Strasbourg - Strasbourg (184.5 km),913,5,0
+3,2006.0,03/07,Stage 2 | Obernai - Esch-sur-Alzette (228.5 km),2679,65,29
+4,2006.0,04/07,Stage 3 | Esch-sur-Alzette - Valkenburg (216.5 km),2423,66,18
+5,2006.0,05/07,Stage 4 | Huy - Saint-Quentin (207 km),1736,20,3
+6,2006.0,06/07,Stage 5 | Beauvais - Caen (225 km),1595,22,0
+7,2006.0,07/07,Stage 6 | Lisieux - Vitré (189 km),1378,18,5
+8,2006.0,08/07,Stage 7 (ITT) | Saint-Grégoire - Rennes (52 km),389,1,0
+9,2006.0,09/07,Stage 8 | Saint-Méen-le-Grand - Lorient (181 km),1465,17,1
+10,2006.0,11/07,Stage 9 | Bordeaux - Dax (169.5 km),326,0,0
+11,2006.0,12/07,Stage 10 | Cambo-les-Bains - Pau (190.5 km),3595,174,3
+12,2006.0,13/07,Stage 11 | Tarbes - Val d'Aran - Pla-de-Beret (206.5 km),5721,307,107
+13,2006.0,14/07,Stage 12 | Luchon - Carcassonne (211.5 km),1750,30,7
+14,2006.0,15/07,Stage 13 | Béziers - Montélimar (231 km),1647,18,1
+15,2006.0,16/07,Stage 14 | Montélimar - Gap (180.5 km),2644,76,41
+16,2006.0,18/07,Stage 15 | Gap - L'Alpe d'Huez (187 km),4442,335,236
+17,2006.0,19/07,Stage 16 | Le Bourg d'Oisans - La Toussuire - Les Sybelles (182 km),5456,393,164
+18,2006.0,20/07,Stage 17 | St-Jean-de-Maurienne - Morzine (200.5 km),4356,308,166
+19,2006.0,21/07,Stage 18 | Morzine - Mâcon (197 km),1751,47,0
+20,2006.0,22/07,Stage 19 (ITT) | Le Creusot - Montceau-les-Mines (57 km),376,8,7
+21,2006.0,23/07,Stage 20 | Sceaux - Antony - Paris (154.5 km),376,9,7
+1,2007.0,07/07,Prologue | London - London (7.9 km),33,0,0
+2,2007.0,08/07,Stage 1 | London - Canterbury (203 km),1709,27,11
+3,2007.0,09/07,Stage 2 | Dunkerque - Gent (168.5 km),337,0,0
+4,2007.0,10/07,Stage 3 | Waregem - Compiegne (236.5 km),1397,12,0
+5,2007.0,11/07,Stage 4 | Villers-Cotterets - Joigny (193 km),1652,34,1
+6,2007.0,12/07,Stage 5 | Chablis - Autun (182.5 km),2703,88,30
+7,2007.0,13/07,Stage 6 | Semur-en-Auxois - Bourg-en-Bresse (199.5 km),1484,20,1
+8,2007.0,14/07,Stage 7 | Bourg-en-Bresse - Le Grand Bornand (197.5 km),3250,199,127
+9,2007.0,15/07,Stage 8 | Le Grand Bornand - Tignes (165 km),4933,344,175
+10,2007.0,17/07,Stage 9 | Val-d’Isère - Briançon (159.5 km),3458,247,21
+11,2007.0,18/07,Stage 10 | Tallard - Marseille (229.5 km),1917,44,19
+12,2007.0,19/07,Stage 11 | Marseille - Montpellier (182.5 km),854,7,0
+13,2007.0,20/07,Stage 12 | Montpellier - Castres (178.5 km),2337,74,2
+14,2007.0,21/07,Stage 13 (ITT) | Albi - Albi (54 km),533,26,23
+15,2007.0,22/07,Stage 14 | Mazamet - Plateau-de-Beille (197 km),4370,371,238
+16,2007.0,23/07,Stage 15 | Foix - Loudenvielle-Le-Louron (196 km),5445,369,126
+17,2007.0,25/07,Stage 16 | Orthez - Gourette - Col d'Aubisque (218.5 km),6031,453,223
+18,2007.0,26/07,Stage 17 | Pau - Castelsarrasin (188.5 km),1734,44,6
+19,2007.0,27/07,Stage 18 | Cahors - Angoulême (211 km),1938,32,5
+20,2007.0,28/07,Stage 19 (ITT) | Cognac - Angoulême (55.5 km),480,14,12
+21,2007.0,29/07,Stage 20 | Marcoussis - Paris (146 km),796,10,1
+1,2008.0,05/07,Stage 1 | Brest - Plumelec (197.5 km),2324,51,23
+2,2008.0,06/07,Stage 2 | Auray - Saint-Brieuc (164.5 km),1888,50,11
+3,2008.0,07/07,Stage 3 | Saint Malo - Nantes (208 km),1507,13,0
+4,2008.0,08/07,Stage 4 (ITT) | Cholet - Cholet (29.5 km),338,9,7
+5,2008.0,09/07,Stage 5 | Cholet - Châteauroux (232 km),1299,10,0
+6,2008.0,10/07,Stage 6 | Aigurande - Super Besse (195.5 km),3280,167,93
+7,2008.0,11/07,Stage 7 | Brioude - Aurillac (159 km),2431,119,36
+8,2008.0,12/07,Stage 8 | Figeac - Toulouse (172.5 km),1892,48,11
+9,2008.0,13/07,Stage 9 | Toulouse - Bagnères de Bigorre (224 km),3778,217,0
+10,2008.0,14/07,Stage 10 | Pau - Hautacam (156 km),3794,346,216
+11,2008.0,16/07,Stage 11 | Lannemezan - Foix (167.5 km),2863,148,21
+12,2008.0,17/07,Stage 12 | Lavelanet - Narbonne (168.5 km),1197,12,2
+13,2008.0,18/07,Stage 13 | Narbonne - Nîmes (182 km),1405,19,0
+14,2008.0,19/07,Stage 14 | Nîmes - Digne-les-Bains (194.5 km),1726,47,32
+15,2008.0,20/07,Stage 15 | Embrun - Prato Nevoso (183 km),3739,237,150
+16,2008.0,22/07,Stage 16 | Cuneo - Jausiers (157 km),4174,259,29
+17,2008.0,23/07,Stage 17 | Embrun - l'Alpe d'Huez (210.5 km),5405,389,211
+18,2008.0,24/07,Stage 18 | Bourg d'Oisans - Saint-Etienne (196.5 km),1905,75,9
+19,2008.0,25/07,Stage 19 | Roanne - Montluçon (165.5 km),1814,43,5
+20,2008.0,26/07,Stage 20 (ITT) | Cérilly - Saint-Amand-Montrond (53 km),408,14,10
+21,2008.0,27/07,Stage 21 | Étampes - Paris (143 km),807,8,0
+1,2009.0,04/07,Stage 1 (ITT) | Monaco - Monaco (15.5 km),316,40,40
+2,2009.0,05/07,Stage 2 | Monaco - Brignoles (187 km),2387,49,7
+3,2009.0,06/07,Stage 3 | Marseille - La Grande-Motte (196.5 km),987,13,0
+4,2009.0,07/07,Stage 4 (TTT) | Montpellier - Montpellier (39 km),430,15,9
+5,2009.0,08/07,Stage 5 | Cap d’Agde - Perpignan (196.5 km),1014,8,1
+6,2009.0,09/07,Stage 6 | Girona - Barcelona (181.5 km),2227,63,15
+7,2009.0,10/07,Stage 7 | Barcelona - Andorra Arcalis (224 km),4910,253,166
+8,2009.0,11/07,Stage 8 | Andorra-la-Vella - Saint-Girons (176.5 km),3582,170,9
+9,2009.0,12/07,Stage 9 | Saint-Gaudens - Tarbes (160.5 km),2915,110,2
+10,2009.0,14/07,Stage 10 | Limoges - Issoudun (194.5 km),2076,28,0
+11,2009.0,15/07,Stage 11 | Vatan - Saint-Fargeau (192 km),1535,25,4
+12,2009.0,16/07,Stage 12 | Tonnerre - Vittel (211.5 km),2340,50,3
+13,2009.0,17/07,Stage 13 | Vittel - Colmar (200 km),3019,139,30
+14,2009.0,18/07,Stage 14 | Colmar - Besançon (199 km),1709,40,6
+15,2009.0,19/07,Stage 15 | Pontarlier - Verbier (207.5 km),3659,196,142
+16,2009.0,21/07,Stage 16 | Martigny - Bourg-Saint-Maurice (159 km),3895,181,0
+17,2009.0,22/07,Stage 17 | Bourg-Saint-Maurice - Le Grand Bornand (169.5 km),4781,343,110
+18,2009.0,23/07,Stage 18 (ITT) | Annecy - Annecy (40.5 km),344,27,27
+19,2009.0,24/07,Stage 19 | Bourgoin-Jallieu - Aubenas (178 km),1891,63,33
+20,2009.0,25/07,Stage 20 | Montélimar - Mont Ventoux (167 km),3767,343,288
+21,2009.0,26/07,Stage 21 | Montereau - Paris (164 km),521,1,0
+1,2010.0,03/07,Prologue | Rotterdam - Rotterdam (8.9 km),43,1,1
+2,2010.0,04/07,Stage 1 | Rotterdam - Brussel (223.5 km),420,0,0
+3,2010.0,05/07,Stage 2 | Brussel - Spa (201 km),2708,98,28
+4,2010.0,06/07,Stage 3 | Wanze - Arenberg Porte du Hainaut (213 km),1168,7,0
+5,2010.0,07/07,Stage 4 | Cambrai - Reims (153.5 km),1107,7,0
+6,2010.0,08/07,Stage 5 | Épernay - Montargis (187.5 km),1374,19,1
+7,2010.0,09/07,Stage 6 | Montargis - Gueugnon (227.5 km),2345,44,10
+8,2010.0,10/07,Stage 7 | Tournus - Station des Rousses (165.5 km),3446,211,100
+9,2010.0,11/07,Stage 8 | Station des Rousses - Morzine-Avoriaz (189 km),3636,297,164
+10,2010.0,13/07,Stage 9 | Morzine-Avoriaz - Saint-Jean-de-Maurienne (204.5 km),5144,264,1
+11,2010.0,14/07,Stage 10 | Chambéry - Gap (179 km),3187,162,24
+12,2010.0,15/07,Stage 11 | Sisteron - Bourg-lès-Valence (184.5 km),1264,21,5
+13,2010.0,16/07,Stage 12 | Bourg-de-Péage  - Mende (210.5 km),3485,143,76
+14,2010.0,17/07,Stage 13 | Rodez - Revel (196 km),2163,60,24
+15,2010.0,18/07,Stage 14 | Revel - Ax-3 Domaines (184.5 km),3796,324,133
+16,2010.0,19/07,Stage 15 | Pamiers - Bagnères-de-Luchon (187.5 km),3542,237,72
+17,2010.0,20/07,Stage 16 | Bagnères-de-Luchon - Pau (199.5 km),4721,202,4
+18,2010.0,22/07,Stage 17 | Pau - Col du Tourmalet (174 km),4681,410,261
+19,2010.0,23/07,Stage 18 | Salies-de-Béarn - Bordeaux (198 km),1056,9,0
+20,2010.0,24/07,Stage 19 (ITT) | Bordeaux - Pauillac (52 km),167,0,0
+21,2010.0,25/07,Stage 20 | Longjumeau  - Paris (102.5 km),481,6,1
+1,2011.0,02/07,Stage 1 | Passage Du Gois La Barre-de-monts - Mont Des Alouettes Les Herbiers (191.5 km),1286,35,26
+2,2011.0,03/07,Stage 2 (TTT) | Les Essarts - Les Essarts (23 km),188,0,0
+3,2011.0,04/07,Stage 3 | Olonne-sur-mer - Redon (198 km),1066,11,6
+4,2011.0,05/07,Stage 4 | Lorient - Mûr-de-Bretagne (172.5 km),2250,83,53
+5,2011.0,06/07,Stage 5 | Carhaix - Cap Fréhel (164.5 km),1652,39,14
+6,2011.0,07/07,Stage 6 | Dinan - Lisieux (226.5 km),2373,52,12
+7,2011.0,08/07,Stage 7 | Le Mans - Châteauroux (215 km),1304,6,1
+8,2011.0,09/07,Stage 8 | Aigurande - SuperBesse (190 km),3019,130,53
+9,2011.0,10/07,Stage 9 | Issoire - Saint-Flour (208 km),3975,160,39
+10,2011.0,12/07,Stage 10 | Aurillac - Carmaux (161 km),1933,77,28
+11,2011.0,13/07,Stage 11 | Blaye-les-mines - Lavaur (168.5 km),1695,42,6
+12,2011.0,14/07,Stage 12 | Cugnaux - Luz Ardiden (211 km),4563,399,181
+13,2011.0,15/07,Stage 13 | Pau - Lourdes (152.5 km),2605,148,3
+14,2011.0,16/07,Stage 14 | Saint-Gaudens - Plateau De Beille (168.5 km),5420,462,257
+15,2011.0,17/07,Stage 15 | Limoux - Montpellier (192.5 km),1464,25,2
+16,2011.0,19/07,Stage 16 | Saint-Paul-Trois-Châteaux - Gap (162.5 km),2372,90,66
+17,2011.0,20/07,Stage 17 | Gap - Pinerolo (179 km),3193,170,78
+18,2011.0,21/07,Stage 18 | Pinerolo - Galibier Serre-Chevalier (189 km),5268,329,164
+19,2011.0,22/07,Stage 19 | Modane - Alpe d’huez (109.5 km),3571,368,239
+20,2011.0,23/07,Stage 20 (ITT) | Grenoble - Grenoble (42.5 km),709,53,35
+21,2011.0,24/07,Stage 21 | Créteil - Paris (95 km),436,2,0
+1,2012.0,30/06,Prologue | Liège - Liège (6.4 km),79,0,0
+2,2012.0,01/07,Stage 1 | Liege - Seraing (198 km),2680,66,20
+3,2012.0,02/07,Stage 2 | Vise - Tournai (207.5 km),1509,18,5
+4,2012.0,03/07,Stage 3 | Orchies - Boulogne-sur-mer (197 km),1551,86,54
+5,2012.0,04/07,Stage 4 | Abbeville - Rouen (214.5 km),1698,25,6
+6,2012.0,05/07,Stage 5 | Rouen - Saint-quentin (196.5 km),1250,11,3
+7,2012.0,06/07,Stage 6 | Epernay - Metz (205 km),1535,16,2
+8,2012.0,07/07,Stage 7 | Tomblaine - La Planche Des Belles Filles (199 km),2736,168,128
+9,2012.0,08/07,Stage 8 | Belfort - Porrentruy (157.5 km),3072,179,62
+10,2012.0,09/07,Stage 9 (ITT) | Arc-et-senans - Besancon (41.5 km),499,35,20
+11,2012.0,11/07,Stage 10 | Macon - Bellegarde-sur-valserine (194.5 km),3350,208,46
+12,2012.0,12/07,Stage 11 | Albertville - La Toussuire - Les Sybelles (148 km),4987,387,169
+13,2012.0,13/07,Stage 12 | Saint-Jean-de-Maurienne - Annonay Davézieux (226 km),3399,126,30
+14,2012.0,14/07,Stage 13 | Saint-Paul-Trois-Châteaux - Cap d'Agde (217 km),1795,50,33
+15,2012.0,15/07,Stage 14 | Limoux - Foix (191 km),3284,206,19
+16,2012.0,16/07,Stage 15 | Samatan - Pau (158.5 km),2173,71,11
+17,2012.0,18/07,Stage 16 | Pau - Bagnères-de-Luchon (197 km),5291,293,113
+18,2012.0,19/07,Stage 17 | Bagnères-de-Luchon - Peyragudes (143.5 km),4383,400,182
+19,2012.0,20/07,Stage 18 | Blagnac - Brive-la-Gaillarde (222.5 km),2146,55,18
+20,2012.0,21/07,Stage 19 (ITT) | Bonneval - Chartres (53.5 km),249,2,1
+21,2012.0,22/07,Stage 20 | Rambouillet - Paris (120 km),699,7,0
+1,2013.0,29/06,Stage 1 | Porto-Vecchio - Bastia (213 km),1529,13,0
+2,2013.0,30/06,Stage 2 | Bastia - Ajaccio (156 km),2373,95,20
+3,2013.0,01/07,Stage 3 | Ajaccio - Calvi (145.5 km),2426,109,52
+4,2013.0,02/07,Stage 4 (TTT) | Nice - Nice (25 km),48,0,0
+5,2013.0,03/07,Stage 5 | Cagnes-sur-Mer - Marseille (228.5 km),2775,68,19
+6,2013.0,04/07,Stage 6 | Aix-en-Provence - Montpellier (176.5 km),837,8,1
+7,2013.0,05/07,Stage 7 | Montpellier - Albi (205.5 km),2675,66,4
+8,2013.0,06/07,Stage 8 | Castres - Ax-3 Domaines (195 km),3839,345,149
+9,2013.0,07/07,Stage 9 | Saint Girons - Bagnéres de Bigorre (168.5 km),4411,252,0
+10,2013.0,09/07,Stage 10 | Saint-Gildas-des-Bois - Saint-Malo (197 km),1762,25,7
+11,2013.0,10/07,Stage 11 (ITT) | Avranches - Mont-Saint-Michel (33 km),283,6,3
+12,2013.0,11/07,Stage 12 | Fougères - Tours (218 km),1425,10,1
+13,2013.0,12/07,Stage 13 | Tours - Saint-Amand-Montrond (173 km),1036,7,4
+14,2013.0,13/07,Stage 14 | Saint-Pourçain-sur-Sioule - Lyon (191 km),2158,60,16
+15,2013.0,14/07,Stage 15 | Givors - Mont Ventoux (242.5 km),4146,342,294
+16,2013.0,16/07,Stage 16 | Vaison-la-Romaine - Gap (168 km),3073,123,65
+17,2013.0,17/07,Stage 17 (ITT) | Embrun - Chorges (32 km),928,104,64
+18,2013.0,18/07,Stage 18 | Gap - Alpe d'Huez (172.5 km),4789,417,235
+19,2013.0,19/07,Stage 19 | Le Bourg d'Oisans - Le Grand Bornand (204.5 km),5567,369,155
+20,2013.0,20/07,Stage 20 | Annecy - Le Semnoz (125 km),3909,353,221
+21,2013.0,21/07,Stage 21 | Château de Versailles - Paris (118 km),766,8,0
+1,2014.0,05/07,Stage 1 | Leeds - Harrogate (190.5 km),2092,50,7
+2,2014.0,06/07,Stage 2 | York - Sheffield (201 km),3347,160,50
+3,2014.0,07/07,Stage 3 | Cambridge - London (155 km),834,4,1
+4,2014.0,08/07,Stage 4 | Le Touquet Paris-Plage - Lille (163.5 km),1118,21,1
+5,2014.0,09/07,Stage 5 | Ypres - Arenberg Porte du Hainaut (155.5 km),475,0,0
+6,2014.0,10/07,Stage 6 | Arras - Reims (194 km),1422,23,1
+7,2014.0,11/07,Stage 7 | Epernay - Nancy (234.5 km),2076,55,37
+8,2014.0,12/07,Stage 8 | Tomblaine - Gerardmer (161 km),1872,150,137
+9,2014.0,13/07,Stage 9 | Gerardmer - Mulhouse (170 km),3373,137,0
+10,2014.0,14/07,Stage 10 | Mulhouse - La Planche des Belles Filles (161.5 km),3906,303,184
+11,2014.0,16/07,Stage 11 | Besançon - Oyonnax (187.5 km),2711,128,42
+12,2014.0,17/07,Stage 12 | Bourg-en-Bresse - Saint-Etienne (185.5 km),2530,64,10
+13,2014.0,18/07,Stage 13 | Saint-Etienne - Chamrousse (197.5 km),3865,363,249
+14,2014.0,19/07,Stage 14 | Grenoble - Risoul (177 km),4838,344,172
+15,2014.0,20/07,Stage 15 | Tallard - Nîmes (222 km),1675,20,2
+16,2014.0,22/07,Stage 16 | Carcassonne - Bagneres-de-Luchon (237.5 km),4047,247,71
+17,2014.0,23/07,Stage 17 | Saint-Gaudens - Saint-Lary-Soulan (Pla d'Adet) (124.5 km),3810,410,212
+18,2014.0,24/07,Stage 18 | Pau - Hautacam (145.5 km),3748,336,209
+19,2014.0,25/07,Stage 19 | Maubourguet val d'Adour - Bergerac (208.5 km),1659,43,18
+20,2014.0,26/07,Stage 20 (ITT) | Bergerac - Perigueux (54 km),611,21,17
+21,2014.0,27/07,Stage 21 | Evry - Paris (137.5 km),805,6,0
+1,2015.0,04/07,Stage 1 (ITT) | Utrecht - Utrecht (13.8 km),28,0,0
+2,2015.0,05/07,Stage 2 | Utrecht - Neeltje Jans (166 km),241,0,0
+3,2015.0,06/07,Stage 3 | Antwerpen - Huy (159.5 km),1435,100,75
+4,2015.0,07/07,Stage 4 | Seraing - Cambrai (223.5 km),1552,15,3
+5,2015.0,08/07,Stage 5 | Arras - Amiens (189.5 km),1606,24,2
+6,2015.0,09/07,Stage 6 | Abbeville - Le Havre (191.5 km),1694,38,8
+7,2015.0,10/07,Stage 7 | Livarot - Fougères (190.5 km),1694,25,6
+8,2015.0,11/07,Stage 8 | Rennes - Mûr-de-bretagne (181.5 km),2057,72,48
+9,2015.0,12/07,Stage 9 (TTT) | Vannes - Plumelec (28 km),401,25,25
+10,2015.0,14/07,Stage 10 | Tarbes - La Pierre-Saint-Martin (167 km),2655,271,237
+11,2015.0,15/07,Stage 11 | Pau - Cauterets (188 km),4099,275,68
+12,2015.0,16/07,Stage 12 | Lannemezan - Plateau de Beille (195 km),4948,393,240
+13,2015.0,17/07,Stage 13 | Muret - Rodez (198.5 km),2299,81,32
+14,2015.0,18/07,Stage 14 | Rodez - Mende (178.5 km),2772,186,104
+15,2015.0,19/07,Stage 15 | Mende - Valence (183 km),1993,53,2
+16,2015.0,20/07,Stage 16 | Bourg-de-Péage - Gap (201 km),2322,89,66
+17,2015.0,22/07,Stage 17 | Digne-Les-Bains - Pra-Loup (161 km),4208,253,109
+18,2015.0,23/07,Stage 18 | Gap - Saint-Jean-de-Maurienne (186.5 km),4424,260,61
+19,2015.0,24/07,Stage 19 | Saint-Jean-de-Maurienne - La Toussuire - Les Sybelles (138 km),4545,376,169
+20,2015.0,25/07,Stage 20 | Modane - l'Alpe d'Huez (110.5 km),3164,332,215
+21,2015.0,26/07,Stage 21 | Sèvres - Paris (109.5 km),562,5,0
+1,2016.0,02/07,Stage 1 | Mont-Saint-Michel - Utah Beach Sainte-Marie-du-Mont (188 km),1071,10,1
+2,2016.0,03/07,Stage 2 | Saint-Lô - Cherbourg (183 km),1985,70,32
+3,2016.0,04/07,Stage 3 | Granville - Angers (223.5 km),1975,20,1
+4,2016.0,05/07,Stage 4 | Saumur - Limoges (237.5 km),1934,47,23
+5,2016.0,06/07,Stage 5 | Limoges - Le Lioran (216 km),4105,225,113
+6,2016.0,07/07,Stage 6 | Arpajon-sur-Cère - Montauban (190.5 km),2025,47,0
+7,2016.0,08/07,Stage 7 | l'Isle-Jourdain - Lac de Payolle (162.5 km),2578,176,153
+8,2016.0,09/07,Stage 8 | Pau - Bagnères-de-Luchon (184 km),4597,302,107
+9,2016.0,10/07,Stage 9 | Vielha val d'Aran - Andorra Arcalis (184 km),4948,366,172
+10,2016.0,12/07,Stage 10 | Escaldes-Engordany - Revel (197 km),2432,80,27
+11,2016.0,13/07,Stage 11 | Carcassonne - Montpellier (162.5 km),1381,24,2
+12,2016.0,14/07,Stage 12 | Montpellier - Chalet-Reynard (Mont Ventoux) (178 km),2416,268,221
+13,2016.0,15/07,Stage 13 (ITT) | Bourg-Saint-Andeol - Le Caverne de Pont d'Arc (37.5 km),752,54,31
+14,2016.0,16/07,Stage 14 | Montélimar - Villars-les-Dombes Parc des Oiseaux (208.5 km),1958,30,4
+15,2016.0,17/07,Stage 15 | Bourg-en-Bresse - Culoz (159 km),4386,286,113
+16,2016.0,18/07,Stage 16 | Moirans-en-Montagne - Berne (209 km),1967,48,28
+17,2016.0,20/07,Stage 17 | Berne - Finhaut-Emosson (184.5 km),3891,359,269
+18,2016.0,21/07,Stage 18 (ITT) | Sallanches - Megève (17 km),676,104,104
+19,2016.0,22/07,Stage 19 | Albertville - Saint-Gervais Mont Blanc (146 km),4436,337,160
+20,2016.0,23/07,Stage 20 | Megève - Morzine (146.5 km),4127,314,170
+21,2016.0,24/07,Stage 21 | Chantilly - Paris (113 km),713,7,0
+1,2017.0,01/07,Stage 1 (ITT) | Düsseldorf - Düsseldorf (14 km),61,1,1
+2,2017.0,02/07,Stage 2 | Düsseldorf - Liège (203.5 km),1278,25,9
+3,2017.0,03/07,Stage 3 | Verviers - Longwy (212.5 km),2706,77,35
+4,2017.0,04/07,Stage 4 | Mondorf-les-Bains - Vittel (207.5 km),1404,24,4
+5,2017.0,05/07,Stage 5 | Vittel - La Planche des Belles Filles (160.5 km),2348,151,116
+6,2017.0,06/07,Stage 6 | Vesoul - Troyes (216 km),1735,29,4
+7,2017.0,07/07,Stage 7 | Troyes - Nuits-Saint-Georges (213.5 km),1578,20,1
+8,2017.0,08/07,Stage 8 | Dole - Station des Rousses (187.5 km),3591,229,140
+9,2017.0,09/07,Stage 9 | Nantua - Chambéry (181.5 km),4696,275,9
+10,2017.0,11/07,Stage 10 | Périgueux - Bergerac (178 km),1407,25,0
+11,2017.0,12/07,Stage 11 | Eymet - Pau (203.5 km),1163,15,6
+12,2017.0,13/07,Stage 12 | Pau - Peyragudes (214.5 km),4903,375,167
+13,2017.0,14/07,Stage 13 | Saint-Girons - Foix (101 km),2856,243,21
+14,2017.0,15/07,Stage 14 | Blagnac - Rodez (181.5 km),1786,85,31
+15,2017.0,16/07,Stage 15 | Laissac-Sévérac l'Église - Le Puy-en-Velay (189.5 km),3164,154,27
+16,2017.0,18/07,Stage 16 | Le Puy-en-Velay - Romans-sur-Isère (165 km),2033,47,10
+17,2017.0,19/07,Stage 17 | La Mure - Serre-Chevalier (183 km),5064,300,2
+18,2017.0,20/07,Stage 18 | Briancon - Izoard (179.5 km),4059,338,235
+19,2017.0,21/07,Stage 19 | Embrun - Salon-de-Provence (222.5 km),2613,59,0
+20,2017.0,22/07,Stage 20 (ITT) | Marseille - Marseille (22.5 km),160,22,22
+21,2017.0,23/07,Stage 21 | Montgeron - Paris (105 km),519,4,1
+1,2018.0,07/07,Stage 1 | Noirmoutier-en-l'Île - Fontenay-le-Comte (201 km),454,2,0
+2,2018.0,08/07,Stage 2 | Mouilleron-Saint-Germain - La Roche-sur-Yon (182.5 km),1395,14,4
+3,2018.0,09/07,Stage 3 (TTT) | Cholet - Cholet (35.5 km),387,13,10
+4,2018.0,10/07,Stage 4 | La Baule - Sarzeau (195 km),1155,14,0
+5,2018.0,11/07,Stage 5 | Lorient - Quimper (204.5 km),2704,107,34
+6,2018.0,12/07,Stage 6 | Brest - Mûr de Bretagne (181 km),2027,95,73
+7,2018.0,13/07,Stage 7 | Fougères - Chartres (231 km),2255,40,2
+8,2018.0,14/07,Stage 8 | Dreux - Amiens Métropole (181 km),1284,17,3
+9,2018.0,15/07,Stage 9 | Arras Citadelle - Roubaix (156.5 km),618,1,0
+10,2018.0,17/07,Stage 10 | Annecy - Le Grand-Bornand (158.5 km),4254,320,108
+11,2018.0,18/07,Stage 11 | Albertville - La Rosière Espace San Bernardo (108.5 km),4093,349,160
+12,2018.0,19/07,Stage 12 | Bourg-Saint-Maurice Les Arcs - Alpe d'Huez (175.5 km),5362,405,212
+13,2018.0,20/07,Stage 13 | Bourg d'Oisans - Valence (169.5 km),1302,46,9
+14,2018.0,21/07,Stage 14 | Saint-Paul-Trois-Châteaux - Mende (188 km),3365,189,79
+15,2018.0,22/07,Stage 15 | Millau - Carcassonne (181 km),2917,118,0
+16,2018.0,24/07,Stage 16 | Carcassonne - Bagnères-de-Luchon (218 km),3521,202,86
+17,2018.0,25/07,Stage 17 | Bagnères-de-Luchon - Col Du Portet (65 km),3274,428,263
+18,2018.0,26/07,Stage 18 | Trie-sur-Baïse - Pau (171 km),1312,34,7
+19,2018.0,27/07,Stage 19 | Lourdes - Laruns (200.5 km),5046,290,40
+20,2018.0,28/07,Stage 20 (ITT) | Saint-Pée-sur-Nivelle - Espelette (31 km),543,46,39
+21,2018.0,29/07,Stage 21 | Houilles - Paris (116 km),732,6,0
+1,2019.0,06/07,Stage 1 | Brussels - Brussels (194.5 km),1582,20,4
+2,2019.0,07/07,Stage 2 (TTT) | Brussels - Brussels (27.6 km),267,7,7
+3,2019.0,08/07,Stage 3 | Binche - Épernay (215 km),2299,97,41
+4,2019.0,09/07,Stage 4 | Reims - Nancy (213.5 km),1555,32,20
+5,2019.0,10/07,Stage 5 | Saint-Dié-des-Vosges - Colmar (175.5 km),2325,132,55
+6,2019.0,11/07,Stage 6 | Mulhouse - La Planche des Belles Filles (160.5 km),3944,329,208
+7,2019.0,12/07,Stage 7 | Belfort - Chalon-sur-Saône (230 km),2367,36,1
+8,2019.0,13/07,Stage 8 | Mâcon - Saint-Étienne (200 km),3844,189,41
+9,2019.0,14/07,Stage 9 | Saint-Étienne - Brioude (170.5 km),2717,114,49
+10,2019.0,15/07,Stage 10 | Saint-Flour - Albi (217.5 km),3031,85,14
+11,2019.0,17/07,Stage 11 | Albi - Toulouse (167 km),1827,43,16
+12,2019.0,18/07,Stage 12 | Toulouse - Bagnères-de-Bigorre (209.5 km),3088,177,0
+13,2019.0,19/07,Stage 13 (ITT) | Pau - Pau (27.2 km),391,33,32
+14,2019.0,20/07,Stage 14 | Tarbes - Col du Tourmalet (111 km),3376,359,252
+15,2019.0,21/07,Stage 15 | Limoux - Foix Prat D'Albis (185 km),4345,365,173
+16,2019.0,23/07,Stage 16 | Nîmes - Nîmes (177 km),1626,29,14
+17,2019.0,24/07,Stage 17 | Pont du Gard - Gap (200 km),2472,85,55
+18,2019.0,25/07,Stage 18 | Embrun - Valloire (208 km),5215,232,56
+19,2019.0,26/07,Stage 19 | Saint-Jean-de-Maurienne - Tignes (89 km),2995,317,202
+20,2019.0,27/07,Stage 20 | Albertville - Val Thorens (59.5 km),2228,267,207
+21,2019.0,28/07,Stage 21 | Rambouillet - Paris (128 km),781,10,0
+1,2020.0,29/08,Stage 1 | Nice - Nice (156 km),1597,46,0
+2,2020.0,30/08,Stage 2 | Nice - Nice (185 km),4066,188,42
+3,2020.0,31/08,Stage 3 | Nice - Sisteron (198 km),3003,81,5
+4,2020.0,01/09,Stage 4 | Sisteron - Orcières-Merlette (160.5 km),3200,200,124
+5,2020.0,02/09,Stage 5 | Gap - Privas (183 km),1388,31,18
+6,2020.0,03/09,Stage 6 | Le Teil - Mont Aigoual (191 km),3087,227,175
+7,2020.0,04/09,Stage 7 | Millau - Lavaur (168 km),2011,47,2
+8,2020.0,05/09,Stage 8 | Cazères - Loudenvielle (141 km),3821,295,112
+9,2020.0,06/09,Stage 9 | Pau - Laruns (153 km),3500,239,118
+10,2020.0,08/09,Stage 10 | île d'Oléron (Le Château-d'Oléron) - Île de Ré (Saint-Martin-de-Ré) (168.5 km),531,2,0
+11,2020.0,09/09,Stage 11 | Châtelaillon-Plage - Poitiers (166.5 km),1008,13,4
+12,2020.0,10/09,Stage 12 | Chauvigny - Sarran (218 km),3389,142,26
+13,2020.0,11/09,Stage 13 | Châtel-Guyon - Pas de Peyrol (Le Puy Mary) (191.5 km),4459,302,178
+14,2020.0,12/09,Stage 14 | Clermont-Ferrand - Lyon (194 km),2646,73,17
+15,2020.0,13/09,Stage 15 | Lyon - Grand Colombier (174.5 km),3724,390,223
+16,2020.0,15/09,Stage 16 | La Tour-du-Pin - Villard-de-Lans (164 km),3903,250,68
+17,2020.0,16/09,Stage 17 | Grenoble - Méribel - Col de la Loze (170 km),4430,444,309
+18,2020.0,17/09,Stage 18 | Méribel - La Roche-sur-Foron (175 km),5166,314,39
+19,2020.0,18/09,Stage 19 | Bourg-en-Bresse - Champagnole (166.5 km),2208,77,34
+20,2020.0,19/09,Stage 20 (ITT) | Lure - La Planche des Belles Filles (36.2 km),962,135,133
+21,2020.0,20/09,Stage 21 | Mantes-la-Jolie - Paris (122 km),816,11,1
+1,2021.0,26/06,Stage 1 | Brest - Landerneau (197.8 km),2843,109,55
+2,2021.0,27/06,Stage 2 | Perros-Guirec - Mûr-de-Bretagne Guerlédan (183.5 km),2210,102,67
+3,2021.0,28/06,Stage 3 | Lorient - Pontivy (182.9 km),1534,34,19
+4,2021.0,29/06,Stage 4 | Redon - Fougères (150.4 km),1404,24,12
+5,2021.0,30/06,Stage 5 (ITT) | Changé - Laval Espace Mayenne (27.2 km),356,17,12
+6,2021.0,01/07,Stage 6 | Tours - Châteauroux (160.4 km),977,5,0
+7,2021.0,02/07,Stage 7 | Vierzon - Le Creusot (249.1 km),3120,146,75
+8,2021.0,03/07,Stage 8 | Oyonnax - Le Grand-Bornand (150.8 km),3557,310,111
+9,2021.0,04/07,Stage 9 | Cluses - Tignes (144.9 km),4628,381,211
+10,2021.0,06/07,Stage 10 | Albertville - Valence (190.7 km),1488,29,2
+11,2021.0,07/07,Stage 11 | Sorgues - Malaucène (198.9 km),4671,282,47
+12,2021.0,08/07,Stage 12 | Saint-Paul-Trois-Châteaux - Nîmes (159.4 km),2052,52,12
+13,2021.0,09/07,Stage 13 | Nîmes - Carcassonne (219.9 km),2023,29,5
+14,2021.0,10/07,Stage 14 | Carcassonne - Quillan (183.7 km),2877,125,55
+15,2021.0,11/07,Stage 15 | Céret - Andorra la Vella (191.3 km),4572,234,101
+16,2021.0,13/07,Stage 16 | El Pas de la Casa - Saint-Gaudens (169 km),3260,177,23
+17,2021.0,14/07,Stage 17 | Muret - Saint-Lary-Soulan (Col du Portet) (178.4 km),4375,450,286
+18,2021.0,15/07,Stage 18 | Pau - Luz Ardiden (129.7 km),3561,367,197
+19,2021.0,16/07,Stage 19 | Mourenx - Libourne (207 km),1181,16,2
+20,2021.0,17/07,Stage 20 (ITT) | Libourne - Saint-Émilion (30.8 km),246,8,8
+21,2021.0,18/07,Stage 21 | Chatou - Paris Champs-Élysées (108.4 km),699,14,1
+1,2022.0,01/07,Stage 1 (ITT) | Copenhagen - Copenhagen (13.2 km),21,0,0
+2,2022.0,02/07,Stage 2 | Roskilde - Nyborg (202.2 km),1149,11,3
+3,2022.0,03/07,Stage 3 | Vejle - Sønderborg (182 km),1280,16,3
+4,2022.0,05/07,Stage 4 | Dunkerque - Calais (171.5 km),1785,63,16
+5,2022.0,06/07,Stage 5 | Lille - Wallers-Arenberg (157 km),601,1,0
+6,2022.0,07/07,Stage 6 | Binche - Longwy (219.9 km),2477,85,57
+7,2022.0,08/07,Stage 7 | Tomblaine - La Super Planche des Belles Filles (176.3 km),2526,192,150
+8,2022.0,09/07,Stage 8 | Dole - Lausanne (186.3 km),2556,87,37
+9,2022.0,10/07,Stage 9 | Aigle - Châtel les portes du Soleil (192.9 km),3743,223,141
+10,2022.0,12/07,Stage 10 | Morzine - Megève (148.1 km),2733,143,101
+11,2022.0,13/07,Stage 11 | Albertville - Col du Granon (151.7 km),4070,400,231
+12,2022.0,14/07,Stage 12 | Briançon - L'Alpe d'Huez (165.1 km),4660,389,226
+13,2022.0,15/07,Stage 13 | Bourg d'Oisans - Saint-Etienne (192.6 km),2109,78,14
+14,2022.0,16/07,Stage 14 | Saint-Etienne - Mende (192.5 km),3441,170,77
+15,2022.0,17/07,Stage 15 | Rodez - Carcassonne (202.5 km),2416,64,1
+16,2022.0,19/07,Stage 16 | Carcassonne - Foix (178.5 km),3418,204,24
+17,2022.0,20/07,Stage 17 | Saint-Gaudens - Peyragudes (129.7 km),3364,324,182
+18,2022.0,21/07,Stage 18 | Lourdes - Hautacam (143.2 km),4036,408,210
+19,2022.0,22/07,Stage 19 | Castelnau-Magnoac - Cahors (188.3 km),1316,35,9
+20,2022.0,23/07,Stage 20 (ITT) | Lacapelle-Marival - Rocamadour (40.7 km),434,39,37
+21,2022.0,24/07,Stage 21 | Paris La Défense - Paris (Champs-Élysées) (115.6 km),748,13,1
+1,2023.0,01/07,Stage 1 | Bilbao - Bilbao (182 km),3221,166,52
+2,2023.0,02/07,Stage 2 | Vitoria-Gasteiz - San Sébastián (208.9 km),2949,141,63
+3,2023.0,03/07,Stage 3 | Amorebieta-Etxano - Bayonne (193.5 km),2667,68,19
+4,2023.0,04/07,Stage 4 | Dax - Nogaro (181.8 km),1427,20,2
+5,2023.0,05/07,Stage 5 | Pau - Laruns (162.7 km),3652,239,123
+6,2023.0,06/07,Stage 6 | Tarbes - Cauterets-Cambasque (144.9 km),3894,310,160
+7,2023.0,07/07,Stage 7 | Mont-de-Marsan - Bordeaux (169.9 km),808,7,1
+8,2023.0,08/07,Stage 8 | Libourne - Limoges (200.7 km),1996,61,23
+9,2023.0,09/07,Stage 9 | Saint-Léonard-de-Noblat - Puy de Dôme (182.4 km),3441,273,221
+10,2023.0,11/07,Stage 10 | Vulcania - Issoire (167.2 km),3151,118,7
+11,2023.0,12/07,Stage 11 | Clermont-Ferrand - Moulins (179.3 km),1873,34,1
+12,2023.0,13/07,Stage 12 | Roanne - Belleville-en-Beaujolais (168.8 km),3120,147,13
+13,2023.0,14/07,Stage 13 | Châtillon-Sur-Chalaronne - Grand Colombier (137.8 km),2413,260,228
+14,2023.0,15/07,Stage 14 | Annemasse - Morzine les Portes du Soleil (151.8 km),4281,308,170
+15,2023.0,16/07,Stage 15 | Les Gets les Portes du Soleil - Saint-Gervais Mont-Blanc (179 km),4483,335,177
+16,2023.0,18/07,Stage 16 (ITT) | Passy - Combloux (22.4 km),636,109,109
+17,2023.0,19/07,Stage 17 | Saint-Gervais Mont-Blanc - Courchevel (165.7 km),5399,445,205
+18,2023.0,20/07,Stage 18 | Moûtiers - Bourg-en-Bresse (184.9 km),1216,18,6
+19,2023.0,21/07,Stage 19 | Moirans-en-Montagne - Poligny (172.8 km),1934,50,3
+20,2023.0,22/07,Stage 20 | Belfort - Le Markstein (133.5 km),3471,303,131
+21,2023.0,23/07,Stage 21 | Saint-Quentin-en-Yvelines - Paris (115.1 km),577,14,1
+1,2024.0,29/06,Stage 1 | Firenze - Rimini (206 km),3821,176,0
+2,2024.0,30/06,Stage 2 | Cesenatico - Bologna (199.2 km),1859,109,40
+3,2024.0,01/07,Stage 3 | Piacenza - Torino (230.8 km),1190,16,0
+4,2024.0,02/07,Stage 4 | Pinerolo - Valloire (139.6 km),3904,187,56
+5,2024.0,03/07,Stage 5 | Saint-Jean-de-Maurienne - Saint Vulbas (177.4 km),1126,25,5
+6,2024.0,04/07,Stage 6 | Mâcon - Dijon (163.5 km),881,7,1
+7,2024.0,05/07,Stage 7 (ITT) | Nuits-Saint-Georges - Gevrey-Chambertin (25.3 km),283,13,13
+8,2024.0,06/07,Stage 8 | Semur-en-Auxois - Colombey-les-Deux-Eglises (183.4 km),2334,63,13
+9,2024.0,07/07,Stage 9 | Troyes - Troyes (199 km),2012,30,1
+10,2024.0,09/07,Stage 10 | Orléans - Saint-Amand-Montrond (187.3 km),888,6,3
+11,2024.0,10/07,Stage 11 | Évaux-les-Bains - Le Lioran (211 km),4177,241,93
+12,2024.0,11/07,Stage 12 | Aurillac - Villeneuve-sur-Lot (203.6 km),2253,53,8
+13,2024.0,12/07,Stage 13 | Agen - Pau (165.3 km),1884,53,15
+14,2024.0,13/07,Stage 14 | Pau - Saint-Lary-Soulan Pla d'Adet (151.9 km),4050,340,193
+15,2024.0,14/07,Stage 15 | Loudenvielle - Plateau de Beille (197.7 km),5071,366,215
+16,2024.0,16/07,Stage 16 | Gruissan - Nîmes (188.6 km),1176,15,0
+17,2024.0,17/07,Stage 17 | Saint-Paul-Trois-Châteaux - Superdévoluy (177.8 km),3091,177,120
+18,2024.0,18/07,Stage 18 | Gap - Barcelonnette (179.5 km),3123,101,15
+19,2024.0,19/07,Stage 19 | Embrun - Isola 2000 (144.6 km),4512,275,155
+20,2024.0,20/07,Stage 20 | Nice - Col de la Couillole (132.8 km),4748,380,218
+21,2024.0,21/07,Stage 21 (ITT) | Monaco - Nice (33.7 km),720,73,42

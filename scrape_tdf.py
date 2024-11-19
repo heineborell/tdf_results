@@ -1,11 +1,7 @@
-import csv
-import os
-import re
 import time
 
 import numpy as np
 import pandas as pd
-from bs4 import BeautifulSoup
 from selenium import webdriver
 from selenium.common.exceptions import NoSuchElementException, TimeoutException
 from selenium.webdriver.chrome.options import Options
@@ -179,7 +175,6 @@ for year in year_options:
                     ).drop(index=0),
                 ]
             )
-            print(df)
             df.to_csv("TDF_2.csv")
 
     html = driver.find_element(By.TAG_NAME, "html")
