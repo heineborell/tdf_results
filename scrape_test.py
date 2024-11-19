@@ -49,6 +49,8 @@ year_lst = [
 ]
 print(year_lst)
 
+df = pd.DataFrame(columns=["year", "stage", "name", "team", "time"])
+
 i = 0
 for year in year_options:
     print(year_lst[i])
