@@ -22,55 +22,91 @@ driver = webdriver.Chrome(options=options)
 wait = WebDriverWait(driver, 5)
 
 
-df = pd.DataFrame(
-    columns=["year", "date", "stage", "vertical_meters", "profile_score", "ps_25"]
-)
-i = 2009
-driver.get(
-    "https://www.procyclingstats.com/race/tour-de-france/" + str(i) + "/stage-11"
-)
+driver.get("https://www.procyclingstats.com/race/tour-de-france/2024/stage-11")
+
+
+df = pd.DataFrame(columns=["year", "stage", "name", "time"])
+table = driver.find_element(By.CSS_SELECTOR, ".results.basic.moblist10")
+info_table = driver.find_element(By.CSS_SELECTOR, ".infolist")
+info_lst = info_table.text.split("\n")
+info_dict = dict(zip(info_lst[0::2], info_lst[1::2]))
+info_df = pd.DataFrame(columns=list(info_dict.keys()))
+print()
 
 drop_list = driver.find_elements(By.CLASS_NAME, "pageSelectNav ")
 year_element = drop_list[0].find_elements(By.TAG_NAME, "option")
-stage_element = drop_list[1].find_elements(By.TAG_NAME, "option")
 year_list = [year.text for year in year_element]
-stage_list = [stage.text for stage in stage_element if "Stage" in stage.text]
+del year_list[0]
+print(year_list)
 
-try:
-    ttt_test = driver.find_element(By.CLASS_NAME, "results-ttt")
-except NoSuchElementException:
-    print("It is a normal stage.")
-    table = driver.find_element(By.CSS_SELECTOR, ".results.basic.moblist10")
+for year in year_list:
+    print(year)
+    driver.get("https://www.procyclingstats.com/race/tour-de-france/" + year + "/")
+    drop_list = driver.find_elements(By.CLASS_NAME, "pageSelectNav ")
+    time.sleep(2)
+    if len(drop_list) == 2:
+        stage_element = drop_list[1].find_elements(By.TAG_NAME, "option")
+        stage_list = [stage.text for stage in stage_element if "Stage" in stage.text]
+    elif len(drop_list) == 3:
+        stage_element = drop_list[2].find_elements(By.TAG_NAME, "option")
+        stage_list = [stage.text for stage in stage_element if "Stage" in stage.text]
 
-    rank_lst = table.find_elements(By.TAG_NAME, "tr")
-    time_table = table.find_elements(By.CSS_SELECTOR, ".time.ar")
-    info_table = driver.find_element(By.CSS_SELECTOR, ".infolist")
-    name_lst = []
-    time_lst = []
+    for i, stage in enumerate(stage_list):
+        print(stage)
+        driver.get(
+            "https://www.procyclingstats.com/race/tour-de-france/"
+            + year
+            + "/stage-"
+            + str(i + 1)
+        )
+        time.sleep(2)
 
-    for rank in rank_lst:
-        if len(rank.text.split("\n")) > 2:
-            name_lst.append(rank.text.split("\n")[1])
+        try:
+            ttt_test = driver.find_element(By.CLASS_NAME, "results-ttt")
+        except NoSuchElementException:
+            print("It is a normal stage.")
+            table = driver.find_element(By.CSS_SELECTOR, ".results.basic.moblist10")
 
-    for time in time_table:
-        time_lst.append(time.text)
+            rank_lst = table.find_elements(By.TAG_NAME, "tr")
+            time_table = table.find_elements(By.CSS_SELECTOR, ".time.ar")
+            info_table = driver.find_element(By.CSS_SELECTOR, ".infolist")
+            name_lst = []
+            time_lst = []
 
-    for j, _ in enumerate(time_lst):
-        if time_lst[j] == ",,":
-            time_lst[j] = time_lst[j - 1]
+            for rank in rank_lst:
+                if len(rank.text.split("\n")) > 2:
+                    name_lst.append(rank.text.split("\n")[1])
 
-    info_lst = info_table.text.split("\n")
-    print(info_lst)
-    for i in info_lst:
-        print(i.split(":"))
+            for t in time_table:
+                time_lst.append(t.text)
 
-    info_dict = dict(zip(info_lst[0::2], info_lst[1::2]))
+            for j, _ in enumerate(time_lst):
+                if time_lst[j] == ",,":
+                    time_lst[j] = time_lst[j - 1]
 
-    df = pd.DataFrame({"name": name_lst, "time": time_lst[1:]})
-    print(df)
-    print(info_dict)
-else:
-    print("It is a TTT stage")
+            info_lst = info_table.text.split("\n")
+
+            info_dict = dict(zip(info_lst[0::2], info_lst[1::2]))
+            # info_df = pd.concat([info_df, pd.DataFrame(info_dict)], ignore_index=True)
+            # info_df = pd.DataFrame(info_dict)
+
+            df = pd.concat(
+                [
+                    df,
+                    pd.DataFrame(
+                        {
+                            "year": [int(year)] * len(name_lst),
+                            "stage": [stage] * len(name_lst),
+                            "name": name_lst,
+                            "time": time_lst[1:],
+                        }
+                    ),
+                ]
+            )
+            df.to_csv("protdf.csv")
+            info_df.to_csv("infodf.csv")
+        else:
+            print("It is a TTT stage")
 # for key in list(info_dict.keys()):
 # print(key)
 # if len(stage_lst) == 10:
