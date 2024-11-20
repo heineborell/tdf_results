@@ -47,139 +47,159 @@ year_lst = [
 
 df = pd.DataFrame(columns=["year", "stage", "name", "team_name", "timing"])
 
-i = 0
-for year in year_options:
-    print(year_lst[i])
-    wait.until(
-        EC.presence_of_element_located(
-            (
-                By.XPATH,
-                "/html/body/div[2]/main/div[1]/section[1]/div/div[1]/div/div/div/div[1]/div",
-            )
-        )
-    )
-    # choose year dropdown
-    year_dd.click()
-    # choose year
-    year.click()
-    print("year clicked")
-    time.sleep(2)
-
-    # # choose individual drop down
-    driver.find_element(
-        By.XPATH,
-        "//*[@id=" + str(year_lst[i]) + "]/div[3]/div[2]/div[1]/div[1]/div[2]/div[1]",
-    ).click()
-    # individual select
-    driver.find_element(
-        By.XPATH,
-        "//*[@id="
-        + str(year_lst[i])
-        + "]/div[3]/div[2]/div[1]/div[1]/div[2]/div[2]/div[2]",
-    ).click()
-    time.sleep(2)
-    print("individual clicked")
-
-    # # choose stage dropdown
-    # driver.find_element(
-    #     By.XPATH,
-    #     "//*[@id=" + str(year_lst[i]) + "]/div[3]/div[2]/div[1]/div[1]/div[1]/div[1]",
-    # ).click()
-
-    stages_dd = driver.find_element(By.ID, "stageSelect")
-    stages = [
-        stage.get_attribute("text")
-        for stage in stages_dd.find_elements(By.TAG_NAME, "option")
-    ]
-    print(stages)
-    for j in range(0, len(stages)):
-        # choose stage
-        print(j, "stage index")
-        # again choose stage dropdown to choose new stage
-        driver.find_element(
-            By.XPATH,
-            "//*[@id="
-            + str(year_lst[i])
-            + "]/div[3]/div[2]/div[1]/div[1]/div[1]/div[1]",
-        ).click()
-        driver.find_element(
-            By.XPATH,
-            "//*[@id="
-            + str(year_lst[i])
-            + "]/div[3]/div[2]/div[1]/div[1]/div[1]/div[2]/div"
-            + str([j + 1]),
-        ).click()
-        time.sleep(2)
-        print("stage clicked")
-
-        ## next rankings button for the table
-        try:
-            wait.until(
-                EC.presence_of_element_located(
-                    (
-                        By.XPATH,
-                        "//*[@id="
-                        + str(year_lst[i])
-                        + "]/div[3]/div[2]/div[1]/div[3]/a",
-                    )
+i = 29
+for p, year in enumerate(year_options):
+    if p >= 29:
+        print(year_lst[i])
+        wait.until(
+            EC.presence_of_element_located(
+                (
+                    By.XPATH,
+                    "/html/body/div[2]/main/div[1]/section[1]/div/div[1]/div/div/div/div[1]/div",
                 )
             )
-        except TimeoutException:
-            print("couldnt find next ranking click")
-        else:
+        )
+        # choose year dropdown
+        year_dd.click()
+        # choose year
+        year.click()
+        print("year clicked")
+        time.sleep(2)
+
+        # # choose stage dropdown
+        # driver.find_element(
+        #     By.XPATH,
+        #     "//*[@id=" + str(year_lst[i]) + "]/div[3]/div[2]/div[1]/div[1]/div[1]/div[1]",
+        # ).click()
+
+        stages_dd = driver.find_element(By.ID, "stageSelect")
+        stages = [
+            stage.get_attribute("text")
+            for stage in stages_dd.find_elements(By.TAG_NAME, "option")
+        ]
+        print(stages)
+        for j in range(0, len(stages)):
+
+            # # choose individual drop down
             driver.find_element(
                 By.XPATH,
-                "//*[@id=" + str(year_lst[i]) + "]/div[3]/div[2]/div[1]/div[3]/a",
+                "//*[@id="
+                + str(year_lst[i])
+                + "]/div[3]/div[2]/div[1]/div[1]/div[2]/div[1]",
+            ).click()
+            # individual select
+            try:
+                wait.until(
+                    EC.presence_of_element_located(
+                        (
+                            By.XPATH,
+                            "//*[@id="
+                            + str(year_lst[i])
+                            + "]/div[3]/div[2]/div[1]/div[1]/div[2]/div[2]/div[2]",
+                        )
+                    )
+                )
+
+            except TimeoutException:
+                print("individual stage click not exist")
+            else:
+
+                driver.find_element(
+                    By.XPATH,
+                    "//*[@id="
+                    + str(year_lst[i])
+                    + "]/div[3]/div[2]/div[1]/div[1]/div[2]/div[2]/div[2]",
+                ).click()
+                time.sleep(2)
+                print("individual clicked")
+
+            # choose stage
+            print(j, "stage index")
+            # again choose stage dropdown to choose new stage
+            driver.find_element(
+                By.XPATH,
+                "//*[@id="
+                + str(year_lst[i])
+                + "]/div[3]/div[2]/div[1]/div[1]/div[1]/div[1]",
+            ).click()
+            driver.find_element(
+                By.XPATH,
+                "//*[@id="
+                + str(year_lst[i])
+                + "]/div[3]/div[2]/div[1]/div[1]/div[1]/div[2]/div"
+                + str([j + 1]),
             ).click()
             time.sleep(2)
-            print("next rankings clicked")
+            print("stage clicked")
 
-        table = driver.find_element(
-            By.XPATH,
-            "//*[@id=" + str(year_lst[i]) + "]/div[3]/div[2]/div[1]/div[2]/table",
-        )
-        cyclists = table.find_elements(By.TAG_NAME, "tr")
-        ranking = np.zeros(3)
-        for cyclist in cyclists:
-            attrs = cyclist.find_elements(By.TAG_NAME, "td")
-            attr_list = []
-            for m, attr in enumerate(attrs):
-                if m == 1 or m == 2 or m == 3:
-                    attr_list.append(attr.text)
-            if len(attr_list) == 3:
-                ranking = np.vstack([ranking, attr_list])
+            ## next rankings button for the table
+            try:
+                wait.until(
+                    EC.presence_of_element_located(
+                        (
+                            By.XPATH,
+                            "//*[@id="
+                            + str(year_lst[i])
+                            + "]/div[3]/div[2]/div[1]/div[3]/a",
+                        )
+                    )
+                )
+            except TimeoutException:
+                print("couldnt find next ranking click")
+            else:
+                driver.find_element(
+                    By.XPATH,
+                    "//*[@id=" + str(year_lst[i]) + "]/div[3]/div[2]/div[1]/div[3]/a",
+                ).click()
+                time.sleep(2)
+                print("next rankings clicked")
 
-        try:
-            name_lst = ranking[:, 0]
-            team_lst = ranking[:, 1]
-            timing_lst = ranking[:, 2]
-        except IndexError:
-            print("the ranking table is empty or some other index problem")
-        else:
-
-            df = pd.concat(
-                [
-                    df,
-                    pd.DataFrame(
-                        {
-                            "year": [
-                                year_lst[i] for _ in range(1, ranking.shape[0] + 1)
-                            ],
-                            "stage": [
-                                stages[j] for _ in range(1, ranking.shape[0] + 1)
-                            ],
-                            "name": name_lst,
-                            "team_name": team_lst,
-                            "timing": timing_lst,
-                        }
-                    ).drop(index=0),
-                ]
+            table = driver.find_element(
+                By.XPATH,
+                "//*[@id=" + str(year_lst[i]) + "]/div[3]/div[2]/div[1]/div[2]/table",
             )
-            df.to_csv("TDF_2.csv")
+            cyclists = table.find_elements(By.TAG_NAME, "tr")
+            ranking = np.zeros(3)
+            for cyclist in cyclists:
+                attrs = cyclist.find_elements(By.TAG_NAME, "td")
+                attr_list = []
+                for m, attr in enumerate(attrs):
+                    if m == 1 or m == 2 or m == 3:
+                        attr_list.append(attr.text)
+                if len(attr_list) == 3:
+                    ranking = np.vstack([ranking, attr_list])
 
-    html = driver.find_element(By.TAG_NAME, "html")
-    html.send_keys(Keys.PAGE_UP)
-    html.send_keys(Keys.PAGE_UP)
-    html.send_keys(Keys.PAGE_UP)
-    time.sleep(6)
-    i = i + 1
+            try:
+                name_lst = ranking[:, 0]
+                team_lst = ranking[:, 1]
+                timing_lst = ranking[:, 2]
+            except IndexError:
+                print("the ranking table is empty or some other index problem")
+            else:
+
+                df = pd.concat(
+                    [
+                        df,
+                        pd.DataFrame(
+                            {
+                                "year": [
+                                    year_lst[i] for _ in range(1, ranking.shape[0] + 1)
+                                ],
+                                "stage": [
+                                    stages[j] for _ in range(1, ranking.shape[0] + 1)
+                                ],
+                                "name": name_lst,
+                                "team_name": team_lst,
+                                "timing": timing_lst,
+                            }
+                        ).drop(index=0),
+                    ]
+                )
+                df.to_csv("TDF_3.csv")
+
+        html = driver.find_element(By.TAG_NAME, "html")
+        html.send_keys(Keys.PAGE_UP)
+        html.send_keys(Keys.PAGE_UP)
+        html.send_keys(Keys.PAGE_UP)
+        time.sleep(6)
+        i = i + 1
