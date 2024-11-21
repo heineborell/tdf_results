@@ -1,9 +1,10 @@
 import time
+from datetime import datetime, timedelta
 
 import numpy as np
 import pandas as pd
 from selenium import webdriver
-from selenium.common.exceptions import NoSuchElementException, TimeoutException
+from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
@@ -81,8 +82,23 @@ for year in year_list:
                 time_lst.append(t.text)
 
             for j, _ in enumerate(time_lst):
-                if time_lst[j] == ",,":
-                    time_lst[j] = time_lst[j - 1]
+
+                if j > 0 and time_lst[j] != ",," and time_lst[j] != "-":
+                    try:
+                        t = datetime.strptime(time_lst[j], "%H:%M:%S")
+                        time_lst[j] = timedelta(
+                            hours=t.hour, minutes=t.minute, seconds=t.second
+                        ).total_seconds()
+
+                    except ValueError:
+                        t = datetime.strptime(time_lst[j], "%M:%S")
+                        time_lst[j] = timedelta(
+                            hours=t.hour, minutes=t.minute, seconds=t.second
+                        ).total_seconds()
+
+            # for j, _ in enumerate(time_lst):
+            #     if time_lst[j] == ",,":
+            #         time_lst[j] = time_lst[j - 1]
 
             info_lst = info_table.text.split("\n")
 
