@@ -29,10 +29,22 @@ driver.get("https://www.procyclingstats.com/race/tour-de-france/2024/stage-11")
 df = pd.DataFrame(columns=["year", "stage", "name", "time"])
 table = driver.find_element(By.CSS_SELECTOR, ".results.basic.moblist10")
 info_table = driver.find_element(By.CSS_SELECTOR, ".infolist")
+info_element = info_table.find_elements(By.TAG_NAME, "li")
 info_lst = info_table.text.split("\n")
-info_dict = dict(zip(info_lst[0::2], info_lst[1::2]))
+
+info_lst = [info.text for info in info_element]
+final_info_lst = []
+for i in info_lst:
+    if len(i.split("\n")) == 1:
+        single_el = i.split("\n")
+        single_el.append("EMPTY")
+        final_info_lst.append(single_el)
+    else:
+        final_info_lst.append(i.split("\n"))
+
+final_info_lst = np.array(final_info_lst).flatten()
+info_dict = dict(zip(final_info_lst[0::2], final_info_lst[1::2]))
 info_df = pd.DataFrame(columns=list(info_dict.keys()))
-print(info_df)
 
 drop_list = driver.find_elements(By.CLASS_NAME, "pageSelectNav ")
 year_element = drop_list[0].find_elements(By.TAG_NAME, "option")
@@ -119,25 +131,39 @@ for year in year_list:
                 if time_lst[j] == ",,":
                     time_lst[j] = time_lst[j - 1]
 
-            print(info_element[3].text)
-            info_lst = info_table.text.split("\n")
+            info_lst = [info.text for info in info_element]
+            final_info_lst = []
+            for i in info_lst:
+                if len(i.split("\n")) == 1:
+                    single_el = i.split("\n")
+                    single_el.append("Na")
+                    final_info_lst.append(single_el)
+                else:
+                    final_info_lst.append(i.split("\n"))
 
-            info_dict = dict(zip(info_lst[0::2], info_lst[1::2]))
-            print(info_dict)
-            # info_df = pd.concat([info_df, pd.DataFrame(info_dict)], ignore_index=True)
-            # info_df = pd.DataFrame(info_dict)
+            final_info_lst = np.array(final_info_lst).flatten()
+
+            # construct info table dictionary
+            info_dict = dict(zip(final_info_lst[0::2], final_info_lst[1::2]))
+            info_dict = {
+                k: [v] for k, v in info_dict.items()
+            }  # this is needed as pandas want and index (kinda hack solution)
+            info_df = pd.concat(
+                [info_df, pd.DataFrame.from_dict(info_dict)], ignore_index=True
+            )
+            final_dict = {
+                "year": [int(year)] * len(name_lst),
+                "stage": [stage] * len(name_lst),
+                "name": name_lst,
+                "time": time_lst,
+            }
+            info_dict_ext = {k: v * len(name_lst) for k, v in info_dict.items()}
+            final_dict = final_dict | info_dict_ext
 
             df = pd.concat(
                 [
                     df,
-                    pd.DataFrame(
-                        {
-                            "year": [int(year)] * len(name_lst),
-                            "stage": [stage] * len(name_lst),
-                            "name": name_lst,
-                            "time": time_lst,
-                        }
-                    ),
+                    pd.DataFrame(final_dict),
                 ]
             )
             df.to_csv("protdf.csv")

@@ -1,702 +1,527 @@
-,year,stage,name,time
-0,2024,Stage 1 | Firenze - Rimini,BARDET Romain,18442
-1,2024,Stage 1 | Firenze - Rimini,VAN DEN BROEK Frank,18442
-2,2024,Stage 1 | Firenze - Rimini,VAN AERT Wout,18447
-3,2024,Stage 1 | Firenze - Rimini,POGAČAR Tadej,18447
-4,2024,Stage 1 | Firenze - Rimini,VAN GILS Maxim,18447
-5,2024,Stage 1 | Firenze - Rimini,ARANBURU Alex,18447
-6,2024,Stage 1 | Firenze - Rimini,PEDERSEN Mads,18447
-7,2024,Stage 1 | Firenze - Rimini,EVENEPOEL Remco,18447
-8,2024,Stage 1 | Firenze - Rimini,BILBAO Pello,18447
-9,2024,Stage 1 | Firenze - Rimini,BETTIOL Alberto,18447
-10,2024,Stage 1 | Firenze - Rimini,PIDCOCK Thomas,18447
-11,2024,Stage 1 | Firenze - Rimini,BERNAL Egan,18447
-12,2024,Stage 1 | Firenze - Rimini,VAN WILDER Ilan,18447
-13,2024,Stage 1 | Firenze - Rimini,CAMPENAERTS Victor,18447
-14,2024,Stage 1 | Firenze - Rimini,HINDLEY Jai,18447
-15,2024,Stage 1 | Firenze - Rimini,VINGEGAARD Jonas,18447
-16,2024,Stage 1 | Firenze - Rimini,GEE Derek,18447
-17,2024,Stage 1 | Firenze - Rimini,VLASOV Aleksandr,18447
-18,2024,Stage 1 | Firenze - Rimini,SKUJIŅŠ Toms,18447
-19,2024,Stage 1 | Firenze - Rimini,THOMAS Geraint,18447
-20,2024,Stage 1 | Firenze - Rimini,CRAS Steff,18447
-21,2024,Stage 1 | Firenze - Rimini,CARAPAZ Richard,18447
-22,2024,Stage 1 | Firenze - Rimini,JORGENSON Matteo,18447
-23,2024,Stage 1 | Firenze - Rimini,JOHANNESSEN Tobias Halland,18447
-24,2024,Stage 1 | Firenze - Rimini,MARTIN Guillaume,18447
-25,2024,Stage 1 | Firenze - Rimini,MAS Enric,18447
-26,2024,Stage 1 | Firenze - Rimini,HAIG Jack,18447
-27,2024,Stage 1 | Firenze - Rimini,RODRÍGUEZ Carlos,18447
-28,2024,Stage 1 | Firenze - Rimini,ONLEY Oscar,18447
-29,2024,Stage 1 | Firenze - Rimini,EIKING Odd Christian,18447
-30,2024,Stage 1 | Firenze - Rimini,CICCONE Giulio,18447
-31,2024,Stage 1 | Firenze - Rimini,LANDA Mikel,18447
-32,2024,Stage 1 | Firenze - Rimini,KULSET Johannes,18447
-33,2024,Stage 1 | Firenze - Rimini,ROGLIČ Primož,18447
-34,2024,Stage 1 | Firenze - Rimini,DE PLUS Laurens,18447
-35,2024,Stage 1 | Firenze - Rimini,YATES Simon,18447
-36,2024,Stage 1 | Firenze - Rimini,AYUSO Juan,18447
-37,2024,Stage 1 | Firenze - Rimini,BARGUIL Warren,18447
-38,2024,Stage 1 | Firenze - Rimini,COSTA Rui,18447
-39,2024,Stage 1 | Firenze - Rimini,HARPER Chris,18447
-40,2024,Stage 1 | Firenze - Rimini,GALL Felix,18447
-41,2024,Stage 1 | Firenze - Rimini,ARMIRAIL Bruno,18447
-42,2024,Stage 1 | Firenze - Rimini,ALMEIDA João,18447
-43,2024,Stage 1 | Firenze - Rimini,SIVAKOV Pavel,18447
-44,2024,Stage 1 | Firenze - Rimini,YATES Adam,18447
-45,2024,Stage 1 | Firenze - Rimini,ROMO Javier,18447
-46,2024,Stage 1 | Firenze - Rimini,BUITRAGO Santiago,18447
-47,2024,Stage 1 | Firenze - Rimini,MEINTJES Louis,18447
-48,2024,Stage 1 | Firenze - Rimini,KWIATKOWSKI Michał,18458
-49,2024,Stage 1 | Firenze - Rimini,HEALY Ben,18460
-50,2024,Stage 1 | Firenze - Rimini,POWLESS Neilson,18476
-51,2024,Stage 1 | Firenze - Rimini,KELDERMAN Wilco,18480
-52,2024,Stage 1 | Firenze - Rimini,BERNARD Julien,18526
-53,2024,Stage 1 | Firenze - Rimini,VERONA Carlos,18526
-54,2024,Stage 1 | Firenze - Rimini,MADOUAS Valentin,18543
-55,2024,Stage 1 | Firenze - Rimini,VERVAEKE Louis,18982
-56,2024,Stage 1 | Firenze - Rimini,GIBBONS Ryan,18982
-57,2024,Stage 1 | Firenze - Rimini,FORMOLO Davide,19298
-58,2024,Stage 1 | Firenze - Rimini,TRATNIK Jan,19298
-59,2024,Stage 1 | Firenze - Rimini,JUNGELS Bob,19345
-60,2024,Stage 1 | Firenze - Rimini,ABRAHAMSEN Jonas,19345
-61,2024,Stage 1 | Firenze - Rimini,TEJADA Harold,19345
-62,2024,Stage 1 | Firenze - Rimini,BEULLENS Cedric,19568
-63,2024,Stage 1 | Firenze - Rimini,OLIVEIRA Nelson,19568
-64,2024,Stage 1 | Firenze - Rimini,PAGE Hugo,19568
-65,2024,Stage 1 | Firenze - Rimini,LAURANCE Axel,19568
-66,2024,Stage 1 | Firenze - Rimini,LAPEIRA Paul,19568
-67,2024,Stage 1 | Firenze - Rimini,PACHER Quentin,19568
-68,2024,Stage 1 | Firenze - Rimini,RODRÍGUEZ Cristián,19568
-69,2024,Stage 1 | Firenze - Rimini,GRELLIER Fabien,19568
-70,2024,Stage 1 | Firenze - Rimini,GENIETS Kevin,19568
-71,2024,Stage 1 | Firenze - Rimini,VAN MOER Brent,19568
-72,2024,Stage 1 | Firenze - Rimini,KRAGH ANDERSEN Søren,19568
-73,2024,Stage 1 | Firenze - Rimini,FUGLSANG Jakob,19568
-74,2024,Stage 1 | Firenze - Rimini,NEILANDS Krists,19568
-75,2024,Stage 1 | Firenze - Rimini,GOOSSENS Kobe,19568
-76,2024,Stage 1 | Firenze - Rimini,KÜNG Stefan,19568
-77,2024,Stage 1 | Firenze - Rimini,SOLER Marc,19568
-78,2024,Stage 1 | Firenze - Rimini,GRÉGOIRE Romain,19568
-79,2024,Stage 1 | Firenze - Rimini,MOHORIČ Matej,19568
-80,2024,Stage 1 | Firenze - Rimini,CASTROVIEJO Jonathan,19568
-81,2024,Stage 1 | Firenze - Rimini,IZAGIRRE Ion,19568
-82,2024,Stage 1 | Firenze - Rimini,HERRADA Jesús,19568
-83,2024,Stage 1 | Firenze - Rimini,HOULE Hugo,19568
-84,2024,Stage 1 | Firenze - Rimini,MOSCON Gianni,19568
-85,2024,Stage 1 | Firenze - Rimini,VANHOUCKE Harm,19568
-86,2024,Stage 1 | Firenze - Rimini,VERMEERSCH Gianni,19568
-87,2024,Stage 1 | Firenze - Rimini,VAN DER POEL Mathieu,19568
-88,2024,Stage 1 | Firenze - Rimini,BENOOT Tiesj,19568
-89,2024,Stage 1 | Firenze - Rimini,LEMMEN Bart,19568
-90,2024,Stage 1 | Firenze - Rimini,LUTSENKO Alexey,19922
-91,2024,Stage 1 | Firenze - Rimini,CORT Magnus,19922
-92,2024,Stage 1 | Firenze - Rimini,TILLER Rasmus,19925
-93,2024,Stage 1 | Firenze - Rimini,STUYVEN Jasper,19925
-94,2024,Stage 1 | Firenze - Rimini,ARNDT Nikias,19925
-95,2024,Stage 1 | Firenze - Rimini,DE LIE Arnaud,20196
-96,2024,Stage 1 | Firenze - Rimini,GRIGNARD Sébastien,20196
-97,2024,Stage 1 | Firenze - Rimini,WELLENS Tim,20196
-98,2024,Stage 1 | Firenze - Rimini,WÆRENSKJOLD Søren,20196
-99,2024,Stage 1 | Firenze - Rimini,EEKHOFF Nils,20196
-100,2024,Stage 1 | Firenze - Rimini,DÉMARE Arnaud,20196
-101,2024,Stage 1 | Firenze - Rimini,DENZ Nico,20196
-102,2024,Stage 1 | Firenze - Rimini,DEGENKOLB John,20196
-103,2024,Stage 1 | Firenze - Rimini,POLITT Nils,20196
-104,2024,Stage 1 | Firenze - Rimini,DUJARDIN Sandy,20196
-105,2024,Stage 1 | Firenze - Rimini,RUSSO Clément,20196
-106,2024,Stage 1 | Firenze - Rimini,DECLERCQ Tim,20196
-107,2024,Stage 1 | Firenze - Rimini,JEGAT Jordan,20196
-108,2024,Stage 1 | Firenze - Rimini,NAESEN Oliver,20196
-109,2024,Stage 1 | Firenze - Rimini,TURGIS Anthony,20196
-110,2024,Stage 1 | Firenze - Rimini,PETERS Nans,20196
-111,2024,Stage 1 | Firenze - Rimini,VAN DEN BERG Marijn,20196
-112,2024,Stage 1 | Firenze - Rimini,GODON Dorian,20196
-113,2024,Stage 1 | Firenze - Rimini,BISSEGGER Stefan,20196
-114,2024,Stage 1 | Firenze - Rimini,PRODHOMME Nicolas,20196
-115,2024,Stage 1 | Firenze - Rimini,SOBRERO Matteo,20196
-116,2024,Stage 1 | Firenze - Rimini,GHYS Robbe,20196
-117,2024,Stage 1 | Firenze - Rimini,TURNER Ben,20196
-118,2024,Stage 1 | Firenze - Rimini,LAPORTE Christophe,20196
-119,2024,Stage 1 | Firenze - Rimini,WRIGHT Fred,20196
-120,2024,Stage 1 | Firenze - Rimini,BAUHAUS Phil,20196
-121,2024,Stage 1 | Firenze - Rimini,GIRMAY Biniam,20196
-122,2024,Stage 1 | Firenze - Rimini,PEDERSEN Casper,20196
-123,2024,Stage 1 | Firenze - Rimini,QUINN Sean,20196
-124,2024,Stage 1 | Firenze - Rimini,GESCHKE Simon,20196
-125,2024,Stage 1 | Firenze - Rimini,VAN POPPEL Danny,20196
-126,2024,Stage 1 | Firenze - Rimini,DURBRIDGE Luke,20196
-127,2024,Stage 1 | Firenze - Rimini,MARTINEZ Lenny,20196
-128,2024,Stage 1 | Firenze - Rimini,ZIMMERMANN Georg,20196
-129,2024,Stage 1 | Firenze - Rimini,BURGAUDEAU Mathieu,20196
-130,2024,Stage 1 | Firenze - Rimini,JUUL-JENSEN Christopher,20196
-131,2024,Stage 1 | Firenze - Rimini,ALLEGAERT Piet,20196
-132,2024,Stage 1 | Firenze - Rimini,TEUNISSEN Mike,20196
-133,2024,Stage 1 | Firenze - Rimini,POELS Wout,20196
-134,2024,Stage 1 | Firenze - Rimini,COQUARD Bryan,20196
-135,2024,Stage 1 | Firenze - Rimini,GAUDU David,20196
-136,2024,Stage 1 | Firenze - Rimini,WILLIAMS Stephen,20196
-137,2024,Stage 1 | Firenze - Rimini,BOIVIN Guillaume,20196
-138,2024,Stage 1 | Firenze - Rimini,VAUQUELIN Kévin,20196
-139,2024,Stage 1 | Firenze - Rimini,MEZGEC Luka,20196
-140,2024,Stage 1 | Firenze - Rimini,STEWART Jake,20196
-141,2024,Stage 1 | Firenze - Rimini,BENNETT Sam,20196
-142,2024,Stage 1 | Firenze - Rimini,HALLER Marco,20196
-143,2024,Stage 1 | Firenze - Rimini,MATTHEWS Michael,20196
-144,2024,Stage 1 | Firenze - Rimini,MÜHLBERGER Gregor,20196
-145,2024,Stage 1 | Firenze - Rimini,ACKERMANN Pascal,20196
-146,2024,Stage 1 | Firenze - Rimini,LAZKANO Oier,20196
-147,2024,Stage 1 | Firenze - Rimini,CHAMPOUSSIN Clément,20196
-148,2024,Stage 1 | Firenze - Rimini,GARCÍA PIERNA Raúl,20196
-149,2024,Stage 1 | Firenze - Rimini,DRIZNERS Jarrad,20196
-150,2024,Stage 1 | Firenze - Rimini,DILLIER Silvan,20260
-151,2024,Stage 1 | Firenze - Rimini,REINDERS Elmar,20260
-152,2024,Stage 1 | Firenze - Rimini,CAPIOT Amaury,20260
-153,2024,Stage 1 | Firenze - Rimini,RENARD Alexis,20260
-154,2024,Stage 1 | Firenze - Rimini,GACHIGNARD Thomas,20260
-155,2024,Stage 1 | Firenze - Rimini,GROENEWEGEN Dylan,20260
-156,2024,Stage 1 | Firenze - Rimini,PHILIPSEN Jasper,20260
-157,2024,Stage 1 | Firenze - Rimini,LAMPAERT Yves,20260
-158,2024,Stage 1 | Firenze - Rimini,REX Laurenz,20260
-159,2024,Stage 1 | Firenze - Rimini,KRISTOFF Alexander,20260
-160,2024,Stage 1 | Firenze - Rimini,MCLAY Daniel,20260
-161,2024,Stage 1 | Firenze - Rimini,HIRT Jan,20260
-162,2024,Stage 1 | Firenze - Rimini,THIJSSEN Gerben,20260
-163,2024,Stage 1 | Firenze - Rimini,VERCHER Mattéo,20260
-164,2024,Stage 1 | Firenze - Rimini,GAVIRIA Fernando,20260
-165,2024,Stage 1 | Firenze - Rimini,MOZZATO Luca,20260
-166,2024,Stage 1 | Firenze - Rimini,ZINGLE Axel,20260
-167,2024,Stage 1 | Firenze - Rimini,FEDOROV Yevgeniy,20794
-168,2024,Stage 1 | Firenze - Rimini,BALLERINI Davide,20794
-169,2024,Stage 1 | Firenze - Rimini,RICKAERT Jonas,20794
-170,2024,Stage 1 | Firenze - Rimini,MØRKØV Michael,20794
-171,2024,Stage 1 | Firenze - Rimini,WELTEN Bram,20794
-172,2024,Stage 1 | Firenze - Rimini,BOL Cees,20794
-173,2024,Stage 1 | Firenze - Rimini,CAVENDISH Mark,20794
-174,2024,Stage 1 | Firenze - Rimini,JAKOBSEN Fabio,20794
-175,2024,Stage 1 | Firenze - Rimini,GAZZOLI Michele,-
-0,2024,Stage 2 | Cesenatico - Bologna,VAUQUELIN Kévin,17022
-1,2024,Stage 2 | Cesenatico - Bologna,ABRAHAMSEN Jonas,17058
-2,2024,Stage 2 | Cesenatico - Bologna,PACHER Quentin,17071
-3,2024,Stage 2 | Cesenatico - Bologna,RODRÍGUEZ Cristián,17071
-4,2024,Stage 2 | Cesenatico - Bologna,TEJADA Harold,17071
-5,2024,Stage 2 | Cesenatico - Bologna,OLIVEIRA Nelson,17072
-6,2024,Stage 2 | Cesenatico - Bologna,LAURANCE Axel,17094
-7,2024,Stage 2 | Cesenatico - Bologna,TEUNISSEN Mike,17115
-8,2024,Stage 2 | Cesenatico - Bologna,HOULE Hugo,17118
-9,2024,Stage 2 | Cesenatico - Bologna,CARAPAZ Richard,17163
-10,2024,Stage 2 | Cesenatico - Bologna,JEGAT Jordan,17163
-11,2024,Stage 2 | Cesenatico - Bologna,EVENEPOEL Remco,17163
-12,2024,Stage 2 | Cesenatico - Bologna,VINGEGAARD Jonas,17163
-13,2024,Stage 2 | Cesenatico - Bologna,POGAČAR Tadej,17163
-14,2024,Stage 2 | Cesenatico - Bologna,CICCONE Giulio,17184
-15,2024,Stage 2 | Cesenatico - Bologna,GRÉGOIRE Romain,17184
-16,2024,Stage 2 | Cesenatico - Bologna,GALL Felix,17184
-17,2024,Stage 2 | Cesenatico - Bologna,VAN GILS Maxim,17184
-18,2024,Stage 2 | Cesenatico - Bologna,RODRÍGUEZ Carlos,17184
-19,2024,Stage 2 | Cesenatico - Bologna,MAS Enric,17184
-20,2024,Stage 2 | Cesenatico - Bologna,AYUSO Juan,17184
-21,2024,Stage 2 | Cesenatico - Bologna,BARDET Romain,17184
-22,2024,Stage 2 | Cesenatico - Bologna,BERNAL Egan,17184
-23,2024,Stage 2 | Cesenatico - Bologna,JORGENSON Matteo,17184
-24,2024,Stage 2 | Cesenatico - Bologna,MARTIN Guillaume,17184
-25,2024,Stage 2 | Cesenatico - Bologna,BILBAO Pello,17184
-26,2024,Stage 2 | Cesenatico - Bologna,ROGLIČ Primož,17184
-27,2024,Stage 2 | Cesenatico - Bologna,VLASOV Aleksandr,17184
-28,2024,Stage 2 | Cesenatico - Bologna,YATES Simon,17184
-29,2024,Stage 2 | Cesenatico - Bologna,PIDCOCK Thomas,17184
-30,2024,Stage 2 | Cesenatico - Bologna,ALMEIDA João,17184
-31,2024,Stage 2 | Cesenatico - Bologna,YATES Adam,17184
-32,2024,Stage 2 | Cesenatico - Bologna,HINDLEY Jai,17184
-33,2024,Stage 2 | Cesenatico - Bologna,LANDA Mikel,17184
-34,2024,Stage 2 | Cesenatico - Bologna,BUITRAGO Santiago,17234
-35,2024,Stage 2 | Cesenatico - Bologna,DE PLUS Laurens,17234
-36,2024,Stage 2 | Cesenatico - Bologna,CRAS Steff,17234
-37,2024,Stage 2 | Cesenatico - Bologna,GEE Derek,17245
-38,2024,Stage 2 | Cesenatico - Bologna,HARPER Chris,17245
-39,2024,Stage 2 | Cesenatico - Bologna,VAN WILDER Ilan,17245
-40,2024,Stage 2 | Cesenatico - Bologna,HAIG Jack,17245
-41,2024,Stage 2 | Cesenatico - Bologna,ROMO Javier,17245
-42,2024,Stage 2 | Cesenatico - Bologna,POWLESS Neilson,17245
-43,2024,Stage 2 | Cesenatico - Bologna,MEINTJES Louis,17314
-44,2024,Stage 2 | Cesenatico - Bologna,EIKING Odd Christian,17314
-45,2024,Stage 2 | Cesenatico - Bologna,ARMIRAIL Bruno,17314
-46,2024,Stage 2 | Cesenatico - Bologna,ONLEY Oscar,17314
-47,2024,Stage 2 | Cesenatico - Bologna,MADOUAS Valentin,17314
-48,2024,Stage 2 | Cesenatico - Bologna,HEALY Ben,17314
-49,2024,Stage 2 | Cesenatico - Bologna,COSTA Rui,17314
-50,2024,Stage 2 | Cesenatico - Bologna,BARGUIL Warren,17314
-51,2024,Stage 2 | Cesenatico - Bologna,BERNARD Julien,17314
-52,2024,Stage 2 | Cesenatico - Bologna,GOOSSENS Kobe,17314
-53,2024,Stage 2 | Cesenatico - Bologna,THOMAS Geraint,17427
-54,2024,Stage 2 | Cesenatico - Bologna,FORMOLO Davide,17427
-55,2024,Stage 2 | Cesenatico - Bologna,SKUJIŅŠ Toms,17427
-56,2024,Stage 2 | Cesenatico - Bologna,VERONA Carlos,17427
-57,2024,Stage 2 | Cesenatico - Bologna,JUNGELS Bob,17501
-58,2024,Stage 2 | Cesenatico - Bologna,ZIMMERMANN Georg,17501
-59,2024,Stage 2 | Cesenatico - Bologna,LAPEIRA Paul,17501
-60,2024,Stage 2 | Cesenatico - Bologna,KELDERMAN Wilco,17501
-61,2024,Stage 2 | Cesenatico - Bologna,BENOOT Tiesj,17501
-62,2024,Stage 2 | Cesenatico - Bologna,PRODHOMME Nicolas,17582
-63,2024,Stage 2 | Cesenatico - Bologna,LUTSENKO Alexey,17582
-64,2024,Stage 2 | Cesenatico - Bologna,WILLIAMS Stephen,17582
-65,2024,Stage 2 | Cesenatico - Bologna,GENIETS Kevin,17602
-66,2024,Stage 2 | Cesenatico - Bologna,SOLER Marc,17679
-67,2024,Stage 2 | Cesenatico - Bologna,SIVAKOV Pavel,17679
-68,2024,Stage 2 | Cesenatico - Bologna,VERVAEKE Louis,17690
-69,2024,Stage 2 | Cesenatico - Bologna,IZAGIRRE Ion,17690
-70,2024,Stage 2 | Cesenatico - Bologna,KÜNG Stefan,17690
-71,2024,Stage 2 | Cesenatico - Bologna,VAN DEN BROEK Frank,17690
-72,2024,Stage 2 | Cesenatico - Bologna,JOHANNESSEN Tobias Halland,17690
-73,2024,Stage 2 | Cesenatico - Bologna,KRAGH ANDERSEN Søren,17736
-74,2024,Stage 2 | Cesenatico - Bologna,NEILANDS Krists,17827
-75,2024,Stage 2 | Cesenatico - Bologna,PETERS Nans,17827
-76,2024,Stage 2 | Cesenatico - Bologna,CAMPENAERTS Victor,17827
-77,2024,Stage 2 | Cesenatico - Bologna,GESCHKE Simon,17827
-78,2024,Stage 2 | Cesenatico - Bologna,VANHOUCKE Harm,17827
-79,2024,Stage 2 | Cesenatico - Bologna,FUGLSANG Jakob,17827
-80,2024,Stage 2 | Cesenatico - Bologna,POELS Wout,17827
-81,2024,Stage 2 | Cesenatico - Bologna,GRELLIER Fabien,17827
-82,2024,Stage 2 | Cesenatico - Bologna,DENZ Nico,17827
-83,2024,Stage 2 | Cesenatico - Bologna,SOBRERO Matteo,17827
-84,2024,Stage 2 | Cesenatico - Bologna,TILLER Rasmus,17827
-85,2024,Stage 2 | Cesenatico - Bologna,VAN MOER Brent,17827
-86,2024,Stage 2 | Cesenatico - Bologna,VAN AERT Wout,17827
-87,2024,Stage 2 | Cesenatico - Bologna,KULSET Johannes,17922
-88,2024,Stage 2 | Cesenatico - Bologna,MOHORIČ Matej,18005
-89,2024,Stage 2 | Cesenatico - Bologna,DILLIER Silvan,18113
-90,2024,Stage 2 | Cesenatico - Bologna,LEMMEN Bart,18113
-91,2024,Stage 2 | Cesenatico - Bologna,ACKERMANN Pascal,18113
-92,2024,Stage 2 | Cesenatico - Bologna,BOIVIN Guillaume,18113
-93,2024,Stage 2 | Cesenatico - Bologna,MOSCON Gianni,18113
-94,2024,Stage 2 | Cesenatico - Bologna,DUJARDIN Sandy,18113
-95,2024,Stage 2 | Cesenatico - Bologna,TRATNIK Jan,18113
-96,2024,Stage 2 | Cesenatico - Bologna,GACHIGNARD Thomas,18113
-97,2024,Stage 2 | Cesenatico - Bologna,VAN DER POEL Mathieu,18113
-98,2024,Stage 2 | Cesenatico - Bologna,LAPORTE Christophe,18113
-99,2024,Stage 2 | Cesenatico - Bologna,ARANBURU Alex,18113
-100,2024,Stage 2 | Cesenatico - Bologna,GIRMAY Biniam,18113
-101,2024,Stage 2 | Cesenatico - Bologna,MÜHLBERGER Gregor,18113
-102,2024,Stage 2 | Cesenatico - Bologna,GAUDU David,18113
-103,2024,Stage 2 | Cesenatico - Bologna,COQUARD Bryan,18113
-104,2024,Stage 2 | Cesenatico - Bologna,CHAMPOUSSIN Clément,18113
-105,2024,Stage 2 | Cesenatico - Bologna,KWIATKOWSKI Michał,18113
-106,2024,Stage 2 | Cesenatico - Bologna,MARTINEZ Lenny,18113
-107,2024,Stage 2 | Cesenatico - Bologna,JUUL-JENSEN Christopher,18113
-108,2024,Stage 2 | Cesenatico - Bologna,WELLENS Tim,18176
-109,2024,Stage 2 | Cesenatico - Bologna,ZINGLE Axel,18176
-110,2024,Stage 2 | Cesenatico - Bologna,KRISTOFF Alexander,18176
-111,2024,Stage 2 | Cesenatico - Bologna,VERCHER Mattéo,18176
-112,2024,Stage 2 | Cesenatico - Bologna,HERRADA Jesús,18176
-113,2024,Stage 2 | Cesenatico - Bologna,RUSSO Clément,18176
-114,2024,Stage 2 | Cesenatico - Bologna,WÆRENSKJOLD Søren,18176
-115,2024,Stage 2 | Cesenatico - Bologna,TURGIS Anthony,18176
-116,2024,Stage 2 | Cesenatico - Bologna,GRIGNARD Sébastien,18176
-117,2024,Stage 2 | Cesenatico - Bologna,MEZGEC Luka,18176
-118,2024,Stage 2 | Cesenatico - Bologna,STUYVEN Jasper,18176
-119,2024,Stage 2 | Cesenatico - Bologna,BEULLENS Cedric,18245
-120,2024,Stage 2 | Cesenatico - Bologna,DECLERCQ Tim,18245
-121,2024,Stage 2 | Cesenatico - Bologna,WRIGHT Fred,18245
-122,2024,Stage 2 | Cesenatico - Bologna,VAN POPPEL Danny,18245
-123,2024,Stage 2 | Cesenatico - Bologna,POLITT Nils,18245
-124,2024,Stage 2 | Cesenatico - Bologna,GIBBONS Ryan,18245
-125,2024,Stage 2 | Cesenatico - Bologna,LAMPAERT Yves,18245
-126,2024,Stage 2 | Cesenatico - Bologna,RICKAERT Jonas,18245
-127,2024,Stage 2 | Cesenatico - Bologna,ARNDT Nikias,18245
-128,2024,Stage 2 | Cesenatico - Bologna,REX Laurenz,18245
-129,2024,Stage 2 | Cesenatico - Bologna,STEWART Jake,18245
-130,2024,Stage 2 | Cesenatico - Bologna,REINDERS Elmar,18245
-131,2024,Stage 2 | Cesenatico - Bologna,LAZKANO Oier,18245
-132,2024,Stage 2 | Cesenatico - Bologna,MATTHEWS Michael,18245
-133,2024,Stage 2 | Cesenatico - Bologna,GODON Dorian,18245
-134,2024,Stage 2 | Cesenatico - Bologna,BAUHAUS Phil,18245
-135,2024,Stage 2 | Cesenatico - Bologna,VERMEERSCH Gianni,18245
-136,2024,Stage 2 | Cesenatico - Bologna,VAN DEN BERG Marijn,18245
-137,2024,Stage 2 | Cesenatico - Bologna,NAESEN Oliver,18245
-138,2024,Stage 2 | Cesenatico - Bologna,DURBRIDGE Luke,18245
-139,2024,Stage 2 | Cesenatico - Bologna,PEDERSEN Mads,18245
-140,2024,Stage 2 | Cesenatico - Bologna,BENNETT Sam,18245
-141,2024,Stage 2 | Cesenatico - Bologna,PHILIPSEN Jasper,18245
-142,2024,Stage 2 | Cesenatico - Bologna,QUINN Sean,18245
-143,2024,Stage 2 | Cesenatico - Bologna,CORT Magnus,18245
-144,2024,Stage 2 | Cesenatico - Bologna,HALLER Marco,18245
-145,2024,Stage 2 | Cesenatico - Bologna,THIJSSEN Gerben,18245
-146,2024,Stage 2 | Cesenatico - Bologna,BURGAUDEAU Mathieu,18245
-147,2024,Stage 2 | Cesenatico - Bologna,CASTROVIEJO Jonathan,18245
-148,2024,Stage 2 | Cesenatico - Bologna,ALLEGAERT Piet,18245
-149,2024,Stage 2 | Cesenatico - Bologna,TURNER Ben,18245
-150,2024,Stage 2 | Cesenatico - Bologna,PEDERSEN Casper,18245
-151,2024,Stage 2 | Cesenatico - Bologna,GHYS Robbe,18245
-152,2024,Stage 2 | Cesenatico - Bologna,RENARD Alexis,18245
-153,2024,Stage 2 | Cesenatico - Bologna,HIRT Jan,18245
-154,2024,Stage 2 | Cesenatico - Bologna,PAGE Hugo,18245
-155,2024,Stage 2 | Cesenatico - Bologna,DE LIE Arnaud,18245
-156,2024,Stage 2 | Cesenatico - Bologna,BETTIOL Alberto,18245
-157,2024,Stage 2 | Cesenatico - Bologna,BISSEGGER Stefan,18245
-158,2024,Stage 2 | Cesenatico - Bologna,DEGENKOLB John,18245
-159,2024,Stage 2 | Cesenatico - Bologna,GROENEWEGEN Dylan,18245
-160,2024,Stage 2 | Cesenatico - Bologna,DRIZNERS Jarrad,18245
-161,2024,Stage 2 | Cesenatico - Bologna,DÉMARE Arnaud,18259
-162,2024,Stage 2 | Cesenatico - Bologna,MOZZATO Luca,18259
-163,2024,Stage 2 | Cesenatico - Bologna,CAPIOT Amaury,18259
-164,2024,Stage 2 | Cesenatico - Bologna,GARCÍA PIERNA Raúl,18259
-165,2024,Stage 2 | Cesenatico - Bologna,BALLERINI Davide,18497
-166,2024,Stage 2 | Cesenatico - Bologna,CAVENDISH Mark,18497
-167,2024,Stage 2 | Cesenatico - Bologna,MCLAY Daniel,18497
-168,2024,Stage 2 | Cesenatico - Bologna,FEDOROV Yevgeniy,18497
-169,2024,Stage 2 | Cesenatico - Bologna,GAVIRIA Fernando,18497
-170,2024,Stage 2 | Cesenatico - Bologna,WELTEN Bram,18497
-171,2024,Stage 2 | Cesenatico - Bologna,JAKOBSEN Fabio,18497
-172,2024,Stage 2 | Cesenatico - Bologna,MØRKØV Michael,18497
-173,2024,Stage 2 | Cesenatico - Bologna,BOL Cees,18497
-174,2024,Stage 2 | Cesenatico - Bologna,EEKHOFF Nils,18497
-0,2024,Stage 3 | Piacenza - Torino,GIRMAY Biniam,19608
-1,2024,Stage 3 | Piacenza - Torino,GAVIRIA Fernando,19608
-2,2024,Stage 3 | Piacenza - Torino,DE LIE Arnaud,19608
-3,2024,Stage 3 | Piacenza - Torino,PEDERSEN Mads,19608
-4,2024,Stage 3 | Piacenza - Torino,GROENEWEGEN Dylan,19608
-5,2024,Stage 3 | Piacenza - Torino,BAUHAUS Phil,19608
-6,2024,Stage 3 | Piacenza - Torino,JAKOBSEN Fabio,19608
-7,2024,Stage 3 | Piacenza - Torino,BALLERINI Davide,19608
-8,2024,Stage 3 | Piacenza - Torino,BENNETT Sam,19608
-9,2024,Stage 3 | Piacenza - Torino,COQUARD Bryan,19608
-10,2024,Stage 3 | Piacenza - Torino,RICKAERT Jonas,19608
-11,2024,Stage 3 | Piacenza - Torino,TURGIS Anthony,19608
-12,2024,Stage 3 | Piacenza - Torino,VAN DEN BERG Marijn,19608
-13,2024,Stage 3 | Piacenza - Torino,CARAPAZ Richard,19608
-14,2024,Stage 3 | Piacenza - Torino,ACKERMANN Pascal,19608
-15,2024,Stage 3 | Piacenza - Torino,THIJSSEN Gerben,19608
-16,2024,Stage 3 | Piacenza - Torino,STUYVEN Jasper,19608
-17,2024,Stage 3 | Piacenza - Torino,LAPEIRA Paul,19608
-18,2024,Stage 3 | Piacenza - Torino,MOHORIČ Matej,19608
-19,2024,Stage 3 | Piacenza - Torino,GACHIGNARD Thomas,19608
-20,2024,Stage 3 | Piacenza - Torino,ZINGLE Axel,19608
-21,2024,Stage 3 | Piacenza - Torino,LAZKANO Oier,19608
-22,2024,Stage 3 | Piacenza - Torino,GEE Derek,19608
-23,2024,Stage 3 | Piacenza - Torino,REINDERS Elmar,19608
-24,2024,Stage 3 | Piacenza - Torino,NAESEN Oliver,19608
-25,2024,Stage 3 | Piacenza - Torino,MARTIN Guillaume,19608
-26,2024,Stage 3 | Piacenza - Torino,DÉMARE Arnaud,19608
-27,2024,Stage 3 | Piacenza - Torino,GODON Dorian,19608
-28,2024,Stage 3 | Piacenza - Torino,GIBBONS Ryan,19608
-29,2024,Stage 3 | Piacenza - Torino,TEUNISSEN Mike,19608
-30,2024,Stage 3 | Piacenza - Torino,EEKHOFF Nils,19608
-31,2024,Stage 3 | Piacenza - Torino,BEULLENS Cedric,19608
-32,2024,Stage 3 | Piacenza - Torino,ARANBURU Alex,19608
-33,2024,Stage 3 | Piacenza - Torino,OLIVEIRA Nelson,19608
-34,2024,Stage 3 | Piacenza - Torino,VAN POPPEL Danny,19608
-35,2024,Stage 3 | Piacenza - Torino,BILBAO Pello,19608
-36,2024,Stage 3 | Piacenza - Torino,HEALY Ben,19608
-37,2024,Stage 3 | Piacenza - Torino,POGAČAR Tadej,19608
-38,2024,Stage 3 | Piacenza - Torino,POLITT Nils,19608
-39,2024,Stage 3 | Piacenza - Torino,EVENEPOEL Remco,19608
-40,2024,Stage 3 | Piacenza - Torino,MEINTJES Louis,19608
-41,2024,Stage 3 | Piacenza - Torino,LAMPAERT Yves,19608
-42,2024,Stage 3 | Piacenza - Torino,ZIMMERMANN Georg,19608
-43,2024,Stage 3 | Piacenza - Torino,HAIG Jack,19608
-44,2024,Stage 3 | Piacenza - Torino,YATES Simon,19608
-45,2024,Stage 3 | Piacenza - Torino,HOULE Hugo,19608
-46,2024,Stage 3 | Piacenza - Torino,FORMOLO Davide,19608
-47,2024,Stage 3 | Piacenza - Torino,HINDLEY Jai,19608
-48,2024,Stage 3 | Piacenza - Torino,HARPER Chris,19608
-49,2024,Stage 3 | Piacenza - Torino,BUITRAGO Santiago,19608
-50,2024,Stage 3 | Piacenza - Torino,VLASOV Aleksandr,19608
-51,2024,Stage 3 | Piacenza - Torino,BERNAL Egan,19608
-52,2024,Stage 3 | Piacenza - Torino,RODRÍGUEZ Carlos,19608
-53,2024,Stage 3 | Piacenza - Torino,DENZ Nico,19608
-54,2024,Stage 3 | Piacenza - Torino,DE PLUS Laurens,19608
-55,2024,Stage 3 | Piacenza - Torino,DUJARDIN Sandy,19608
-56,2024,Stage 3 | Piacenza - Torino,BARDET Romain,19608
-57,2024,Stage 3 | Piacenza - Torino,VAN AERT Wout,19608
-58,2024,Stage 3 | Piacenza - Torino,REX Laurenz,19608
-59,2024,Stage 3 | Piacenza - Torino,SKUJIŅŠ Toms,19608
-60,2024,Stage 3 | Piacenza - Torino,ARMIRAIL Bruno,19655
-61,2024,Stage 3 | Piacenza - Torino,PAGE Hugo,19608
-62,2024,Stage 3 | Piacenza - Torino,VAN MOER Brent,19608
-63,2024,Stage 3 | Piacenza - Torino,VAN DEN BROEK Frank,19608
-64,2024,Stage 3 | Piacenza - Torino,WELTEN Bram,19608
-65,2024,Stage 3 | Piacenza - Torino,DEGENKOLB John,19608
-66,2024,Stage 3 | Piacenza - Torino,JORGENSON Matteo,19608
-67,2024,Stage 3 | Piacenza - Torino,VINGEGAARD Jonas,19608
-68,2024,Stage 3 | Piacenza - Torino,BENOOT Tiesj,19608
-69,2024,Stage 3 | Piacenza - Torino,LEMMEN Bart,19608
-70,2024,Stage 3 | Piacenza - Torino,WELLENS Tim,19608
-71,2024,Stage 3 | Piacenza - Torino,EIKING Odd Christian,19608
-72,2024,Stage 3 | Piacenza - Torino,MADOUAS Valentin,19608
-73,2024,Stage 3 | Piacenza - Torino,BERNARD Julien,19608
-74,2024,Stage 3 | Piacenza - Torino,JOHANNESSEN Tobias Halland,19608
-75,2024,Stage 3 | Piacenza - Torino,KULSET Johannes,19608
-76,2024,Stage 3 | Piacenza - Torino,CICCONE Giulio,19608
-77,2024,Stage 3 | Piacenza - Torino,RUSSO Clément,19608
-78,2024,Stage 3 | Piacenza - Torino,KÜNG Stefan,19608
-79,2024,Stage 3 | Piacenza - Torino,ROMO Javier,19608
-80,2024,Stage 3 | Piacenza - Torino,MAS Enric,19608
-81,2024,Stage 3 | Piacenza - Torino,GRÉGOIRE Romain,19608
-82,2024,Stage 3 | Piacenza - Torino,KRISTOFF Alexander,19608
-83,2024,Stage 3 | Piacenza - Torino,NEILANDS Krists,19608
-84,2024,Stage 3 | Piacenza - Torino,RODRÍGUEZ Cristián,19608
-85,2024,Stage 3 | Piacenza - Torino,MÜHLBERGER Gregor,19608
-86,2024,Stage 3 | Piacenza - Torino,SOBRERO Matteo,19608
-87,2024,Stage 3 | Piacenza - Torino,JUNGELS Bob,19608
-88,2024,Stage 3 | Piacenza - Torino,ROGLIČ Primož,19608
-89,2024,Stage 3 | Piacenza - Torino,CRAS Steff,19608
-90,2024,Stage 3 | Piacenza - Torino,JEGAT Jordan,19608
-91,2024,Stage 3 | Piacenza - Torino,COSTA Rui,19608
-92,2024,Stage 3 | Piacenza - Torino,PRODHOMME Nicolas,19608
-93,2024,Stage 3 | Piacenza - Torino,GALL Felix,19608
-94,2024,Stage 3 | Piacenza - Torino,PETERS Nans,19608
-95,2024,Stage 3 | Piacenza - Torino,ARNDT Nikias,19608
-96,2024,Stage 3 | Piacenza - Torino,ALMEIDA João,19608
-97,2024,Stage 3 | Piacenza - Torino,GENIETS Kevin,19608
-98,2024,Stage 3 | Piacenza - Torino,POWLESS Neilson,19608
-99,2024,Stage 3 | Piacenza - Torino,AYUSO Juan,19608
-100,2024,Stage 3 | Piacenza - Torino,VAN GILS Maxim,19608
-101,2024,Stage 3 | Piacenza - Torino,LANDA Mikel,19608
-102,2024,Stage 3 | Piacenza - Torino,GOOSSENS Kobe,19608
-103,2024,Stage 3 | Piacenza - Torino,MOSCON Gianni,19608
-104,2024,Stage 3 | Piacenza - Torino,YATES Adam,19608
-105,2024,Stage 3 | Piacenza - Torino,DECLERCQ Tim,19608
-106,2024,Stage 3 | Piacenza - Torino,ONLEY Oscar,19608
-107,2024,Stage 3 | Piacenza - Torino,ALLEGAERT Piet,19608
-108,2024,Stage 3 | Piacenza - Torino,GESCHKE Simon,19608
-109,2024,Stage 3 | Piacenza - Torino,KELDERMAN Wilco,19608
-110,2024,Stage 3 | Piacenza - Torino,MCLAY Daniel,19608
-111,2024,Stage 3 | Piacenza - Torino,GARCÍA PIERNA Raúl,19608
-112,2024,Stage 3 | Piacenza - Torino,CAVENDISH Mark,19608
-113,2024,Stage 3 | Piacenza - Torino,BISSEGGER Stefan,19608
-114,2024,Stage 3 | Piacenza - Torino,BARGUIL Warren,19608
-115,2024,Stage 3 | Piacenza - Torino,BETTIOL Alberto,19608
-116,2024,Stage 3 | Piacenza - Torino,BOL Cees,19608
-117,2024,Stage 3 | Piacenza - Torino,PHILIPSEN Jasper,19608
-118,2024,Stage 3 | Piacenza - Torino,GAUDU David,19608
-119,2024,Stage 3 | Piacenza - Torino,VAN WILDER Ilan,19608
-120,2024,Stage 3 | Piacenza - Torino,POELS Wout,19608
-121,2024,Stage 3 | Piacenza - Torino,THOMAS Geraint,19608
-122,2024,Stage 3 | Piacenza - Torino,VERONA Carlos,19608
-123,2024,Stage 3 | Piacenza - Torino,SOLER Marc,19608
-124,2024,Stage 3 | Piacenza - Torino,PACHER Quentin,19608
-125,2024,Stage 3 | Piacenza - Torino,CAPIOT Amaury,19608
-126,2024,Stage 3 | Piacenza - Torino,VAUQUELIN Kévin,19608
-127,2024,Stage 3 | Piacenza - Torino,MOZZATO Luca,19608
-128,2024,Stage 3 | Piacenza - Torino,GRIGNARD Sébastien,19608
-129,2024,Stage 3 | Piacenza - Torino,HERRADA Jesús,19608
-130,2024,Stage 3 | Piacenza - Torino,VERVAEKE Louis,19608
-131,2024,Stage 3 | Piacenza - Torino,BURGAUDEAU Mathieu,19608
-132,2024,Stage 3 | Piacenza - Torino,QUINN Sean,19608
-133,2024,Stage 3 | Piacenza - Torino,TURNER Ben,19608
-134,2024,Stage 3 | Piacenza - Torino,SIVAKOV Pavel,19608
-135,2024,Stage 3 | Piacenza - Torino,KWIATKOWSKI Michał,19608
-136,2024,Stage 3 | Piacenza - Torino,VANHOUCKE Harm,19608
-137,2024,Stage 3 | Piacenza - Torino,HALLER Marco,19608
-138,2024,Stage 3 | Piacenza - Torino,MATTHEWS Michael,19608
-139,2024,Stage 3 | Piacenza - Torino,TEJADA Harold,19608
-140,2024,Stage 3 | Piacenza - Torino,FEDOROV Yevgeniy,19608
-141,2024,Stage 3 | Piacenza - Torino,MEZGEC Luka,19608
-142,2024,Stage 3 | Piacenza - Torino,LUTSENKO Alexey,19608
-143,2024,Stage 3 | Piacenza - Torino,WRIGHT Fred,19608
-144,2024,Stage 3 | Piacenza - Torino,CHAMPOUSSIN Clément,19608
-145,2024,Stage 3 | Piacenza - Torino,PIDCOCK Thomas,19608
-146,2024,Stage 3 | Piacenza - Torino,IZAGIRRE Ion,19608
-147,2024,Stage 3 | Piacenza - Torino,TRATNIK Jan,19608
-148,2024,Stage 3 | Piacenza - Torino,DURBRIDGE Luke,19608
-149,2024,Stage 3 | Piacenza - Torino,DRIZNERS Jarrad,19608
-150,2024,Stage 3 | Piacenza - Torino,ABRAHAMSEN Jonas,19608
-151,2024,Stage 3 | Piacenza - Torino,VERMEERSCH Gianni,19608
-152,2024,Stage 3 | Piacenza - Torino,VERCHER Mattéo,19729
-153,2024,Stage 3 | Piacenza - Torino,MØRKØV Michael,19608
-154,2024,Stage 3 | Piacenza - Torino,KRAGH ANDERSEN Søren,19608
-155,2024,Stage 3 | Piacenza - Torino,WILLIAMS Stephen,19608
-156,2024,Stage 3 | Piacenza - Torino,CAMPENAERTS Victor,19744
-157,2024,Stage 3 | Piacenza - Torino,CORT Magnus,19608
-158,2024,Stage 3 | Piacenza - Torino,TILLER Rasmus,19755
-159,2024,Stage 3 | Piacenza - Torino,LAPORTE Christophe,19608
-160,2024,Stage 3 | Piacenza - Torino,VAN DER POEL Mathieu,19770
-161,2024,Stage 3 | Piacenza - Torino,LAURANCE Axel,19770
-162,2024,Stage 3 | Piacenza - Torino,GHYS Robbe,19608
-163,2024,Stage 3 | Piacenza - Torino,FUGLSANG Jakob,19608
-164,2024,Stage 3 | Piacenza - Torino,GRELLIER Fabien,19810
-165,2024,Stage 3 | Piacenza - Torino,JUUL-JENSEN Christopher,19810
-166,2024,Stage 3 | Piacenza - Torino,DILLIER Silvan,19810
-167,2024,Stage 3 | Piacenza - Torino,BOIVIN Guillaume,19608
-168,2024,Stage 3 | Piacenza - Torino,STEWART Jake,19608
-169,2024,Stage 3 | Piacenza - Torino,CASTROVIEJO Jonathan,19608
-170,2024,Stage 3 | Piacenza - Torino,MARTINEZ Lenny,19862
-171,2024,Stage 3 | Piacenza - Torino,HIRT Jan,19862
-172,2024,Stage 3 | Piacenza - Torino,RENARD Alexis,19608
-173,2024,Stage 3 | Piacenza - Torino,WÆRENSKJOLD Søren,19608
-174,2024,Stage 3 | Piacenza - Torino,PEDERSEN Casper,20174
-0,2024,Stage 4 | Pinerolo - Valloire,POGAČAR Tadej,13598
-1,2024,Stage 4 | Pinerolo - Valloire,EVENEPOEL Remco,13633
-2,2024,Stage 4 | Pinerolo - Valloire,AYUSO Juan,13633
-3,2024,Stage 4 | Pinerolo - Valloire,ROGLIČ Primož,13633
-4,2024,Stage 4 | Pinerolo - Valloire,VINGEGAARD Jonas,13635
-5,2024,Stage 4 | Pinerolo - Valloire,RODRÍGUEZ Carlos,13635
-6,2024,Stage 4 | Pinerolo - Valloire,LANDA Mikel,13651
-7,2024,Stage 4 | Pinerolo - Valloire,ALMEIDA João,13651
-8,2024,Stage 4 | Pinerolo - Valloire,CICCONE Giulio,13759
-9,2024,Stage 4 | Pinerolo - Valloire,BUITRAGO Santiago,13759
-10,2024,Stage 4 | Pinerolo - Valloire,GALL Felix,13760
-11,2024,Stage 4 | Pinerolo - Valloire,JORGENSON Matteo,13760
-12,2024,Stage 4 | Pinerolo - Valloire,BERNAL Egan,13760
-13,2024,Stage 4 | Pinerolo - Valloire,YATES Adam,13760
-14,2024,Stage 4 | Pinerolo - Valloire,THOMAS Geraint,13760
-15,2024,Stage 4 | Pinerolo - Valloire,VLASOV Aleksandr,13783
-16,2024,Stage 4 | Pinerolo - Valloire,GEE Derek,13785
-17,2024,Stage 4 | Pinerolo - Valloire,VAN WILDER Ilan,13839
-18,2024,Stage 4 | Pinerolo - Valloire,MÜHLBERGER Gregor,13839
-19,2024,Stage 4 | Pinerolo - Valloire,MARTIN Guillaume,13839
-20,2024,Stage 4 | Pinerolo - Valloire,MEINTJES Louis,13839
-21,2024,Stage 4 | Pinerolo - Valloire,CRAS Steff,13839
-22,2024,Stage 4 | Pinerolo - Valloire,BILBAO Pello,13839
-23,2024,Stage 4 | Pinerolo - Valloire,HINDLEY Jai,13839
-24,2024,Stage 4 | Pinerolo - Valloire,MAS Enric,13839
-25,2024,Stage 4 | Pinerolo - Valloire,HAIG Jack,13839
-26,2024,Stage 4 | Pinerolo - Valloire,YATES Simon,13839
-27,2024,Stage 4 | Pinerolo - Valloire,DE PLUS Laurens,13839
-28,2024,Stage 4 | Pinerolo - Valloire,HIRT Jan,13845
-29,2024,Stage 4 | Pinerolo - Valloire,HARPER Chris,13846
-30,2024,Stage 4 | Pinerolo - Valloire,HEALY Ben,13908
-31,2024,Stage 4 | Pinerolo - Valloire,CARAPAZ Richard,13908
-32,2024,Stage 4 | Pinerolo - Valloire,JEGAT Jordan,14038
-33,2024,Stage 4 | Pinerolo - Valloire,ZIMMERMANN Georg,14038
-34,2024,Stage 4 | Pinerolo - Valloire,ROMO Javier,14038
-35,2024,Stage 4 | Pinerolo - Valloire,FUGLSANG Jakob,14038
-36,2024,Stage 4 | Pinerolo - Valloire,VERONA Carlos,14038
-37,2024,Stage 4 | Pinerolo - Valloire,RODRÍGUEZ Cristián,14044
-38,2024,Stage 4 | Pinerolo - Valloire,EIKING Odd Christian,14044
-39,2024,Stage 4 | Pinerolo - Valloire,PETERS Nans,14110
-40,2024,Stage 4 | Pinerolo - Valloire,VERVAEKE Louis,14110
-41,2024,Stage 4 | Pinerolo - Valloire,ONLEY Oscar,14191
-42,2024,Stage 4 | Pinerolo - Valloire,BARDET Romain,14191
-43,2024,Stage 4 | Pinerolo - Valloire,KELDERMAN Wilco,14229
-44,2024,Stage 4 | Pinerolo - Valloire,TRATNIK Jan,14292
-45,2024,Stage 4 | Pinerolo - Valloire,QUINN Sean,14292
-46,2024,Stage 4 | Pinerolo - Valloire,JOHANNESSEN Tobias Halland,14292
-47,2024,Stage 4 | Pinerolo - Valloire,BENOOT Tiesj,14302
-48,2024,Stage 4 | Pinerolo - Valloire,JUNGELS Bob,14302
-49,2024,Stage 4 | Pinerolo - Valloire,WILLIAMS Stephen,14302
-50,2024,Stage 4 | Pinerolo - Valloire,POELS Wout,14302
-51,2024,Stage 4 | Pinerolo - Valloire,GRÉGOIRE Romain,14302
-52,2024,Stage 4 | Pinerolo - Valloire,ARMIRAIL Bruno,14302
-53,2024,Stage 4 | Pinerolo - Valloire,PRODHOMME Nicolas,14302
-54,2024,Stage 4 | Pinerolo - Valloire,SIVAKOV Pavel,14302
-55,2024,Stage 4 | Pinerolo - Valloire,PIDCOCK Thomas,14302
-56,2024,Stage 4 | Pinerolo - Valloire,BARGUIL Warren,14302
-57,2024,Stage 4 | Pinerolo - Valloire,FORMOLO Davide,14302
-58,2024,Stage 4 | Pinerolo - Valloire,MADOUAS Valentin,14302
-59,2024,Stage 4 | Pinerolo - Valloire,GAUDU David,14302
-60,2024,Stage 4 | Pinerolo - Valloire,SOLER Marc,14302
-61,2024,Stage 4 | Pinerolo - Valloire,GOOSSENS Kobe,14302
-62,2024,Stage 4 | Pinerolo - Valloire,BERNARD Julien,14412
-63,2024,Stage 4 | Pinerolo - Valloire,JUUL-JENSEN Christopher,14426
-64,2024,Stage 4 | Pinerolo - Valloire,BETTIOL Alberto,14466
-65,2024,Stage 4 | Pinerolo - Valloire,CASTROVIEJO Jonathan,14489
-66,2024,Stage 4 | Pinerolo - Valloire,LAZKANO Oier,14489
-67,2024,Stage 4 | Pinerolo - Valloire,VAN GILS Maxim,14523
-68,2024,Stage 4 | Pinerolo - Valloire,GESCHKE Simon,14523
-69,2024,Stage 4 | Pinerolo - Valloire,KULSET Johannes,14523
-70,2024,Stage 4 | Pinerolo - Valloire,POWLESS Neilson,14523
-71,2024,Stage 4 | Pinerolo - Valloire,BURGAUDEAU Mathieu,14523
-72,2024,Stage 4 | Pinerolo - Valloire,SKUJIŅŠ Toms,14523
-73,2024,Stage 4 | Pinerolo - Valloire,NEILANDS Krists,14523
-74,2024,Stage 4 | Pinerolo - Valloire,MOSCON Gianni,14523
-75,2024,Stage 4 | Pinerolo - Valloire,WELLENS Tim,14619
-76,2024,Stage 4 | Pinerolo - Valloire,GODON Dorian,14619
-77,2024,Stage 4 | Pinerolo - Valloire,CORT Magnus,14624
-78,2024,Stage 4 | Pinerolo - Valloire,LEMMEN Bart,14628
-79,2024,Stage 4 | Pinerolo - Valloire,VAN DEN BROEK Frank,14628
-80,2024,Stage 4 | Pinerolo - Valloire,SOBRERO Matteo,14628
-81,2024,Stage 4 | Pinerolo - Valloire,HALLER Marco,14628
-82,2024,Stage 4 | Pinerolo - Valloire,OLIVEIRA Nelson,14628
-83,2024,Stage 4 | Pinerolo - Valloire,GACHIGNARD Thomas,14628
-84,2024,Stage 4 | Pinerolo - Valloire,VAN DER POEL Mathieu,14636
-85,2024,Stage 4 | Pinerolo - Valloire,GARCÍA PIERNA Raúl,14804
-86,2024,Stage 4 | Pinerolo - Valloire,LUTSENKO Alexey,14804
-87,2024,Stage 4 | Pinerolo - Valloire,LAPEIRA Paul,14842
-88,2024,Stage 4 | Pinerolo - Valloire,STUYVEN Jasper,14842
-89,2024,Stage 4 | Pinerolo - Valloire,GENIETS Kevin,14842
-90,2024,Stage 4 | Pinerolo - Valloire,PACHER Quentin,14842
-91,2024,Stage 4 | Pinerolo - Valloire,NAESEN Oliver,14842
-92,2024,Stage 4 | Pinerolo - Valloire,COSTA Rui,14842
-93,2024,Stage 4 | Pinerolo - Valloire,KÜNG Stefan,14842
-94,2024,Stage 4 | Pinerolo - Valloire,DENZ Nico,14842
-95,2024,Stage 4 | Pinerolo - Valloire,IZAGIRRE Ion,14842
-96,2024,Stage 4 | Pinerolo - Valloire,HOULE Hugo,14842
-97,2024,Stage 4 | Pinerolo - Valloire,MATTHEWS Michael,14905
-98,2024,Stage 4 | Pinerolo - Valloire,BISSEGGER Stefan,14956
-99,2024,Stage 4 | Pinerolo - Valloire,HERRADA Jesús,14978
-100,2024,Stage 4 | Pinerolo - Valloire,POLITT Nils,15042
-101,2024,Stage 4 | Pinerolo - Valloire,TURNER Ben,15051
-102,2024,Stage 4 | Pinerolo - Valloire,KWIATKOWSKI Michał,15051
-103,2024,Stage 4 | Pinerolo - Valloire,ARANBURU Alex,15062
-104,2024,Stage 4 | Pinerolo - Valloire,LAPORTE Christophe,15062
-105,2024,Stage 4 | Pinerolo - Valloire,TEJADA Harold,15062
-106,2024,Stage 4 | Pinerolo - Valloire,VERCHER Mattéo,15163
-107,2024,Stage 4 | Pinerolo - Valloire,VAN POPPEL Danny,15203
-108,2024,Stage 4 | Pinerolo - Valloire,MOHORIČ Matej,15205
-109,2024,Stage 4 | Pinerolo - Valloire,MEZGEC Luka,15205
-110,2024,Stage 4 | Pinerolo - Valloire,WRIGHT Fred,15205
-111,2024,Stage 4 | Pinerolo - Valloire,STEWART Jake,15205
-112,2024,Stage 4 | Pinerolo - Valloire,ARNDT Nikias,15205
-113,2024,Stage 4 | Pinerolo - Valloire,DURBRIDGE Luke,15205
-114,2024,Stage 4 | Pinerolo - Valloire,COQUARD Bryan,15205
-115,2024,Stage 4 | Pinerolo - Valloire,DUJARDIN Sandy,15205
-116,2024,Stage 4 | Pinerolo - Valloire,VANHOUCKE Harm,15205
-117,2024,Stage 4 | Pinerolo - Valloire,GRELLIER Fabien,15205
-118,2024,Stage 4 | Pinerolo - Valloire,VAN MOER Brent,15205
-119,2024,Stage 4 | Pinerolo - Valloire,VAN AERT Wout,15205
-120,2024,Stage 4 | Pinerolo - Valloire,CHAMPOUSSIN Clément,15215
-121,2024,Stage 4 | Pinerolo - Valloire,GIBBONS Ryan,15215
-122,2024,Stage 4 | Pinerolo - Valloire,PEDERSEN Mads,15216
-123,2024,Stage 4 | Pinerolo - Valloire,VAN DEN BERG Marijn,15359
-124,2024,Stage 4 | Pinerolo - Valloire,TEUNISSEN Mike,15359
-125,2024,Stage 4 | Pinerolo - Valloire,BOIVIN Guillaume,15435
-126,2024,Stage 4 | Pinerolo - Valloire,DECLERCQ Tim,15435
-127,2024,Stage 4 | Pinerolo - Valloire,DEGENKOLB John,15435
-128,2024,Stage 4 | Pinerolo - Valloire,RUSSO Clément,15446
-129,2024,Stage 4 | Pinerolo - Valloire,FEDOROV Yevgeniy,15446
-130,2024,Stage 4 | Pinerolo - Valloire,BALLERINI Davide,15446
-131,2024,Stage 4 | Pinerolo - Valloire,ALLEGAERT Piet,15449
-132,2024,Stage 4 | Pinerolo - Valloire,KRAGH ANDERSEN Søren,15451
-133,2024,Stage 4 | Pinerolo - Valloire,LAMPAERT Yves,15478
-134,2024,Stage 4 | Pinerolo - Valloire,VAUQUELIN Kévin,15479
-135,2024,Stage 4 | Pinerolo - Valloire,TURGIS Anthony,15479
-136,2024,Stage 4 | Pinerolo - Valloire,ACKERMANN Pascal,15519
-137,2024,Stage 4 | Pinerolo - Valloire,ZINGLE Axel,15631
-138,2024,Stage 4 | Pinerolo - Valloire,DE LIE Arnaud,15665
-139,2024,Stage 4 | Pinerolo - Valloire,CAMPENAERTS Victor,15665
-140,2024,Stage 4 | Pinerolo - Valloire,ABRAHAMSEN Jonas,15665
-141,2024,Stage 4 | Pinerolo - Valloire,PAGE Hugo,15665
-142,2024,Stage 4 | Pinerolo - Valloire,BEULLENS Cedric,15665
-143,2024,Stage 4 | Pinerolo - Valloire,REX Laurenz,15665
-144,2024,Stage 4 | Pinerolo - Valloire,GIRMAY Biniam,15665
-145,2024,Stage 4 | Pinerolo - Valloire,CAPIOT Amaury,15665
-146,2024,Stage 4 | Pinerolo - Valloire,RENARD Alexis,15665
-147,2024,Stage 4 | Pinerolo - Valloire,BAUHAUS Phil,15665
-148,2024,Stage 4 | Pinerolo - Valloire,MCLAY Daniel,15665
-149,2024,Stage 4 | Pinerolo - Valloire,MOZZATO Luca,15665
-150,2024,Stage 4 | Pinerolo - Valloire,LAURANCE Axel,15665
-151,2024,Stage 4 | Pinerolo - Valloire,RICKAERT Jonas,15665
-152,2024,Stage 4 | Pinerolo - Valloire,TILLER Rasmus,15665
-153,2024,Stage 4 | Pinerolo - Valloire,GRIGNARD Sébastien,15665
-154,2024,Stage 4 | Pinerolo - Valloire,KRISTOFF Alexander,15665
-155,2024,Stage 4 | Pinerolo - Valloire,BENNETT Sam,15665
-156,2024,Stage 4 | Pinerolo - Valloire,VERMEERSCH Gianni,15665
-157,2024,Stage 4 | Pinerolo - Valloire,PHILIPSEN Jasper,15665
-158,2024,Stage 4 | Pinerolo - Valloire,THIJSSEN Gerben,15665
-159,2024,Stage 4 | Pinerolo - Valloire,DÉMARE Arnaud,15665
-160,2024,Stage 4 | Pinerolo - Valloire,GHYS Robbe,15665
-161,2024,Stage 4 | Pinerolo - Valloire,MARTINEZ Lenny,15665
-162,2024,Stage 4 | Pinerolo - Valloire,DRIZNERS Jarrad,15665
-163,2024,Stage 4 | Pinerolo - Valloire,DILLIER Silvan,15665
-164,2024,Stage 4 | Pinerolo - Valloire,WÆRENSKJOLD Søren,15760
-165,2024,Stage 4 | Pinerolo - Valloire,JAKOBSEN Fabio,15769
-166,2024,Stage 4 | Pinerolo - Valloire,CAVENDISH Mark,15769
-167,2024,Stage 4 | Pinerolo - Valloire,EEKHOFF Nils,15769
-168,2024,Stage 4 | Pinerolo - Valloire,REINDERS Elmar,15769
-169,2024,Stage 4 | Pinerolo - Valloire,GROENEWEGEN Dylan,15769
-170,2024,Stage 4 | Pinerolo - Valloire,WELTEN Bram,15769
-171,2024,Stage 4 | Pinerolo - Valloire,MØRKØV Michael,15769
-172,2024,Stage 4 | Pinerolo - Valloire,BOL Cees,15769
-173,2024,Stage 4 | Pinerolo - Valloire,GAVIRIA Fernando,15769
-174,2024,Stage 4 | Pinerolo - Valloire,PEDERSEN Casper,-
+,year,stage,name,time,Date:,Start time:,Avg. speed winner:,Classification:,Race category:,Distance:,Points scale:,UCI scale:,Parcours type:,ProfileScore:,Vertical meters:,Departure:,Arrival:,Race ranking:,Startlist quality score:,Won how:,Avg. temperature:
+0,2024,Stage 1 | Firenze - Rimini,BARDET Romain,18442,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+1,2024,Stage 1 | Firenze - Rimini,VAN DEN BROEK Frank,18442,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+2,2024,Stage 1 | Firenze - Rimini,VAN AERT Wout,18447,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+3,2024,Stage 1 | Firenze - Rimini,POGAČAR Tadej,18447,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+4,2024,Stage 1 | Firenze - Rimini,VAN GILS Maxim,18447,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+5,2024,Stage 1 | Firenze - Rimini,ARANBURU Alex,18447,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+6,2024,Stage 1 | Firenze - Rimini,PEDERSEN Mads,18447,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+7,2024,Stage 1 | Firenze - Rimini,EVENEPOEL Remco,18447,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+8,2024,Stage 1 | Firenze - Rimini,BILBAO Pello,18447,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+9,2024,Stage 1 | Firenze - Rimini,BETTIOL Alberto,18447,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+10,2024,Stage 1 | Firenze - Rimini,PIDCOCK Thomas,18447,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+11,2024,Stage 1 | Firenze - Rimini,BERNAL Egan,18447,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+12,2024,Stage 1 | Firenze - Rimini,VAN WILDER Ilan,18447,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+13,2024,Stage 1 | Firenze - Rimini,CAMPENAERTS Victor,18447,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+14,2024,Stage 1 | Firenze - Rimini,HINDLEY Jai,18447,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+15,2024,Stage 1 | Firenze - Rimini,VINGEGAARD Jonas,18447,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+16,2024,Stage 1 | Firenze - Rimini,GEE Derek,18447,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+17,2024,Stage 1 | Firenze - Rimini,VLASOV Aleksandr,18447,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+18,2024,Stage 1 | Firenze - Rimini,SKUJIŅŠ Toms,18447,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+19,2024,Stage 1 | Firenze - Rimini,THOMAS Geraint,18447,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+20,2024,Stage 1 | Firenze - Rimini,CRAS Steff,18447,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+21,2024,Stage 1 | Firenze - Rimini,CARAPAZ Richard,18447,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+22,2024,Stage 1 | Firenze - Rimini,JORGENSON Matteo,18447,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+23,2024,Stage 1 | Firenze - Rimini,JOHANNESSEN Tobias Halland,18447,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+24,2024,Stage 1 | Firenze - Rimini,MARTIN Guillaume,18447,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+25,2024,Stage 1 | Firenze - Rimini,MAS Enric,18447,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+26,2024,Stage 1 | Firenze - Rimini,HAIG Jack,18447,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+27,2024,Stage 1 | Firenze - Rimini,RODRÍGUEZ Carlos,18447,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+28,2024,Stage 1 | Firenze - Rimini,ONLEY Oscar,18447,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+29,2024,Stage 1 | Firenze - Rimini,EIKING Odd Christian,18447,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+30,2024,Stage 1 | Firenze - Rimini,CICCONE Giulio,18447,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+31,2024,Stage 1 | Firenze - Rimini,LANDA Mikel,18447,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+32,2024,Stage 1 | Firenze - Rimini,KULSET Johannes,18447,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+33,2024,Stage 1 | Firenze - Rimini,ROGLIČ Primož,18447,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+34,2024,Stage 1 | Firenze - Rimini,DE PLUS Laurens,18447,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+35,2024,Stage 1 | Firenze - Rimini,YATES Simon,18447,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+36,2024,Stage 1 | Firenze - Rimini,AYUSO Juan,18447,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+37,2024,Stage 1 | Firenze - Rimini,BARGUIL Warren,18447,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+38,2024,Stage 1 | Firenze - Rimini,COSTA Rui,18447,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+39,2024,Stage 1 | Firenze - Rimini,HARPER Chris,18447,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+40,2024,Stage 1 | Firenze - Rimini,GALL Felix,18447,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+41,2024,Stage 1 | Firenze - Rimini,ARMIRAIL Bruno,18447,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+42,2024,Stage 1 | Firenze - Rimini,ALMEIDA João,18447,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+43,2024,Stage 1 | Firenze - Rimini,SIVAKOV Pavel,18447,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+44,2024,Stage 1 | Firenze - Rimini,YATES Adam,18447,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+45,2024,Stage 1 | Firenze - Rimini,ROMO Javier,18447,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+46,2024,Stage 1 | Firenze - Rimini,BUITRAGO Santiago,18447,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+47,2024,Stage 1 | Firenze - Rimini,MEINTJES Louis,18447,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+48,2024,Stage 1 | Firenze - Rimini,KWIATKOWSKI Michał,18458,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+49,2024,Stage 1 | Firenze - Rimini,HEALY Ben,18460,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+50,2024,Stage 1 | Firenze - Rimini,POWLESS Neilson,18476,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+51,2024,Stage 1 | Firenze - Rimini,KELDERMAN Wilco,18480,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+52,2024,Stage 1 | Firenze - Rimini,BERNARD Julien,18526,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+53,2024,Stage 1 | Firenze - Rimini,VERONA Carlos,18526,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+54,2024,Stage 1 | Firenze - Rimini,MADOUAS Valentin,18543,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+55,2024,Stage 1 | Firenze - Rimini,VERVAEKE Louis,18982,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+56,2024,Stage 1 | Firenze - Rimini,GIBBONS Ryan,18982,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+57,2024,Stage 1 | Firenze - Rimini,FORMOLO Davide,19298,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+58,2024,Stage 1 | Firenze - Rimini,TRATNIK Jan,19298,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+59,2024,Stage 1 | Firenze - Rimini,JUNGELS Bob,19345,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+60,2024,Stage 1 | Firenze - Rimini,ABRAHAMSEN Jonas,19345,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+61,2024,Stage 1 | Firenze - Rimini,TEJADA Harold,19345,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+62,2024,Stage 1 | Firenze - Rimini,BEULLENS Cedric,19568,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+63,2024,Stage 1 | Firenze - Rimini,OLIVEIRA Nelson,19568,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+64,2024,Stage 1 | Firenze - Rimini,PAGE Hugo,19568,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+65,2024,Stage 1 | Firenze - Rimini,LAURANCE Axel,19568,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+66,2024,Stage 1 | Firenze - Rimini,LAPEIRA Paul,19568,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+67,2024,Stage 1 | Firenze - Rimini,PACHER Quentin,19568,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+68,2024,Stage 1 | Firenze - Rimini,RODRÍGUEZ Cristián,19568,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+69,2024,Stage 1 | Firenze - Rimini,GRELLIER Fabien,19568,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+70,2024,Stage 1 | Firenze - Rimini,GENIETS Kevin,19568,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+71,2024,Stage 1 | Firenze - Rimini,VAN MOER Brent,19568,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+72,2024,Stage 1 | Firenze - Rimini,KRAGH ANDERSEN Søren,19568,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+73,2024,Stage 1 | Firenze - Rimini,FUGLSANG Jakob,19568,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+74,2024,Stage 1 | Firenze - Rimini,NEILANDS Krists,19568,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+75,2024,Stage 1 | Firenze - Rimini,GOOSSENS Kobe,19568,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+76,2024,Stage 1 | Firenze - Rimini,KÜNG Stefan,19568,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+77,2024,Stage 1 | Firenze - Rimini,SOLER Marc,19568,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+78,2024,Stage 1 | Firenze - Rimini,GRÉGOIRE Romain,19568,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+79,2024,Stage 1 | Firenze - Rimini,MOHORIČ Matej,19568,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+80,2024,Stage 1 | Firenze - Rimini,CASTROVIEJO Jonathan,19568,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+81,2024,Stage 1 | Firenze - Rimini,IZAGIRRE Ion,19568,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+82,2024,Stage 1 | Firenze - Rimini,HERRADA Jesús,19568,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+83,2024,Stage 1 | Firenze - Rimini,HOULE Hugo,19568,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+84,2024,Stage 1 | Firenze - Rimini,MOSCON Gianni,19568,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+85,2024,Stage 1 | Firenze - Rimini,VANHOUCKE Harm,19568,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+86,2024,Stage 1 | Firenze - Rimini,VERMEERSCH Gianni,19568,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+87,2024,Stage 1 | Firenze - Rimini,VAN DER POEL Mathieu,19568,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+88,2024,Stage 1 | Firenze - Rimini,BENOOT Tiesj,19568,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+89,2024,Stage 1 | Firenze - Rimini,LEMMEN Bart,19568,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+90,2024,Stage 1 | Firenze - Rimini,LUTSENKO Alexey,19922,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+91,2024,Stage 1 | Firenze - Rimini,CORT Magnus,19922,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+92,2024,Stage 1 | Firenze - Rimini,TILLER Rasmus,19925,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+93,2024,Stage 1 | Firenze - Rimini,STUYVEN Jasper,19925,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+94,2024,Stage 1 | Firenze - Rimini,ARNDT Nikias,19925,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+95,2024,Stage 1 | Firenze - Rimini,DE LIE Arnaud,20196,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+96,2024,Stage 1 | Firenze - Rimini,GRIGNARD Sébastien,20196,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+97,2024,Stage 1 | Firenze - Rimini,WELLENS Tim,20196,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+98,2024,Stage 1 | Firenze - Rimini,WÆRENSKJOLD Søren,20196,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+99,2024,Stage 1 | Firenze - Rimini,EEKHOFF Nils,20196,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+100,2024,Stage 1 | Firenze - Rimini,DÉMARE Arnaud,20196,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+101,2024,Stage 1 | Firenze - Rimini,DENZ Nico,20196,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+102,2024,Stage 1 | Firenze - Rimini,DEGENKOLB John,20196,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+103,2024,Stage 1 | Firenze - Rimini,POLITT Nils,20196,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+104,2024,Stage 1 | Firenze - Rimini,DUJARDIN Sandy,20196,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+105,2024,Stage 1 | Firenze - Rimini,RUSSO Clément,20196,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+106,2024,Stage 1 | Firenze - Rimini,DECLERCQ Tim,20196,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+107,2024,Stage 1 | Firenze - Rimini,JEGAT Jordan,20196,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+108,2024,Stage 1 | Firenze - Rimini,NAESEN Oliver,20196,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+109,2024,Stage 1 | Firenze - Rimini,TURGIS Anthony,20196,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+110,2024,Stage 1 | Firenze - Rimini,PETERS Nans,20196,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+111,2024,Stage 1 | Firenze - Rimini,VAN DEN BERG Marijn,20196,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+112,2024,Stage 1 | Firenze - Rimini,GODON Dorian,20196,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+113,2024,Stage 1 | Firenze - Rimini,BISSEGGER Stefan,20196,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+114,2024,Stage 1 | Firenze - Rimini,PRODHOMME Nicolas,20196,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+115,2024,Stage 1 | Firenze - Rimini,SOBRERO Matteo,20196,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+116,2024,Stage 1 | Firenze - Rimini,GHYS Robbe,20196,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+117,2024,Stage 1 | Firenze - Rimini,TURNER Ben,20196,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+118,2024,Stage 1 | Firenze - Rimini,LAPORTE Christophe,20196,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+119,2024,Stage 1 | Firenze - Rimini,WRIGHT Fred,20196,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+120,2024,Stage 1 | Firenze - Rimini,BAUHAUS Phil,20196,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+121,2024,Stage 1 | Firenze - Rimini,GIRMAY Biniam,20196,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+122,2024,Stage 1 | Firenze - Rimini,PEDERSEN Casper,20196,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+123,2024,Stage 1 | Firenze - Rimini,QUINN Sean,20196,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+124,2024,Stage 1 | Firenze - Rimini,GESCHKE Simon,20196,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+125,2024,Stage 1 | Firenze - Rimini,VAN POPPEL Danny,20196,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+126,2024,Stage 1 | Firenze - Rimini,DURBRIDGE Luke,20196,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+127,2024,Stage 1 | Firenze - Rimini,MARTINEZ Lenny,20196,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+128,2024,Stage 1 | Firenze - Rimini,ZIMMERMANN Georg,20196,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+129,2024,Stage 1 | Firenze - Rimini,BURGAUDEAU Mathieu,20196,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+130,2024,Stage 1 | Firenze - Rimini,JUUL-JENSEN Christopher,20196,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+131,2024,Stage 1 | Firenze - Rimini,ALLEGAERT Piet,20196,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+132,2024,Stage 1 | Firenze - Rimini,TEUNISSEN Mike,20196,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+133,2024,Stage 1 | Firenze - Rimini,POELS Wout,20196,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+134,2024,Stage 1 | Firenze - Rimini,COQUARD Bryan,20196,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+135,2024,Stage 1 | Firenze - Rimini,GAUDU David,20196,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+136,2024,Stage 1 | Firenze - Rimini,WILLIAMS Stephen,20196,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+137,2024,Stage 1 | Firenze - Rimini,BOIVIN Guillaume,20196,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+138,2024,Stage 1 | Firenze - Rimini,VAUQUELIN Kévin,20196,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+139,2024,Stage 1 | Firenze - Rimini,MEZGEC Luka,20196,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+140,2024,Stage 1 | Firenze - Rimini,STEWART Jake,20196,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+141,2024,Stage 1 | Firenze - Rimini,BENNETT Sam,20196,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+142,2024,Stage 1 | Firenze - Rimini,HALLER Marco,20196,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+143,2024,Stage 1 | Firenze - Rimini,MATTHEWS Michael,20196,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+144,2024,Stage 1 | Firenze - Rimini,MÜHLBERGER Gregor,20196,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+145,2024,Stage 1 | Firenze - Rimini,ACKERMANN Pascal,20196,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+146,2024,Stage 1 | Firenze - Rimini,LAZKANO Oier,20196,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+147,2024,Stage 1 | Firenze - Rimini,CHAMPOUSSIN Clément,20196,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+148,2024,Stage 1 | Firenze - Rimini,GARCÍA PIERNA Raúl,20196,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+149,2024,Stage 1 | Firenze - Rimini,DRIZNERS Jarrad,20196,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+150,2024,Stage 1 | Firenze - Rimini,DILLIER Silvan,20260,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+151,2024,Stage 1 | Firenze - Rimini,REINDERS Elmar,20260,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+152,2024,Stage 1 | Firenze - Rimini,CAPIOT Amaury,20260,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+153,2024,Stage 1 | Firenze - Rimini,RENARD Alexis,20260,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+154,2024,Stage 1 | Firenze - Rimini,GACHIGNARD Thomas,20260,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+155,2024,Stage 1 | Firenze - Rimini,GROENEWEGEN Dylan,20260,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+156,2024,Stage 1 | Firenze - Rimini,PHILIPSEN Jasper,20260,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+157,2024,Stage 1 | Firenze - Rimini,LAMPAERT Yves,20260,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+158,2024,Stage 1 | Firenze - Rimini,REX Laurenz,20260,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+159,2024,Stage 1 | Firenze - Rimini,KRISTOFF Alexander,20260,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+160,2024,Stage 1 | Firenze - Rimini,MCLAY Daniel,20260,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+161,2024,Stage 1 | Firenze - Rimini,HIRT Jan,20260,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+162,2024,Stage 1 | Firenze - Rimini,THIJSSEN Gerben,20260,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+163,2024,Stage 1 | Firenze - Rimini,VERCHER Mattéo,20260,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+164,2024,Stage 1 | Firenze - Rimini,GAVIRIA Fernando,20260,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+165,2024,Stage 1 | Firenze - Rimini,MOZZATO Luca,20260,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+166,2024,Stage 1 | Firenze - Rimini,ZINGLE Axel,20260,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+167,2024,Stage 1 | Firenze - Rimini,FEDOROV Yevgeniy,20794,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+168,2024,Stage 1 | Firenze - Rimini,BALLERINI Davide,20794,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+169,2024,Stage 1 | Firenze - Rimini,RICKAERT Jonas,20794,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+170,2024,Stage 1 | Firenze - Rimini,MØRKØV Michael,20794,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+171,2024,Stage 1 | Firenze - Rimini,WELTEN Bram,20794,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+172,2024,Stage 1 | Firenze - Rimini,BOL Cees,20794,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+173,2024,Stage 1 | Firenze - Rimini,CAVENDISH Mark,20794,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+174,2024,Stage 1 | Firenze - Rimini,JAKOBSEN Fabio,20794,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+175,2024,Stage 1 | Firenze - Rimini,GAZZOLI Michele,-,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
+0,2024,Stage 2 | Cesenatico - Bologna,VAUQUELIN Kévin,17022,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+1,2024,Stage 2 | Cesenatico - Bologna,ABRAHAMSEN Jonas,17058,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+2,2024,Stage 2 | Cesenatico - Bologna,PACHER Quentin,17071,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+3,2024,Stage 2 | Cesenatico - Bologna,RODRÍGUEZ Cristián,17071,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+4,2024,Stage 2 | Cesenatico - Bologna,TEJADA Harold,17071,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+5,2024,Stage 2 | Cesenatico - Bologna,OLIVEIRA Nelson,17072,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+6,2024,Stage 2 | Cesenatico - Bologna,LAURANCE Axel,17094,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+7,2024,Stage 2 | Cesenatico - Bologna,TEUNISSEN Mike,17115,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+8,2024,Stage 2 | Cesenatico - Bologna,HOULE Hugo,17118,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+9,2024,Stage 2 | Cesenatico - Bologna,CARAPAZ Richard,17163,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+10,2024,Stage 2 | Cesenatico - Bologna,JEGAT Jordan,17163,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+11,2024,Stage 2 | Cesenatico - Bologna,EVENEPOEL Remco,17163,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+12,2024,Stage 2 | Cesenatico - Bologna,VINGEGAARD Jonas,17163,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+13,2024,Stage 2 | Cesenatico - Bologna,POGAČAR Tadej,17163,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+14,2024,Stage 2 | Cesenatico - Bologna,CICCONE Giulio,17184,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+15,2024,Stage 2 | Cesenatico - Bologna,GRÉGOIRE Romain,17184,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+16,2024,Stage 2 | Cesenatico - Bologna,GALL Felix,17184,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+17,2024,Stage 2 | Cesenatico - Bologna,VAN GILS Maxim,17184,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+18,2024,Stage 2 | Cesenatico - Bologna,RODRÍGUEZ Carlos,17184,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+19,2024,Stage 2 | Cesenatico - Bologna,MAS Enric,17184,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+20,2024,Stage 2 | Cesenatico - Bologna,AYUSO Juan,17184,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+21,2024,Stage 2 | Cesenatico - Bologna,BARDET Romain,17184,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+22,2024,Stage 2 | Cesenatico - Bologna,BERNAL Egan,17184,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+23,2024,Stage 2 | Cesenatico - Bologna,JORGENSON Matteo,17184,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+24,2024,Stage 2 | Cesenatico - Bologna,MARTIN Guillaume,17184,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+25,2024,Stage 2 | Cesenatico - Bologna,BILBAO Pello,17184,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+26,2024,Stage 2 | Cesenatico - Bologna,ROGLIČ Primož,17184,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+27,2024,Stage 2 | Cesenatico - Bologna,VLASOV Aleksandr,17184,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+28,2024,Stage 2 | Cesenatico - Bologna,YATES Simon,17184,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+29,2024,Stage 2 | Cesenatico - Bologna,PIDCOCK Thomas,17184,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+30,2024,Stage 2 | Cesenatico - Bologna,ALMEIDA João,17184,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+31,2024,Stage 2 | Cesenatico - Bologna,YATES Adam,17184,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+32,2024,Stage 2 | Cesenatico - Bologna,HINDLEY Jai,17184,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+33,2024,Stage 2 | Cesenatico - Bologna,LANDA Mikel,17184,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+34,2024,Stage 2 | Cesenatico - Bologna,BUITRAGO Santiago,17234,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+35,2024,Stage 2 | Cesenatico - Bologna,DE PLUS Laurens,17234,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+36,2024,Stage 2 | Cesenatico - Bologna,CRAS Steff,17234,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+37,2024,Stage 2 | Cesenatico - Bologna,GEE Derek,17245,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+38,2024,Stage 2 | Cesenatico - Bologna,HARPER Chris,17245,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+39,2024,Stage 2 | Cesenatico - Bologna,VAN WILDER Ilan,17245,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+40,2024,Stage 2 | Cesenatico - Bologna,HAIG Jack,17245,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+41,2024,Stage 2 | Cesenatico - Bologna,ROMO Javier,17245,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+42,2024,Stage 2 | Cesenatico - Bologna,POWLESS Neilson,17245,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+43,2024,Stage 2 | Cesenatico - Bologna,MEINTJES Louis,17314,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+44,2024,Stage 2 | Cesenatico - Bologna,EIKING Odd Christian,17314,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+45,2024,Stage 2 | Cesenatico - Bologna,ARMIRAIL Bruno,17314,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+46,2024,Stage 2 | Cesenatico - Bologna,ONLEY Oscar,17314,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+47,2024,Stage 2 | Cesenatico - Bologna,MADOUAS Valentin,17314,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+48,2024,Stage 2 | Cesenatico - Bologna,HEALY Ben,17314,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+49,2024,Stage 2 | Cesenatico - Bologna,COSTA Rui,17314,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+50,2024,Stage 2 | Cesenatico - Bologna,BARGUIL Warren,17314,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+51,2024,Stage 2 | Cesenatico - Bologna,BERNARD Julien,17314,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+52,2024,Stage 2 | Cesenatico - Bologna,GOOSSENS Kobe,17314,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+53,2024,Stage 2 | Cesenatico - Bologna,THOMAS Geraint,17427,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+54,2024,Stage 2 | Cesenatico - Bologna,FORMOLO Davide,17427,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+55,2024,Stage 2 | Cesenatico - Bologna,SKUJIŅŠ Toms,17427,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+56,2024,Stage 2 | Cesenatico - Bologna,VERONA Carlos,17427,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+57,2024,Stage 2 | Cesenatico - Bologna,JUNGELS Bob,17501,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+58,2024,Stage 2 | Cesenatico - Bologna,ZIMMERMANN Georg,17501,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+59,2024,Stage 2 | Cesenatico - Bologna,LAPEIRA Paul,17501,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+60,2024,Stage 2 | Cesenatico - Bologna,KELDERMAN Wilco,17501,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+61,2024,Stage 2 | Cesenatico - Bologna,BENOOT Tiesj,17501,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+62,2024,Stage 2 | Cesenatico - Bologna,PRODHOMME Nicolas,17582,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+63,2024,Stage 2 | Cesenatico - Bologna,LUTSENKO Alexey,17582,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+64,2024,Stage 2 | Cesenatico - Bologna,WILLIAMS Stephen,17582,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+65,2024,Stage 2 | Cesenatico - Bologna,GENIETS Kevin,17602,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+66,2024,Stage 2 | Cesenatico - Bologna,SOLER Marc,17679,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+67,2024,Stage 2 | Cesenatico - Bologna,SIVAKOV Pavel,17679,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+68,2024,Stage 2 | Cesenatico - Bologna,VERVAEKE Louis,17690,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+69,2024,Stage 2 | Cesenatico - Bologna,IZAGIRRE Ion,17690,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+70,2024,Stage 2 | Cesenatico - Bologna,KÜNG Stefan,17690,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+71,2024,Stage 2 | Cesenatico - Bologna,VAN DEN BROEK Frank,17690,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+72,2024,Stage 2 | Cesenatico - Bologna,JOHANNESSEN Tobias Halland,17690,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+73,2024,Stage 2 | Cesenatico - Bologna,KRAGH ANDERSEN Søren,17736,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+74,2024,Stage 2 | Cesenatico - Bologna,NEILANDS Krists,17827,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+75,2024,Stage 2 | Cesenatico - Bologna,PETERS Nans,17827,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+76,2024,Stage 2 | Cesenatico - Bologna,CAMPENAERTS Victor,17827,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+77,2024,Stage 2 | Cesenatico - Bologna,GESCHKE Simon,17827,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+78,2024,Stage 2 | Cesenatico - Bologna,VANHOUCKE Harm,17827,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+79,2024,Stage 2 | Cesenatico - Bologna,FUGLSANG Jakob,17827,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+80,2024,Stage 2 | Cesenatico - Bologna,POELS Wout,17827,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+81,2024,Stage 2 | Cesenatico - Bologna,GRELLIER Fabien,17827,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+82,2024,Stage 2 | Cesenatico - Bologna,DENZ Nico,17827,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+83,2024,Stage 2 | Cesenatico - Bologna,SOBRERO Matteo,17827,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+84,2024,Stage 2 | Cesenatico - Bologna,TILLER Rasmus,17827,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+85,2024,Stage 2 | Cesenatico - Bologna,VAN MOER Brent,17827,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+86,2024,Stage 2 | Cesenatico - Bologna,VAN AERT Wout,17827,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+87,2024,Stage 2 | Cesenatico - Bologna,KULSET Johannes,17922,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+88,2024,Stage 2 | Cesenatico - Bologna,MOHORIČ Matej,18005,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+89,2024,Stage 2 | Cesenatico - Bologna,DILLIER Silvan,18113,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+90,2024,Stage 2 | Cesenatico - Bologna,LEMMEN Bart,18113,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+91,2024,Stage 2 | Cesenatico - Bologna,ACKERMANN Pascal,18113,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+92,2024,Stage 2 | Cesenatico - Bologna,BOIVIN Guillaume,18113,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+93,2024,Stage 2 | Cesenatico - Bologna,MOSCON Gianni,18113,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+94,2024,Stage 2 | Cesenatico - Bologna,DUJARDIN Sandy,18113,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+95,2024,Stage 2 | Cesenatico - Bologna,TRATNIK Jan,18113,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+96,2024,Stage 2 | Cesenatico - Bologna,GACHIGNARD Thomas,18113,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+97,2024,Stage 2 | Cesenatico - Bologna,VAN DER POEL Mathieu,18113,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+98,2024,Stage 2 | Cesenatico - Bologna,LAPORTE Christophe,18113,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+99,2024,Stage 2 | Cesenatico - Bologna,ARANBURU Alex,18113,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+100,2024,Stage 2 | Cesenatico - Bologna,GIRMAY Biniam,18113,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+101,2024,Stage 2 | Cesenatico - Bologna,MÜHLBERGER Gregor,18113,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+102,2024,Stage 2 | Cesenatico - Bologna,GAUDU David,18113,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+103,2024,Stage 2 | Cesenatico - Bologna,COQUARD Bryan,18113,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+104,2024,Stage 2 | Cesenatico - Bologna,CHAMPOUSSIN Clément,18113,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+105,2024,Stage 2 | Cesenatico - Bologna,KWIATKOWSKI Michał,18113,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+106,2024,Stage 2 | Cesenatico - Bologna,MARTINEZ Lenny,18113,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+107,2024,Stage 2 | Cesenatico - Bologna,JUUL-JENSEN Christopher,18113,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+108,2024,Stage 2 | Cesenatico - Bologna,WELLENS Tim,18176,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+109,2024,Stage 2 | Cesenatico - Bologna,ZINGLE Axel,18176,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+110,2024,Stage 2 | Cesenatico - Bologna,KRISTOFF Alexander,18176,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+111,2024,Stage 2 | Cesenatico - Bologna,VERCHER Mattéo,18176,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+112,2024,Stage 2 | Cesenatico - Bologna,HERRADA Jesús,18176,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+113,2024,Stage 2 | Cesenatico - Bologna,RUSSO Clément,18176,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+114,2024,Stage 2 | Cesenatico - Bologna,WÆRENSKJOLD Søren,18176,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+115,2024,Stage 2 | Cesenatico - Bologna,TURGIS Anthony,18176,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+116,2024,Stage 2 | Cesenatico - Bologna,GRIGNARD Sébastien,18176,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+117,2024,Stage 2 | Cesenatico - Bologna,MEZGEC Luka,18176,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+118,2024,Stage 2 | Cesenatico - Bologna,STUYVEN Jasper,18176,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+119,2024,Stage 2 | Cesenatico - Bologna,BEULLENS Cedric,18245,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+120,2024,Stage 2 | Cesenatico - Bologna,DECLERCQ Tim,18245,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+121,2024,Stage 2 | Cesenatico - Bologna,WRIGHT Fred,18245,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+122,2024,Stage 2 | Cesenatico - Bologna,VAN POPPEL Danny,18245,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+123,2024,Stage 2 | Cesenatico - Bologna,POLITT Nils,18245,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+124,2024,Stage 2 | Cesenatico - Bologna,GIBBONS Ryan,18245,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+125,2024,Stage 2 | Cesenatico - Bologna,LAMPAERT Yves,18245,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+126,2024,Stage 2 | Cesenatico - Bologna,RICKAERT Jonas,18245,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+127,2024,Stage 2 | Cesenatico - Bologna,ARNDT Nikias,18245,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+128,2024,Stage 2 | Cesenatico - Bologna,REX Laurenz,18245,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+129,2024,Stage 2 | Cesenatico - Bologna,STEWART Jake,18245,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+130,2024,Stage 2 | Cesenatico - Bologna,REINDERS Elmar,18245,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+131,2024,Stage 2 | Cesenatico - Bologna,LAZKANO Oier,18245,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+132,2024,Stage 2 | Cesenatico - Bologna,MATTHEWS Michael,18245,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+133,2024,Stage 2 | Cesenatico - Bologna,GODON Dorian,18245,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+134,2024,Stage 2 | Cesenatico - Bologna,BAUHAUS Phil,18245,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+135,2024,Stage 2 | Cesenatico - Bologna,VERMEERSCH Gianni,18245,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+136,2024,Stage 2 | Cesenatico - Bologna,VAN DEN BERG Marijn,18245,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+137,2024,Stage 2 | Cesenatico - Bologna,NAESEN Oliver,18245,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+138,2024,Stage 2 | Cesenatico - Bologna,DURBRIDGE Luke,18245,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+139,2024,Stage 2 | Cesenatico - Bologna,PEDERSEN Mads,18245,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+140,2024,Stage 2 | Cesenatico - Bologna,BENNETT Sam,18245,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+141,2024,Stage 2 | Cesenatico - Bologna,PHILIPSEN Jasper,18245,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+142,2024,Stage 2 | Cesenatico - Bologna,QUINN Sean,18245,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+143,2024,Stage 2 | Cesenatico - Bologna,CORT Magnus,18245,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+144,2024,Stage 2 | Cesenatico - Bologna,HALLER Marco,18245,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+145,2024,Stage 2 | Cesenatico - Bologna,THIJSSEN Gerben,18245,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+146,2024,Stage 2 | Cesenatico - Bologna,BURGAUDEAU Mathieu,18245,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+147,2024,Stage 2 | Cesenatico - Bologna,CASTROVIEJO Jonathan,18245,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+148,2024,Stage 2 | Cesenatico - Bologna,ALLEGAERT Piet,18245,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+149,2024,Stage 2 | Cesenatico - Bologna,TURNER Ben,18245,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+150,2024,Stage 2 | Cesenatico - Bologna,PEDERSEN Casper,18245,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+151,2024,Stage 2 | Cesenatico - Bologna,GHYS Robbe,18245,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+152,2024,Stage 2 | Cesenatico - Bologna,RENARD Alexis,18245,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+153,2024,Stage 2 | Cesenatico - Bologna,HIRT Jan,18245,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+154,2024,Stage 2 | Cesenatico - Bologna,PAGE Hugo,18245,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+155,2024,Stage 2 | Cesenatico - Bologna,DE LIE Arnaud,18245,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+156,2024,Stage 2 | Cesenatico - Bologna,BETTIOL Alberto,18245,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+157,2024,Stage 2 | Cesenatico - Bologna,BISSEGGER Stefan,18245,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+158,2024,Stage 2 | Cesenatico - Bologna,DEGENKOLB John,18245,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+159,2024,Stage 2 | Cesenatico - Bologna,GROENEWEGEN Dylan,18245,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+160,2024,Stage 2 | Cesenatico - Bologna,DRIZNERS Jarrad,18245,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+161,2024,Stage 2 | Cesenatico - Bologna,DÉMARE Arnaud,18259,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+162,2024,Stage 2 | Cesenatico - Bologna,MOZZATO Luca,18259,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+163,2024,Stage 2 | Cesenatico - Bologna,CAPIOT Amaury,18259,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+164,2024,Stage 2 | Cesenatico - Bologna,GARCÍA PIERNA Raúl,18259,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+165,2024,Stage 2 | Cesenatico - Bologna,BALLERINI Davide,18497,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+166,2024,Stage 2 | Cesenatico - Bologna,CAVENDISH Mark,18497,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+167,2024,Stage 2 | Cesenatico - Bologna,MCLAY Daniel,18497,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+168,2024,Stage 2 | Cesenatico - Bologna,FEDOROV Yevgeniy,18497,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+169,2024,Stage 2 | Cesenatico - Bologna,GAVIRIA Fernando,18497,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+170,2024,Stage 2 | Cesenatico - Bologna,WELTEN Bram,18497,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+171,2024,Stage 2 | Cesenatico - Bologna,JAKOBSEN Fabio,18497,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+172,2024,Stage 2 | Cesenatico - Bologna,MØRKØV Michael,18497,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+173,2024,Stage 2 | Cesenatico - Bologna,BOL Cees,18497,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+174,2024,Stage 2 | Cesenatico - Bologna,EEKHOFF Nils,18497,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
+0,2024,Stage 3 | Piacenza - Torino,GIRMAY Biniam,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+1,2024,Stage 3 | Piacenza - Torino,GAVIRIA Fernando,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+2,2024,Stage 3 | Piacenza - Torino,DE LIE Arnaud,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+3,2024,Stage 3 | Piacenza - Torino,PEDERSEN Mads,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+4,2024,Stage 3 | Piacenza - Torino,GROENEWEGEN Dylan,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+5,2024,Stage 3 | Piacenza - Torino,BAUHAUS Phil,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+6,2024,Stage 3 | Piacenza - Torino,JAKOBSEN Fabio,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+7,2024,Stage 3 | Piacenza - Torino,BALLERINI Davide,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+8,2024,Stage 3 | Piacenza - Torino,BENNETT Sam,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+9,2024,Stage 3 | Piacenza - Torino,COQUARD Bryan,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+10,2024,Stage 3 | Piacenza - Torino,RICKAERT Jonas,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+11,2024,Stage 3 | Piacenza - Torino,TURGIS Anthony,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+12,2024,Stage 3 | Piacenza - Torino,VAN DEN BERG Marijn,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+13,2024,Stage 3 | Piacenza - Torino,CARAPAZ Richard,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+14,2024,Stage 3 | Piacenza - Torino,ACKERMANN Pascal,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+15,2024,Stage 3 | Piacenza - Torino,THIJSSEN Gerben,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+16,2024,Stage 3 | Piacenza - Torino,STUYVEN Jasper,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+17,2024,Stage 3 | Piacenza - Torino,LAPEIRA Paul,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+18,2024,Stage 3 | Piacenza - Torino,MOHORIČ Matej,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+19,2024,Stage 3 | Piacenza - Torino,GACHIGNARD Thomas,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+20,2024,Stage 3 | Piacenza - Torino,ZINGLE Axel,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+21,2024,Stage 3 | Piacenza - Torino,LAZKANO Oier,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+22,2024,Stage 3 | Piacenza - Torino,GEE Derek,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+23,2024,Stage 3 | Piacenza - Torino,REINDERS Elmar,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+24,2024,Stage 3 | Piacenza - Torino,NAESEN Oliver,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+25,2024,Stage 3 | Piacenza - Torino,MARTIN Guillaume,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+26,2024,Stage 3 | Piacenza - Torino,DÉMARE Arnaud,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+27,2024,Stage 3 | Piacenza - Torino,GODON Dorian,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+28,2024,Stage 3 | Piacenza - Torino,GIBBONS Ryan,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+29,2024,Stage 3 | Piacenza - Torino,TEUNISSEN Mike,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+30,2024,Stage 3 | Piacenza - Torino,EEKHOFF Nils,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+31,2024,Stage 3 | Piacenza - Torino,BEULLENS Cedric,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+32,2024,Stage 3 | Piacenza - Torino,ARANBURU Alex,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+33,2024,Stage 3 | Piacenza - Torino,OLIVEIRA Nelson,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+34,2024,Stage 3 | Piacenza - Torino,VAN POPPEL Danny,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+35,2024,Stage 3 | Piacenza - Torino,BILBAO Pello,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+36,2024,Stage 3 | Piacenza - Torino,HEALY Ben,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+37,2024,Stage 3 | Piacenza - Torino,POGAČAR Tadej,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+38,2024,Stage 3 | Piacenza - Torino,POLITT Nils,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+39,2024,Stage 3 | Piacenza - Torino,EVENEPOEL Remco,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+40,2024,Stage 3 | Piacenza - Torino,MEINTJES Louis,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+41,2024,Stage 3 | Piacenza - Torino,LAMPAERT Yves,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+42,2024,Stage 3 | Piacenza - Torino,ZIMMERMANN Georg,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+43,2024,Stage 3 | Piacenza - Torino,HAIG Jack,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+44,2024,Stage 3 | Piacenza - Torino,YATES Simon,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+45,2024,Stage 3 | Piacenza - Torino,HOULE Hugo,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+46,2024,Stage 3 | Piacenza - Torino,FORMOLO Davide,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+47,2024,Stage 3 | Piacenza - Torino,HINDLEY Jai,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+48,2024,Stage 3 | Piacenza - Torino,HARPER Chris,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+49,2024,Stage 3 | Piacenza - Torino,BUITRAGO Santiago,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+50,2024,Stage 3 | Piacenza - Torino,VLASOV Aleksandr,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+51,2024,Stage 3 | Piacenza - Torino,BERNAL Egan,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+52,2024,Stage 3 | Piacenza - Torino,RODRÍGUEZ Carlos,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+53,2024,Stage 3 | Piacenza - Torino,DENZ Nico,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+54,2024,Stage 3 | Piacenza - Torino,DE PLUS Laurens,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+55,2024,Stage 3 | Piacenza - Torino,DUJARDIN Sandy,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+56,2024,Stage 3 | Piacenza - Torino,BARDET Romain,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+57,2024,Stage 3 | Piacenza - Torino,VAN AERT Wout,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+58,2024,Stage 3 | Piacenza - Torino,REX Laurenz,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+59,2024,Stage 3 | Piacenza - Torino,SKUJIŅŠ Toms,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+60,2024,Stage 3 | Piacenza - Torino,ARMIRAIL Bruno,19655,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+61,2024,Stage 3 | Piacenza - Torino,PAGE Hugo,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+62,2024,Stage 3 | Piacenza - Torino,VAN MOER Brent,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+63,2024,Stage 3 | Piacenza - Torino,VAN DEN BROEK Frank,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+64,2024,Stage 3 | Piacenza - Torino,WELTEN Bram,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+65,2024,Stage 3 | Piacenza - Torino,DEGENKOLB John,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+66,2024,Stage 3 | Piacenza - Torino,JORGENSON Matteo,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+67,2024,Stage 3 | Piacenza - Torino,VINGEGAARD Jonas,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+68,2024,Stage 3 | Piacenza - Torino,BENOOT Tiesj,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+69,2024,Stage 3 | Piacenza - Torino,LEMMEN Bart,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+70,2024,Stage 3 | Piacenza - Torino,WELLENS Tim,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+71,2024,Stage 3 | Piacenza - Torino,EIKING Odd Christian,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+72,2024,Stage 3 | Piacenza - Torino,MADOUAS Valentin,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+73,2024,Stage 3 | Piacenza - Torino,BERNARD Julien,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+74,2024,Stage 3 | Piacenza - Torino,JOHANNESSEN Tobias Halland,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+75,2024,Stage 3 | Piacenza - Torino,KULSET Johannes,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+76,2024,Stage 3 | Piacenza - Torino,CICCONE Giulio,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+77,2024,Stage 3 | Piacenza - Torino,RUSSO Clément,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+78,2024,Stage 3 | Piacenza - Torino,KÜNG Stefan,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+79,2024,Stage 3 | Piacenza - Torino,ROMO Javier,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+80,2024,Stage 3 | Piacenza - Torino,MAS Enric,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+81,2024,Stage 3 | Piacenza - Torino,GRÉGOIRE Romain,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+82,2024,Stage 3 | Piacenza - Torino,KRISTOFF Alexander,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+83,2024,Stage 3 | Piacenza - Torino,NEILANDS Krists,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+84,2024,Stage 3 | Piacenza - Torino,RODRÍGUEZ Cristián,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+85,2024,Stage 3 | Piacenza - Torino,MÜHLBERGER Gregor,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+86,2024,Stage 3 | Piacenza - Torino,SOBRERO Matteo,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+87,2024,Stage 3 | Piacenza - Torino,JUNGELS Bob,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+88,2024,Stage 3 | Piacenza - Torino,ROGLIČ Primož,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+89,2024,Stage 3 | Piacenza - Torino,CRAS Steff,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+90,2024,Stage 3 | Piacenza - Torino,JEGAT Jordan,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+91,2024,Stage 3 | Piacenza - Torino,COSTA Rui,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+92,2024,Stage 3 | Piacenza - Torino,PRODHOMME Nicolas,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+93,2024,Stage 3 | Piacenza - Torino,GALL Felix,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+94,2024,Stage 3 | Piacenza - Torino,PETERS Nans,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+95,2024,Stage 3 | Piacenza - Torino,ARNDT Nikias,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+96,2024,Stage 3 | Piacenza - Torino,ALMEIDA João,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+97,2024,Stage 3 | Piacenza - Torino,GENIETS Kevin,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+98,2024,Stage 3 | Piacenza - Torino,POWLESS Neilson,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+99,2024,Stage 3 | Piacenza - Torino,AYUSO Juan,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+100,2024,Stage 3 | Piacenza - Torino,VAN GILS Maxim,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+101,2024,Stage 3 | Piacenza - Torino,LANDA Mikel,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+102,2024,Stage 3 | Piacenza - Torino,GOOSSENS Kobe,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+103,2024,Stage 3 | Piacenza - Torino,MOSCON Gianni,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+104,2024,Stage 3 | Piacenza - Torino,YATES Adam,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+105,2024,Stage 3 | Piacenza - Torino,DECLERCQ Tim,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+106,2024,Stage 3 | Piacenza - Torino,ONLEY Oscar,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+107,2024,Stage 3 | Piacenza - Torino,ALLEGAERT Piet,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+108,2024,Stage 3 | Piacenza - Torino,GESCHKE Simon,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+109,2024,Stage 3 | Piacenza - Torino,KELDERMAN Wilco,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+110,2024,Stage 3 | Piacenza - Torino,MCLAY Daniel,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+111,2024,Stage 3 | Piacenza - Torino,GARCÍA PIERNA Raúl,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+112,2024,Stage 3 | Piacenza - Torino,CAVENDISH Mark,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+113,2024,Stage 3 | Piacenza - Torino,BISSEGGER Stefan,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+114,2024,Stage 3 | Piacenza - Torino,BARGUIL Warren,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+115,2024,Stage 3 | Piacenza - Torino,BETTIOL Alberto,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+116,2024,Stage 3 | Piacenza - Torino,BOL Cees,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+117,2024,Stage 3 | Piacenza - Torino,PHILIPSEN Jasper,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+118,2024,Stage 3 | Piacenza - Torino,GAUDU David,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+119,2024,Stage 3 | Piacenza - Torino,VAN WILDER Ilan,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+120,2024,Stage 3 | Piacenza - Torino,POELS Wout,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+121,2024,Stage 3 | Piacenza - Torino,THOMAS Geraint,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+122,2024,Stage 3 | Piacenza - Torino,VERONA Carlos,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+123,2024,Stage 3 | Piacenza - Torino,SOLER Marc,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+124,2024,Stage 3 | Piacenza - Torino,PACHER Quentin,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+125,2024,Stage 3 | Piacenza - Torino,CAPIOT Amaury,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+126,2024,Stage 3 | Piacenza - Torino,VAUQUELIN Kévin,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+127,2024,Stage 3 | Piacenza - Torino,MOZZATO Luca,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+128,2024,Stage 3 | Piacenza - Torino,GRIGNARD Sébastien,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+129,2024,Stage 3 | Piacenza - Torino,HERRADA Jesús,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+130,2024,Stage 3 | Piacenza - Torino,VERVAEKE Louis,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+131,2024,Stage 3 | Piacenza - Torino,BURGAUDEAU Mathieu,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+132,2024,Stage 3 | Piacenza - Torino,QUINN Sean,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+133,2024,Stage 3 | Piacenza - Torino,TURNER Ben,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+134,2024,Stage 3 | Piacenza - Torino,SIVAKOV Pavel,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+135,2024,Stage 3 | Piacenza - Torino,KWIATKOWSKI Michał,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+136,2024,Stage 3 | Piacenza - Torino,VANHOUCKE Harm,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+137,2024,Stage 3 | Piacenza - Torino,HALLER Marco,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+138,2024,Stage 3 | Piacenza - Torino,MATTHEWS Michael,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+139,2024,Stage 3 | Piacenza - Torino,TEJADA Harold,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+140,2024,Stage 3 | Piacenza - Torino,FEDOROV Yevgeniy,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+141,2024,Stage 3 | Piacenza - Torino,MEZGEC Luka,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+142,2024,Stage 3 | Piacenza - Torino,LUTSENKO Alexey,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+143,2024,Stage 3 | Piacenza - Torino,WRIGHT Fred,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+144,2024,Stage 3 | Piacenza - Torino,CHAMPOUSSIN Clément,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+145,2024,Stage 3 | Piacenza - Torino,PIDCOCK Thomas,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+146,2024,Stage 3 | Piacenza - Torino,IZAGIRRE Ion,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+147,2024,Stage 3 | Piacenza - Torino,TRATNIK Jan,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+148,2024,Stage 3 | Piacenza - Torino,DURBRIDGE Luke,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+149,2024,Stage 3 | Piacenza - Torino,DRIZNERS Jarrad,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+150,2024,Stage 3 | Piacenza - Torino,ABRAHAMSEN Jonas,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+151,2024,Stage 3 | Piacenza - Torino,VERMEERSCH Gianni,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+152,2024,Stage 3 | Piacenza - Torino,VERCHER Mattéo,19729,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+153,2024,Stage 3 | Piacenza - Torino,MØRKØV Michael,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+154,2024,Stage 3 | Piacenza - Torino,KRAGH ANDERSEN Søren,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+155,2024,Stage 3 | Piacenza - Torino,WILLIAMS Stephen,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+156,2024,Stage 3 | Piacenza - Torino,CAMPENAERTS Victor,19744,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+157,2024,Stage 3 | Piacenza - Torino,CORT Magnus,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+158,2024,Stage 3 | Piacenza - Torino,TILLER Rasmus,19755,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+159,2024,Stage 3 | Piacenza - Torino,LAPORTE Christophe,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+160,2024,Stage 3 | Piacenza - Torino,VAN DER POEL Mathieu,19770,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+161,2024,Stage 3 | Piacenza - Torino,LAURANCE Axel,19770,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+162,2024,Stage 3 | Piacenza - Torino,GHYS Robbe,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+163,2024,Stage 3 | Piacenza - Torino,FUGLSANG Jakob,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+164,2024,Stage 3 | Piacenza - Torino,GRELLIER Fabien,19810,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+165,2024,Stage 3 | Piacenza - Torino,JUUL-JENSEN Christopher,19810,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+166,2024,Stage 3 | Piacenza - Torino,DILLIER Silvan,19810,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+167,2024,Stage 3 | Piacenza - Torino,BOIVIN Guillaume,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+168,2024,Stage 3 | Piacenza - Torino,STEWART Jake,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+169,2024,Stage 3 | Piacenza - Torino,CASTROVIEJO Jonathan,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+170,2024,Stage 3 | Piacenza - Torino,MARTINEZ Lenny,19862,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+171,2024,Stage 3 | Piacenza - Torino,HIRT Jan,19862,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+172,2024,Stage 3 | Piacenza - Torino,RENARD Alexis,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+173,2024,Stage 3 | Piacenza - Torino,WÆRENSKJOLD Søren,19608,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
+174,2024,Stage 3 | Piacenza - Torino,PEDERSEN Casper,20174,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
