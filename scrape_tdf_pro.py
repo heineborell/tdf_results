@@ -32,7 +32,7 @@ info_table = driver.find_element(By.CSS_SELECTOR, ".infolist")
 info_lst = info_table.text.split("\n")
 info_dict = dict(zip(info_lst[0::2], info_lst[1::2]))
 info_df = pd.DataFrame(columns=list(info_dict.keys()))
-print()
+print(info_df)
 
 drop_list = driver.find_elements(By.CLASS_NAME, "pageSelectNav ")
 year_element = drop_list[0].find_elements(By.TAG_NAME, "option")
@@ -71,6 +71,7 @@ for year in year_list:
             rank_lst = table.find_elements(By.TAG_NAME, "tr")
             time_table = table.find_elements(By.CSS_SELECTOR, ".time.ar")
             info_table = driver.find_element(By.CSS_SELECTOR, ".infolist")
+            info_element = info_table.find_elements(By.TAG_NAME, "li")
             name_lst = []
             time_lst = []
 
@@ -78,31 +79,51 @@ for year in year_list:
                 if len(rank.text.split("\n")) > 2:
                     name_lst.append(rank.text.split("\n")[1])
 
-            for t in time_table:
-                time_lst.append(t.text)
+            for k, t in enumerate(time_table):
+                if k > 0:
+                    time_lst.append(t.text)
 
             for j, _ in enumerate(time_lst):
 
-                if j > 0 and time_lst[j] != ",," and time_lst[j] != "-":
+                if time_lst[j] != ",," and time_lst[j] != "-":
                     try:
                         t = datetime.strptime(time_lst[j], "%H:%M:%S")
-                        time_lst[j] = timedelta(
-                            hours=t.hour, minutes=t.minute, seconds=t.second
-                        ).total_seconds()
+                        time_lst[j] = int(
+                            timedelta(
+                                hours=t.hour, minutes=t.minute, seconds=t.second
+                            ).total_seconds()
+                        )
 
                     except ValueError:
-                        t = datetime.strptime(time_lst[j], "%M:%S")
-                        time_lst[j] = timedelta(
-                            hours=t.hour, minutes=t.minute, seconds=t.second
-                        ).total_seconds()
+                        if "," not in time_lst[j]:
+                            t = datetime.strptime(time_lst[j], "%M:%S")
+                            time_lst[j] = int(
+                                timedelta(
+                                    hours=t.hour, minutes=t.minute, seconds=t.second
+                                ).total_seconds()
+                            )
+                        else:
+                            stripped_t = time_lst[j][0 : time_lst[j].index(",")]
+                            t = datetime.strptime(stripped_t, "%M.%S")
+                            time_lst[j] = int(
+                                timedelta(
+                                    hours=t.hour, minutes=t.minute, seconds=t.second
+                                ).total_seconds()
+                            )
 
-            # for j, _ in enumerate(time_lst):
-            #     if time_lst[j] == ",,":
-            #         time_lst[j] = time_lst[j - 1]
+            for j, _ in enumerate(time_lst):
+                if isinstance(time_lst[j], int) and j > 0:
+                    time_lst[j] = time_lst[j] + time_lst[0]
 
+            for j, _ in enumerate(time_lst):
+                if time_lst[j] == ",,":
+                    time_lst[j] = time_lst[j - 1]
+
+            print(info_element[3].text)
             info_lst = info_table.text.split("\n")
 
             info_dict = dict(zip(info_lst[0::2], info_lst[1::2]))
+            print(info_dict)
             # info_df = pd.concat([info_df, pd.DataFrame(info_dict)], ignore_index=True)
             # info_df = pd.DataFrame(info_dict)
 
@@ -114,7 +135,7 @@ for year in year_list:
                             "year": [int(year)] * len(name_lst),
                             "stage": [stage] * len(name_lst),
                             "name": name_lst,
-                            "time": time_lst[1:],
+                            "time": time_lst,
                         }
                     ),
                 ]
@@ -123,45 +144,5 @@ for year in year_list:
             info_df.to_csv("infodf.csv")
         else:
             print("It is a TTT stage")
-# for key in list(info_dict.keys()):
-# print(key)
-# if len(stage_lst) == 10:
-#  stage_table = np.vstack([stage_table, stage_lst[1::2]])
 
-# for i in range(2001, 2025, 1):
-#    time.sleep(5)
-#    driver.get(
-#        "https://www.procyclingstats.com/race/tour-de-france/"
-#        + str(i)
-#        + "/route/stage-profiles"
-#    )
-#
-#    time.sleep(2)
-#    stages = driver.find_elements(By.CLASS_NAME, "mt50")
-#    stage_table = np.zeros(5)
-#    for stage in stages:
-#        stage_lst = stage.text.split("\n")
-#        if len(stage_lst) == 10:
-#            stage_table = np.vstack([stage_table, stage_lst[1::2]])
-#
-#    df = pd.concat(
-#        [
-#            df,
-#            pd.DataFrame(
-#                {
-#                    "year": i * np.ones(len(stage_table[:, 0])),
-#                    "date": stage_table[:, 0],
-#                    "stage": stage_table[:, 1],
-#                    "vertical_meters": stage_table[:, 2],
-#                    "profile_score": stage_table[:, 3],
-#                    "ps_25": stage_table[:, 4],
-#                }
-#            ).drop(index=0),
-#        ]
-#    )
-#    df.to_csv("procycling.csv")
-#
-#    # driver.get(
-##    "https://www.procyclingstats.com/race/tour-de-france/2023/route/stage-profiles"
-## )
-# driver.quit()
+driver.quit()
