@@ -49,6 +49,8 @@ info_df = pd.DataFrame(columns=list(info_dict.keys()))
 drop_list = driver.find_elements(By.CLASS_NAME, "pageSelectNav ")
 year_element = drop_list[0].find_elements(By.TAG_NAME, "option")
 year_list = [year.text for year in year_element]
+# use this to choose what year you want to scrape
+# year_list = year_list[21:]
 del year_list[0]
 print(year_list)
 
@@ -97,7 +99,7 @@ for year in year_list:
 
             for j, _ in enumerate(time_lst):
 
-                if time_lst[j] != ",," and time_lst[j] != "-":
+                if time_lst[j] != ",," and "-" not in time_lst[j]:
                     try:
                         t = datetime.strptime(time_lst[j], "%H:%M:%S")
                         time_lst[j] = int(
