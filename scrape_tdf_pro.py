@@ -7,15 +7,15 @@ from selenium import webdriver
 from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
-from selenium.webdriver.common.keys import Keys
-from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver.support.ui import Select, WebDriverWait
+from selenium.webdriver.support.ui import WebDriverWait
 
 # Set up options for headless Chrome
 options = Options()
 options.headless = True  # Enable headless mode for invisible operation
 options.add_argument("--window-size=1920,1200")  # Define the window size of the browser
-options.page_load_strategy = "eager"
+options.page_load_strategy = (
+    "eager"  # Scraper doesn't wait for browser to load all the page
+)
 # options.add_experimental_option("detach", True)
 
 # Initialize Chrome with the specified options
@@ -24,8 +24,6 @@ wait = WebDriverWait(driver, 5)
 
 
 driver.get("https://www.procyclingstats.com/race/tour-de-france/2024/stage-11")
-
-
 df = pd.DataFrame(columns=["year", "stage", "name", "time"])
 table = driver.find_element(By.CSS_SELECTOR, ".results.basic.moblist10")
 info_table = driver.find_element(By.CSS_SELECTOR, ".infolist")
@@ -50,7 +48,7 @@ drop_list = driver.find_elements(By.CLASS_NAME, "pageSelectNav ")
 year_element = drop_list[0].find_elements(By.TAG_NAME, "option")
 year_list = [year.text for year in year_element]
 # use this to choose what year you want to scrape
-# year_list = year_list[39:]
+year_list = year_list[98:]
 del year_list[0]
 print(year_list)
 
@@ -65,6 +63,24 @@ for year in year_list:
     elif len(drop_list) == 3:
         stage_element = drop_list[2].find_elements(By.TAG_NAME, "option")
         stage_list = [stage.text for stage in stage_element if "Stage" in stage.text]
+
+    if "Stage 14 | Metz - Dunkerque" in stage_list:
+        print("Stage 14 | Metz - Dunkerque seems to be wrong")
+        stage_list.remove("Stage 14 | Metz - Dunkerque")
+    else:
+        pass
+
+    if "Stage 4 | Grenoble - Toulon" in stage_list:
+        print("Stage 4 | Grenoble - Toulon  taken out because of hour formatting")
+        stage_list.remove("Stage 4 | Grenoble - Toulon")
+    else:
+        pass
+
+    if "Stage 4 | Toulouse - Bordeaux" in stage_list:
+        print("Stage 4 | Touoluse - Bordeaux taken out because of hour formatting")
+        stage_list.remove("Stage 4 | Toulouse - Bordeaux")
+    else:
+        pass
 
     for i, stage in enumerate(stage_list):
         print(stage)
