@@ -3,12 +3,12 @@ import time
 import numpy as np
 import pandas as pd
 from selenium import webdriver
-from selenium.common.exceptions import NoSuchElementException, TimeoutException
+from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver.support.ui import Select, WebDriverWait
+from selenium.webdriver.support.ui import WebDriverWait
 
 # Set up options for headless Chrome
 options = Options()
@@ -65,13 +65,6 @@ for p, year in enumerate(year_options):
         year.click()
         print("year clicked")
         time.sleep(2)
-
-        # # choose stage dropdown
-        # driver.find_element(
-        #     By.XPATH,
-        #     "//*[@id=" + str(year_lst[i]) + "]/div[3]/div[2]/div[1]/div[1]/div[1]/div[1]",
-        # ).click()
-
         stages_dd = driver.find_element(By.ID, "stageSelect")
         stages = [
             stage.get_attribute("text")
