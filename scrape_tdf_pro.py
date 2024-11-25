@@ -8,18 +8,21 @@ from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.chrome.service import Service
+from webdriver_manager.chrome import ChromeDriverManager
+
 
 # Set up options for headless Chrome
 options = Options()
-options.headless = True  # Enable headless mode for invisible operation
-options.add_argument("--window-size=1920,1200")  # Define the window size of the browser
+options.add_argument('--headless')
+options.add_argument('--no-sandbox')
+options.add_argument('--disable-dev-shm-usage')
 options.page_load_strategy = (
     "eager"  # Scraper doesn't wait for browser to load all the page
 )
-# options.add_experimental_option("detach", True)
+driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
 
 # Initialize Chrome with the specified options
-driver = webdriver.Chrome(options=options)
 wait = WebDriverWait(driver, 5)
 
 
