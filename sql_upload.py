@@ -37,7 +37,10 @@ df = pd.concat([df1, df2]).drop(
 )
 
 #  year column
-df["year"] = pd.to_datetime(df["year"]).dt.year  # setting year as datetime
+df["year"] = pd.to_numeric(df["year"])
+
+# stage column
+df["stage"] = df["stage"].str.split("|").str[0]
 
 # time column
 df = df.drop(

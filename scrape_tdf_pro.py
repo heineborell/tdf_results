@@ -11,12 +11,17 @@ from selenium.webdriver.support.ui import WebDriverWait
 
 # Set up options for headless Chrome
 options = Options()
-options.headless = True  # Enable headless mode for invisible operation
-options.add_argument("--window-size=1920,1200")  # Define the window size of the browser
+options.add_argument("--no-sandbox")
+options.add_argument("--headless")
+options.add_argument("--no-proxy-server")
+options.add_argument("--proxy-server='direct://'")
+options.add_argument("--proxy-bypass-list=*")
+options.add_argument("--blink-settings=imagesEnabled=false")
+options.add_argument("--disable-dev-shm-usage")
 options.page_load_strategy = (
     "eager"  # Scraper doesn't wait for browser to load all the page
 )
-# options.add_experimental_option("detach", True)
+options.add_experimental_option("detach", True)
 
 # Initialize Chrome with the specified options
 driver = webdriver.Chrome(options=options)
@@ -48,7 +53,7 @@ drop_list = driver.find_elements(By.CLASS_NAME, "pageSelectNav ")
 year_element = drop_list[0].find_elements(By.TAG_NAME, "option")
 year_list = [year.text for year in year_element]
 # use this to choose what year you want to scrape
-year_list = year_list[98:]
+# year_list = year_list[98:]
 del year_list[0]
 print(year_list)
 
@@ -112,6 +117,8 @@ for year in year_list:
             for k, t in enumerate(time_table):
                 if k > 0:
                     time_lst.append(t.text)
+
+            print(time_lst)
 
             if all(times == "" for times in time_lst):
                 print("entries empty")

@@ -19,7 +19,7 @@ df = pd.concat([df1, df2]).drop(
 )
 
 #  year column
-df["year"] = pd.to_datetime(df["year"]).dt.year  # setting year as datetime
+df["year"] = pd.to_numeric(df["year"])
 
 # time column
 df = df.drop(
@@ -27,6 +27,9 @@ df = df.drop(
 )  # 45 records have - time infront of them for some reason I don't understand, so I had to drop them out
 df["time"] = df["time"].replace("-", np.nan)  # replace dnf by nan
 df["time"] = pd.to_numeric(df["time"])
+
+# stage column
+df["stage"] = df["stage"].str.split("|").str[0]
 
 # date column
 df = df.rename(columns={"Date:": "date"})
