@@ -23,8 +23,8 @@ options = Options()
 # options.add_argument("--window-size=1920,1200")  # Define the window size of the browser
 # options.add_experimental_option("detach", True)
 
-options.add_argument("--no-sandbox")
-options.add_argument("--headless")
+# options.add_argument("--no-sandbox")
+# options.add_argument("--headless")
 # options.add_argument("--no-proxy-server")
 # options.add_argument("--proxy-server='direct://'")
 # options.add_argument("--proxy-bypass-list=*")
@@ -89,7 +89,7 @@ for name in name_list:
         print(f"No strava account for {name}")
 
     strava_df = pd.concat([strava_df, pd.DataFrame.from_dict(strava_dict)])
-    strava_df.to_csv("strava_id.csv")
+    strava_df.to_csv("strava_ids.csv")
 
 
 driver.quit()
