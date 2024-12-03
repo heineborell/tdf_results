@@ -13,5 +13,22 @@ if __name__ == "__main__":
         "11879168103",
         "11878904744",
     ]
+    activity_dict = {
+        "act_id": activity_list,
+        "act_date": [],
+        "act_dist": [],
+        "strava_id": [],
+    }
+    act_date = []
+    act_dist = []
+    strava_id = []
+
     for act in activity_list:
-        print(activity_scrape.activity_scraper(act))
+        act_date.append(activity_scrape.activity_scraper(act)[0])
+        act_dist.append(activity_scrape.activity_scraper(act)[1])
+        strava_id.append(activity_scrape.activity_scraper(act)[2])
+
+    activity_dict.update(
+        {"act_date": act_date, "act_dist": act_dist, "strava_id": strava_id}
+    )
+    print(activity_dict)
