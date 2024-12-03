@@ -1,28 +1,22 @@
+import subprocess
+
+import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
-import pymysql
-from sqlalchemy import create_engine
+import sqlalchemy
+from sqlalchemy import create_engine, inspect, text
 
-# Define your MySQL connection parameters
-MYSQL_USER = "root"
-MYSQL_PASSWORD = "Abrakadabra69!"
-MYSQL_HOST = "127.0.0.1"
-MYSQL_PORT = 3306
-MYSQL_DATABASE = "grand_tours"
+engine = create_engine("mysql+mysqldb://root:Abrakadabra69!@127.0.0.1:3306/grand_tours")
+conn = engine.connect()
 
-connection = pymysql.connect(
-    host=MYSQL_HOST, port=MYSQL_PORT, user=MYSQL_USER, password=MYSQL_PASSWORD
-)
-cursor = connection.cursor()
 
-cursor.execute(f"CREATE DATABASE IF NOT EXISTS {MYSQL_DATABASE}")
+query_weeks = " SELECT DISTINCT(EXTRACT(week FROM `date`)) week FROM tdf_database where `year`=2024 ORDER BY week DESC"
 
-cursor.close()
-connection.close()
-
+query_all_names = "SELECT DISTINCT(main.`name`), id.strava_id FROM tdf_database as main LEFT JOIN ( SELECT `name`, strava_id FROM strava_ids where strava_id is not null) as id on main.`name`= id.`name` "
 
 df1 = pd.read_csv("protdf_2024_1919.csv")
 df2 = pd.read_csv("protdf_1919_1903.csv")
+df_ids = pd.read_csv("strava_ids_fin.csv", usecols=["name", "strava_id"])
 
 
 df = pd.concat([df1, df2]).drop(
@@ -99,15 +93,13 @@ df["avg_temperature"] = df["avg_temperature"].replace(
 )  # replace dnf by nan
 df["avg_temperature"] = pd.to_numeric(df["avg_temperature"])
 # read the pandas dataframe
+df_names = df["name"].drop_duplicates()
+df_names = pd.merge(left=df_names, right=df_ids, on="name", how="left")
 
-engine = create_engine(
-    f"mysql+pymysql://{MYSQL_USER}:{MYSQL_PASSWORD}@{MYSQL_HOST}:{MYSQL_PORT}/{MYSQL_DATABASE}"
-)
+# df = pd.read_sql_query(query_all_names, conn)
 
-with engine.connect() as connection:
-    df.to_sql("tdf_database", connection, if_exists="append", index=False)
+subprocess.run(["vd", "-f", "csv", "-"], input=df_names.to_csv(index=False), text=True)
 
-print("database uploaded")
 
-connection.close()
+conn.close()
 engine.dispose()

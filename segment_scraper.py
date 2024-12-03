@@ -41,8 +41,11 @@ options.page_load_strategy = (
 
 # Initialize Chrome with the specified options
 driver = webdriver.Chrome(service=service, options=options)
+
+
 wait = WebDriverWait(driver, 5)
-activity = "https://www.strava.com/activities/11888473406"
+activity_no = 11888473406
+activity = "https://www.strava.com/activities/" + str(activity_no)
 driver.get(activity)
 segment_table = driver.find_element(
     By.CSS_SELECTOR, ".dense.hoverable.marginless.segments"

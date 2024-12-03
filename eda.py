@@ -31,11 +31,15 @@ query_4 = "SELECT AVG(x.vertical_meters) AS avg_climb, x.`year`FROM( SELECT * FR
 
 query_5 = "SELECT x.`year`, x.stage, AVG(x.distance)OVER(PARTITION BY x.`date`) AS avgdist FROM( SELECT * FROM tdf_database WHERE distance IS NOT NULL) AS x "
 
+query_6 = "select * from strava_ids"
+
 df = pd.read_sql_query(query_3, conn)
 df2 = pd.read_sql_query(query_4, conn)
 df3 = pd.read_sql_query(query_5, conn)
+df4 = pd.read_sql_query(query_6, conn)
 # df["customer_name"] = df["customer_first_name"] + " " + df["customer_last_name"]
-subprocess.run(["vd", "-f", "csv", "-"], input=df3.to_csv(index=False), text=True)
+df4["name"] = df4["name"].str.split(r"\s{2,}")[0] + df4["name"].str.split(r"\s{2,}")[1]
+subprocess.run(["vd", "-f", "csv", "-"], input=df4.to_csv(index=False), text=True)
 
 # plt.figure()
 # plt.scatter(df2.year, df2.avg_climb)

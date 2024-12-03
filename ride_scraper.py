@@ -40,125 +40,27 @@ options.add_argument(
 #    "eager"  # Scraper doesn't wait for browser to load all the page
 # )
 
-# Initialize Chrome with the specified options
-driver = webdriver.Chrome(service=service, options=options)
-wait = WebDriverWait(driver, 5)
 pro_id = 1557033
-homepage = (
-    "https://www.strava.com/pros/"
-    + str(pro_id)
-    + "#interval?interval=202427&interval_type=week&chart_type=miles&year_offset=0"
-)
-driver.get(homepage)
-# ride_table = driver.find_elements(By.XPATH, "//*[@id='feed-entry-null']/div/div[3]/ul")
-# for script in ride_table:
-#    for j in script.find_elements(By.TAG_NAME, "li"):
-#        print(j.text)
-# WebDriverWait(driver, 10).until(
-#    EC.visibility_of_all_elements_located(
-#        (
-#            By.CLASS_NAME,
-#            "------packages-feed-ui-src-features-GroupActivity-GroupActivity-module__listEntries--okXqG",
-#        )
-#    )
-# )
-time.sleep(30)
+date = 202428
 
-for m in driver.find_elements(By.CSS_SELECTOR, "a[data-testid='activity_name']"):
-    print(m.get_attribute("href"))
-# other = driver.find_elements(
-#    By.CLASS_NAME,
-#    "------packages-feed-ui-src-features-GroupActivity-GroupActivity-module__listEntries--okXqG",
-# )
-# for thing in other:
-#    for m in thing.find_elements(By.TAG_NAME, "li"):
-#        print(m.text)
 
-# ride_data = ride_table.find_elements(By.TAG_NAME, "li")
-# for data in ride_data:
-#    print(data)
-# segment_name = []
-# segment_distance = []
-# segment_vert = []
-# segment_grade = []
-# segment_time = []
-# segment_speed = []
-# watt = []
-# heart_rate = []
-# VAM = []
-# for segment in segment_table.find_elements(By.TAG_NAME, "tr"):
-#    for i, field in enumerate(segment.find_elements(By.TAG_NAME, "td")):
-#        if i == 3:
-#            segment_name.append(field.text.split("\n")[0])
-#            segment_distance.append(field.text.split("\n")[1].split(" ")[0])
-#            segment_vert.append(field.text.split("\n")[1].split(" ")[2])
-#            segment_grade.append(field.text.split("\n")[1].split(" ")[4].split("%")[0])
-#        elif i == 5:
-#            segment_time.append(field.text)
-#        elif i == 6:
-#            segment_speed.append(field.text.split(" ")[0])
-#        elif i == 7:
-#            watt.append(field.text.split(" ")[0])
-#        elif i == 8:
-#            VAM.append(field.text)
-#        elif i == 9:
-#            heart_rate.append(field.text.split("b")[0])
-#
-# segment_dict = {
-#    "segment_name": segment_name,
-#    "segment_time": segment_time,
-#    "segment_speed": segment_speed,
-#    "watt": watt,
-#    "heart_rate": heart_rate,
-#    "segment_distance": segment_distance,
-#    "segment_vert": segment_vert,
-#    "segment_grade": segment_grade,
-#    "VAM": VAM,
-# }
-#
-# df = pd.DataFrame.from_dict(segment_dict)
-# df.to_csv("segment.csv")
-#
-## name_list = [split_from_first_lowercase(name) for name in df_names.name]
-## strava_df = pd.DataFrame(columns=["name", "strava_id"])
-## for name in name_list:
-##    strava_dict = {}
-##    driver.get("https://www.strava.com/athletes/search")
-##    athlete_name = driver.find_element(By.CLASS_NAME, "inline-inputs")
-##    search_field = athlete_name.find_elements(By.TAG_NAME, "input")
-##    search_field[0].send_keys(name[1] + " " + name[0])  # insert field
-##    search_field[1].click()  # submit search
-##    time.sleep(random.randint(1, 2))
-##    try:
-##        athelete = driver.find_element(
-##            By.XPATH,
-##            "//*[contains(@class, 'app-icon') and contains(@class, 'icon-badge-pro')]/ancestor::*[contains(@class, 'spans6')]",
-##        )
-##        athelete_details = athelete.find_element(By.CLASS_NAME, "athlete-details")
-##        print(athelete_details.text.split("\n")[0])
-##        print(
-##            athelete_details.find_element(By.CLASS_NAME, "follow-action").get_attribute(
-##                "data-athlete-id"
-##            )
-##        )
-##        strava_dict.update(
-##            {
-##                "name": [name[0] + " " + name[1]],
-##                "strava_id": [
-##                    athelete_details.find_element(
-##                        By.CLASS_NAME, "follow-action"
-##                    ).get_attribute("data-athlete-id")
-##                ],
-##            }
-##        )
-##    except NoSuchElementException:
-##        strava_dict.update({"name": [name[0] + " " + name[1]], "strava_id": [np.nan]})
-##        print(f"No strava account for {name}")
-##
-##    strava_df = pd.concat([strava_df, pd.DataFrame.from_dict(strava_dict)])
-##    strava_df.to_csv("strava_ids.csv")
-##
-##
-driver.quit()
-conn.close()
-engine.dispose()
+def ride_scraper(pro_id, date):
+    # Initialize Chrome with the specified options
+    driver = webdriver.Chrome(service=service, options=options)
+    wait = WebDriverWait(driver, 5)
+    homepage = (
+        "https://www.strava.com/pros/"
+        + str(pro_id)
+        + "#interval?interval="
+        + str(date)
+        + "&interval_type=week&chart_type=miles&year_offset=0"
+    )
+    driver.get(homepage)
+    time.sleep(30)
+    activities = []
+    for m in driver.find_elements(By.CSS_SELECTOR, "a[data-testid='activity_name']"):
+        activities.append(m.get_attribute("href").split("/")[-1])
+    driver.quit()
+    conn.close()
+    engine.dispose()
+    return activities

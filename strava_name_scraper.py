@@ -14,7 +14,7 @@ from sqlalchemy import create_engine, inspect, text
 engine = create_engine("mysql+mysqldb://root:Abrakadabra69!@127.0.0.1:3306/grand_tours")
 conn = engine.connect()
 
-name_query = "SELECT DISTINCT(`name`) FROM tdf_database WHERE `year` = 2024 "
+name_query = "SELECT DISTINCT(`name`) FROM tdf_database WHERE `year` > 2010 "
 
 service = Service()
 # Set up options for headless Chrome
@@ -55,6 +55,7 @@ def split_from_first_lowercase(s):
 name_list = [split_from_first_lowercase(name) for name in df_names.name]
 strava_df = pd.DataFrame(columns=["name", "strava_id"])
 for name in name_list:
+    time.sleep(np.abs(np.random.randn()))
     strava_dict = {}
     driver.get("https://www.strava.com/athletes/search")
     athlete_name = driver.find_element(By.CLASS_NAME, "inline-inputs")
@@ -76,7 +77,7 @@ for name in name_list:
         )
         strava_dict.update(
             {
-                "name": [name[0] + " " + name[1]],
+                "name": [name[0] + name[1]],
                 "strava_id": [
                     athelete_details.find_element(
                         By.CLASS_NAME, "follow-action"
@@ -85,11 +86,11 @@ for name in name_list:
             }
         )
     except NoSuchElementException:
-        strava_dict.update({"name": [name[0] + " " + name[1]], "strava_id": [np.nan]})
+        strava_dict.update({"name": [name[0] + name[1]], "strava_id": [np.nan]})
         print(f"No strava account for {name}")
 
     strava_df = pd.concat([strava_df, pd.DataFrame.from_dict(strava_dict)])
-    strava_df.to_csv("strava_ids.csv")
+    strava_df.to_csv("strava_ids_fin.csv")
 
 
 driver.quit()
