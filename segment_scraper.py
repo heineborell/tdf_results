@@ -1,20 +1,10 @@
-import random
-import time
+import json
 
-import numpy as np
-import pandas as pd
 from selenium import webdriver
-from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
-from sqlalchemy import create_engine, inspect, text
-
-engine = create_engine("mysql+mysqldb://root:Abrakadabra69!@127.0.0.1:3306/grand_tours")
-conn = engine.connect()
-
-name_query = "SELECT DISTINCT(`name`) FROM tdf_database WHERE `year` = 2024 "
 
 service = Service()
 # Set up options for headless Chrome
@@ -44,54 +34,89 @@ driver = webdriver.Chrome(service=service, options=options)
 
 
 wait = WebDriverWait(driver, 5)
-activity_no = 11888473406
-activity = "https://www.strava.com/activities/" + str(activity_no)
-driver.get(activity)
-segment_table = driver.find_element(
-    By.CSS_SELECTOR, ".dense.hoverable.marginless.segments"
-)
-segment_name = []
-segment_distance = []
-segment_vert = []
-segment_grade = []
-segment_time = []
-segment_speed = []
-watt = []
-heart_rate = []
-VAM = []
-for segment in segment_table.find_elements(By.TAG_NAME, "tr"):
-    for i, field in enumerate(segment.find_elements(By.TAG_NAME, "td")):
-        if i == 3:
-            segment_name.append(field.text.split("\n")[0])
-            segment_distance.append(field.text.split("\n")[1].split(" ")[0])
-            segment_vert.append(field.text.split("\n")[1].split(" ")[2])
-            segment_grade.append(field.text.split("\n")[1].split(" ")[4].split("%")[0])
-        elif i == 5:
-            segment_time.append(field.text)
-        elif i == 6:
-            segment_speed.append(field.text.split(" ")[0])
-        elif i == 7:
-            watt.append(field.text.split(" ")[0])
-        elif i == 8:
-            VAM.append(field.text)
-        elif i == 9:
-            heart_rate.append(field.text.split("b")[0])
+activity_no_list = [11888473406, 11888654604]
+activity_dict_list = {"activities": []}
+for activity_no in activity_no_list:
+    activity = "https://www.strava.com/activities/" + str(activity_no)
+    driver.get(activity)
 
-segment_dict = {
-    "segment_name": segment_name,
-    "segment_time": segment_time,
-    "segment_speed": segment_speed,
-    "watt": watt,
-    "heart_rate": heart_rate,
-    "segment_distance": segment_distance,
-    "segment_vert": segment_vert,
-    "segment_grade": segment_grade,
-    "VAM": VAM,
-}
+    summary_container = driver.find_element(
+        By.CSS_SELECTOR, ".row.no-margins.activity-summary-container"
+    )
+    summary_pre = summary_container.text.split("\n")[0].split(",")
+    date = summary_pre[1] + " " + summary_pre[2].split(" ")[1]
+    date = date.strip()
+    distance = summary_container.text.split("\n")[
+        summary_container.text.split("\n").index("Distance") - 1
+    ].split(" ")[0]
 
-df = pd.DataFrame.from_dict(segment_dict)
-df.to_csv("segment.csv")
+    for i in driver.find_elements(By.XPATH, "//*[@id='heading']/header/h2/span/a"):
+        name = i.get_attribute("href").split("/")[-1]
 
+    activity_dict = {
+        "activities": [
+            {
+                "activity_id": activity_no,
+                "athlete_id": name,
+                "date": date,
+                "distance": distance,
+                "segments": [],
+            }
+        ]
+    }
+    segment_table = driver.find_element(
+        By.CSS_SELECTOR, ".dense.hoverable.marginless.segments"
+    )
+    segment_name = []
+    segment_distance = []
+    segment_vert = []
+    segment_grade = []
+    segment_time = []
+    segment_speed = []
+    watt = []
+    heart_rate = []
+    VAM = []
+    for segment in segment_table.find_elements(By.TAG_NAME, "tr"):
+        for i, field in enumerate(segment.find_elements(By.TAG_NAME, "td")):
+            if i == 3:
+                segment_name.append(field.text.split("\n")[0])
+                segment_distance.append(field.text.split("\n")[1].split(" ")[0])
+                segment_vert.append(field.text.split("\n")[1].split(" ")[2])
+                segment_grade.append(
+                    field.text.split("\n")[1].split(" ")[4].split("%")[0]
+                )
+            elif i == 5:
+                segment_time.append(field.text)
+            elif i == 6:
+                segment_speed.append(field.text.split(" ")[0])
+            elif i == 7:
+                watt.append(field.text.split(" ")[0])
+            elif i == 8:
+                VAM.append(field.text)
+            elif i == 9:
+                heart_rate.append(field.text.split("b")[0])
+
+    segment_dict = {
+        "segment_name": segment_name,
+        "segment_time": segment_time,
+        "segment_speed": segment_speed,
+        "watt": watt,
+        "heart_rate": heart_rate,
+        "segment_distance": segment_distance,
+        "segment_vert": segment_vert,
+        "segment_grade": segment_grade,
+        "VAM": VAM,
+    }
+    # activity_dict["activities"][0]['activity_id'].append(activity_no)
+    activity_dict["activities"][0]["segments"].append(segment_dict)
+    print(activity_dict)
+    activity_dict_list["activities"].append(activity_dict)
+
+json_string = json.dumps(activity_dict_list)
+with open("segment.json", "w") as f:
+    f.write(json_string)
+# stats = driver.find_element(By.XPATH, '//*[@id="heading"]/div/div/div[2]')
+# stat_list = stats.text.split("\n")
+# stat_list.remove("Show More")
+# print(stat_list)
 driver.quit()
-conn.close()
-engine.dispose()
