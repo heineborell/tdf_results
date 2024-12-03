@@ -1,0 +1,32 @@
+import time
+
+from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.chrome.service import Service
+from selenium.webdriver.common.by import By
+
+
+def ride_scraper(pro_id, date):
+    # Initialize Chrome with the specified options
+    service = Service()
+    options = Options()
+    options.add_experimental_option("detach", True)
+    options.add_argument(
+        "user-data-dir=/Users/deniz/Library/Application Support/Google/Chrome/Profile 1"
+    )
+
+    driver = webdriver.Chrome(service=service, options=options)
+    homepage = (
+        "https://www.strava.com/pros/"
+        + str(pro_id)
+        + "#interval?interval="
+        + str(date)
+        + "&interval_type=week&chart_type=miles&year_offset=0"
+    )
+    driver.get(homepage)
+    time.sleep(30)
+    activities = []
+    for m in driver.find_elements(By.CSS_SELECTOR, "a[data-testid='activity_name']"):
+        activities.append(m.get_attribute("href").split("/")[-1])
+    driver.quit()
+    return activities
