@@ -1,0 +1,10 @@
+#The ignore file
+#
+#For MAC files
+**.DS_Store
+*.swp
+.venv
+__pycache__
+*egg*
+build
+

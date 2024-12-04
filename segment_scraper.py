@@ -31,10 +31,8 @@ options.page_load_strategy = (
 
 # Initialize Chrome with the specified options
 driver = webdriver.Chrome(service=service, options=options)
-
-
 wait = WebDriverWait(driver, 5)
-activity_no_list = [11888473406, 11888654604]
+activity_no_list = [11888473406, 11888654604, 11879168103, 11878904744]
 activity_dict_list = {"activities": []}
 for activity_no in activity_no_list:
     activity = "https://www.strava.com/activities/" + str(activity_no)
@@ -54,16 +52,13 @@ for activity_no in activity_no_list:
         name = i.get_attribute("href").split("/")[-1]
 
     activity_dict = {
-        "activities": [
-            {
-                "activity_id": activity_no,
-                "athlete_id": name,
-                "date": date,
-                "distance": distance,
-                "segments": [],
-            }
-        ]
+        "activity_id": activity_no,
+        "athlete_id": name,
+        "date": date,
+        "distance": distance,
+        "segments": [],
     }
+
     segment_table = driver.find_element(
         By.CSS_SELECTOR, ".dense.hoverable.marginless.segments"
     )
@@ -108,7 +103,7 @@ for activity_no in activity_no_list:
         "VAM": VAM,
     }
     # activity_dict["activities"][0]['activity_id'].append(activity_no)
-    activity_dict["activities"][0]["segments"].append(segment_dict)
+    activity_dict["segments"].append(segment_dict)
     print(activity_dict)
     activity_dict_list["activities"].append(activity_dict)
 

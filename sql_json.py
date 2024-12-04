@@ -1,6 +1,6 @@
 import json
 
-from sqlalchemy import Column, Float, ForeignKey, Integer, String, Table, create_engine
+from sqlalchemy import Column, Float, ForeignKey, Integer, String, create_engine
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import relationship, sessionmaker
 
@@ -11,12 +11,13 @@ MYSQL_HOST = "127.0.0.1"
 MYSQL_PORT = 3306
 MYSQL_DATABASE = "grand_tours"
 
-# Define the database URL
-DATABASE_URL = "mysql+pymysql://username:password@localhost:3306/your_database"
+
+engine = create_engine(
+    f"mysql+pymysql://{MYSQL_USER}:{MYSQL_PASSWORD}@{MYSQL_HOST}:{MYSQL_PORT}/{MYSQL_DATABASE}"
+)
 
 # Initialize the SQLAlchemy base and engine
 Base = declarative_base()
-engine = create_engine(DATABASE_URL)
 Session = sessionmaker(bind=engine)
 session = Session()
 
@@ -24,8 +25,7 @@ session = Session()
 # Define the tables
 class Activity(Base):
     __tablename__ = "activities"
-    id = Column(Integer, primary_key=True, autoincrement=True)
-    activity_id = Column(Integer, nullable=False)
+    activity_id = Column(Integer, primary_key=True, nullable=False)
     athlete_id = Column(String(50), nullable=False)
     date = Column(String(50), nullable=False)
     distance = Column(Float, nullable=False)
@@ -36,9 +36,8 @@ class Activity(Base):
 
 class Segment(Base):
     __tablename__ = "segments"
-    id = Column(Integer, primary_key=True, autoincrement=True)
-    activity_id = Column(Integer, ForeignKey("activities.id"), nullable=False)
-    segment_name = Column(String(255), nullable=False)
+    segment_name = Column(String(255), primary_key=True)  # Primary key
+    activity_id = Column(Integer, ForeignKey("activities.activity_id"), nullable=False)
     segment_time = Column(String(50))
     segment_speed = Column(Float)
     watt = Column(String(50))
@@ -55,7 +54,14 @@ class Segment(Base):
 Base.metadata.create_all(engine)
 
 
-# Insert data into the database
+# Function to load JSON data from a file
+def load_json_file(file_path):
+    with open(file_path, "r") as file:
+        data = json.load(file)
+    return data
+
+
+# Function to insert data into the database
 def insert_data(data):
     # Create an activity object
     activity = Activity(
@@ -65,13 +71,12 @@ def insert_data(data):
         distance=float(data["distance"]),
     )
     session.add(activity)
-    session.flush()  # To get the activity ID before inserting segments
 
     # Insert segments
     for segment in data["segments"]:
         segment_obj = Segment(
-            activity_id=activity.id,
-            segment_name=segment["segment_name"],
+            segment_name=segment["segment_name"],  # Primary key
+            activity_id=activity.activity_id,  # Foreign key
             segment_time=segment.get("segment_time"),
             segment_speed=float(segment.get("segment_speed", 0)),
             watt=segment.get("watt"),
@@ -85,7 +90,11 @@ def insert_data(data):
     session.commit()
 
 
-# Call the function to insert data
+# Load JSON data from the file
+file_path = "segment.json"
+json_data = load_json_file(file_path)
+
+# Insert data into the database
 insert_data(json_data)
 
-print("Data inserted successfully!")
+print("Data from segment.json inserted successfully!")
