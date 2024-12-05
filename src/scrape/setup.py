@@ -16,7 +16,7 @@ requirements_dev = ["black", "flake8", "isort", "pre-commit", "pytest", "pytest-
 
 
 setup(
-    name="grand_tours",
+    name="scrape",
     version="0.1.0",
     description="scraping grand tour data and create a database",
     author="deniz",
