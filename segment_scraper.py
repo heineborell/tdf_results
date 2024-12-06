@@ -1,6 +1,9 @@
 import json
+import time
 
+import numpy as np
 from selenium import webdriver
+from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
@@ -32,11 +35,23 @@ options.page_load_strategy = (
 # Initialize Chrome with the specified options
 driver = webdriver.Chrome(service=service, options=options)
 wait = WebDriverWait(driver, 5)
-activity_no_list = [11888473406, 11888654604, 11879168103, 11878904744, 12828517984]
+
+activity_no_list = [
+    11888473406,
+    11888654604,
+    11879168103,
+    11878904744,
+    12828517984,
+    30583511,
+    4402228117,
+]
 activity_dict_list = {"activities": []}
-for activity_no in activity_no_list:
+stat_dict_list = {"stats": []}
+
+for p, activity_no in enumerate(activity_no_list):
     activity = "https://www.strava.com/activities/" + str(activity_no)
     driver.get(activity)
+    time.sleep(np.abs(np.random.randn()))
 
     summary_container = driver.find_element(
         By.CSS_SELECTOR, ".row.no-margins.activity-summary-container"
@@ -67,7 +82,7 @@ for activity_no in activity_no_list:
         print("no segments")
 
     else:
-
+        print(activity_no)
         segment_name = []
         segment_distance = []
         segment_vert = []
@@ -110,15 +125,56 @@ for activity_no in activity_no_list:
         }
         # activity_dict["activities"][0]['activity_id'].append(activity_no)
         activity_dict["segments"].append(segment_dict)
-        print(activity_dict)
         activity_dict_list["activities"].append(activity_dict)
 
         stats = driver.find_element(By.XPATH, '//*[@id="heading"]/div/div/div[2]')
         stat_list = stats.text.split("\n")
         stat_list.remove("Show More")
-        print(stat_list)
+        stat_dict = {}
+        for i, stat in enumerate(stat_list):
+            if stat == "Distance":
+                stat_dict.update({"activity_id": activity_no, "dist": stat_list[i - 1]})
+            if stat == "Moving Time":
+                stat_dict.update({"move_time": stat_list[i - 1]})
+            if stat == "Elevation":
+                stat_dict.update({"elevation": stat_list[i - 1]})
+            if stat == "Weighted Avg Power":
+                stat_dict.update({"wap": stat_list[i - 1]})
+            if stat == "total work":
+                stat_dict.update({"tw": stat_list[i - 1]})
+            if stat == "Avg Max":
+                stat_dict.update({"avg_max": stat_list[i + 1]})
+            if "Elapsed Time" in stat:
+                stat_dict.update({"elapsed": stat_list[i].split(" ")[-1]})
+            if stat == "Temperature":
+                stat_dict.update({"temp": stat_list[i + 1]})
+            if stat == "Humidity":
+                stat_dict.update({"humd": stat_list[i + 1]})
+            if stat == "Feels like":
+                stat_dict.update({"feels": stat_list[i + 1]})
+            if stat == "Wind Speed":
+                stat_dict.update({"wind_speed": stat_list[i + 1]})
+            if stat == "Wind Direction":
+                stat_dict.update({"wind_direction": stat_list[i + 1]})
+            if i == len(stat_list) - 1:
+                stat_dict.update({"device": stat_list[i]})
+
+        stat_dict_list["stats"].append(stat_dict)
+        print(stat_dict)
+
+    if p % 2 == 0:
+        json_string = json.dumps(activity_dict_list)
+        with open("segment.json", "w") as f:
+            f.write(json_string)
+        json_string = json.dumps(stat_dict_list)
+        with open("stat.json", "w") as f:
+            f.write(json_string)
+
 
 json_string = json.dumps(activity_dict_list)
 with open("segment.json", "w") as f:
+    f.write(json_string)
+json_string = json.dumps(stat_dict_list)
+with open("stat.json", "w") as f:
     f.write(json_string)
 driver.quit()
