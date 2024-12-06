@@ -32,7 +32,7 @@ options.page_load_strategy = (
 # Initialize Chrome with the specified options
 driver = webdriver.Chrome(service=service, options=options)
 wait = WebDriverWait(driver, 5)
-activity_no_list = [11888473406, 11888654604, 11879168103, 11878904744]
+activity_no_list = [11888473406, 11888654604, 11879168103, 11878904744, 12828517984]
 activity_dict_list = {"activities": []}
 for activity_no in activity_no_list:
     activity = "https://www.strava.com/activities/" + str(activity_no)
@@ -59,59 +59,66 @@ for activity_no in activity_no_list:
         "segments": [],
     }
 
-    segment_table = driver.find_element(
-        By.CSS_SELECTOR, ".dense.hoverable.marginless.segments"
-    )
-    segment_name = []
-    segment_distance = []
-    segment_vert = []
-    segment_grade = []
-    segment_time = []
-    segment_speed = []
-    watt = []
-    heart_rate = []
-    VAM = []
-    for segment in segment_table.find_elements(By.TAG_NAME, "tr"):
-        for i, field in enumerate(segment.find_elements(By.TAG_NAME, "td")):
-            if i == 3:
-                segment_name.append(field.text.split("\n")[0])
-                segment_distance.append(field.text.split("\n")[1].split(" ")[0])
-                segment_vert.append(field.text.split("\n")[1].split(" ")[2])
-                segment_grade.append(
-                    field.text.split("\n")[1].split(" ")[4].split("%")[0]
-                )
-            elif i == 5:
-                segment_time.append(field.text)
-            elif i == 6:
-                segment_speed.append(field.text.split(" ")[0])
-            elif i == 7:
-                watt.append(field.text.split(" ")[0])
-            elif i == 8:
-                VAM.append(field.text)
-            elif i == 9:
-                heart_rate.append(field.text.split("b")[0])
+    try:
+        segment_table = driver.find_element(
+            By.CSS_SELECTOR, ".dense.hoverable.marginless.segments"
+        )
+    except NoSuchElementException:
+        print("no segments")
 
-    segment_dict = {
-        "segment_name": segment_name,
-        "segment_time": segment_time,
-        "segment_speed": segment_speed,
-        "watt": watt,
-        "heart_rate": heart_rate,
-        "segment_distance": segment_distance,
-        "segment_vert": segment_vert,
-        "segment_grade": segment_grade,
-        "VAM": VAM,
-    }
-    # activity_dict["activities"][0]['activity_id'].append(activity_no)
-    activity_dict["segments"].append(segment_dict)
-    print(activity_dict)
-    activity_dict_list["activities"].append(activity_dict)
+    else:
+
+        segment_name = []
+        segment_distance = []
+        segment_vert = []
+        segment_grade = []
+        segment_time = []
+        segment_speed = []
+        watt = []
+        heart_rate = []
+        VAM = []
+        for segment in segment_table.find_elements(By.TAG_NAME, "tr"):
+            for i, field in enumerate(segment.find_elements(By.TAG_NAME, "td")):
+                if i == 3:
+                    segment_name.append(field.text.split("\n")[0])
+                    segment_distance.append(field.text.split("\n")[1].split(" ")[0])
+                    segment_vert.append(field.text.split("\n")[1].split(" ")[2])
+                    segment_grade.append(
+                        field.text.split("\n")[1].split(" ")[4].split("%")[0]
+                    )
+                elif i == 5:
+                    segment_time.append(field.text)
+                elif i == 6:
+                    segment_speed.append(field.text.split(" ")[0])
+                elif i == 7:
+                    watt.append(field.text.split(" ")[0])
+                elif i == 8:
+                    VAM.append(field.text)
+                elif i == 9:
+                    heart_rate.append(field.text.split("b")[0])
+
+        segment_dict = {
+            "segment_name": segment_name,
+            "segment_time": segment_time,
+            "segment_speed": segment_speed,
+            "watt": watt,
+            "heart_rate": heart_rate,
+            "segment_distance": segment_distance,
+            "segment_vert": segment_vert,
+            "segment_grade": segment_grade,
+            "VAM": VAM,
+        }
+        # activity_dict["activities"][0]['activity_id'].append(activity_no)
+        activity_dict["segments"].append(segment_dict)
+        print(activity_dict)
+        activity_dict_list["activities"].append(activity_dict)
+
+        stats = driver.find_element(By.XPATH, '//*[@id="heading"]/div/div/div[2]')
+        stat_list = stats.text.split("\n")
+        stat_list.remove("Show More")
+        print(stat_list)
 
 json_string = json.dumps(activity_dict_list)
 with open("segment.json", "w") as f:
     f.write(json_string)
-# stats = driver.find_element(By.XPATH, '//*[@id="heading"]/div/div/div[2]')
-# stat_list = stats.text.split("\n")
-# stat_list.remove("Show More")
-# print(stat_list)
 driver.quit()

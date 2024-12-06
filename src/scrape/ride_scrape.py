@@ -10,7 +10,14 @@ def ride_scraper(pro_id, date):
     # Initialize Chrome with the specified options
     service = Service()
     options = Options()
-    options.add_experimental_option("detach", True)
+    options.add_argument("--no-sandbox")
+    options.add_argument("--headless")
+    options.add_argument("--disable-dev-shm-usage")
+    options.add_argument("--no-proxy-server")
+    options.add_argument("--proxy-server='direct://'")
+    options.add_argument("--proxy-bypass-list=*")
+    options.add_argument("--blink-settings=imagesEnabled=false")
+    # options.add_experimental_option("detach", True)
     options.add_argument(
         "user-data-dir=/Users/deniz/Library/Application Support/Google/Chrome/Profile 1"
     )
@@ -24,7 +31,7 @@ def ride_scraper(pro_id, date):
         + "&interval_type=week&chart_type=miles&year_offset=0"
     )
     driver.get(homepage)
-    time.sleep(30)
+    time.sleep(5)
     activities = []
     for m in driver.find_elements(By.CSS_SELECTOR, "a[data-testid='activity_name']"):
         activities.append(m.get_attribute("href").split("/")[-1])

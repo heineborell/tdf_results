@@ -14,9 +14,29 @@ if __name__ == "__main__":
     df = pd.read_sql_query(query, conn)
     df = df.loc[df["year"] == 2024]
 
-    pro_id = [1557033]
+    query_id = """
+    SELECT * 
+    FROM df_names AS y 
+    LEFT JOIN (
+        SELECT *
+        FROM tdf_database
+        WHERE stage LIKE %s AND `year` = %s
+    ) AS x 
+    ON y.`name` = x.`name`
+    WHERE `year` IS NOT NULL
+    """
+
+    # Define parameters for the query
+    params = ("Stage 1 %", 2024)
+
+    # Execute the query
+    df_id = pd.read_sql_query(query_id, engine, params=params)
+    df_id.to_csv("2024_list.csv")
+    # print(df_id["strava_id"].values[3])
+    pro_id = df_id["strava_id"].values[97:]
     df_activity = pd.DataFrame(columns=["pro_id", "activity"])
     for id in pro_id:
+        print(id)
         activity_list = []
         for year in df["year"].drop_duplicates().values:
             print(year)
@@ -32,3 +52,5 @@ if __name__ == "__main__":
         }
         df_activity = pd.concat([df_activity, pd.DataFrame.from_dict(activity_dict)])
         df_activity.to_csv("activity_list.csv")
+
+    conn.close()
