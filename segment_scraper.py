@@ -2,6 +2,7 @@ import json
 import time
 
 import numpy as np
+import pandas as pd
 from selenium import webdriver
 from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.chrome.options import Options
@@ -36,15 +37,19 @@ options.page_load_strategy = (
 driver = webdriver.Chrome(service=service, options=options)
 wait = WebDriverWait(driver, 5)
 
-activity_no_list = [
-    11888473406,
-    11888654604,
-    11879168103,
-    11878904744,
-    12828517984,
-    30583511,
-    4402228117,
-]
+# activity_no_list = [
+#    11888473406,
+#    11888654604,
+#    11879168103,
+#    11878904744,
+#    12828517984,
+#    30583511,
+#    4402228117,
+# ]
+activity_no_list = pd.read_csv("activity_list_2024.csv")["activity"].values.tolist()
+last_index = activity_no_list.index(11903125943)
+activity_no_list = activity_no_list[922:]
+print(activity_no_list)
 activity_dict_list = {"activities": []}
 stat_dict_list = {"stats": []}
 
@@ -82,7 +87,7 @@ for p, activity_no in enumerate(activity_no_list):
         print("no segments")
 
     else:
-        print(activity_no)
+        print(activity_no, p)
         segment_name = []
         segment_distance = []
         segment_vert = []
@@ -133,7 +138,13 @@ for p, activity_no in enumerate(activity_no_list):
         stat_dict = {}
         for i, stat in enumerate(stat_list):
             if stat == "Distance":
-                stat_dict.update({"activity_id": activity_no, "dist": stat_list[i - 1]})
+                stat_dict.update(
+                    {
+                        "activity_id": activity_no,
+                        "athlete_id": name,
+                        "dist": stat_list[i - 1],
+                    }
+                )
             if stat == "Moving Time":
                 stat_dict.update({"move_time": stat_list[i - 1]})
             if stat == "Elevation":
@@ -169,6 +180,8 @@ for p, activity_no in enumerate(activity_no_list):
         json_string = json.dumps(stat_dict_list)
         with open("stat.json", "w") as f:
             f.write(json_string)
+    # if p % 100 == 0:
+    # time.sleep(120)
 
 
 json_string = json.dumps(activity_dict_list)
