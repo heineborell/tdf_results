@@ -35,14 +35,20 @@ query_5 = "SELECT x.`year`, x.stage, AVG(x.distance)OVER(PARTITION BY x.`date`) 
 
 query_7 = """SELECT COUNT(f.strava_id), f.`year` FROM ( SELECT y.strava_id, y.`name`, x.`year` FROM df_names AS y LEFT JOIN ( SELECT * FROM tdf_database WHERE stage LIKE %s and `year` > %s ) AS x ON y.`name` = x.`name`) AS f GROUP BY f.`year` ORDER BY f.`year` """
 
+query_8 = "select trim(cast(x.tdf_date as char)) as tdfdate from( SELECT DISTINCT(w.tdf_date) FROM ( SELECT Date_format( DATE, %s )AS tdf_date FROM tdf_database WHERE year= %s ) As w) as x"
+
+query_9 = "SELECT p.activity_id, p.athlete_id, cast(p.`date` as char) as date, p.segment, l.stat from segments_data as p left join stats_data as l on l.activity_id=p.activity_id where p.`date` IN( select cast(x.tdf_date as CHAR) as tdfdate FROM( SELECT DISTINCT(w.tdf_date) FROM ( SELECT Date_format( DATE, %s) AS tdf_date FROM tdf_database WHERE year=%s) As w) as x) "
+
+
 df = pd.read_sql_query(query_3, conn)
 df2 = pd.read_sql_query(query_4, conn)
 df3 = pd.read_sql_query(query_5, conn)
 # df4 = pd.read_sql_query(query_6, conn)
 df7 = pd.read_sql_query(query_7, conn, params=("Stage 1 %", 2001))
+df9 = pd.read_sql_query(query_9, conn, params=("%b %d %Y", 2024))
 # df["customer_name"] = df["customer_first_name"] + " " + df["customer_last_name"]
 # df4["name"] = df4["name"].str.split(r"\s{2,}")[0] + df4["name"].str.split(r"\s{2,}")[1]
-subprocess.run(["vd", "-f", "csv", "-"], input=df7.to_csv(index=False), text=True)
+subprocess.run(["vd", "-f", "csv", "-"], input=df9.to_csv(index=False), text=True)
 
 # plt.figure()
 # plt.scatter(df2.year, df2.avg_climb)

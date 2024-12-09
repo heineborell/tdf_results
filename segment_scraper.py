@@ -48,7 +48,7 @@ wait = WebDriverWait(driver, 5)
 # ]
 activity_no_list = pd.read_csv("activity_list_2024.csv")["activity"].values.tolist()
 last_index = activity_no_list.index(11903125943)
-activity_no_list = activity_no_list[922:]
+activity_no_list = activity_no_list[2300:]
 print(activity_no_list)
 activity_dict_list = {"activities": []}
 stat_dict_list = {"stats": []}
@@ -64,9 +64,12 @@ for p, activity_no in enumerate(activity_no_list):
     summary_pre = summary_container.text.split("\n")[0].split(",")
     date = summary_pre[1] + " " + summary_pre[2].split(" ")[1]
     date = date.strip()
-    distance = summary_container.text.split("\n")[
-        summary_container.text.split("\n").index("Distance") - 1
-    ].split(" ")[0]
+    try:
+        distance = summary_container.text.split("\n")[
+            summary_container.text.split("\n").index("Distance") - 1
+        ].split(" ")[0]
+    except ValueError:
+        print("No Distance")
 
     for i in driver.find_elements(By.XPATH, "//*[@id='heading']/header/h2/span/a"):
         name = i.get_attribute("href").split("/")[-1]
@@ -181,7 +184,7 @@ for p, activity_no in enumerate(activity_no_list):
         with open("stat.json", "w") as f:
             f.write(json_string)
     # if p % 100 == 0:
-    # time.sleep(120)
+    time.sleep(3)
 
 
 json_string = json.dumps(activity_dict_list)
