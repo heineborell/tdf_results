@@ -1,10 +1,16 @@
 ,Date:,Start time:,Avg. speed winner:,Classification:,Race category:,Distance:,Points scale:,UCI scale:,Parcours type:,ProfileScore:,Vertical meters:,Departure:,Arrival:,Race ranking:,Startlist quality score:,Won how:,Avg. temperature:
-0,29 June 2024,12:40,40.213 km/h,2.UWT,ME - Men Elite,206 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,176,3821,Firenze,Rimini,1,1723,Other,30 °C
-1,30 June 2024,12:35,42.129 km/h,2.UWT,ME - Men Elite,199.2 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,109,1859,Cesenatico,Bologna,1,1723,14.3 km solo,31 °C
-2,01 July 2024,11:35,42.375 km/h,2.UWT,ME - Men Elite,230.8 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,16,1190,Piacenza,Torino,1,1723,Sprint of small group,26 °C
-3,02 July 2024,13:15,36.958 km/h,2.UWT,ME - Men Elite,139.6 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,187,3904,Pinerolo,Valloire,1,1723,19.3 km solo,18 °C
-4,03 July 2024,13:30,42.787 km/h,2.UWT,ME - Men Elite,177.4 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,25,1126,Saint-Jean-de-Maurienne,Saint Vulbas,1,1723,Sprint of large group,20 °C
-5,05 July 2024,13:05,52.587 km/h,2.UWT,ME - Men Elite,25.3 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,13,283,Nuits-Saint-Georges,Gevrey-Chambertin,1,1723,,24 °C
-6,06 July 2024,13:20,44.945 km/h,2.UWT,ME - Men Elite,183.4 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,63,2334,Semur-en-Auxois,Colombey-les-Deux-Eglises,1,1723,Sprint of large group,16 °C
-7,07 July 2024,13:35,45.973 km/h,2.UWT,ME - Men Elite,199 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,30,2012,Troyes,Troyes,1,1723,Sprint of 6 riders,22 °C
-8,09 July 2024,13:25,43.206 km/h,2.UWT,ME - Men Elite,187.3 km,GT.A.Stage,UCI.WR.GT.A.Stage,Na,6,888,Orléans,Saint-Amand-Montrond,1,1723,Sprint of large group,26 °C
+0,09 July 1905,-,29.78 km/h,Na,ME - Men Elite,340 km,GT.A.Stage,Na,Na,Na,Na,Paris,Nancy,n/a,515,? - let us know!,Na
+1,11 July 1905,-,29.36 km/h,Na,ME - Men Elite,299 km,GT.A.Stage,Na,Na,Na,Na,Nancy,Besançon,n/a,515,? - let us know!,Na
+2,18 July 1905,-,25.95 km/h,Na,ME - Men Elite,192 km,GT.A.Stage,Na,Na,Na,Na,Toulon,Nîmes,n/a,515,? - let us know!,Na
+3,20 July 1905,-,25.31 km/h,Na,ME - Men Elite,307 km,GT.A.Stage,Na,Na,Na,Na,Nîmes,Toulouse,n/a,515,? - let us know!,Na
+4,29 July 1905,-,33.73 km/h,Na,ME - Men Elite,253 km,GT.A.Stage,Na,Na,Na,Na,Caen,Paris,n/a,515,? - let us know!,Na
+5,02 July 1904,-,26.31 km/h,Na,ME - Men Elite,467 km,GT.A.Stage,Na,Na,Na,Na,Paris,Lyon,n/a,550,? - let us know!,Na
+6,09 July 1904,-,24.686 km/h,Na,ME - Men Elite,374 km,GT.A.Stage,Na,Na,Na,Na,Lyon,Marseille,n/a,550,? - let us know!,Na
+7,13 July 1904,-,26.952 km/h,Na,ME - Men Elite,424 km,GT.A.Stage,Na,Na,Na,Na,Marseille,Toulouse,n/a,550,? - let us know!,Na
+8,20 July 1904,-,25.252 km/h,Na,ME - Men Elite,425 km,GT.A.Stage,Na,Na,Na,Na,Bordeaux,Nantes,n/a,550,? - let us know!,Na
+9,23 July 1904,-,24.2 km/h,Na,ME - Men Elite,471 km,GT.A.Stage,Na,Na,Na,Na,Ville d'Avray,Paris,n/a,550,? - let us know!,Na
+10,01 July 1903,-,26.3 km/h,Na,ME - Men Elite,467 km,GT.A.Stage,Na,Na,Na,Na,Montgeron,Lyon,n/a,310,0.2 km solo,Na
+11,05 July 1903,-,25.83 km/h,Na,ME - Men Elite,374 km,GT.A.Stage,Na,Na,Na,Na,Lyon,Marseille,n/a,310,Sprint à deux,Na
+12,08 July 1903,-,23.61 km/h,Na,ME - Men Elite,423 km,GT.A.Stage,Na,Na,Na,Na,Marseille,Toulouse,n/a,310,? km solo,Na
+13,13 July 1903,-,25.849 km/h,Na,ME - Men Elite,425 km,GT.A.Stage,Na,Na,Na,Na,Bordeaux,Nantes,n/a,310,? - let us know!,Na
+14,18 July 1903,-,25.95 km/h,Na,ME - Men Elite,471 km,GT.A.Stage,Na,Na,Na,Na,Nantes,Paris,n/a,310,? - let us know!,Na
