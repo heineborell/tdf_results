@@ -1,3 +1,5 @@
+""" This script is for combining and cleaning the data of procycling stats """
+
 import subprocess
 
 import numpy as np
