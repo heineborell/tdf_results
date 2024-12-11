@@ -49,7 +49,7 @@ year_element = drop_list[0].find_elements(By.TAG_NAME, "option")
 year_list = [year.text for year in year_element]
 
 # use this to choose what year you want to scrape
-# year_list = year_list[108:]
+year_list = year_list[62:]
 del year_list[0]
 print(year_list)
 
@@ -208,8 +208,8 @@ for year in year_list:
                     pd.DataFrame(final_dict),
                 ]
             )
-            df.to_csv("protdf.csv")
-            info_df.to_csv("infodf.csv")
+            df.to_csv("../../data/pro_cycling_db/pro_tdf/protdf.csv")
+            info_df.to_csv("../../data/pro_cycling_db/pro_tdf/info/infodf.csv")
         else:
             print("If its normal the entries are empty if its not it is a TTT stage")
 

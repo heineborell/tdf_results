@@ -1,0 +1,939 @@
+,Date:,Start time:,Avg. speed winner:,Classification:,Race category:,Distance:,Points scale:,UCI scale:,Parcours type:,ProfileScore:,Vertical meters:,Departure:,Arrival:,Race ranking:,Startlist quality score:,Won how:,Avg. temperature:
+0,24 June 1962,-,38.28 km/h,SPP,ME - Men Elite,253 km,GT.A.Stage,Na,Na,Na,Na,Nancy,Spa,n/a,1716,? - let us know!,Na
+1,25 June 1962,-,39.95 km/h,SPP,ME - Men Elite,147 km,GT.A.Stage,Na,Na,Na,Na,Spa,Herentals,n/a,1716,Sprint of large group,Na
+2,26 June 1962,-,37.91 km/h,SPP,ME - Men Elite,210 km,GT.A.Stage,Na,Na,Na,Na,Brussel,Amiens,n/a,1716,? - let us know!,Na
+3,27 June 1962,-,40.48 km/h,SPP,ME - Men Elite,196.5 km,GT.A.Stage,Na,Na,Na,Na,Amiens,Le Havre,n/a,1716,? - let us know!,Na
+4,28 June 1962,-,40.09 km/h,SPP,ME - Men Elite,215 km,GT.A.Stage,Na,Na,Na,Na,Pont l'Evêque,Saint Malo,n/a,1716,? - let us know!,Na
+5,29 June 1962,-,41.39 km/h,SPP,ME - Men Elite,235.5 km,GT.A.Stage,Na,Na,Na,Na,Dinard,Brest,n/a,1716,? - let us know!,Na
+6,30 June 1962,-,44.52 km/h,SPP,ME - Men Elite,201 km,GT.A.Stage,Na,Na,Na,Na,Quimper,Saint Nazaire,n/a,1716,? - let us know!,Na
+7,01 July 1962,-,44.49 km/h,SPP,ME - Men Elite,155 km,GT.A.Stage,Na,Na,Na,Na,Saint Nazaire,Luçon,n/a,1716,? - let us know!,Na
+8,01 July 1962,-,47.72 km/h,SPP,ME - Men Elite,43 km,GT.A.Stage,Na,Na,Na,Na,Luçon,La Rochelle,n/a,1716,,Na
+9,02 July 1962,-,41.25 km/h,SPP,ME - Men Elite,214 km,GT.A.Stage,Na,Na,Na,Na,La Rochelle,Bordeaux,n/a,1716,? - let us know!,Na
+10,03 July 1962,-,37.65 km/h,SPP,ME - Men Elite,184.5 km,GT.A.Stage,Na,Na,Na,Na,Bordeaux,Bayonne,n/a,1716,Sprint of large group,Na
+11,04 July 1962,-,39.77 km/h,SPP,ME - Men Elite,155.5 km,GT.A.Stage,Na,Na,Na,Na,Bayonne,Pau,n/a,1716,? - let us know!,Na
+12,05 July 1962,-,34.64 km/h,SPP,ME - Men Elite,207.5 km,GT.A.Stage,Na,Na,Na,Na,Pau,Saint-Gaudens,n/a,1716,? - let us know!,Na
+13,06 July 1962,-,23.43 km/h,SPP,ME - Men Elite,18.5 km,GT.A.Stage,Na,Na,Na,Na,Luchon,Superbagnères,n/a,1716,,Na
+14,07 July 1962,-,35.65 km/h,SPP,ME - Men Elite,215 km,GT.A.Stage,Na,Na,Na,Na,Luchon,Carcassonne,n/a,1716,? - let us know!,Na
+15,08 July 1962,-,37.7 km/h,SPP,ME - Men Elite,196.5 km,GT.A.Stage,Na,Na,Na,Na,Carcassonne,Montpellier,n/a,1716,? - let us know!,Na
+16,09 July 1962,-,40.63 km/h,SPP,ME - Men Elite,185 km,GT.A.Stage,Na,Na,Na,Na,Montpellier,Aix-en-Provence,n/a,1716,? - let us know!,Na
+17,10 July 1962,-,36.81 km/h,SPP,ME - Men Elite,201 km,GT.A.Stage,Na,Na,Na,Na,Aix-en-Provence,Juan-les-Pins,n/a,1716,? - let us know!,Na
+18,11 July 1962,-,25.87 km/h,SPP,ME - Men Elite,241.5 km,GT.A.Stage,Na,Na,Na,Na,Juan-les-Pins,Briançon,n/a,1716,? - let us know!,Na
+19,12 July 1962,-,31.83 km/h,SPP,ME - Men Elite,204.5 km,GT.A.Stage,Na,Na,Na,Na,Briançon,Aix-les-Bains,n/a,1716,? - let us know!,Na
+20,13 July 1962,-,43.6 km/h,SPP,ME - Men Elite,68 km,GT.A.Stage,Na,Na,Na,Na,Bourgoin,Lyon,n/a,1716,,Na
+21,14 July 1962,-,35.97 km/h,SPP,ME - Men Elite,232 km,GT.A.Stage,Na,Na,Na,Na,Lyon,Pougues-les-Eaux,n/a,1716,? - let us know!,Na
+22,15 July 1962,-,39.59 km/h,SPP,ME - Men Elite,271 km,GT.A.Stage,Na,Na,Na,Na,Pougues-les-Eaux,Paris,n/a,1716,? - let us know!,Na
+23,25 June 1961,-,41.94 km/h,SPP,ME - Men Elite,136.5 km,GT.A.Stage,Na,Na,42,1638,Rouen,Versailles,n/a,1190,? - let us know!,Na
+24,25 June 1961,-,43.05 km/h,SPP,ME - Men Elite,28.5 km,GT.A.Stage,Na,Na,25,374,Versailles,Versailles,n/a,1190,,Na
+25,26 June 1961,-,41.73 km/h,SPP,ME - Men Elite,230.5 km,GT.A.Stage,Na,Na,14,1881,Pontoise,Roubaix,n/a,1190,? - let us know!,Na
+26,27 June 1961,-,39.39 km/h,SPP,ME - Men Elite,197.5 km,GT.A.Stage,Na,Na,58,1958,Roubaix,Charleroi,n/a,1190,? - let us know!,Na
+27,28 June 1961,-,37.16 km/h,SPP,ME - Men Elite,237.5 km,GT.A.Stage,Na,Na,83,2500,Charleroi,Metz,n/a,1190,? - let us know!,Na
+28,29 June 1961,-,38.09 km/h,SPP,ME - Men Elite,221 km,GT.A.Stage,Na,Na,99,2902,Metz,Strasbourg,n/a,1190,? - let us know!,Na
+29,30 June 1961,-,39.29 km/h,SPP,ME - Men Elite,180.5 km,GT.A.Stage,Na,Na,157,2830,Strasbourg,Belfort,n/a,1190,? - let us know!,Na
+30,01 July 1961,-,40.07 km/h,SPP,ME - Men Elite,214.5 km,GT.A.Stage,Na,Na,30,2076,Belfort,Chalon-sur-Saone,n/a,1190,? - let us know!,Na
+31,02 July 1961,-,33.94 km/h,SPP,ME - Men Elite,240.5 km,GT.A.Stage,Na,Na,189,4000,Chalon-sur-Saone,Saint-Etienne,n/a,1190,? - let us know!,Na
+32,03 July 1961,-,32.47 km/h,SPP,ME - Men Elite,230 km,GT.A.Stage,Na,Na,342,4500,Saint-Etienne,Grenoble,n/a,1190,? - let us know!,Na
+33,04 July 1961,-,33.33 km/h,SPP,ME - Men Elite,250.5 km,GT.A.Stage,Na,Na,260,5000,Grenoble,Torino,n/a,1190,? - let us know!,Na
+34,05 July 1961,-,33.58 km/h,SPP,ME - Men Elite,225 km,GT.A.Stage,Na,Na,252,3000,Torino,Antibes,n/a,1190,? - let us know!,Na
+35,06 July 1961,-,34.8 km/h,SPP,ME - Men Elite,199 km,GT.A.Stage,Na,Na,177,3000,Antibes,Aix-en-Provence,n/a,1190,? - let us know!,Na
+36,07 July 1961,-,38.22 km/h,SPP,ME - Men Elite,177.5 km,GT.A.Stage,Na,Na,14,1261,Aix-en-Provence,Montpellier,n/a,1190,? - let us know!,Na
+37,09 July 1961,-,39.89 km/h,SPP,ME - Men Elite,174 km,GT.A.Stage,Na,Na,15,1271,Montpellier,Perpignan,n/a,1190,? - let us know!,Na
+38,10 July 1961,-,37.01 km/h,SPP,ME - Men Elite,206 km,GT.A.Stage,Na,Na,39,1500,Perpignan,Toulouse,n/a,1190,? - let us know!,Na
+39,11 July 1961,-,29.84 km/h,SPP,ME - Men Elite,208 km,GT.A.Stage,Na,Na,519,4000,Toulouse,Superbagneres,n/a,1190,? - let us know!,Na
+40,12 July 1961,-,30.31 km/h,SPP,ME - Men Elite,197 km,GT.A.Stage,Na,Na,384,5000,Luchon,Pau,n/a,1190,? - let us know!,Na
+41,13 July 1961,-,36.82 km/h,SPP,ME - Men Elite,207 km,GT.A.Stage,Na,Na,18,1659,Pau,Bordeaux,n/a,1190,Sprint of large group,Na
+42,14 July 1961,-,43.6 km/h,SPP,ME - Men Elite,74.5 km,GT.A.Stage,Na,Na,61,1043,Bergerac,Perigueux,n/a,1190,,Na
+43,15 July 1961,-,35.99 km/h,SPP,ME - Men Elite,309.5 km,GT.A.Stage,Na,Na,57,3000,Perigueux,Tours,n/a,1190,Sprint of large group,Na
+44,16 July 1961,-,38.72 km/h,SPP,ME - Men Elite,252.5 km,GT.A.Stage,Na,Na,48,2141,Tours,Paris,n/a,1190,? - let us know!,Na
+45,26 June 1960,-,38.95 km/h,SPP,ME - Men Elite,108 km,GT.A.Stage,Na,Na,13,814,Lille,Brussel,n/a,1247,? - let us know!,Na
+46,26 June 1960,-,40.34 km/h,SPP,ME - Men Elite,27.8 km,GT.A.Stage,Na,Na,10,296,Brussel,Brussel,n/a,1247,,Na
+47,27 June 1960,-,39.98 km/h,SPP,ME - Men Elite,208 km,GT.A.Stage,Na,Na,3,974,Brussel,Dunkerque,n/a,1247,? - let us know!,Na
+48,28 June 1960,-,41.58 km/h,SPP,ME - Men Elite,209 km,GT.A.Stage,Na,Na,24,1543,Dunkerque,Dieppe,n/a,1247,? - let us know!,Na
+49,29 June 1960,-,40.23 km/h,SPP,ME - Men Elite,211 km,GT.A.Stage,Na,Na,40,2350,Dieppe,Caen,n/a,1247,? - let us know!,Na
+50,30 June 1960,-,43.36 km/h,SPP,ME - Men Elite,189 km,GT.A.Stage,Na,Na,32,1953,Caen,Saint-Malo,n/a,1247,? - let us know!,Na
+51,01 July 1960,-,44.05 km/h,SPP,ME - Men Elite,191 km,GT.A.Stage,Na,Na,45,2248,Saint-Malo,Lorient,n/a,1247,? - let us know!,Na
+52,02 July 1960,-,40.62 km/h,SPP,ME - Men Elite,244 km,GT.A.Stage,Na,Na,19,2112,Lorient,Angers,n/a,1247,? - let us know!,Na
+53,03 July 1960,-,41.03 km/h,SPP,ME - Men Elite,240 km,GT.A.Stage,Na,Na,59,2418,Angers,Limoges,n/a,1247,? - let us know!,Na
+54,04 July 1960,-,39.87 km/h,SPP,ME - Men Elite,225 km,GT.A.Stage,Na,Na,41,2413,Limoges,Bordeaux,n/a,1247,? - let us know!,Na
+55,05 July 1960,-,34.3 km/h,SPP,ME - Men Elite,228 km,GT.A.Stage,Na,Na,203,3000,Mont-de-Marsan,Pau,n/a,1247,? - let us know!,Na
+56,06 July 1960,-,31.76 km/h,SPP,ME - Men Elite,161 km,GT.A.Stage,Na,Na,403,4000,Pau,Luchon,n/a,1247,? - let us know!,Na
+57,07 July 1960,-,38 km/h,SPP,ME - Men Elite,176 km,GT.A.Stage,Na,Na,95,2000,Luchon,Toulouse,n/a,1247,? - let us know!,Na
+58,08 July 1960,-,37.49 km/h,SPP,ME - Men Elite,224 km,GT.A.Stage,Na,Na,189,3500,Toulouse,Millau,n/a,1247,? - let us know!,Na
+59,10 July 1960,-,37.14 km/h,SPP,ME - Men Elite,217 km,GT.A.Stage,Na,Na,194,3000,Millau,Avignon,n/a,1247,Sprint of large group,Na
+60,11 July 1960,-,35.59 km/h,SPP,ME - Men Elite,187 km,GT.A.Stage,Na,Na,143,2500,Avignon,Gap,n/a,1247,? - let us know!,Na
+61,12 July 1960,-,31.35 km/h,SPP,ME - Men Elite,172 km,GT.A.Stage,Na,Na,492,4000,Gap,Briancon,n/a,1247,? - let us know!,Na
+62,13 July 1960,-,30.51 km/h,SPP,ME - Men Elite,229 km,GT.A.Stage,Na,Na,406,4500,Briancon,Aix-les-Bains,n/a,1247,? - let us know!,Na
+63,14 July 1960,-,33.15 km/h,SPP,ME - Men Elite,215 km,GT.A.Stage,Na,Na,319,4500,Aix-les-Bains,Thonon,n/a,1247,? - let us know!,Na
+64,15 July 1960,-,41.69 km/h,SPP,ME - Men Elite,83 km,GT.A.Stage,Na,Na,80,1232,Pontarlier,Besancon,n/a,1247,,Na
+65,16 July 1960,-,38.99 km/h,SPP,ME - Men Elite,229 km,GT.A.Stage,Na,Na,48,2649,Besancon,Troyes,n/a,1247,? - let us know!,Na
+66,17 July 1960,-,37.56 km/h,SPP,ME - Men Elite,200 km,GT.A.Stage,Na,Na,37,1856,Troyes,Paris,n/a,1247,Sprint of large group,Na
+67,25 June 1959,-,42.79 km/h,SPP,ME - Men Elite,238 km,GT.A.Stage,Na,Na,Na,Na,Mulhouse,Metz,n/a,1236,? - let us know!,Na
+68,26 June 1959,-,36.46 km/h,SPP,ME - Men Elite,234 km,GT.A.Stage,Na,Na,Na,Na,Metz,Namur,n/a,1236,? - let us know!,Na
+69,27 June 1959,-,35.09 km/h,SPP,ME - Men Elite,217 km,GT.A.Stage,Na,Na,Na,Na,Namur,Roubaix,n/a,1236,? - let us know!,Na
+70,28 June 1959,-,34.45 km/h,SPP,ME - Men Elite,230 km,GT.A.Stage,Na,Na,Na,Na,Roubaix,Rouen,n/a,1236,? - let us know!,Na
+71,29 June 1959,-,35.27 km/h,SPP,ME - Men Elite,286 km,GT.A.Stage,Na,Na,Na,Na,Rouen,Rennes,n/a,1236,? - let us know!,Na
+72,30 June 1959,-,47.56 km/h,SPP,ME - Men Elite,45 km,GT.A.Stage,Na,Na,Na,Na,Blain,Nantes,n/a,1236,,Na
+73,01 July 1959,-,43.39 km/h,SPP,ME - Men Elite,190 km,GT.A.Stage,Na,Na,Na,Na,Nantes,La Rochelle,n/a,1236,? - let us know!,Na
+74,02 July 1959,-,41.12 km/h,SPP,ME - Men Elite,201 km,GT.A.Stage,Na,Na,Na,Na,La Rochelle,Bordeaux,n/a,1236,? - let us know!,Na
+75,03 July 1959,-,38.9 km/h,SPP,ME - Men Elite,207 km,GT.A.Stage,Na,Na,Na,Na,Bordeaux,Bayonne,n/a,1236,? - let us know!,Na
+76,05 July 1959,-,36.76 km/h,SPP,ME - Men Elite,235 km,GT.A.Stage,Na,Na,Na,Na,Bayonne,Bagnères-de-Bigorre,n/a,1236,? - let us know!,Na
+77,06 July 1959,-,35.79 km/h,SPP,ME - Men Elite,119 km,GT.A.Stage,Na,Na,Na,Na,Bagnères-de-Bigorre,Saint-Gaudens,n/a,1236,? - let us know!,Na
+78,07 July 1959,-,41.57 km/h,SPP,ME - Men Elite,184 km,GT.A.Stage,Na,Na,Na,Na,Saint-Gaudens,Albi,n/a,1236,? - let us know!,Na
+79,08 July 1959,-,35.29 km/h,SPP,ME - Men Elite,219 km,GT.A.Stage,Na,Na,Na,Na,Albi,Aurillac,n/a,1236,? - let us know!,Na
+80,09 July 1959,-,32.73 km/h,SPP,ME - Men Elite,231 km,GT.A.Stage,Na,Na,Na,Na,Aurillac,Clermont Ferrand,n/a,1236,? - let us know!,Na
+81,10 July 1959,-,19.86 km/h,SPP,ME - Men Elite,12 km,GT.A.Stage,Na,Na,Na,Na,Puy de Dôme,Puy de Dôme,n/a,1236,,Na
+82,11 July 1959,-,32.69 km/h,SPP,ME - Men Elite,210 km,GT.A.Stage,Na,Na,Na,Na,Clermont Ferrand,Saint-Étienne,n/a,1236,? - let us know!,Na
+83,13 July 1959,-,35.05 km/h,SPP,ME - Men Elite,197 km,GT.A.Stage,Na,Na,Na,Na,Saint-Étienne,Grenoble,n/a,1236,? - let us know!,Na
+84,14 July 1959,-,31.11 km/h,SPP,ME - Men Elite,243 km,GT.A.Stage,Na,Na,Na,Na,Le Lautaret,Saint-Vincent,n/a,1236,? - let us know!,Na
+85,15 July 1959,-,29.33 km/h,SPP,ME - Men Elite,251 km,GT.A.Stage,Na,Na,Na,Na,Saint-Vincent,Annecy,n/a,1236,? - let us know!,Na
+86,16 July 1959,-,34.4 km/h,SPP,ME - Men Elite,202 km,GT.A.Stage,Na,Na,Na,Na,Annecy,Chalon-sur-Saône,n/a,1236,130 km solo,Na
+87,17 July 1959,-,41.55 km/h,SPP,ME - Men Elite,69 km,GT.A.Stage,Na,Na,Na,Na,Seurre,Dijon,n/a,1236,,Na
+88,18 July 1959,-,33.33 km/h,SPP,ME - Men Elite,331 km,GT.A.Stage,Na,Na,Na,Na,Dijon,Paris,n/a,1236,Sprint of large group,Na
+89,26 June 1958,-,40.41 km/h,CD-C,ME - Men Elite,184 km,GT.A.Stage,Na,Na,18,1245,Brussel,Ghent,n/a,1163,? - let us know!,Na
+90,27 June 1958,-,38.07 km/h,CD-C,ME - Men Elite,198 km,GT.A.Stage,Na,Na,1,552,Ghent,Dunkirk,n/a,1163,? - let us know!,Na
+91,28 June 1958,-,37.37 km/h,CD-C,ME - Men Elite,177 km,GT.A.Stage,Na,Na,10,1076,Dunkirk,Mers-les-Bains,n/a,1163,? - let us know!,Na
+92,29 June 1958,-,40.45 km/h,CD-C,ME - Men Elite,205 km,GT.A.Stage,Na,Na,47,2074,Le Tréport,Versailles,n/a,1163,? - let us know!,Na
+93,30 June 1958,-,42.22 km/h,CD-C,ME - Men Elite,232 km,GT.A.Stage,Na,Na,24,1783,Versailles,Caen,n/a,1163,? - let us know!,Na
+94,01 July 1958,-,41.59 km/h,CD-C,ME - Men Elite,223 km,GT.A.Stage,Na,Na,42,2348,Caen,Saint-Brieuc,n/a,1163,? - let us know!,Na
+95,02 July 1958,-,41.89 km/h,CD-C,ME - Men Elite,170 km,GT.A.Stage,Na,Na,42,1712,Saint-Brieuc,Brest,n/a,1163,? - let us know!,Na
+96,03 July 1958,-,41.07 km/h,CD-C,ME - Men Elite,46 km,GT.A.Stage,Na,Na,24,573,Chateaulin,Chateaulin,n/a,1163,,Na
+97,04 July 1958,-,42.85 km/h,CD-C,ME - Men Elite,206 km,GT.A.Stage,Na,Na,20,1825,Quimper,Saint-Nazaire,n/a,1163,? - let us know!,Na
+98,05 July 1958,-,41.92 km/h,CD-C,ME - Men Elite,255 km,GT.A.Stage,Na,Na,8,1299,Saint-Nazaire,Royan,n/a,1163,? - let us know!,Na
+99,06 July 1958,-,42.73 km/h,CD-C,ME - Men Elite,137 km,GT.A.Stage,Na,Na,17,1155,Royan,Bordeaux,n/a,1163,? - let us know!,Na
+100,07 July 1958,-,38.44 km/h,CD-C,ME - Men Elite,161 km,GT.A.Stage,Na,Na,18,785,Bordeaux,Dax,n/a,1163,? - let us know!,Na
+101,08 July 1958,-,36.72 km/h,CD-C,ME - Men Elite,230 km,GT.A.Stage,Na,Na,189,3000,Dax,Pau,n/a,1163,? - let us know!,Na
+102,09 July 1958,-,35.94 km/h,CD-C,ME - Men Elite,129 km,GT.A.Stage,Na,Na,276,2966,Pau,Luchon,n/a,1163,? - let us know!,Na
+103,10 July 1958,-,37.62 km/h,CD-C,ME - Men Elite,176 km,GT.A.Stage,Na,Na,94,2000,Luchon,Toulouse,n/a,1163,? - let us know!,Na
+104,11 July 1958,-,34.25 km/h,CD-C,ME - Men Elite,187 km,GT.A.Stage,Na,Na,31,1253,Toulouse,Béziers,n/a,1163,? - let us know!,Na
+105,12 July 1958,-,36.55 km/h,CD-C,ME - Men Elite,189 km,GT.A.Stage,Na,Na,87,2000,Béziers,Nîmes,n/a,1163,? - let us know!,Na
+106,13 July 1958,-,20.27 km/h,CD-C,ME - Men Elite,21 km,GT.A.Stage,Na,Na,329,1640,Mont Ventoux,Mont Ventoux,n/a,1163,,Na
+107,14 July 1958,-,36.41 km/h,CD-C,ME - Men Elite,178 km,GT.A.Stage,Na,Na,194,3000,Carpentras,Gap,n/a,1163,? - let us know!,Na
+108,15 July 1958,-,31.08 km/h,CD-C,ME - Men Elite,165 km,GT.A.Stage,Na,Na,402,4000,Gap,Briançon,n/a,1163,? - let us know!,Na
+109,16 July 1958,-,31.35 km/h,CD-C,ME - Men Elite,219 km,GT.A.Stage,Na,Na,361,5000,Briançon,Aix-les-Bains,n/a,1163,? - let us know!,Na
+110,17 July 1958,-,32.69 km/h,CD-C,ME - Men Elite,237 km,GT.A.Stage,Na,Na,132,3500,Aix-les-Bains,Besançon,n/a,1163,? - let us know!,Na
+111,18 July 1958,-,44.2 km/h,CD-C,ME - Men Elite,74 km,GT.A.Stage,Na,Na,10,565,Besançon,Dijon,n/a,1163,,Na
+112,19 July 1958,-,33.94 km/h,CD-C,ME - Men Elite,320 km,GT.A.Stage,Na,Na,52,2633,Dijon,Paris,n/a,1163,Sprint of large group,Na
+113,27 June 1957,-,41.31 km/h,CD-C,ME - Men Elite,204 km,GT.A.Stage,Na,Na,Na,Na,Nantes,Granville,n/a,1242,? - let us know!,Na
+114,28 June 1957,-,36.71 km/h,CD-C,ME - Men Elite,226 km,GT.A.Stage,Na,Na,Na,Na,Granville,Caen,n/a,1242,? - let us know!,Na
+115,29 June 1957,-,39.46 km/h,CD-C,ME - Men Elite,134 km,GT.A.Stage,Na,Na,Na,Na,Caen,Rouen,n/a,1242,? - let us know!,Na
+116,30 June 1957,-,36.29 km/h,CD-C,ME - Men Elite,232 km,GT.A.Stage,Na,Na,Na,Na,Rouen,Roubaix,n/a,1242,? - let us know!,Na
+117,01 July 1957,-,38.43 km/h,CD-C,ME - Men Elite,170 km,GT.A.Stage,Na,Na,Na,Na,Roubaix,Charleroi,n/a,1242,? - let us know!,Na
+118,02 July 1957,-,38.16 km/h,CD-C,ME - Men Elite,248 km,GT.A.Stage,Na,Na,Na,Na,Charleroi,Metz,n/a,1242,? - let us know!,Na
+119,03 July 1957,-,35.1 km/h,CD-C,ME - Men Elite,223 km,GT.A.Stage,Na,Na,Na,Na,Metz,Colmar,n/a,1242,? - let us know!,Na
+120,04 July 1957,-,36.11 km/h,CD-C,ME - Men Elite,192 km,GT.A.Stage,Na,Na,Na,Na,Colmar,Besançon,n/a,1242,? - let us know!,Na
+121,05 July 1957,-,37.03 km/h,CD-C,ME - Men Elite,188 km,GT.A.Stage,Na,Na,Na,Na,Besançon,Thonon-les-Bains,n/a,1242,? - let us know!,Na
+122,07 July 1957,-,31.64 km/h,CD-C,ME - Men Elite,247 km,GT.A.Stage,Na,Na,Na,Na,Thonon-les-Bains,Briançon,n/a,1242,? - let us know!,Na
+123,08 July 1957,-,30.7 km/h,CD-C,ME - Men Elite,286 km,GT.A.Stage,Na,Na,Na,Na,Briançon,Cannes,n/a,1242,? - let us know!,Na
+124,09 July 1957,-,30.98 km/h,CD-C,ME - Men Elite,239 km,GT.A.Stage,Na,Na,Na,Na,Cannes,Marseille,n/a,1242,? - let us know!,Na
+125,10 July 1957,-,31.69 km/h,CD-C,ME - Men Elite,160 km,GT.A.Stage,Na,Na,Na,Na,Marseille,Alès,n/a,1242,? - let us know!,Na
+126,11 July 1957,-,39.11 km/h,CD-C,ME - Men Elite,246 km,GT.A.Stage,Na,Na,Na,Na,Alès,Perpignan,n/a,1242,? - let us know!,Na
+127,12 July 1957,-,36.39 km/h,CD-C,ME - Men Elite,197 km,GT.A.Stage,Na,Na,Na,Na,Perpignan,Barcelona,n/a,1242,? - let us know!,Na
+128,13 July 1957,-,40.6 km/h,CD-C,ME - Men Elite,9.8 km,GT.A.Stage,Na,Na,Na,Na,Barcelona (Montjuïc),Barcelona (Montjuïc),n/a,1242,,Na
+129,14 July 1957,-,35.34 km/h,CD-C,ME - Men Elite,220 km,GT.A.Stage,Na,Na,Na,Na,Barcelona,Ax-les-Thermes,n/a,1242,? - let us know!,Na
+130,15 July 1957,-,33.71 km/h,CD-C,ME - Men Elite,236 km,GT.A.Stage,Na,Na,Na,Na,Ax-les-Thermes,Saint-Gaudens,n/a,1242,? - let us know!,Na
+131,16 July 1957,-,31.24 km/h,CD-C,ME - Men Elite,207 km,GT.A.Stage,Na,Na,Na,Na,Saint-Gaudens,Pau,n/a,1242,? - let us know!,Na
+132,17 July 1957,-,38.24 km/h,CD-C,ME - Men Elite,194 km,GT.A.Stage,Na,Na,Na,Na,Pau,Bordeaux,n/a,1242,130 km solo,Na
+133,19 July 1957,-,31.87 km/h,CD-C,ME - Men Elite,317 km,GT.A.Stage,Na,Na,Na,Na,Libourne,Tours,n/a,1242,? - let us know!,Na
+134,20 July 1957,-,37.99 km/h,CD-C,ME - Men Elite,227 km,GT.A.Stage,Na,Na,Na,Na,Tours,Paris,n/a,1242,? - let us know!,Na
+135,05 July 1956,-,41.91 km/h,CD-C,ME - Men Elite,223 km,GT.A.Stage,Na,Na,Na,Na,Reims,Liège,n/a,1378,? - let us know!,Na
+136,06 July 1956,-,32.92 km/h,CD-C,ME - Men Elite,217 km,GT.A.Stage,Na,Na,Na,Na,Liège,Lille,n/a,1378,? - let us know!,Na
+137,07 July 1956,-,34.22 km/h,CD-C,ME - Men Elite,225 km,GT.A.Stage,Na,Na,Na,Na,Lille,Rouen,n/a,1378,? - let us know!,Na
+138,08 July 1956,-,40.6 km/h,CD-C,ME - Men Elite,15.1 km,GT.A.Stage,Na,Na,Na,Na,Rouen,Circuit des Essarts,n/a,1378,,Na
+139,08 July 1956,-,42.44 km/h,CD-C,ME - Men Elite,125 km,GT.A.Stage,Na,Na,Na,Na,Rouen,Caen,n/a,1378,? - let us know!,Na
+140,09 July 1956,-,38.86 km/h,CD-C,ME - Men Elite,189 km,GT.A.Stage,Na,Na,Na,Na,Caen,Saint-Malo,n/a,1378,? - let us know!,Na
+141,10 July 1956,-,41.24 km/h,CD-C,ME - Men Elite,192 km,GT.A.Stage,Na,Na,Na,Na,Saint-Malo,Lorient,n/a,1378,? - let us know!,Na
+142,11 July 1956,-,40.74 km/h,CD-C,ME - Men Elite,244 km,GT.A.Stage,Na,Na,Na,Na,Lorient,Angers,n/a,1378,? - let us know!,Na
+143,12 July 1956,-,42.36 km/h,CD-C,ME - Men Elite,180 km,GT.A.Stage,Na,Na,Na,Na,Angers,La Rochelle,n/a,1378,? - let us know!,Na
+144,13 July 1956,-,39.7 km/h,CD-C,ME - Men Elite,219 km,GT.A.Stage,Na,Na,Na,Na,La Rochelle,Bordeaux,n/a,1378,? - let us know!,Na
+145,15 July 1956,-,40.25 km/h,CD-C,ME - Men Elite,201 km,GT.A.Stage,Na,Na,Na,Na,Bordeaux,Bayonne,n/a,1378,? - let us know!,Na
+146,16 July 1956,-,38.64 km/h,CD-C,ME - Men Elite,255 km,GT.A.Stage,Na,Na,Na,Na,Bayonne,Pau,n/a,1378,? - let us know!,Na
+147,17 July 1956,-,33.24 km/h,CD-C,ME - Men Elite,130 km,GT.A.Stage,Na,Na,Na,Na,Pau,Luchon,n/a,1378,? - let us know!,Na
+148,18 July 1956,-,36.44 km/h,CD-C,ME - Men Elite,176 km,GT.A.Stage,Na,Na,Na,Na,Luchon,Toulouse,n/a,1378,? - let us know!,Na
+149,19 July 1956,-,42.5 km/h,CD-C,ME - Men Elite,231 km,GT.A.Stage,Na,Na,Na,Na,Toulouse,Montpellier,n/a,1378,? - let us know!,Na
+150,20 July 1956,-,40.64 km/h,CD-C,ME - Men Elite,204 km,GT.A.Stage,Na,Na,Na,Na,Montpellier,Aix-en-Provence,n/a,1378,? - let us know!,Na
+151,22 July 1956,-,36.88 km/h,CD-C,ME - Men Elite,203 km,GT.A.Stage,Na,Na,Na,Na,Aix-en-Provence,Gap,n/a,1378,? - let us know!,Na
+152,23 July 1956,-,34.91 km/h,CD-C,ME - Men Elite,234 km,GT.A.Stage,Na,Na,Na,Na,Gap,Torino,n/a,1378,? - let us know!,Na
+153,24 July 1956,-,30.35 km/h,CD-C,ME - Men Elite,250 km,GT.A.Stage,Na,Na,Na,Na,Torino,Grenoble,n/a,1378,? - let us know!,Na
+154,25 July 1956,-,31.25 km/h,CD-C,ME - Men Elite,173 km,GT.A.Stage,Na,Na,Na,Na,Grenoble,Saint-Étienne,n/a,1378,? - let us know!,Na
+155,26 July 1956,-,41.02 km/h,CD-C,ME - Men Elite,73 km,GT.A.Stage,Na,Na,Na,Na,Saint-Étienne,Lyon,n/a,1378,,Na
+156,27 July 1956,-,33.54 km/h,CD-C,ME - Men Elite,237 km,GT.A.Stage,Na,Na,Na,Na,Lyon,Montluçon,n/a,1378,? - let us know!,Na
+157,28 July 1956,-,34.96 km/h,CD-C,ME - Men Elite,331 km,GT.A.Stage,Na,Na,Na,Na,Montluçon,Paris,n/a,1378,? - let us know!,Na
+158,07 July 1955,-,38.37 km/h,CD-C,ME - Men Elite,102 km,GT.A.Stage,Na,Na,Na,Na,Le Havre,Dieppe,n/a,1392,? - let us know!,Na
+159,08 July 1955,-,34.58 km/h,CD-C,ME - Men Elite,204 km,GT.A.Stage,Na,Na,Na,Na,Dieppe,Roubaix,n/a,1392,? - let us know!,Na
+160,09 July 1955,-,31.69 km/h,CD-C,ME - Men Elite,210 km,GT.A.Stage,Na,Na,Na,Na,Roubaix,Namur,n/a,1392,? - let us know!,Na
+161,10 July 1955,-,33.66 km/h,CD-C,ME - Men Elite,225 km,GT.A.Stage,Na,Na,Na,Na,Namur,Metz,n/a,1392,? - let us know!,Na
+162,11 July 1955,-,38.39 km/h,CD-C,ME - Men Elite,229 km,GT.A.Stage,Na,Na,Na,Na,Metz,Colmar,n/a,1392,? - let us know!,Na
+163,12 July 1955,-,42.98 km/h,CD-C,ME - Men Elite,195 km,GT.A.Stage,Na,Na,Na,Na,Colmar,Zürich,n/a,1392,? - let us know!,Na
+164,13 July 1955,-,36.24 km/h,CD-C,ME - Men Elite,267 km,GT.A.Stage,Na,Na,Na,Na,Zürich,Thonon-les-Bains,n/a,1392,? - let us know!,Na
+165,14 July 1955,-,32.79 km/h,CD-C,ME - Men Elite,253 km,GT.A.Stage,Na,Na,Na,Na,Thonon-les-Bains,Briançon,n/a,1392,? - let us know!,Na
+166,15 July 1955,-,33.28 km/h,CD-C,ME - Men Elite,275 km,GT.A.Stage,Na,Na,Na,Na,Briançon,Monaco,n/a,1392,? - let us know!,Na
+167,16 July 1955,-,35.54 km/h,CD-C,ME - Men Elite,240 km,GT.A.Stage,Na,Na,Na,Na,Monaco,Marseille,n/a,1392,? - let us know!,Na
+168,18 July 1955,-,34.68 km/h,CD-C,ME - Men Elite,198 km,GT.A.Stage,Na,Na,Na,Na,Marseille,Avignon,n/a,1392,? - let us know!,Na
+169,19 July 1955,-,34.8 km/h,CD-C,ME - Men Elite,240 km,GT.A.Stage,Na,Na,Na,Na,Avignon,Millau,n/a,1392,? - let us know!,Na
+170,20 July 1955,-,34.88 km/h,CD-C,ME - Men Elite,205 km,GT.A.Stage,Na,Na,Na,Na,Millau,Albi,n/a,1392,170 km solo,Na
+171,21 July 1955,-,37.13 km/h,CD-C,ME - Men Elite,156 km,GT.A.Stage,Na,Na,Na,Na,Albi,Narbonne,n/a,1392,? - let us know!,Na
+172,22 July 1955,-,33.2 km/h,CD-C,ME - Men Elite,151 km,GT.A.Stage,Na,Na,Na,Na,Narbonne,Ax-les-Thermes,n/a,1392,? - let us know!,Na
+173,24 July 1955,-,41.66 km/h,CD-C,ME - Men Elite,123 km,GT.A.Stage,Na,Na,Na,Na,Ax-les-Thermes,Toulouse,n/a,1392,? - let us know!,Na
+174,25 July 1955,-,33.22 km/h,CD-C,ME - Men Elite,250 km,GT.A.Stage,Na,Na,Na,Na,Toulouse,Saint-Gaudens,n/a,1392,? - let us know!,Na
+175,26 July 1955,-,30.78 km/h,CD-C,ME - Men Elite,205 km,GT.A.Stage,Na,Na,Na,Na,Saint-Gaudens,Pau,n/a,1392,? - let us know!,Na
+176,27 July 1955,-,37.07 km/h,CD-C,ME - Men Elite,195 km,GT.A.Stage,Na,Na,Na,Na,Pau,Bordeaux,n/a,1392,? - let us know!,Na
+177,28 July 1955,-,32.82 km/h,CD-C,ME - Men Elite,243 km,GT.A.Stage,Na,Na,Na,Na,Bordeaux,Poitiers,n/a,1392,? - let us know!,Na
+178,29 July 1955,-,41.22 km/h,CD-C,ME - Men Elite,68.6 km,GT.A.Stage,Na,Na,Na,Na,Châtellerault,Tours,n/a,1392,,Na
+179,30 July 1955,-,34.49 km/h,CD-C,ME - Men Elite,229 km,GT.A.Stage,Na,Na,Na,Na,Tours,Paris,n/a,1392,? - let us know!,Na
+180,08 July 1954,-,40.07 km/h,CD-C,ME - Men Elite,216 km,GT.A.Stage,Na,Na,Na,Na,Amsterdam,Brasschaat,n/a,1161,? - let us know!,Na
+181,09 July 1954,-,37.15 km/h,CD-C,ME - Men Elite,255 km,GT.A.Stage,Na,Na,Na,Na,Beveren,Lille,n/a,1161,? - let us know!,Na
+182,10 July 1954,-,34.59 km/h,CD-C,ME - Men Elite,219 km,GT.A.Stage,Na,Na,Na,Na,Lille,Rouen,n/a,1161,? - let us know!,Na
+183,11 July 1954,-,40.09 km/h,CD-C,ME - Men Elite,131 km,GT.A.Stage,Na,Na,Na,Na,Rouen,Caen,n/a,1161,? - let us know!,Na
+184,12 July 1954,-,36.91 km/h,CD-C,ME - Men Elite,224 km,GT.A.Stage,Na,Na,Na,Na,Caen,Saint-Brieuc,n/a,1161,? - let us know!,Na
+185,13 July 1954,-,36.39 km/h,CD-C,ME - Men Elite,179 km,GT.A.Stage,Na,Na,Na,Na,Saint-Brieuc,Brest,n/a,1161,? - let us know!,Na
+186,14 July 1954,-,39.03 km/h,CD-C,ME - Men Elite,211 km,GT.A.Stage,Na,Na,Na,Na,Brest,Vannes,n/a,1161,? - let us know!,Na
+187,15 July 1954,-,42.69 km/h,CD-C,ME - Men Elite,190 km,GT.A.Stage,Na,Na,Na,Na,Vannes,Angers,n/a,1161,? - let us know!,Na
+188,16 July 1954,-,34.11 km/h,CD-C,ME - Men Elite,343 km,GT.A.Stage,Na,Na,Na,Na,Angers,Bordeaux,n/a,1161,? - let us know!,Na
+189,18 July 1954,-,40.84 km/h,CD-C,ME - Men Elite,202 km,GT.A.Stage,Na,Na,Na,Na,Bordeaux,Bayonne,n/a,1161,? - let us know!,Na
+190,19 July 1954,-,34.89 km/h,CD-C,ME - Men Elite,241 km,GT.A.Stage,Na,Na,Na,Na,Bayonne,Pau,n/a,1161,? - let us know!,Na
+191,20 July 1954,-,29.5 km/h,CD-C,ME - Men Elite,161 km,GT.A.Stage,Na,Na,Na,Na,Pau,Luchon,n/a,1161,? - let us know!,Na
+192,21 July 1954,-,38.16 km/h,CD-C,ME - Men Elite,203 km,GT.A.Stage,Na,Na,Na,Na,Luchon,Toulouse,n/a,1161,? - let us know!,Na
+193,22 July 1954,-,34.39 km/h,CD-C,ME - Men Elite,225 km,GT.A.Stage,Na,Na,Na,Na,Toulouse,Millau,n/a,1161,? - let us know!,Na
+194,23 July 1954,-,31.25 km/h,CD-C,ME - Men Elite,197 km,GT.A.Stage,Na,Na,Na,Na,Millau,Le Puy,n/a,1161,? - let us know!,Na
+195,24 July 1954,-,35.38 km/h,CD-C,ME - Men Elite,194 km,GT.A.Stage,Na,Na,Na,Na,Le Puy,Lyon,n/a,1161,? - let us know!,Na
+196,25 July 1954,-,32.05 km/h,CD-C,ME - Men Elite,182 km,GT.A.Stage,Na,Na,Na,Na,Lyon,Grenoble,n/a,1161,? - let us know!,Na
+197,27 July 1954,-,29.01 km/h,CD-C,ME - Men Elite,216 km,GT.A.Stage,Na,Na,Na,Na,Grenoble,Briançon,n/a,1161,? - let us know!,Na
+198,28 July 1954,-,30.18 km/h,CD-C,ME - Men Elite,221 km,GT.A.Stage,Na,Na,Na,Na,Briançon,Aix-les-Bains,n/a,1161,? - let us know!,Na
+199,29 July 1954,-,34.26 km/h,CD-C,ME - Men Elite,243 km,GT.A.Stage,Na,Na,Na,Na,Aix les Bains,Besançon,n/a,1161,? - let us know!,Na
+200,30 July 1954,-,35.607 km/h,CD-C,ME - Men Elite,134 km,GT.A.Stage,Na,Na,Na,Na,Besançon,Épinal,n/a,1161,? - let us know!,Na
+201,30 July 1954,-,40.31 km/h,CD-C,ME - Men Elite,72 km,GT.A.Stage,Na,Na,Na,Na,Epinal,Nancy,n/a,1161,,Na
+202,31 July 1954,-,32.81 km/h,CD-C,ME - Men Elite,216 km,GT.A.Stage,Na,Na,Na,Na,Nancy,Troyes,n/a,1161,? - let us know!,Na
+203,01 August 1954,-,34.91 km/h,CD-C,ME - Men Elite,180 km,GT.A.Stage,Na,Na,Na,Na,Troyes,Paris,n/a,1161,? - let us know!,Na
+204,03 July 1953,-,39.661 km/h,CD-C,ME - Men Elite,195 km,GT.A.Stage,Na,Na,52,2159,Strasbourg,Metz,n/a,1153,Sprint of small group,Na
+205,04 July 1953,-,35.761 km/h,CD-C,ME - Men Elite,227 km,GT.A.Stage,Na,Na,130,2875,Metz,Liège,n/a,1153,Sprint à deux,Na
+206,05 July 1953,-,36.19 km/h,CD-C,ME - Men Elite,221 km,GT.A.Stage,Na,Na,4,1079,Liège,Lille,n/a,1153,? - let us know!,Na
+207,06 July 1953,-,35.22 km/h,CD-C,ME - Men Elite,188 km,GT.A.Stage,Na,Na,17,1195,Lille,Dieppe,n/a,1153,? - let us know!,Na
+208,07 July 1953,-,35.44 km/h,CD-C,ME - Men Elite,200 km,GT.A.Stage,Na,Na,27,1614,Dieppe,Caen,n/a,1153,? - let us know!,Na
+209,08 July 1953,-,39.76 km/h,CD-C,ME - Men Elite,206 km,GT.A.Stage,Na,Na,15,1427,Caen,Le Mans,n/a,1153,? - let us know!,Na
+210,09 July 1953,-,37.95 km/h,CD-C,ME - Men Elite,181 km,GT.A.Stage,Na,Na,24,1177,Le Mans,Nantes,n/a,1153,? - let us know!,Na
+211,10 July 1953,-,34.69 km/h,CD-C,ME - Men Elite,345 km,GT.A.Stage,Na,Na,9,1806,Nantes,Bordeaux,n/a,1153,? - let us know!,Na
+212,12 July 1953,-,38.13 km/h,CD-C,ME - Men Elite,197 km,GT.A.Stage,Na,Na,40,1360,Bordeaux,Pau,n/a,1153,? - let us know!,Na
+213,13 July 1953,-,31.77 km/h,CD-C,ME - Men Elite,103 km,GT.A.Stage,Na,Na,352,3000,Pau,Cauterets,n/a,1153,? - let us know!,Na
+214,14 July 1953,-,29.99 km/h,CD-C,ME - Men Elite,115 km,GT.A.Stage,Na,Na,365,3500,Cauterets,Luchon,n/a,1153,? - let us know!,Na
+215,15 July 1953,-,40.16 km/h,CD-C,ME - Men Elite,228 km,GT.A.Stage,Na,Na,39,1776,Luchon,Albi,n/a,1153,? - let us know!,Na
+216,16 July 1953,-,35.58 km/h,CD-C,ME - Men Elite,189 km,GT.A.Stage,Na,Na,127,3000,Albi,Béziers,n/a,1153,? - let us know!,Na
+217,17 July 1953,-,33.67 km/h,CD-C,ME - Men Elite,214 km,GT.A.Stage,Na,Na,112,2500,Béziers,Nîmes,n/a,1153,? - let us know!,Na
+218,18 July 1953,-,38.08 km/h,CD-C,ME - Men Elite,173 km,GT.A.Stage,Na,Na,102,1949,Nîmes,Marseille,n/a,1153,? - let us know!,Na
+219,19 July 1953,-,32.12 km/h,CD-C,ME - Men Elite,236 km,GT.A.Stage,Na,Na,188,2500,Marseille,Monaco,n/a,1153,? - let us know!,Na
+220,21 July 1953,-,31.41 km/h,CD-C,ME - Men Elite,261 km,GT.A.Stage,Na,Na,300,4500,Monaco,Gap,n/a,1153,? - let us know!,Na
+221,22 July 1953,-,31.8 km/h,CD-C,ME - Men Elite,165 km,GT.A.Stage,Na,Na,401,4000,Gap,Briançon,n/a,1153,? - let us know!,Na
+222,23 July 1953,-,36.01 km/h,CD-C,ME - Men Elite,227 km,GT.A.Stage,Na,Na,107,2500,Briançon,Lyon,n/a,1153,? - let us know!,Na
+223,24 July 1953,-,38.53 km/h,CD-C,ME - Men Elite,70 km,GT.A.Stage,Na,Na,74,1299,Lyon,Saint-Etienne,n/a,1153,,Na
+224,25 July 1953,-,33.15 km/h,CD-C,ME - Men Elite,210 km,GT.A.Stage,Na,Na,88,2554,Saint-Etienne,Montluçon,n/a,1153,? - let us know!,Na
+225,26 July 1953,-,33.76 km/h,CD-C,ME - Men Elite,328 km,GT.A.Stage,Na,Na,56,1814,Montluçon,Paris,n/a,1153,? - let us know!,Na
+226,25 June 1952,-,38.09 km/h,CD-C,ME - Men Elite,246 km,GT.A.Stage,Na,Na,39,2669,Brest,Rennes,n/a,1089,? - let us know!,Na
+227,26 June 1952,-,37.19 km/h,CD-C,ME - Men Elite,181 km,GT.A.Stage,Na,Na,13,1292,Rennes,Le Mans,n/a,1089,? - let us know!,Na
+228,27 June 1952,-,36.29 km/h,CD-C,ME - Men Elite,189 km,GT.A.Stage,Na,Na,39,1470,Le Mans,Rouen,n/a,1089,? - let us know!,Na
+229,28 June 1952,-,36.31 km/h,CD-C,ME - Men Elite,232 km,GT.A.Stage,Na,Na,25,1792,Rouen,Roubaix,n/a,1089,? - let us know!,Na
+230,29 June 1952,-,33.35 km/h,CD-C,ME - Men Elite,197 km,GT.A.Stage,Na,Na,57,1542,Roubaix,Namur,n/a,1089,? - let us know!,Na
+231,30 June 1952,-,31.97 km/h,CD-C,ME - Men Elite,228 km,GT.A.Stage,Na,Na,92,3041,Namur,Metz,n/a,1089,? - let us know!,Na
+232,01 July 1952,-,38.72 km/h,CD-C,ME - Men Elite,60 km,GT.A.Stage,Na,Na,14,471,Metz,Nancy,n/a,1089,,Na
+233,02 July 1952,-,30.4 km/h,CD-C,ME - Men Elite,252 km,GT.A.Stage,Na,Na,232,4000,Nancy,Mulhouse,n/a,1089,? - let us know!,Na
+234,03 July 1952,-,32.22 km/h,CD-C,ME - Men Elite,238 km,GT.A.Stage,Na,Na,171,3000,Mulhouse,Lausanne,n/a,1089,? - let us know!,Na
+235,04 July 1952,-,30.02 km/h,CD-C,ME - Men Elite,266 km,GT.A.Stage,Na,Na,339,4347,Lausanne,l'Alpe d'Huez,n/a,1089,? - let us know!,Na
+236,06 July 1952,-,27.51 km/h,CD-C,ME - Men Elite,182 km,GT.A.Stage,Na,Na,529,5500,Bourg d'Oisans,Sestrieres,n/a,1089,? - let us know!,Na
+237,07 July 1952,-,30.53 km/h,CD-C,ME - Men Elite,251 km,GT.A.Stage,Na,Na,380,3000,Sestrieres,Monaco,n/a,1089,? - let us know!,Na
+238,08 July 1952,-,30.09 km/h,CD-C,ME - Men Elite,214 km,GT.A.Stage,Na,Na,73,2000,Monaco,Aix-en-Provence,n/a,1089,? - let us know!,Na
+239,09 July 1952,-,28.34 km/h,CD-C,ME - Men Elite,178 km,GT.A.Stage,Na,Na,134,2694,Aix-en-Provence,Avignon,n/a,1089,? - let us know!,Na
+240,10 July 1952,-,35.81 km/h,CD-C,ME - Men Elite,255 km,GT.A.Stage,Na,Na,19,1511,Avignon,Perpignan,n/a,1089,? - let us know!,Na
+241,11 July 1952,-,28.99 km/h,CD-C,ME - Men Elite,200 km,GT.A.Stage,Na,Na,40,1979,Perpignan,Toulouse,n/a,1089,? - let us know!,Na
+242,13 July 1952,-,30.35 km/h,CD-C,ME - Men Elite,204 km,GT.A.Stage,Na,Na,299,3500,Toulouse,Bagneres-de-Bigorre,n/a,1089,? - let us know!,Na
+243,14 July 1952,-,31.69 km/h,CD-C,ME - Men Elite,149 km,GT.A.Stage,Na,Na,255,3500,Bagneres-de-Bigorre,Pau,n/a,1089,? - let us know!,Na
+244,15 July 1952,-,37.11 km/h,CD-C,ME - Men Elite,195 km,GT.A.Stage,Na,Na,13,1034,Pau,Bordeaux,n/a,1089,? - let us know!,Na
+245,16 July 1952,-,34.83 km/h,CD-C,ME - Men Elite,228 km,GT.A.Stage,Na,Na,53,1980,Bordeaux,Limoges,n/a,1089,? - let us know!,Na
+246,17 July 1952,-,25.31 km/h,CD-C,ME - Men Elite,245 km,GT.A.Stage,Na,Na,350,5474,Limoges,Puy de Dome,n/a,1089,? - let us know!,Na
+247,18 July 1952,-,40.57 km/h,CD-C,ME - Men Elite,63 km,GT.A.Stage,Na,Na,20,411,Puy de Dome,Vichy,n/a,1089,,Na
+248,19 July 1952,-,30.83 km/h,CD-C,ME - Men Elite,354 km,GT.A.Stage,Na,Na,35,2303,Vichy,Paris,n/a,1089,? - let us know!,Na
+249,04 July 1951,-,34.35 km/h,CD-C,ME - Men Elite,185 km,GT.A.Stage,Na,Na,20,1330,Metz,Reims,n/a,1175,? - let us know!,Na
+250,05 July 1951,-,35.18 km/h,CD-C,ME - Men Elite,228 km,GT.A.Stage,Na,Na,31,2006,Reims,Gent,n/a,1175,? - let us know!,Na
+251,06 July 1951,-,30.97 km/h,CD-C,ME - Men Elite,219 km,GT.A.Stage,Na,Na,19,1284,Gent,Le Treport,n/a,1175,? - let us know!,Na
+252,07 July 1951,-,39.96 km/h,CD-C,ME - Men Elite,188 km,GT.A.Stage,Na,Na,32,1608,Le treport,Paris,n/a,1175,? - let us know!,Na
+253,08 July 1951,-,34.91 km/h,CD-C,ME - Men Elite,215 km,GT.A.Stage,Na,Na,36,1841,Paris,Caen,n/a,1175,? - let us know!,Na
+254,09 July 1951,-,33.9 km/h,CD-C,ME - Men Elite,182 km,GT.A.Stage,Na,Na,48,2103,Caen,Rennes,n/a,1175,? - let us know!,Na
+255,10 July 1951,-,40.58 km/h,CD-C,ME - Men Elite,85 km,GT.A.Stage,Na,Na,6,639,La Guerche,Angers,n/a,1175,,Na
+256,11 July 1951,-,33.76 km/h,CD-C,ME - Men Elite,241 km,GT.A.Stage,Na,Na,51,1818,Angers,Limoges,n/a,1175,? - let us know!,Na
+257,13 July 1951,-,33.74 km/h,CD-C,ME - Men Elite,236 km,GT.A.Stage,Na,Na,151,3912,Limoges,Clermont-Ferrand,n/a,1175,? - let us know!,Na
+258,14 July 1951,-,32.79 km/h,CD-C,ME - Men Elite,216 km,GT.A.Stage,Na,Na,159,3500,Clermont-Ferrand,Brive-la-Gaillarde,n/a,1175,? - let us know!,Na
+259,15 July 1951,-,38.95 km/h,CD-C,ME - Men Elite,177 km,GT.A.Stage,Na,Na,56,2261,Brive-la-Gaillarde,Agen,n/a,1175,? - let us know!,Na
+260,16 July 1951,-,46.54 km/h,CD-C,ME - Men Elite,233 km,GT.A.Stage,Na,Na,43,1820,Agen,Dax,n/a,1175,? - let us know!,Na
+261,17 July 1951,-,34.66 km/h,CD-C,ME - Men Elite,201 km,GT.A.Stage,Na,Na,192,3000,Dax,Tarbes,n/a,1175,? - let us know!,Na
+262,18 July 1951,-,37.91 km/h,CD-C,ME - Men Elite,178 km,GT.A.Stage,Na,Na,365,4000,Tarbes,Luchon,n/a,1175,? - let us know!,Na
+263,19 July 1951,-,33.45 km/h,CD-C,ME - Men Elite,213 km,GT.A.Stage,Na,Na,106,2500,Luchon,Carcassonne,n/a,1175,? - let us know!,Na
+264,20 July 1951,-,35.2 km/h,CD-C,ME - Men Elite,192 km,GT.A.Stage,Na,Na,116,2500,Carcassonne,Montpellier,n/a,1175,? - let us know!,Na
+265,21 July 1951,-,30.22 km/h,CD-C,ME - Men Elite,224 km,GT.A.Stage,Na,Na,133,2906,Montpellier,Avignon,n/a,1175,? - let us know!,Na
+266,23 July 1951,-,34.98 km/h,CD-C,ME - Men Elite,173 km,GT.A.Stage,Na,Na,106,2529,Avignon,Marseille,n/a,1175,? - let us know!,Na
+267,24 July 1951,-,28.64 km/h,CD-C,ME - Men Elite,208 km,GT.A.Stage,Na,Na,205,3000,Marseille,Gap,n/a,1175,? - let us know!,Na
+268,25 July 1951,-,29.63 km/h,CD-C,ME - Men Elite,165 km,GT.A.Stage,Na,Na,401,4000,Gap,Briancon,n/a,1175,? - let us know!,Na
+269,26 July 1951,-,29.75 km/h,CD-C,ME - Men Elite,201 km,GT.A.Stage,Na,Na,336,4500,Briancon,Aix-les-Bains,n/a,1175,? - let us know!,Na
+270,27 July 1951,-,36.81 km/h,CD-C,ME - Men Elite,98 km,GT.A.Stage,Na,Na,51,1299,Aix-les-Bains,Geneve,n/a,1175,,Na
+271,28 July 1951,-,31.81 km/h,CD-C,ME - Men Elite,197 km,GT.A.Stage,Na,Na,72,2780,Geneve,Dijon,n/a,1175,? - let us know!,Na
+272,29 July 1951,-,35.5 km/h,CD-C,ME - Men Elite,354 km,GT.A.Stage,Na,Na,39,2239,Dijon,Paris,n/a,1175,? - let us know!,Na
+273,13 July 1950,-,32.71 km/h,CD-C,ME - Men Elite,307 km,GT.A.Stage,Na,Na,30,2276,Paris,Metz,n/a,1148,? - let us know!,Na
+274,14 July 1950,-,34.26 km/h,CD-C,ME - Men Elite,241 km,GT.A.Stage,Na,Na,120,3184,Metz,Liege,n/a,1148,? - let us know!,Na
+275,15 July 1950,-,33.81 km/h,CD-C,ME - Men Elite,232.5 km,GT.A.Stage,Na,Na,20,1804,Liege,Lille,n/a,1148,? - let us know!,Na
+276,16 July 1950,-,32.05 km/h,CD-C,ME - Men Elite,231 km,GT.A.Stage,Na,Na,34,2011,Lille,Rouen,n/a,1148,? - let us know!,Na
+277,17 July 1950,-,29.82 km/h,CD-C,ME - Men Elite,316 km,GT.A.Stage,Na,Na,49,2889,Rouen,Dinard,n/a,1148,? - let us know!,Na
+278,19 July 1950,-,39.88 km/h,CD-C,ME - Men Elite,78 km,GT.A.Stage,Na,Na,25,799,Dinard,Saint-Brieuc,n/a,1148,,Na
+279,20 July 1950,-,36.92 km/h,CD-C,ME - Men Elite,248 km,GT.A.Stage,Na,Na,21,2070,Saint-Brieuc,Angers,n/a,1148,? - let us know!,Na
+280,21 July 1950,-,39.28 km/h,CD-C,ME - Men Elite,181 km,GT.A.Stage,Na,Na,39,1330,Angers,Niort,n/a,1148,? - let us know!,Na
+281,22 July 1950,-,37.41 km/h,CD-C,ME - Men Elite,206 km,GT.A.Stage,Na,Na,13,1439,Niort,Bordeaux,n/a,1148,? - let us know!,Na
+282,23 July 1950,-,36.84 km/h,CD-C,ME - Men Elite,202 km,GT.A.Stage,Na,Na,51,1532,Bordeaux,Pau,n/a,1148,? - let us know!,Na
+283,25 July 1950,-,30.78 km/h,CD-C,ME - Men Elite,230 km,GT.A.Stage,Na,Na,250,5000,Pau,Saint-Gaudens,n/a,1148,? - let us know!,Na
+284,26 July 1950,-,35.92 km/h,CD-C,ME - Men Elite,233 km,GT.A.Stage,Na,Na,70,2736,Saint-Gaudens,Perpignan,n/a,1148,? - let us know!,Na
+285,27 July 1950,-,33.69 km/h,CD-C,ME - Men Elite,215 km,GT.A.Stage,Na,Na,23,1669,Perpignan,Nimes,n/a,1148,? - let us know!,Na
+286,28 July 1950,-,32.5 km/h,CD-C,ME - Men Elite,222 km,GT.A.Stage,Na,Na,104,2950,Nimes,Toulon,n/a,1148,? - let us know!,Na
+287,29 July 1950,-,30.42 km/h,CD-C,ME - Men Elite,205.5 km,GT.A.Stage,Na,Na,245,2500,Toulon,Menton,n/a,1148,? - let us know!,Na
+288,30 July 1950,-,31.52 km/h,CD-C,ME - Men Elite,96 km,GT.A.Stage,Na,Na,317,2250,Menton,Nice,n/a,1148,? - let us know!,Na
+289,01 August 1950,-,28.71 km/h,CD-C,ME - Men Elite,229 km,GT.A.Stage,Na,Na,333,4500,Nice,Gap,n/a,1148,? - let us know!,Na
+290,02 August 1950,-,26.81 km/h,CD-C,ME - Men Elite,165 km,GT.A.Stage,Na,Na,401,4000,Gap,Briancon,n/a,1148,? - let us know!,Na
+291,03 August 1950,-,32.99 km/h,CD-C,ME - Men Elite,291 km,GT.A.Stage,Na,Na,248,4000,Briancon,Saint-Etienne,n/a,1148,? - let us know!,Na
+292,06 August 1950,-,34.72 km/h,CD-C,ME - Men Elite,233 km,GT.A.Stage,Na,Na,8,1275,Lyon,Dijon,n/a,1148,? - let us know!,Na
+293,07 August 1950,-,32.7 km/h,CD-C,ME - Men Elite,314 km,GT.A.Stage,Na,Na,46,2481,Dijon,Paris,n/a,1148,? - let us know!,Na
+294,30 June 1949,-,34.78 km/h,CD-C,ME - Men Elite,182 km,GT.A.Stage,Na,Na,69,1983,Paris,Reims,n/a,1445,? - let us know!,Na
+295,01 July 1949,-,31.62 km/h,CD-C,ME - Men Elite,273 km,GT.A.Stage,Na,Na,76,3618,Reims,Brussel,n/a,1445,? - let us know!,Na
+296,02 July 1949,-,34.61 km/h,CD-C,ME - Men Elite,211 km,GT.A.Stage,Na,Na,26,1403,Brussel,Boulogne-sur-Mer,n/a,1445,? - let us know!,Na
+297,03 July 1949,-,35.8 km/h,CD-C,ME - Men Elite,185 km,GT.A.Stage,Na,Na,37,1890,Boulogne-sur-Mer,Rouen,n/a,1445,? - let us know!,Na
+298,04 July 1949,-,34.66 km/h,CD-C,ME - Men Elite,293 km,GT.A.Stage,Na,Na,36,2507,Rouen,Saint-Malo,n/a,1445,? - let us know!,Na
+299,05 July 1949,-,35.25 km/h,CD-C,ME - Men Elite,305 km,GT.A.Stage,Na,Na,33,2640,Saint-Malo,Les Sables,n/a,1445,? - let us know!,Na
+300,07 July 1949,-,39.95 km/h,CD-C,ME - Men Elite,92 km,GT.A.Stage,Na,Na,4,330,Les Sables,La Rochelle,n/a,1445,,Na
+301,08 July 1949,-,35.14 km/h,CD-C,ME - Men Elite,262 km,GT.A.Stage,Na,Na,23,1961,La Rochelle,Bordeaux,n/a,1445,? - let us know!,Na
+302,09 July 1949,-,35 km/h,CD-C,ME - Men Elite,228 km,GT.A.Stage,Na,Na,70,1662,Bordeaux,San Sebastian,n/a,1445,? - let us know!,Na
+303,10 July 1949,-,32.63 km/h,CD-C,ME - Men Elite,192 km,GT.A.Stage,Na,Na,108,3000,San Sebastian,Pau,n/a,1445,? - let us know!,Na
+304,12 July 1949,-,27.16 km/h,CD-C,ME - Men Elite,193 km,GT.A.Stage,Na,Na,453,5500,Pau,Luchon,n/a,1445,? - let us know!,Na
+305,13 July 1949,-,37.89 km/h,CD-C,ME - Men Elite,134 km,GT.A.Stage,Na,Na,16,764,Luchon,Toulouse,n/a,1445,? - let us know!,Na
+306,14 July 1949,-,34.06 km/h,CD-C,ME - Men Elite,289 km,GT.A.Stage,Na,Na,37,2772,Toulouse,Nimes,n/a,1445,? - let us know!,Na
+307,15 July 1949,-,31.66 km/h,CD-C,ME - Men Elite,199 km,GT.A.Stage,Na,Na,90,2102,Nimes,Marseille,n/a,1445,? - let us know!,Na
+308,16 July 1949,-,35.59 km/h,CD-C,ME - Men Elite,215 km,GT.A.Stage,Na,Na,121,2500,Marseille,Cannes,n/a,1445,? - let us know!,Na
+309,18 July 1949,-,26.38 km/h,CD-C,ME - Men Elite,275 km,GT.A.Stage,Na,Na,0,6414,Cannes,Briancon,n/a,1445,? - let us know!,Na
+310,19 July 1949,-,28.1 km/h,CD-C,ME - Men Elite,257 km,GT.A.Stage,Na,Na,407,6000,Briancon,Aoste,n/a,1445,? - let us know!,Na
+311,21 July 1949,-,29.12 km/h,CD-C,ME - Men Elite,265 km,GT.A.Stage,Na,Na,260,4500,Aoste,Lausanne,n/a,1445,? - let us know!,Na
+312,22 July 1949,-,31.45 km/h,CD-C,ME - Men Elite,283 km,GT.A.Stage,Na,Na,97,3000,Lausanne,Colmar,n/a,1445,? - let us know!,Na
+313,23 July 1949,-,37.563 km/h,CD-C,ME - Men Elite,137 km,GT.A.Stage,Na,Na,31,1372,Colmar,Nancy,n/a,1445,,Na
+314,24 July 1949,-,31.4 km/h,CD-C,ME - Men Elite,340 km,GT.A.Stage,Na,Na,44,2489,Nancy,Paris,n/a,1445,? - let us know!,Na
+315,30 June 1948,-,34.65 km/h,CD-C,ME - Men Elite,237 km,GT.A.Stage,Na,Na,39,2157,Paris,Trouville,n/a,1154,? - let us know!,Na
+316,01 July 1948,-,34.54 km/h,CD-C,ME - Men Elite,259 km,GT.A.Stage,Na,Na,39,2326,Trouville,Dinard,n/a,1154,? - let us know!,Na
+317,02 July 1948,-,36.87 km/h,CD-C,ME - Men Elite,251 km,GT.A.Stage,Na,Na,40,2322,Dinard,Nantes,n/a,1154,? - let us know!,Na
+318,03 July 1948,-,41.21 km/h,CD-C,ME - Men Elite,166 km,GT.A.Stage,Na,Na,5,722,Nantes,La Rochelle,n/a,1154,? - let us know!,Na
+319,04 July 1948,-,37.12 km/h,CD-C,ME - Men Elite,262 km,GT.A.Stage,Na,Na,26,2024,La Rochelle,Bordeaux,n/a,1154,? - let us know!,Na
+320,05 July 1948,-,37.81 km/h,CD-C,ME - Men Elite,244 km,GT.A.Stage,Na,Na,38,1665,Bordeaux,Biarritz,n/a,1154,? - let us know!,Na
+321,06 July 1948,-,32.79 km/h,CD-C,ME - Men Elite,219 km,GT.A.Stage,Na,Na,288,3500,Biarritz,Lourdes,n/a,1154,? - let us know!,Na
+322,08 July 1948,-,30.86 km/h,CD-C,ME - Men Elite,261 km,GT.A.Stage,Na,Na,212,4500,Lourdes,Toulouse,n/a,1154,? - let us know!,Na
+323,10 July 1948,-,40.66 km/h,CD-C,ME - Men Elite,246 km,GT.A.Stage,Na,Na,17,1317,Toulouse,Montpellier,n/a,1154,? - let us know!,Na
+324,11 July 1948,-,35.8 km/h,CD-C,ME - Men Elite,248 km,GT.A.Stage,Na,Na,89,2209,Montpellier,Marseille,n/a,1154,? - let us know!,Na
+325,12 July 1948,-,33.12 km/h,CD-C,ME - Men Elite,245 km,GT.A.Stage,Na,Na,198,2500,Marseille,San Remo,n/a,1154,? - let us know!,Na
+326,13 July 1948,-,31.59 km/h,CD-C,ME - Men Elite,170 km,GT.A.Stage,Na,Na,302,3500,San Remo,Cannes,n/a,1154,? - let us know!,Na
+327,15 July 1948,-,26.97 km/h,CD-C,ME - Men Elite,274 km,GT.A.Stage,Na,Na,568,6414,Cannes,Briancon,n/a,1154,? - let us know!,Na
+328,16 July 1948,-,27.67 km/h,CD-C,ME - Men Elite,263 km,GT.A.Stage,Na,Na,438,6000,Briancon,Aix-les-Bains,n/a,1154,? - let us know!,Na
+329,18 July 1948,-,30.12 km/h,CD-C,ME - Men Elite,256 km,GT.A.Stage,Na,Na,242,4500,Aix-les-Bains,Lausanne,n/a,1154,? - let us know!,Na
+330,19 July 1948,-,36.08 km/h,CD-C,ME - Men Elite,243 km,GT.A.Stage,Na,Na,101,3000,Lausanne,Mulhouse,n/a,1154,? - let us know!,Na
+331,21 July 1948,-,32.99 km/h,CD-C,ME - Men Elite,195 km,GT.A.Stage,Na,Na,49,2066,Strasbourg,Metz,n/a,1154,? - let us know!,Na
+332,23 July 1948,-,34.04 km/h,CD-C,ME - Men Elite,249 km,GT.A.Stage,Na,Na,123,3049,Metz,Liege,n/a,1154,? - let us know!,Na
+333,24 July 1948,-,34.93 km/h,CD-C,ME - Men Elite,228 km,GT.A.Stage,Na,Na,22,1812,Liege,Roubaix,n/a,1154,? - let us know!,Na
+334,25 July 1948,-,31.67 km/h,CD-C,ME - Men Elite,286 km,GT.A.Stage,Na,Na,43,2378,Roubaix,Paris,n/a,1154,? - let us know!,Na
+335,25 June 1947,-,34.376 km/h,Na,ME - Men Elite,236 km,GT.A.Stage,Na,Na,16,1733,Paris,Lille,n/a,575,Sprint à deux,Na
+336,26 June 1947,-,35.702 km/h,Na,ME - Men Elite,182 km,GT.A.Stage,Na,Na,18,1270,Lille,Brussels,n/a,575,125 km solo,Na
+337,27 June 1947,-,28.579 km/h,Na,ME - Men Elite,314 km,GT.A.Stage,Na,Na,95,3500,Brussel,Luxembourg,n/a,575,120 km solo,Na
+338,28 June 1947,-,27.059 km/h,Na,ME - Men Elite,223 km,GT.A.Stage,Na,Na,39,2087,Luxembourg,Strasbourg,n/a,575,? km solo,Na
+339,29 June 1947,-,30.321 km/h,Na,ME - Men Elite,248 km,GT.A.Stage,Na,Na,65,1996,Strasbourg,Besancon,n/a,575,Sprint of small group,Na
+340,01 July 1947,-,35.947 km/h,Na,ME - Men Elite,249 km,GT.A.Stage,Na,Na,34,2298,Besancon,Lyon,n/a,575,Sprint of small group,Na
+341,02 July 1947,-,31.29 km/h,Na,ME - Men Elite,172 km,GT.A.Stage,Na,Na,331,3500,Lyon,Grenoble,n/a,575,30 km solo,Na
+342,03 July 1947,-,27.132 km/h,Na,ME - Men Elite,185 km,GT.A.Stage,Na,Na,446,5000,Grenoble,Briançon,n/a,575,? km solo,Na
+343,05 July 1947,-,29.374 km/h,Na,ME - Men Elite,217 km,GT.A.Stage,Na,Na,338,4500,Briancon,Digne,n/a,575,Other,Na
+344,06 July 1947,-,31.354 km/h,Na,ME - Men Elite,255 km,GT.A.Stage,Na,Na,485,4500,Digne,Nice,n/a,575,? - let us know!,Na
+345,08 July 1947,-,35.294 km/h,Na,ME - Men Elite,230 km,GT.A.Stage,Na,Na,134,2500,Nice,Marseille,n/a,575,? - let us know!,Na
+346,09 July 1947,-,33.259 km/h,Na,ME - Men Elite,165 km,GT.A.Stage,Na,Na,9,867,Marseille,Montpellier,n/a,575,? - let us know!,Na
+347,10 July 1947,-,32.393 km/h,Na,ME - Men Elite,172 km,GT.A.Stage,Na,Na,60,1411,Montpellier,Carcassonne,n/a,575,? - let us know!,Na
+348,11 July 1947,-,30.968 km/h,Na,ME - Men Elite,253 km,GT.A.Stage,Na,Na,306,4000,Carcassonne,Luchon,n/a,575,253 km solo,Na
+349,13 July 1947,-,28.8 km/h,Na,ME - Men Elite,195 km,GT.A.Stage,Na,Na,389,5000,Luchon,Pau,n/a,575,? - let us know!,Na
+350,14 July 1947,-,34.246 km/h,Na,ME - Men Elite,195 km,GT.A.Stage,Na,Na,12,1031,Pau,Bordeaux,n/a,575,? - let us know!,Na
+351,15 July 1947,-,30.274 km/h,Na,ME - Men Elite,272 km,GT.A.Stage,Na,Na,7,1427,Bordeaux,Les Sables,n/a,575,? - let us know!,Na
+352,16 July 1947,-,32.921 km/h,Na,ME - Men Elite,236 km,GT.A.Stage,Na,Na,24,1711,Les Sables,Nantes,n/a,575,? - let us know!,Na
+353,19 July 1947,-,36.755 km/h,Na,ME - Men Elite,235 km,GT.A.Stage,Na,Na,53,2427,Saint-Brieuc,Caen,n/a,575,? - let us know!,Na
+354,20 July 1947,-,35.349 km/h,Na,ME - Men Elite,257 km,GT.A.Stage,Na,Na,51,2329,Caen,Paris,n/a,575,? - let us know!,Na
+355,10 July 1939,-,33.82 km/h,Na,ME - Men Elite,215 km,GT.A.Stage,Na,Na,Na,Na,Paris,Caen,n/a,831,? - let us know!,Na
+356,11 July 1939,-,38.32 km/h,Na,ME - Men Elite,64 km,GT.A.Stage,Na,Na,Na,Na,Caen,Vire,n/a,831,,Na
+357,11 July 1939,-,37.43 km/h,Na,ME - Men Elite,119 km,GT.A.Stage,Na,Na,Na,Na,Vire,Rennes,n/a,831,? - let us know!,Na
+358,12 July 1939,-,35.49 km/h,Na,ME - Men Elite,244 km,GT.A.Stage,Na,Na,Na,Na,Rennes,Brest,n/a,831,? - let us know!,Na
+359,13 July 1939,-,37.43 km/h,Na,ME - Men Elite,174 km,GT.A.Stage,Na,Na,Na,Na,Brest,Lorient,n/a,831,? - let us know!,Na
+360,14 July 1939,-,36.51 km/h,Na,ME - Men Elite,207 km,GT.A.Stage,Na,Na,Na,Na,Lorient,Nantes,n/a,831,? - let us know!,Na
+361,15 July 1939,-,32.84 km/h,Na,ME - Men Elite,144 km,GT.A.Stage,Na,Na,Na,Na,Nantes,La Rochelle,n/a,831,? - let us know!,Na
+362,15 July 1939,-,35.59 km/h,Na,ME - Men Elite,107 km,GT.A.Stage,Na,Na,Na,Na,La Rochelle,Royan,n/a,831,? - let us know!,Na
+363,17 July 1939,-,34.21 km/h,Na,ME - Men Elite,198 km,GT.A.Stage,Na,Na,Na,Na,Royan,Bordeaux,n/a,831,? - let us know!,Na
+364,18 July 1939,-,31.84 km/h,Na,ME - Men Elite,210 km,GT.A.Stage,Na,Na,Na,Na,Bordeaux,Salies-de-Béarn,n/a,831,? - let us know!,Na
+365,18 July 1939,-,36.94 km/h,Na,ME - Men Elite,69 km,GT.A.Stage,Na,Na,Na,Na,Salies-de-Béarn,Pau,n/a,831,,Na
+366,19 July 1939,-,29.93 km/h,Na,ME - Men Elite,311 km,GT.A.Stage,Na,Na,Na,Na,Pau,Toulouse,n/a,831,? - let us know!,Na
+367,21 July 1939,-,36.11 km/h,Na,ME - Men Elite,149 km,GT.A.Stage,Na,Na,Na,Na,Toulouse,Narbonne,n/a,831,? - let us know!,Na
+368,21 July 1939,-,43.2 km/h,Na,ME - Men Elite,27 km,GT.A.Stage,Na,Na,Na,Na,Narbonne,Béziers,n/a,831,,Na
+369,21 July 1939,-,38.13 km/h,Na,ME - Men Elite,70 km,GT.A.Stage,Na,Na,Na,Na,Béziers,Montpellier,n/a,831,? - let us know!,Na
+370,22 July 1939,-,32.54 km/h,Na,ME - Men Elite,212 km,GT.A.Stage,Na,Na,Na,Na,Montpellier,Marseille,n/a,831,? - let us know!,Na
+371,23 July 1939,-,30.27 km/h,Na,ME - Men Elite,157 km,GT.A.Stage,Na,Na,Na,Na,Marseille,Saint-Raphaël,n/a,831,? - let us know!,Na
+372,23 July 1939,-,34.15 km/h,Na,ME - Men Elite,122 km,GT.A.Stage,Na,Na,Na,Na,Saint-Raphaël,Monaco,n/a,831,? - let us know!,Na
+373,24 July 1939,-,30.62 km/h,Na,ME - Men Elite,101 km,GT.A.Stage,Na,Na,Na,Na,Monaco,Monaco,n/a,831,? - let us know!,Na
+374,25 July 1939,-,27.93 km/h,Na,ME - Men Elite,175 km,GT.A.Stage,Na,Na,Na,Na,Monaco,Digne,n/a,831,? - let us know!,Na
+375,26 July 1939,-,26.05 km/h,Na,ME - Men Elite,219 km,GT.A.Stage,Na,Na,Na,Na,Digne,Briançon,n/a,831,? - let us know!,Na
+376,27 July 1939,-,24.82 km/h,Na,ME - Men Elite,126 km,GT.A.Stage,Na,Na,Na,Na,Briançon,Briançon,n/a,831,? - let us know!,Na
+377,27 July 1939,-,27.82 km/h,Na,ME - Men Elite,104 km,GT.A.Stage,Na,Na,Na,Na,Bourg-Saint-Maurice,Annecy,n/a,831,? - let us know!,Na
+378,29 July 1939,-,30.96 km/h,Na,ME - Men Elite,226 km,GT.A.Stage,Na,Na,Na,Na,Annecy,Dôle,n/a,831,? - let us know!,Na
+379,29 July 1939,-,41.91 km/h,Na,ME - Men Elite,59 km,GT.A.Stage,Na,Na,Na,Na,Dôle,Dijon,n/a,831,,Na
+380,30 July 1939,-,29.98 km/h,Na,ME - Men Elite,151 km,GT.A.Stage,Na,Na,Na,Na,Dijon,Troyes,n/a,831,? - let us know!,Na
+381,30 July 1939,-,30.86 km/h,Na,ME - Men Elite,201 km,GT.A.Stage,Na,Na,Na,Na,Troyes,Paris,n/a,831,? - let us know!,Na
+382,05 July 1938,-,32.38 km/h,Na,ME - Men Elite,215 km,GT.A.Stage,Na,Na,Na,Na,Paris,Lille,n/a,967,? - let us know!,Na
+383,06 July 1938,-,33.77 km/h,Na,ME - Men Elite,237 km,GT.A.Stage,Na,Na,Na,Na,Lille,Saint-Brieuc,n/a,967,? - let us know!,Na
+384,07 July 1938,-,31.11 km/h,Na,ME - Men Elite,238 km,GT.A.Stage,Na,Na,Na,Na,Saint-Brieuc,Nantes,n/a,967,? - let us know!,Na
+385,08 July 1938,-,30.04 km/h,Na,ME - Men Elite,62 km,GT.A.Stage,Na,Na,Na,Na,Nantes,La Roche sur Yon,n/a,967,? - let us know!,Na
+386,08 July 1938,-,32.27 km/h,Na,ME - Men Elite,83 km,GT.A.Stage,Na,Na,Na,Na,La Roche sur Yon,La Rochelle,n/a,967,? - let us know!,Na
+387,08 July 1938,-,32.72 km/h,Na,ME - Men Elite,83 km,GT.A.Stage,Na,Na,Na,Na,La Rochelle,Royan,n/a,967,? - let us know!,Na
+388,10 July 1938,-,37.99 km/h,Na,ME - Men Elite,198 km,GT.A.Stage,Na,Na,Na,Na,Royan,Bordeaux,n/a,967,? - let us know!,Na
+389,11 July 1938,-,41.66 km/h,Na,ME - Men Elite,53 km,GT.A.Stage,Na,Na,Na,Na,Bordeaux,Arcachon,n/a,967,? - let us know!,Na
+390,11 July 1938,-,33.47 km/h,Na,ME - Men Elite,171 km,GT.A.Stage,Na,Na,Na,Na,Arcachon,Bayonne,n/a,967,? - let us know!,Na
+391,12 July 1938,-,40.26 km/h,Na,ME - Men Elite,115 km,GT.A.Stage,Na,Na,Na,Na,Bayonne,Pau,n/a,967,? - let us know!,Na
+392,14 July 1938,-,26.6 km/h,Na,ME - Men Elite,193 km,GT.A.Stage,Na,Na,Na,Na,Pau,Luchon,n/a,967,? - let us know!,Na
+393,16 July 1938,-,36.43 km/h,Na,ME - Men Elite,260 km,GT.A.Stage,Na,Na,Na,Na,Luchon,Perpignan,n/a,967,? - let us know!,Na
+394,17 July 1938,-,32.54 km/h,Na,ME - Men Elite,63 km,GT.A.Stage,Na,Na,Na,Na,Perpignan,Narbonne,n/a,967,? - let us know!,Na
+395,17 July 1938,-,41 km/h,Na,ME - Men Elite,27 km,GT.A.Stage,Na,Na,Na,Na,Narbonne,Béziers,n/a,967,,Na
+396,17 July 1938,-,34.66 km/h,Na,ME - Men Elite,73 km,GT.A.Stage,Na,Na,Na,Na,Béziers,Montpellier,n/a,967,? - let us know!,Na
+397,18 July 1938,-,32.46 km/h,Na,ME - Men Elite,223 km,GT.A.Stage,Na,Na,Na,Na,Montpellier,Marseille,n/a,967,? - let us know!,Na
+398,19 July 1938,-,30.19 km/h,Na,ME - Men Elite,199 km,GT.A.Stage,Na,Na,Na,Na,Marseille,Cannes,n/a,967,? - let us know!,Na
+399,21 July 1938,-,30.44 km/h,Na,ME - Men Elite,284 km,GT.A.Stage,Na,Na,Na,Na,Cannes,Digne,n/a,967,? - let us know!,Na
+400,22 July 1938,-,24.83 km/h,Na,ME - Men Elite,219 km,GT.A.Stage,Na,Na,Na,Na,Digne,Briançon,n/a,967,? - let us know!,Na
+401,23 July 1938,-,28.6 km/h,Na,ME - Men Elite,311 km,GT.A.Stage,Na,Na,Na,Na,Briançon,Aix-les-Bains,n/a,967,? - let us know!,Na
+402,25 July 1938,-,29.38 km/h,Na,ME - Men Elite,284 km,GT.A.Stage,Na,Na,Na,Na,Aix-les-Bains,Besançon,n/a,967,? - let us know!,Na
+403,26 July 1938,-,36.13 km/h,Na,ME - Men Elite,89 km,GT.A.Stage,Na,Na,Na,Na,Besançon,Belfort,n/a,967,? - let us know!,Na
+404,26 July 1938,-,31.74 km/h,Na,ME - Men Elite,143 km,GT.A.Stage,Na,Na,Na,Na,Belfort,Strasbourg,n/a,967,? - let us know!,Na
+405,27 July 1938,-,32.49 km/h,Na,ME - Men Elite,186 km,GT.A.Stage,Na,Na,Na,Na,Strasbourg,Metz,n/a,967,? - let us know!,Na
+406,28 July 1938,-,29.75 km/h,Na,ME - Men Elite,196 km,GT.A.Stage,Na,Na,Na,Na,Metz,Reims,n/a,967,? - let us know!,Na
+407,30 July 1938,-,45.51 km/h,Na,ME - Men Elite,48 km,GT.A.Stage,Na,Na,Na,Na,Reims,Laon,n/a,967,? - let us know!,Na
+408,30 July 1938,-,38.97 km/h,Na,ME - Men Elite,42 km,GT.A.Stage,Na,Na,Na,Na,Laon,Saint-Quentin,n/a,967,,Na
+409,30 July 1938,-,34.29 km/h,Na,ME - Men Elite,107 km,GT.A.Stage,Na,Na,Na,Na,Saint-Quentin,Lille,n/a,967,? - let us know!,Na
+410,31 July 1938,-,31.3 km/h,Na,ME - Men Elite,279 km,GT.A.Stage,Na,Na,Na,Na,Lille,Paris,n/a,967,? - let us know!,Na
+411,30 June 1937,-,37.77 km/h,Na,ME - Men Elite,263 km,GT.A.Stage,Na,Na,Na,Na,Paris,Lille,n/a,1268,? - let us know!,Na
+412,01 July 1937,-,36.17 km/h,Na,ME - Men Elite,192 km,GT.A.Stage,Na,Na,Na,Na,Lille,Charleville,n/a,1268,? - let us know!,Na
+413,02 July 1937,-,38.18 km/h,Na,ME - Men Elite,161 km,GT.A.Stage,Na,Na,Na,Na,Charleville,Metz,n/a,1268,? - let us know!,Na
+414,03 July 1937,-,33.94 km/h,Na,ME - Men Elite,220 km,GT.A.Stage,Na,Na,Na,Na,Metz,Belfort,n/a,1268,? - let us know!,Na
+415,04 July 1937,-,31.23 km/h,Na,ME - Men Elite,175 km,GT.A.Stage,Na,Na,Na,Na,Belfort,Lons le Saunier,n/a,1268,? - let us know!,Na
+416,04 July 1937,-,36.72 km/h,Na,ME - Men Elite,34 km,GT.A.Stage,Na,Na,Na,Na,Lons le Saunier,Champagnole,n/a,1268,? - let us know!,Na
+417,04 July 1937,-,37.58 km/h,Na,ME - Men Elite,93 km,GT.A.Stage,Na,Na,Na,Na,Champagnole,Geneva,n/a,1268,? - let us know!,Na
+418,06 July 1937,-,33.09 km/h,Na,ME - Men Elite,180 km,GT.A.Stage,Na,Na,Na,Na,Geneva,Aix-les-Bains,n/a,1268,? - let us know!,Na
+419,07 July 1937,-,28.33 km/h,Na,ME - Men Elite,228 km,GT.A.Stage,Na,Na,Na,Na,Aix-les-Bains,Grenoble,n/a,1268,? - let us know!,Na
+420,08 July 1937,-,32.72 km/h,Na,ME - Men Elite,194 km,GT.A.Stage,Na,Na,Na,Na,Grenoble,Briançon,n/a,1268,? - let us know!,Na
+421,09 July 1937,-,29.48 km/h,Na,ME - Men Elite,220 km,GT.A.Stage,Na,Na,Na,Na,Briançon,Digne,n/a,1268,? - let us know!,Na
+422,11 July 1937,-,29.57 km/h,Na,ME - Men Elite,251 km,GT.A.Stage,Na,Na,Na,Na,Digne,Nice,n/a,1268,? - let us know!,Na
+423,13 July 1937,-,31.18 km/h,Na,ME - Men Elite,169 km,GT.A.Stage,Na,Na,Na,Na,Nice,Toulon,n/a,1268,? - let us know!,Na
+424,13 July 1937,-,38.56 km/h,Na,ME - Men Elite,65 km,GT.A.Stage,Na,Na,Na,Na,Toulon,Marseille,n/a,1268,,Na
+425,14 July 1937,-,30.6 km/h,Na,ME - Men Elite,112 km,GT.A.Stage,Na,Na,Na,Na,Marseille,Nîmes,n/a,1268,? - let us know!,Na
+426,14 July 1937,-,39.84 km/h,Na,ME - Men Elite,51 km,GT.A.Stage,Na,Na,Na,Na,Nîmes,Montpellier,n/a,1268,? - let us know!,Na
+427,15 July 1937,-,40.48 km/h,Na,ME - Men Elite,103 km,GT.A.Stage,Na,Na,Na,Na,Montpellier,Narbonne,n/a,1268,? - let us know!,Na
+428,15 July 1937,-,41.48 km/h,Na,ME - Men Elite,63 km,GT.A.Stage,Na,Na,Na,Na,Narbonne,Perpignan,n/a,1268,? - let us know!,Na
+429,17 July 1937,-,25.25 km/h,Na,ME - Men Elite,99 km,GT.A.Stage,Na,Na,Na,Na,Perpignan,Bourg-Madame,n/a,1268,? - let us know!,Na
+430,17 July 1937,-,29.48 km/h,Na,ME - Men Elite,59 km,GT.A.Stage,Na,Na,Na,Na,Bourg-Madame,Ax-les-Thermes,n/a,1268,? - let us know!,Na
+431,17 July 1937,-,26.18 km/h,Na,ME - Men Elite,167 km,GT.A.Stage,Na,Na,Na,Na,Ax-les-Thermes,Luchon,n/a,1268,? - let us know!,Na
+432,19 July 1937,-,27.65 km/h,Na,ME - Men Elite,194 km,GT.A.Stage,Na,Na,Na,Na,Luchon,Pau,n/a,1268,? - let us know!,Na
+433,21 July 1937,-,29.57 km/h,Na,ME - Men Elite,235 km,GT.A.Stage,Na,Na,Na,Na,Pau,Bordeaux,n/a,1268,? - let us know!,Na
+434,22 July 1937,-,39.85 km/h,Na,ME - Men Elite,123 km,GT.A.Stage,Na,Na,Na,Na,Bordeaux,Royan,n/a,1268,? - let us know!,Na
+435,22 July 1937,-,33.41 km/h,Na,ME - Men Elite,37 km,GT.A.Stage,Na,Na,Na,Na,Royan,Saintes,n/a,1268,,Na
+436,22 July 1937,-,27.57 km/h,Na,ME - Men Elite,67 km,GT.A.Stage,Na,Na,Na,Na,Saintes,La Rochelle,n/a,1268,? - let us know!,Na
+437,23 July 1937,-,41.29 km/h,Na,ME - Men Elite,82 km,GT.A.Stage,Na,Na,Na,Na,La Rochelle,La Roche sur Yon,n/a,1268,,Na
+438,23 July 1937,-,28.18 km/h,Na,ME - Men Elite,172 km,GT.A.Stage,Na,Na,Na,Na,La Roche sur Yon,Rennes,n/a,1268,? - let us know!,Na
+439,24 July 1937,-,33.87 km/h,Na,ME - Men Elite,114 km,GT.A.Stage,Na,Na,Na,Na,Rennes,Vire,n/a,1268,? - let us know!,Na
+440,24 July 1937,-,39.95 km/h,Na,ME - Men Elite,59 km,GT.A.Stage,Na,Na,Na,Na,Vire,Caen,n/a,1268,,Na
+441,25 July 1937,-,31.64 km/h,Na,ME - Men Elite,234 km,GT.A.Stage,Na,Na,Na,Na,Caen,Paris,n/a,1268,? - let us know!,Na
+442,07 July 1936,-,36.31 km/h,Na,ME - Men Elite,258 km,GT.A.Stage,Na,Na,Na,Na,Paris,Lille,n/a,765,? - let us know!,Na
+443,08 July 1936,-,34.66 km/h,Na,ME - Men Elite,192 km,GT.A.Stage,Na,Na,Na,Na,Lille,Charleville,n/a,765,? - let us know!,Na
+444,09 July 1936,-,36.82 km/h,Na,ME - Men Elite,161 km,GT.A.Stage,Na,Na,Na,Na,Charleville,Metz,n/a,765,? - let us know!,Na
+445,10 July 1936,-,32.16 km/h,Na,ME - Men Elite,220 km,GT.A.Stage,Na,Na,Na,Na,Metz,Belfort,n/a,765,? - let us know!,Na
+446,11 July 1936,-,31.16 km/h,Na,ME - Men Elite,298 km,GT.A.Stage,Na,Na,Na,Na,Belfort,Évian-les-Bains,n/a,765,? - let us know!,Na
+447,13 July 1936,-,33.05 km/h,Na,ME - Men Elite,212 km,GT.A.Stage,Na,Na,Na,Na,Évian-les-Bains,Aix-les-Bains,n/a,765,? - let us know!,Na
+448,14 July 1936,-,26.95 km/h,Na,ME - Men Elite,230 km,GT.A.Stage,Na,Na,Na,Na,Aix-les-Bains,Grenoble,n/a,765,? - let us know!,Na
+449,15 July 1936,-,31 km/h,Na,ME - Men Elite,194 km,GT.A.Stage,Na,Na,Na,Na,Grenoble,Briançon,n/a,765,? - let us know!,Na
+450,16 July 1936,-,27.15 km/h,Na,ME - Men Elite,220 km,GT.A.Stage,Na,Na,Na,Na,Briançon,Digne,n/a,765,? - let us know!,Na
+451,18 July 1936,-,32.93 km/h,Na,ME - Men Elite,156 km,GT.A.Stage,Na,Na,Na,Na,Digne,Nice,n/a,765,? - let us know!,Na
+452,19 July 1936,-,31.07 km/h,Na,ME - Men Elite,126 km,GT.A.Stage,Na,Na,Na,Na,Nice,Cannes,n/a,765,? - let us know!,Na
+453,21 July 1936,-,29.53 km/h,Na,ME - Men Elite,195 km,GT.A.Stage,Na,Na,Na,Na,Cannes,Marseille,n/a,765,? - let us know!,Na
+454,22 July 1936,-,26.64 km/h,Na,ME - Men Elite,112 km,GT.A.Stage,Na,Na,Na,Na,Marseille,Nîmes,n/a,765,? - let us know!,Na
+455,22 July 1936,-,44.88 km/h,Na,ME - Men Elite,52 km,GT.A.Stage,Na,Na,Na,Na,Nîmes,Montpellier,n/a,765,,Na
+456,23 July 1936,-,30.05 km/h,Na,ME - Men Elite,103 km,GT.A.Stage,Na,Na,Na,Na,Montpellier,Narbonne,n/a,765,? - let us know!,Na
+457,23 July 1936,-,39.66 km/h,Na,ME - Men Elite,63 km,GT.A.Stage,Na,Na,Na,Na,Narbonne,Perpignan,n/a,765,,Na
+458,25 July 1936,-,27.18 km/h,Na,ME - Men Elite,325 km,GT.A.Stage,Na,Na,Na,Na,Perpignan,Luchon,n/a,765,? - let us know!,Na
+459,27 July 1936,-,26.89 km/h,Na,ME - Men Elite,194 km,GT.A.Stage,Na,Na,Na,Na,Luchon,Pau,n/a,765,? - let us know!,Na
+460,29 July 1936,-,31.2 km/h,Na,ME - Men Elite,229 km,GT.A.Stage,Na,Na,Na,Na,Pau,Bordeaux,n/a,765,? - let us know!,Na
+461,30 July 1936,-,33.41 km/h,Na,ME - Men Elite,117 km,GT.A.Stage,Na,Na,Na,Na,Bordeaux,Saintes,n/a,765,? - let us know!,Na
+462,30 July 1936,-,42.1 km/h,Na,ME - Men Elite,75 km,GT.A.Stage,Na,Na,Na,Na,Saintes,La Rochelle,n/a,765,,Na
+463,31 July 1936,-,28.68 km/h,Na,ME - Men Elite,81 km,GT.A.Stage,Na,Na,Na,Na,La Rochelle,La Roche sur Yon,n/a,765,? - let us know!,Na
+464,31 July 1936,-,41.89 km/h,Na,ME - Men Elite,65 km,GT.A.Stage,Na,Na,Na,Na,La Roche sur Yon,Cholet,n/a,765,,Na
+465,31 July 1936,-,40.81 km/h,Na,ME - Men Elite,67 km,GT.A.Stage,Na,Na,Na,Na,Cholet,Angers,n/a,765,? - let us know!,Na
+466,01 August 1936,-,26.71 km/h,Na,ME - Men Elite,204 km,GT.A.Stage,Na,Na,Na,Na,Angers,Vire,n/a,765,? - let us know!,Na
+467,01 August 1936,-,42.16 km/h,Na,ME - Men Elite,55 km,GT.A.Stage,Na,Na,Na,Na,Vire,Caen,n/a,765,,Na
+468,02 August 1936,-,32.82 km/h,Na,ME - Men Elite,234 km,GT.A.Stage,Na,Na,Na,Na,Caen,Paris,n/a,765,? - let us know!,Na
+469,04 July 1935,-,35.41 km/h,Na,ME - Men Elite,262 km,GT.A.Stage,Na,Na,Na,Na,Paris,Lille,n/a,1102,? - let us know!,Na
+470,05 July 1935,-,34.67 km/h,Na,ME - Men Elite,192 km,GT.A.Stage,Na,Na,Na,Na,Lille,Charleville,n/a,1102,? - let us know!,Na
+471,06 July 1935,-,35.9 km/h,Na,ME - Men Elite,161 km,GT.A.Stage,Na,Na,Na,Na,Charleville,Metz,n/a,1102,? - let us know!,Na
+472,07 July 1935,-,31.41 km/h,Na,ME - Men Elite,220 km,GT.A.Stage,Na,Na,Na,Na,Metz,Belfort,n/a,1102,? - let us know!,Na
+473,08 July 1935,-,31.35 km/h,Na,ME - Men Elite,262 km,GT.A.Stage,Na,Na,Na,Na,Belfort,Geneva,n/a,1102,? - let us know!,Na
+474,08 July 1935,-,35.73 km/h,Na,ME - Men Elite,58 km,GT.A.Stage,Na,Na,Na,Na,Geneva,Evian,n/a,1102,,Na
+475,10 July 1935,-,32.37 km/h,Na,ME - Men Elite,207 km,GT.A.Stage,Na,Na,Na,Na,Evian,Aix-les-Bains,n/a,1102,? - let us know!,Na
+476,11 July 1935,-,30.32 km/h,Na,ME - Men Elite,229 km,GT.A.Stage,Na,Na,Na,Na,Aix-les-Bains,Grenoble,n/a,1102,? - let us know!,Na
+477,12 July 1935,-,29.98 km/h,Na,ME - Men Elite,102 km,GT.A.Stage,Na,Na,Na,Na,Grenoble,Gap,n/a,1102,? - let us know!,Na
+478,13 July 1935,-,28.29 km/h,Na,ME - Men Elite,227 km,GT.A.Stage,Na,Na,Na,Na,Gap,Digne,n/a,1102,? - let us know!,Na
+479,14 July 1935,-,35.65 km/h,Na,ME - Men Elite,156 km,GT.A.Stage,Na,Na,Na,Na,Digne,Nice,n/a,1102,? - let us know!,Na
+480,16 July 1935,-,28.54 km/h,Na,ME - Men Elite,126 km,GT.A.Stage,Na,Na,Na,Na,Nice,Cannes,n/a,1102,? - let us know!,Na
+481,17 July 1935,-,32.23 km/h,Na,ME - Men Elite,195 km,GT.A.Stage,Na,Na,Na,Na,Cannes,Marseille,n/a,1102,? - let us know!,Na
+482,18 July 1935,-,26.96 km/h,Na,ME - Men Elite,112 km,GT.A.Stage,Na,Na,Na,Na,Marseille,Nîmes,n/a,1102,? - let us know!,Na
+483,18 July 1935,-,44.17 km/h,Na,ME - Men Elite,56 km,GT.A.Stage,Na,Na,Na,Na,Nîmes,Montpellier,n/a,1102,,Na
+484,19 July 1935,-,26.28 km/h,Na,ME - Men Elite,103 km,GT.A.Stage,Na,Na,Na,Na,Montpellier,Narbonne,n/a,1102,? - let us know!,Na
+485,19 July 1935,-,38.13 km/h,Na,ME - Men Elite,63 km,GT.A.Stage,Na,Na,Na,Na,Narbonne,Perpignan,n/a,1102,,Na
+486,20 July 1935,-,27.88 km/h,Na,ME - Men Elite,325 km,GT.A.Stage,Na,Na,Na,Na,Perpignan,Luchon,n/a,1102,? - let us know!,Na
+487,22 July 1935,-,26.92 km/h,Na,ME - Men Elite,194 km,GT.A.Stage,Na,Na,Na,Na,Luchon,Pau,n/a,1102,? - let us know!,Na
+488,24 July 1935,-,29.57 km/h,Na,ME - Men Elite,224 km,GT.A.Stage,Na,Na,Na,Na,Pau,Bordeaux,n/a,1102,? - let us know!,Na
+489,25 July 1935,-,36.77 km/h,Na,ME - Men Elite,158 km,GT.A.Stage,Na,Na,Na,Na,Bordeaux,Rochefort,n/a,1102,? - let us know!,Na
+490,25 July 1935,-,37.85 km/h,Na,ME - Men Elite,33 km,GT.A.Stage,Na,Na,Na,Na,Rochefort,La Rochelle,n/a,1102,,Na
+491,26 July 1935,-,27.8 km/h,Na,ME - Men Elite,81 km,GT.A.Stage,Na,Na,Na,Na,La Rochelle,La Roche sur Yon,n/a,1102,? - let us know!,Na
+492,26 July 1935,-,34.38 km/h,Na,ME - Men Elite,95 km,GT.A.Stage,Na,Na,Na,Na,La Roche sur Yon,Nantes,n/a,1102,,Na
+493,27 July 1935,-,25.72 km/h,Na,ME - Men Elite,220 km,GT.A.Stage,Na,Na,Na,Na,Nantes,Vire,n/a,1102,? - let us know!,Na
+494,27 July 1935,-,38.68 km/h,Na,ME - Men Elite,55 km,GT.A.Stage,Na,Na,Na,Na,Vire,Caen,n/a,1102,,Na
+495,28 July 1935,-,31.74 km/h,Na,ME - Men Elite,221 km,GT.A.Stage,Na,Na,Na,Na,Caen,Paris,n/a,1102,? - let us know!,Na
+496,03 July 1934,-,31.64 km/h,Na,ME - Men Elite,262 km,GT.A.Stage,Na,Na,Na,Na,Paris,Lille,n/a,966,? - let us know!,Na
+497,04 July 1934,-,32.96 km/h,Na,ME - Men Elite,192 km,GT.A.Stage,Na,Na,Na,Na,Lille,Charleville,n/a,966,? - let us know!,Na
+498,05 July 1934,-,32 km/h,Na,ME - Men Elite,161 km,GT.A.Stage,Na,Na,Na,Na,Charleville,Metz,n/a,966,? - let us know!,Na
+499,06 July 1934,-,30.24 km/h,Na,ME - Men Elite,220 km,GT.A.Stage,Na,Na,Na,Na,Metz,Belfort,n/a,966,? - let us know!,Na
+500,07 July 1934,-,29.94 km/h,Na,ME - Men Elite,293 km,GT.A.Stage,Na,Na,Na,Na,Belfort,Evian,n/a,966,? - let us know!,Na
+501,09 July 1934,-,30.65 km/h,Na,ME - Men Elite,207 km,GT.A.Stage,Na,Na,Na,Na,Evian,Aix-les-Bains,n/a,966,? - let us know!,Na
+502,10 July 1934,-,26.4 km/h,Na,ME - Men Elite,229 km,GT.A.Stage,Na,Na,Na,Na,Aix-les-Bains,Grenoble,n/a,966,? - let us know!,Na
+503,11 July 1934,-,29.39 km/h,Na,ME - Men Elite,102 km,GT.A.Stage,Na,Na,Na,Na,Grenoble,Gap,n/a,966,? - let us know!,Na
+504,12 July 1934,-,27.87 km/h,Na,ME - Men Elite,227 km,GT.A.Stage,Na,Na,Na,Na,Gap,Digne,n/a,966,? - let us know!,Na
+505,13 July 1934,-,31.36 km/h,Na,ME - Men Elite,156 km,GT.A.Stage,Na,Na,Na,Na,Digne,Nice,n/a,966,? - let us know!,Na
+506,15 July 1934,-,30.35 km/h,Na,ME - Men Elite,126 km,GT.A.Stage,Na,Na,Na,Na,Nice,Cannes,n/a,966,? - let us know!,Na
+507,16 July 1934,-,28.57 km/h,Na,ME - Men Elite,195 km,GT.A.Stage,Na,Na,Na,Na,Cannes,Marseille,n/a,966,? - let us know!,Na
+508,17 July 1934,-,33.85 km/h,Na,ME - Men Elite,172 km,GT.A.Stage,Na,Na,Na,Na,Marseille,Montpellier,n/a,966,? - let us know!,Na
+509,18 July 1934,-,27.01 km/h,Na,ME - Men Elite,177 km,GT.A.Stage,Na,Na,Na,Na,Montpellier,Perpignan,n/a,966,? - let us know!,Na
+510,20 July 1934,-,27.32 km/h,Na,ME - Men Elite,158 km,GT.A.Stage,Na,Na,Na,Na,Perpignan,Ax-les-Thermes,n/a,966,? - let us know!,Na
+511,21 July 1934,-,30.35 km/h,Na,ME - Men Elite,165 km,GT.A.Stage,Na,Na,Na,Na,Ax-les-Thermes,Luchon,n/a,966,? - let us know!,Na
+512,22 July 1934,-,31.79 km/h,Na,ME - Men Elite,91 km,GT.A.Stage,Na,Na,Na,Na,Luchon,Tarbes,n/a,966,? - let us know!,Na
+513,23 July 1934,-,26.33 km/h,Na,ME - Men Elite,172 km,GT.A.Stage,Na,Na,Na,Na,Tarbes,Pau,n/a,966,? - let us know!,Na
+514,25 July 1934,-,30.14 km/h,Na,ME - Men Elite,215 km,GT.A.Stage,Na,Na,Na,Na,Pau,Bordeaux,n/a,966,? - let us know!,Na
+515,26 July 1934,-,26.88 km/h,Na,ME - Men Elite,183 km,GT.A.Stage,Na,Na,Na,Na,Bordeaux,La Rochelle,n/a,966,? - let us know!,Na
+516,27 July 1934,-,26.99 km/h,Na,ME - Men Elite,81 km,GT.A.Stage,Na,Na,Na,Na,La Rochelle,La Roche sur Yon,n/a,966,? - let us know!,Na
+517,27 July 1934,-,35.51 km/h,Na,ME - Men Elite,90 km,GT.A.Stage,Na,Na,Na,Na,La Roche sur Yon,Nantes,n/a,966,,Na
+518,28 July 1934,-,31.25 km/h,Na,ME - Men Elite,275 km,GT.A.Stage,Na,Na,Na,Na,Nantes,Caen,n/a,966,? - let us know!,Na
+519,29 July 1934,-,30.72 km/h,Na,ME - Men Elite,221 km,GT.A.Stage,Na,Na,Na,Na,Caen,Paris,n/a,966,? - let us know!,Na
+520,27 June 1933,-,33.54 km/h,Na,ME - Men Elite,262 km,GT.A.Stage,Na,Na,Na,Na,Paris,Lille,n/a,1078,? - let us know!,Na
+521,28 June 1933,-,34.5 km/h,Na,ME - Men Elite,192 km,GT.A.Stage,Na,Na,Na,Na,Lille,Charleville,n/a,1078,? - let us know!,Na
+522,29 June 1933,-,35.9 km/h,Na,ME - Men Elite,166 km,GT.A.Stage,Na,Na,Na,Na,Charleville,Metz,n/a,1078,? - let us know!,Na
+523,30 June 1933,-,30.4 km/h,Na,ME - Men Elite,220 km,GT.A.Stage,Na,Na,Na,Na,Metz,Belfort,n/a,1078,? - let us know!,Na
+524,01 July 1933,-,29.3 km/h,Na,ME - Men Elite,293 km,GT.A.Stage,Na,Na,Na,Na,Belfort,Evian,n/a,1078,? - let us know!,Na
+525,03 July 1933,-,29.92 km/h,Na,ME - Men Elite,207 km,GT.A.Stage,Na,Na,Na,Na,Evian,Aix-les-Bains,n/a,1078,? - let us know!,Na
+526,04 July 1933,-,26.23 km/h,Na,ME - Men Elite,229 km,GT.A.Stage,Na,Na,Na,Na,Aix-les-Bains,Grenoble,n/a,1078,? - let us know!,Na
+527,05 July 1933,-,29.76 km/h,Na,ME - Men Elite,102 km,GT.A.Stage,Na,Na,Na,Na,Grenoble,Gap,n/a,1078,? - let us know!,Na
+528,06 July 1933,-,25.89 km/h,Na,ME - Men Elite,227 km,GT.A.Stage,Na,Na,Na,Na,Gap,Digne,n/a,1078,? - let us know!,Na
+529,07 July 1933,-,34.35 km/h,Na,ME - Men Elite,156 km,GT.A.Stage,Na,Na,Na,Na,Digne,Nice,n/a,1078,? - let us know!,Na
+530,09 July 1933,-,32.56 km/h,Na,ME - Men Elite,128 km,GT.A.Stage,Na,Na,Na,Na,Nice,Cannes,n/a,1078,? - let us know!,Na
+531,10 July 1933,-,29.63 km/h,Na,ME - Men Elite,208 km,GT.A.Stage,Na,Na,Na,Na,Cannes,Marseille,n/a,1078,? - let us know!,Na
+532,11 July 1933,-,27.71 km/h,Na,ME - Men Elite,168 km,GT.A.Stage,Na,Na,Na,Na,Marseille,Montpellier,n/a,1078,? - let us know!,Na
+533,12 July 1933,-,27.31 km/h,Na,ME - Men Elite,166 km,GT.A.Stage,Na,Na,Na,Na,Montpellier,Perpignan,n/a,1078,? - let us know!,Na
+534,14 July 1933,-,26.41 km/h,Na,ME - Men Elite,158 km,GT.A.Stage,Na,Na,Na,Na,Perpignan,Ax-les-Thermes,n/a,1078,? - let us know!,Na
+535,15 July 1933,-,28.53 km/h,Na,ME - Men Elite,165 km,GT.A.Stage,Na,Na,Na,Na,Ax-les-Thermes,Luchon,n/a,1078,? - let us know!,Na
+536,16 July 1933,-,30.78 km/h,Na,ME - Men Elite,91 km,GT.A.Stage,Na,Na,Na,Na,Luchon,Tarbes,n/a,1078,? - let us know!,Na
+537,17 July 1933,-,26.4 km/h,Na,ME - Men Elite,185 km,GT.A.Stage,Na,Na,Na,Na,Tarbes,Pau,n/a,1078,? - let us know!,Na
+538,19 July 1933,-,29.49 km/h,Na,ME - Men Elite,233 km,GT.A.Stage,Na,Na,Na,Na,Pau,Bordeaux,n/a,1078,? - let us know!,Na
+539,20 July 1933,-,31.07 km/h,Na,ME - Men Elite,183 km,GT.A.Stage,Na,Na,Na,Na,Bordeaux,La Rochelle,n/a,1078,? - let us know!,Na
+540,21 July 1933,-,28.91 km/h,Na,ME - Men Elite,266 km,GT.A.Stage,Na,Na,Na,Na,La Rochelle,Rennes,n/a,1078,? - let us know!,Na
+541,22 July 1933,-,34.26 km/h,Na,ME - Men Elite,169 km,GT.A.Stage,Na,Na,Na,Na,Rennes,Caen,n/a,1078,? - let us know!,Na
+542,23 July 1933,-,32.3 km/h,Na,ME - Men Elite,222 km,GT.A.Stage,Na,Na,Na,Na,Caen,Paris,n/a,1078,? - let us know!,Na
+543,06 July 1932,-,34.08 km/h,Na,ME - Men Elite,208 km,GT.A.Stage,Na,Na,Na,Na,Paris,Caen,n/a,900,? - let us know!,Na
+544,07 July 1932,-,30.43 km/h,Na,ME - Men Elite,300 km,GT.A.Stage,Na,Na,Na,Na,Caen,Nantes,n/a,900,? - let us know!,Na
+545,09 July 1932,-,29.98 km/h,Na,ME - Men Elite,387 km,GT.A.Stage,Na,Na,Na,Na,Nantes,Bordeaux,n/a,900,? - let us know!,Na
+546,11 July 1932,-,32.24 km/h,Na,ME - Men Elite,206 km,GT.A.Stage,Na,Na,Na,Na,Bordeaux,Pau,n/a,900,? - let us know!,Na
+547,12 July 1932,-,25.42 km/h,Na,ME - Men Elite,229 km,GT.A.Stage,Na,Na,Na,Na,Pau,Luchon,n/a,900,? - let us know!,Na
+548,14 July 1932,-,27.19 km/h,Na,ME - Men Elite,322 km,GT.A.Stage,Na,Na,Na,Na,Luchon,Perpignan,n/a,900,? - let us know!,Na
+549,16 July 1932,-,30.24 km/h,Na,ME - Men Elite,168 km,GT.A.Stage,Na,Na,Na,Na,Perpignan,Montpellier,n/a,900,? - let us know!,Na
+550,17 July 1932,-,31.6 km/h,Na,ME - Men Elite,206 km,GT.A.Stage,Na,Na,Na,Na,Montpellier,Marseille,n/a,900,? - let us know!,Na
+551,18 July 1932,-,29.42 km/h,Na,ME - Men Elite,191 km,GT.A.Stage,Na,Na,Na,Na,Marseille,Cannes,n/a,900,? - let us know!,Na
+552,19 July 1932,-,28.63 km/h,Na,ME - Men Elite,132 km,GT.A.Stage,Na,Na,Na,Na,Cannes,Nice,n/a,900,? - let us know!,Na
+553,21 July 1932,-,26.8 km/h,Na,ME - Men Elite,233 km,GT.A.Stage,Na,Na,Na,Na,Nice,Gap,n/a,900,? - let us know!,Na
+554,22 July 1932,-,30.32 km/h,Na,ME - Men Elite,102 km,GT.A.Stage,Na,Na,Na,Na,Gap,Grenoble,n/a,900,? - let us know!,Na
+555,23 July 1932,-,28.07 km/h,Na,ME - Men Elite,230 km,GT.A.Stage,Na,Na,Na,Na,Grenoble,Aix-les-Bains,n/a,900,? - let us know!,Na
+556,24 July 1932,-,25.53 km/h,Na,ME - Men Elite,204 km,GT.A.Stage,Na,Na,Na,Na,Aix-les-Bains,Evian,n/a,900,? - let us know!,Na
+557,25 July 1932,-,29.28 km/h,Na,ME - Men Elite,291 km,GT.A.Stage,Na,Na,Na,Na,Evian,Belfort,n/a,900,? - let us know!,Na
+558,26 July 1932,-,35.58 km/h,Na,ME - Men Elite,145 km,GT.A.Stage,Na,Na,Na,Na,Belfort,Strasbourg,n/a,900,? - let us know!,Na
+559,27 July 1932,-,29.24 km/h,Na,ME - Men Elite,165 km,GT.A.Stage,Na,Na,Na,Na,Strasbourg,Metz,n/a,900,? - let us know!,Na
+560,28 July 1932,-,30.79 km/h,Na,ME - Men Elite,159 km,GT.A.Stage,Na,Na,Na,Na,Metz,Charleville,n/a,900,? - let us know!,Na
+561,29 July 1932,-,31.25 km/h,Na,ME - Men Elite,271 km,GT.A.Stage,Na,Na,Na,Na,Charleville,Malo-les-Bains,n/a,900,? - let us know!,Na
+562,30 July 1932,-,25.6 km/h,Na,ME - Men Elite,212 km,GT.A.Stage,Na,Na,Na,Na,Malo-les-Bains,Amiens,n/a,900,? - let us know!,Na
+563,31 July 1932,-,32.6 km/h,Na,ME - Men Elite,159 km,GT.A.Stage,Na,Na,Na,Na,Amiens,Paris,n/a,900,? - let us know!,Na
+564,30 June 1931,-,33.09 km/h,Na,ME - Men Elite,208 km,GT.A.Stage,Na,Na,Na,Na,Paris,Caen,n/a,881,? - let us know!,Na
+565,01 July 1931,-,32.02 km/h,Na,ME - Men Elite,212 km,GT.A.Stage,Na,Na,Na,Na,Caen,Dinan,n/a,881,? - let us know!,Na
+566,02 July 1931,-,32.74 km/h,Na,ME - Men Elite,206 km,GT.A.Stage,Na,Na,Na,Na,Dinan,Brest,n/a,881,? - let us know!,Na
+567,03 July 1931,-,34.38 km/h,Na,ME - Men Elite,211 km,GT.A.Stage,Na,Na,Na,Na,Brest,Vannes,n/a,881,? - let us know!,Na
+568,04 July 1931,-,30.54 km/h,Na,ME - Men Elite,202 km,GT.A.Stage,Na,Na,Na,Na,Vannes,Les Sables,n/a,881,? - let us know!,Na
+569,05 July 1931,-,31.38 km/h,Na,ME - Men Elite,338 km,GT.A.Stage,Na,Na,Na,Na,Les Sables d'Olonne,Bordeaux,n/a,881,? - let us know!,Na
+570,06 July 1931,-,31.98 km/h,Na,ME - Men Elite,180 km,GT.A.Stage,Na,Na,Na,Na,Bordeaux,Bayonne,n/a,881,? - let us know!,Na
+571,07 July 1931,-,31.13 km/h,Na,ME - Men Elite,106 km,GT.A.Stage,Na,Na,Na,Na,Bayonne,Pau,n/a,881,? - let us know!,Na
+572,08 July 1931,-,25.86 km/h,Na,ME - Men Elite,231 km,GT.A.Stage,Na,Na,Na,Na,Pau,Luchon,n/a,881,? - let us know!,Na
+573,10 July 1931,-,25.63 km/h,Na,ME - Men Elite,322 km,GT.A.Stage,Na,Na,Na,Na,Luchon,Perpignan,n/a,881,? - let us know!,Na
+574,12 July 1931,-,28.07 km/h,Na,ME - Men Elite,164 km,GT.A.Stage,Na,Na,Na,Na,Perpignan,Montpellier,n/a,881,? - let us know!,Na
+575,13 July 1931,-,32.5 km/h,Na,ME - Men Elite,207 km,GT.A.Stage,Na,Na,Na,Na,Montpellier,Marseille,n/a,881,? - let us know!,Na
+576,14 July 1931,-,27.06 km/h,Na,ME - Men Elite,181 km,GT.A.Stage,Na,Na,Na,Na,Marseille,Cannes,n/a,881,? - let us know!,Na
+577,15 July 1931,-,27.59 km/h,Na,ME - Men Elite,132 km,GT.A.Stage,Na,Na,Na,Na,Cannes,Nice,n/a,881,? - let us know!,Na
+578,17 July 1931,-,26.73 km/h,Na,ME - Men Elite,233 km,GT.A.Stage,Na,Na,Na,Na,Nice,Gap,n/a,881,? - let us know!,Na
+579,18 July 1931,-,28.91 km/h,Na,ME - Men Elite,102 km,GT.A.Stage,Na,Na,Na,Na,Gap,Grenoble,n/a,881,? - let us know!,Na
+580,19 July 1931,-,26.69 km/h,Na,ME - Men Elite,230 km,GT.A.Stage,Na,Na,Na,Na,Grenoble,Aix-les-Bains,n/a,881,? - let us know!,Na
+581,20 July 1931,-,25.65 km/h,Na,ME - Men Elite,204 km,GT.A.Stage,Na,Na,Na,Na,Aix-les-Bains,Evian,n/a,881,? - let us know!,Na
+582,21 July 1931,-,26.7 km/h,Na,ME - Men Elite,282 km,GT.A.Stage,Na,Na,Na,Na,Evian,Belfort,n/a,881,? - let us know!,Na
+583,22 July 1931,-,29.44 km/h,Na,ME - Men Elite,209 km,GT.A.Stage,Na,Na,Na,Na,Belfort,Colmar,n/a,881,? - let us know!,Na
+584,23 July 1931,-,30.32 km/h,Na,ME - Men Elite,192 km,GT.A.Stage,Na,Na,Na,Na,Colmar,Metz,n/a,881,? - let us know!,Na
+585,24 July 1931,-,31.62 km/h,Na,ME - Men Elite,159 km,GT.A.Stage,Na,Na,Na,Na,Metz,Charleville,n/a,881,? - let us know!,Na
+586,25 July 1931,-,33.3 km/h,Na,ME - Men Elite,271 km,GT.A.Stage,Na,Na,Na,Na,Charleville,Malo-les-Bains,n/a,881,? - let us know!,Na
+587,26 July 1931,-,23.6 km/h,Na,ME - Men Elite,313 km,GT.A.Stage,Na,Na,Na,Na,Malo-les-Bains,Paris,n/a,881,? - let us know!,Na
+588,02 July 1930,-,31.21 km/h,Na,ME - Men Elite,206 km,GT.A.Stage,Na,Na,Na,Na,Paris,Caen,n/a,801,? - let us know!,Na
+589,03 July 1930,-,28.98 km/h,Na,ME - Men Elite,203 km,GT.A.Stage,Na,Na,Na,Na,Caen,Dinan,n/a,801,? - let us know!,Na
+590,04 July 1930,-,30.95 km/h,Na,ME - Men Elite,206 km,GT.A.Stage,Na,Na,Na,Na,Dinan,Brest,n/a,801,? - let us know!,Na
+591,05 July 1930,-,30.28 km/h,Na,ME - Men Elite,210 km,GT.A.Stage,Na,Na,Na,Na,Brest,Vannes,n/a,801,? - let us know!,Na
+592,06 July 1930,-,30.65 km/h,Na,ME - Men Elite,202 km,GT.A.Stage,Na,Na,Na,Na,Vannes,Les Sables d'Olonne,n/a,801,? - let us know!,Na
+593,07 July 1930,-,29.2 km/h,Na,ME - Men Elite,285 km,GT.A.Stage,Na,Na,Na,Na,Les Sables d'Olonne,Bordeaux,n/a,801,? - let us know!,Na
+594,08 July 1930,-,35.87 km/h,Na,ME - Men Elite,222 km,GT.A.Stage,Na,Na,Na,Na,Bordeaux,Hendaye,n/a,801,? - let us know!,Na
+595,09 July 1930,-,28.96 km/h,Na,ME - Men Elite,146 km,GT.A.Stage,Na,Na,Na,Na,Hendaye,Pau,n/a,801,? - let us know!,Na
+596,10 July 1930,-,24.68 km/h,Na,ME - Men Elite,231 km,GT.A.Stage,Na,Na,Na,Na,Pau,Luchon,n/a,801,? - let us know!,Na
+597,12 July 1930,-,26.93 km/h,Na,ME - Men Elite,322 km,GT.A.Stage,Na,Na,Na,Na,Luchon,Perpignan,n/a,801,? - let us know!,Na
+598,15 July 1930,-,31.22 km/h,Na,ME - Men Elite,209 km,GT.A.Stage,Na,Na,Na,Na,Montpellier,Marseille,n/a,801,? - let us know!,Na
+599,16 July 1930,-,28.45 km/h,Na,ME - Men Elite,181 km,GT.A.Stage,Na,Na,Na,Na,Marseille,Cannes,n/a,801,? - let us know!,Na
+600,17 July 1930,-,28.92 km/h,Na,ME - Men Elite,132 km,GT.A.Stage,Na,Na,Na,Na,Cannes,Nice,n/a,801,? - let us know!,Na
+601,19 July 1930,-,24.1 km/h,Na,ME - Men Elite,333 km,GT.A.Stage,Na,Na,Na,Na,Nice,Grenoble,n/a,801,? - let us know!,Na
+602,21 July 1930,-,24.24 km/h,Na,ME - Men Elite,331 km,GT.A.Stage,Na,Na,Na,Na,Grenoble,Evian,n/a,801,? - let us know!,Na
+603,23 July 1930,-,28.37 km/h,Na,ME - Men Elite,282 km,GT.A.Stage,Na,Na,Na,Na,Evian,Belfort,n/a,801,? - let us know!,Na
+604,24 July 1930,-,26.35 km/h,Na,ME - Men Elite,223 km,GT.A.Stage,Na,Na,Na,Na,Belfort,Metz,n/a,801,? - let us know!,Na
+605,25 July 1930,-,31.24 km/h,Na,ME - Men Elite,159 km,GT.A.Stage,Na,Na,Na,Na,Metz,Charleville,n/a,801,? - let us know!,Na
+606,26 July 1930,-,26.87 km/h,Na,ME - Men Elite,271 km,GT.A.Stage,Na,Na,Na,Na,Charleville,Malo-les-Bains,n/a,801,? - let us know!,Na
+607,27 July 1930,-,24.65 km/h,Na,ME - Men Elite,300 km,GT.A.Stage,Na,Na,Na,Na,Malo-les-Bains,Paris,n/a,801,? - let us know!,Na
+608,30 June 1929,-,34.782 km/h,Na,ME - Men Elite,206 km,GT.A.Stage,Na,Na,Na,Na,Paris,Caen,n/a,909,? - let us know!,Na
+609,01 July 1929,-,32.2 km/h,Na,ME - Men Elite,140 km,GT.A.Stage,Na,Na,Na,Na,Caen,Cherbourg,n/a,909,? - let us know!,Na
+610,02 July 1929,-,31.33 km/h,Na,ME - Men Elite,199 km,GT.A.Stage,Na,Na,Na,Na,Cherbourg,Dinan,n/a,909,? - let us know!,Na
+611,03 July 1929,-,30.75 km/h,Na,ME - Men Elite,206 km,GT.A.Stage,Na,Na,Na,Na,Dinan,Brest,n/a,909,? - let us know!,Na
+612,04 July 1929,-,32.08 km/h,Na,ME - Men Elite,208 km,GT.A.Stage,Na,Na,Na,Na,Brest,Vannes,n/a,909,? - let us know!,Na
+613,05 July 1929,-,32.25 km/h,Na,ME - Men Elite,206 km,GT.A.Stage,Na,Na,Na,Na,Vannes,Les Sables d'Olonne,n/a,909,? - let us know!,Na
+614,06 July 1929,-,30.92 km/h,Na,ME - Men Elite,285 km,GT.A.Stage,Na,Na,Na,Na,Les Sables d'Olonne,Bordeaux,n/a,909,? - let us know!,Na
+615,07 July 1929,-,32.46 km/h,Na,ME - Men Elite,182 km,GT.A.Stage,Na,Na,Na,Na,Bordeaux,Bayonne,n/a,909,? - let us know!,Na
+616,09 July 1929,-,21.96 km/h,Na,ME - Men Elite,363 km,GT.A.Stage,Na,Na,Na,Na,Bayonne,Luchon,n/a,909,? - let us know!,Na
+617,11 July 1929,-,27.58 km/h,Na,ME - Men Elite,323 km,GT.A.Stage,Na,Na,Na,Na,Luchon,Perpignan,n/a,909,? - let us know!,Na
+618,13 July 1929,-,26.86 km/h,Na,ME - Men Elite,366 km,GT.A.Stage,Na,Na,Na,Na,Perpignan,Marseille,n/a,909,? - let us know!,Na
+619,15 July 1929,-,32.03 km/h,Na,ME - Men Elite,191 km,GT.A.Stage,Na,Na,Na,Na,Marseille,Cannes,n/a,909,? - let us know!,Na
+620,16 July 1929,-,27.3 km/h,Na,ME - Men Elite,133 km,GT.A.Stage,Na,Na,Na,Na,Cannes,Nice,n/a,909,? - let us know!,Na
+621,18 July 1929,-,25 km/h,Na,ME - Men Elite,333 km,GT.A.Stage,Na,Na,Na,Na,Nice,Grenoble,n/a,909,? - let us know!,Na
+622,20 July 1929,-,25 km/h,Na,ME - Men Elite,329 km,GT.A.Stage,Na,Na,Na,Na,Grenoble,Evian,n/a,909,? - let us know!,Na
+623,22 July 1929,-,29.58 km/h,Na,ME - Men Elite,283 km,GT.A.Stage,Na,Na,Na,Na,Evian,Belfort,n/a,909,? - let us know!,Na
+624,23 July 1929,-,32.54 km/h,Na,ME - Men Elite,145 km,GT.A.Stage,Na,Na,Na,Na,Belfort,Strasbourg,n/a,909,? - let us know!,Na
+625,24 July 1929,-,28.52 km/h,Na,ME - Men Elite,165 km,GT.A.Stage,Na,Na,Na,Na,Strasbourg,Metz,n/a,909,? - let us know!,Na
+626,25 July 1929,-,33.58 km/h,Na,ME - Men Elite,159 km,GT.A.Stage,Na,Na,Na,Na,Metz,Charleville,n/a,909,? - let us know!,Na
+627,26 July 1929,-,29.12 km/h,Na,ME - Men Elite,270 km,GT.A.Stage,Na,Na,Na,Na,Charleville,Malo-les-Bains,n/a,909,? - let us know!,Na
+628,27 July 1929,-,25.82 km/h,Na,ME - Men Elite,234 km,GT.A.Stage,Na,Na,Na,Na,Malo-les-Bains,Dieppe,n/a,909,? - let us know!,Na
+629,28 July 1929,-,26.94 km/h,Na,ME - Men Elite,332 km,GT.A.Stage,Na,Na,Na,Na,Dieppe,Paris,n/a,909,? - let us know!,Na
+630,17 June 1928,-,31.92 km/h,Na,ME - Men Elite,207 km,GT.A.Stage,Na,Na,Na,Na,Paris,Caen,n/a,753,? - let us know!,Na
+631,18 June 1928,-,33.27 km/h,Na,ME - Men Elite,140 km,GT.A.Stage,Na,Na,Na,Na,Caen,Cherbourg,n/a,753,? - let us know!,Na
+632,19 June 1928,-,30.67 km/h,Na,ME - Men Elite,199 km,GT.A.Stage,Na,Na,Na,Na,Cherbourg,Dinan,n/a,753,? - let us know!,Na
+633,20 June 1928,-,30.3 km/h,Na,ME - Men Elite,206 km,GT.A.Stage,Na,Na,Na,Na,Dinan,Brest,n/a,753,? - let us know!,Na
+634,21 June 1928,-,30.92 km/h,Na,ME - Men Elite,208 km,GT.A.Stage,Na,Na,Na,Na,Brest,Vannes,n/a,753,? - let us know!,Na
+635,22 June 1928,-,31.9 km/h,Na,ME - Men Elite,204 km,GT.A.Stage,Na,Na,Na,Na,Vannes,Les Sables d'Olonne,n/a,753,? - let us know!,Na
+636,23 June 1928,-,30.45 km/h,Na,ME - Men Elite,285 km,GT.A.Stage,Na,Na,Na,Na,Les Sables d'Olonne,Bordeaux,n/a,753,? - let us know!,Na
+637,24 June 1928,-,33.14 km/h,Na,ME - Men Elite,225 km,GT.A.Stage,Na,Na,Na,Na,Bordeaux,Hendaye,n/a,753,? - let us know!,Na
+638,26 June 1928,-,23.86 km/h,Na,ME - Men Elite,387 km,GT.A.Stage,Na,Na,Na,Na,Hendaye,Luchon,n/a,753,? - let us know!,Na
+639,28 June 1928,-,25.93 km/h,Na,ME - Men Elite,323 km,GT.A.Stage,Na,Na,Na,Na,Luchon,Perpignan,n/a,753,? - let us know!,Na
+640,30 June 1928,-,24.7 km/h,Na,ME - Men Elite,363 km,GT.A.Stage,Na,Na,Na,Na,Perpignan,Marseille,n/a,753,? - let us know!,Na
+641,02 July 1928,-,24.12 km/h,Na,ME - Men Elite,330 km,GT.A.Stage,Na,Na,Na,Na,Marseille,Nice,n/a,753,? - let us know!,Na
+642,04 July 1928,-,23.77 km/h,Na,ME - Men Elite,333 km,GT.A.Stage,Na,Na,Na,Na,Nice,Grenoble,n/a,753,? - let us know!,Na
+643,06 July 1928,-,26.13 km/h,Na,ME - Men Elite,329 km,GT.A.Stage,Na,Na,Na,Na,Grenoble,Evian,n/a,753,? - let us know!,Na
+644,08 July 1928,-,31.66 km/h,Na,ME - Men Elite,213 km,GT.A.Stage,Na,Na,Na,Na,Evian,Pontarlier,n/a,753,? - let us know!,Na
+645,09 July 1928,-,33.46 km/h,Na,ME - Men Elite,119 km,GT.A.Stage,Na,Na,Na,Na,Pontarlier,Belfort,n/a,753,? - let us know!,Na
+646,10 July 1928,-,32.89 km/h,Na,ME - Men Elite,145 km,GT.A.Stage,Na,Na,Na,Na,Belfort,Strasbourg,n/a,753,? - let us know!,Na
+647,11 July 1928,-,33.08 km/h,Na,ME - Men Elite,165 km,GT.A.Stage,Na,Na,Na,Na,Strasbourg,Metz,n/a,753,? - let us know!,Na
+648,12 July 1928,-,34.53 km/h,Na,ME - Men Elite,159 km,GT.A.Stage,Na,Na,Na,Na,Metz,Charleville,n/a,753,? - let us know!,Na
+649,13 July 1928,-,30.82 km/h,Na,ME - Men Elite,271 km,GT.A.Stage,Na,Na,Na,Na,Charleville,Malo-les-Bains,n/a,753,? - let us know!,Na
+650,14 July 1928,-,30.29 km/h,Na,ME - Men Elite,234 km,GT.A.Stage,Na,Na,Na,Na,Malo-les-Bains,Dieppe,n/a,753,? - let us know!,Na
+651,15 July 1928,-,24.37 km/h,Na,ME - Men Elite,331 km,GT.A.Stage,Na,Na,Na,Na,Dieppe,Paris,n/a,753,? - let us know!,Na
+652,19 June 1927,-,30.36 km/h,Na,ME - Men Elite,180 km,GT.A.Stage,Na,Na,Na,Na,Paris,Dieppe,n/a,516,? - let us know!,Na
+653,20 June 1927,-,30.02 km/h,Na,ME - Men Elite,103 km,GT.A.Stage,Na,Na,Na,Na,Dieppe,Le Havre,n/a,516,? - let us know!,Na
+654,21 June 1927,-,30.61 km/h,Na,ME - Men Elite,225 km,GT.A.Stage,Na,Na,Na,Na,Le Havre,Caen,n/a,516,? - let us know!,Na
+655,22 June 1927,-,32.21 km/h,Na,ME - Men Elite,140 km,GT.A.Stage,Na,Na,Na,Na,Caen,Cherbourg,n/a,516,? - let us know!,Na
+656,23 June 1927,-,30.23 km/h,Na,ME - Men Elite,199 km,GT.A.Stage,Na,Na,Na,Na,Cherbourg,Dinan,n/a,516,? - let us know!,Na
+657,24 June 1927,-,27.73 km/h,Na,ME - Men Elite,206 km,GT.A.Stage,Na,Na,Na,Na,Dinan,Brest,n/a,516,? - let us know!,Na
+658,25 June 1927,-,31.01 km/h,Na,ME - Men Elite,207 km,GT.A.Stage,Na,Na,Na,Na,Brest,Vannes,n/a,516,? - let us know!,Na
+659,26 June 1927,-,33.66 km/h,Na,ME - Men Elite,204 km,GT.A.Stage,Na,Na,Na,Na,Vannes,Les Sables d'Olonne,n/a,516,? - let us know!,Na
+660,27 June 1927,-,31.87 km/h,Na,ME - Men Elite,285 km,GT.A.Stage,Na,Na,Na,Na,Les Sables d'Olonne,Bordeaux,n/a,516,? - let us know!,Na
+661,28 June 1927,-,26.15 km/h,Na,ME - Men Elite,189 km,GT.A.Stage,Na,Na,Na,Na,Bordeaux,Bayonne,n/a,516,? - let us know!,Na
+662,30 June 1927,-,19.85 km/h,Na,ME - Men Elite,326 km,GT.A.Stage,Na,Na,Na,Na,Bayonne,Luchon,n/a,516,? - let us know!,Na
+663,02 July 1927,-,26.54 km/h,Na,ME - Men Elite,323 km,GT.A.Stage,Na,Na,Na,Na,Luchon,Perpignan,n/a,516,? - let us know!,Na
+664,04 July 1927,-,25.04 km/h,Na,ME - Men Elite,360 km,GT.A.Stage,Na,Na,Na,Na,Perpignan,Marseille,n/a,516,? - let us know!,Na
+665,05 July 1927,-,31.07 km/h,Na,ME - Men Elite,120 km,GT.A.Stage,Na,Na,Na,Na,Marseille,Toulon,n/a,516,? - let us know!,Na
+666,06 July 1927,-,18.86 km/h,Na,ME - Men Elite,220 km,GT.A.Stage,Na,Na,Na,Na,Toulon,Nice,n/a,516,? - let us know!,Na
+667,08 July 1927,-,21.21 km/h,Na,ME - Men Elite,275 km,GT.A.Stage,Na,Na,Na,Na,Nice,Briançon,n/a,516,? - let us know!,Na
+668,09 July 1927,-,23.68 km/h,Na,ME - Men Elite,283 km,GT.A.Stage,Na,Na,Na,Na,Briançon,Evian,n/a,516,? - let us know!,Na
+669,11 July 1927,-,29.75 km/h,Na,ME - Men Elite,213 km,GT.A.Stage,Na,Na,Na,Na,Evian,Pontarlier,n/a,516,? - let us know!,Na
+670,12 July 1927,-,31.66 km/h,Na,ME - Men Elite,119 km,GT.A.Stage,Na,Na,Na,Na,Pontarlier,Belfort,n/a,516,? - let us know!,Na
+671,13 July 1927,-,33.56 km/h,Na,ME - Men Elite,145 km,GT.A.Stage,Na,Na,Na,Na,Belfort,Strasbourg,n/a,516,? - let us know!,Na
+672,14 July 1927,-,30.47 km/h,Na,ME - Men Elite,165 km,GT.A.Stage,Na,Na,Na,Na,Strasbourg,Metz,n/a,516,? - let us know!,Na
+673,15 July 1927,-,31.75 km/h,Na,ME - Men Elite,159 km,GT.A.Stage,Na,Na,Na,Na,Metz,Charleville,n/a,516,? - let us know!,Na
+674,16 July 1927,-,29.47 km/h,Na,ME - Men Elite,270 km,GT.A.Stage,Na,Na,Na,Na,Charleville,Dunkerque,n/a,516,? - let us know!,Na
+675,17 July 1927,-,24.63 km/h,Na,ME - Men Elite,344 km,GT.A.Stage,Na,Na,Na,Na,Dunkerque,Paris,n/a,516,? - let us know!,Na
+676,20 June 1926,-,26.27 km/h,Na,ME - Men Elite,373 km,GT.A.Stage,Na,Na,Na,Na,Evian,Mülhausen,n/a,769,? - let us know!,Na
+677,22 June 1926,-,24.76 km/h,Na,ME - Men Elite,334 km,GT.A.Stage,Na,Na,Na,Na,Mülhausen,Metz,n/a,769,? - let us know!,Na
+678,24 June 1926,-,25.19 km/h,Na,ME - Men Elite,433 km,GT.A.Stage,Na,Na,Na,Na,Metz,Dunkerque,n/a,769,? - let us know!,Na
+679,26 June 1926,-,24.15 km/h,Na,ME - Men Elite,361 km,GT.A.Stage,Na,Na,Na,Na,Dunkerque,Le Havre,n/a,769,? - let us know!,Na
+680,28 June 1926,-,25.08 km/h,Na,ME - Men Elite,357 km,GT.A.Stage,Na,Na,Na,Na,Le Havre,Cherbourg,n/a,769,? - let us know!,Na
+681,30 June 1926,-,24.98 km/h,Na,ME - Men Elite,405 km,GT.A.Stage,Na,Na,Na,Na,Cherbourg,Brest,n/a,769,? - let us know!,Na
+682,02 July 1926,-,25.2 km/h,Na,ME - Men Elite,412 km,GT.A.Stage,Na,Na,Na,Na,Brest,Les Sables d'Olonne,n/a,769,? - let us know!,Na
+683,03 July 1926,-,23.75 km/h,Na,ME - Men Elite,285 km,GT.A.Stage,Na,Na,Na,Na,Les Sables d'Olonne,Bordeaux,n/a,769,? - let us know!,Na
+684,04 July 1926,-,24.74 km/h,Na,ME - Men Elite,189 km,GT.A.Stage,Na,Na,Na,Na,Bordeaux,Bayonne,n/a,769,? - let us know!,Na
+685,06 July 1926,-,18.95 km/h,Na,ME - Men Elite,326 km,GT.A.Stage,Na,Na,Na,Na,Bayonne,Luchon,n/a,769,? - let us know!,Na
+686,08 July 1926,-,25.8 km/h,Na,ME - Men Elite,323 km,GT.A.Stage,Na,Na,Na,Na,Luchon,Perpignan,n/a,769,? - let us know!,Na
+687,10 July 1926,-,24.81 km/h,Na,ME - Men Elite,427 km,GT.A.Stage,Na,Na,Na,Na,Perpignan,Toulon,n/a,769,? - let us know!,Na
+688,12 July 1926,-,24.31 km/h,Na,ME - Men Elite,280 km,GT.A.Stage,Na,Na,Na,Na,Toulon,Nice,n/a,769,? - let us know!,Na
+689,14 July 1926,-,22.92 km/h,Na,ME - Men Elite,275 km,GT.A.Stage,Na,Na,Na,Na,Nice,Briançon,n/a,769,? - let us know!,Na
+690,16 July 1926,-,24.93 km/h,Na,ME - Men Elite,303 km,GT.A.Stage,Na,Na,Na,Na,Briançon,Evian,n/a,769,? - let us know!,Na
+691,17 July 1926,-,23.32 km/h,Na,ME - Men Elite,321 km,GT.A.Stage,Na,Na,Na,Na,Evian,Dijon,n/a,769,? - let us know!,Na
+692,18 July 1926,-,22.83 km/h,Na,ME - Men Elite,341 km,GT.A.Stage,Na,Na,Na,Na,Dijon,Paris,n/a,769,? - let us know!,Na
+693,21 June 1925,-,27.6 km/h,Na,ME - Men Elite,340 km,GT.A.Stage,Na,Na,Na,Na,Paris,Le Havre,n/a,958,? - let us know!,Na
+694,23 June 1925,-,24.57 km/h,Na,ME - Men Elite,371 km,GT.A.Stage,Na,Na,Na,Na,Le Havre,Cherbourg,n/a,958,? - let us know!,Na
+695,25 June 1925,-,24.73 km/h,Na,ME - Men Elite,405 km,GT.A.Stage,Na,Na,Na,Na,Cherbourg,Brest,n/a,958,? - let us know!,Na
+696,26 June 1925,-,24.84 km/h,Na,ME - Men Elite,208 km,GT.A.Stage,Na,Na,Na,Na,Brest,Vannes,n/a,958,? - let us know!,Na
+697,27 June 1925,-,27.46 km/h,Na,ME - Men Elite,204 km,GT.A.Stage,Na,Na,Na,Na,Vannes,Les Sables d'Olonne,n/a,958,? - let us know!,Na
+698,28 June 1925,-,26.36 km/h,Na,ME - Men Elite,293 km,GT.A.Stage,Na,Na,Na,Na,Les Sables d'Olonne,Bordeaux,n/a,958,? - let us know!,Na
+699,29 June 1925,-,28.68 km/h,Na,ME - Men Elite,189 km,GT.A.Stage,Na,Na,Na,Na,Bordeaux,Bayonne,n/a,958,? - let us know!,Na
+700,01 July 1925,-,21.29 km/h,Na,ME - Men Elite,326 km,GT.A.Stage,Na,Na,Na,Na,Bayonne,Luchon,n/a,958,? - let us know!,Na
+701,03 July 1925,-,24.57 km/h,Na,ME - Men Elite,323 km,GT.A.Stage,Na,Na,Na,Na,Luchon,Perpignan,n/a,958,? - let us know!,Na
+702,04 July 1925,-,24.59 km/h,Na,ME - Men Elite,215 km,GT.A.Stage,Na,Na,Na,Na,Perpignan,Nîmes,n/a,958,? - let us know!,Na
+703,05 July 1925,-,31.15 km/h,Na,ME - Men Elite,215 km,GT.A.Stage,Na,Na,Na,Na,Nîmes,Toulon,n/a,958,? - let us know!,Na
+704,07 July 1925,-,25.37 km/h,Na,ME - Men Elite,280 km,GT.A.Stage,Na,Na,Na,Na,Toulon,Nice,n/a,958,? - let us know!,Na
+705,09 July 1925,-,21.02 km/h,Na,ME - Men Elite,275 km,GT.A.Stage,Na,Na,Na,Na,Nice,Briançon,n/a,958,? - let us know!,Na
+706,11 July 1925,-,26.11 km/h,Na,ME - Men Elite,303 km,GT.A.Stage,Na,Na,Na,Na,Briançon,Evian,n/a,958,? - let us know!,Na
+707,13 July 1925,-,23.74 km/h,Na,ME - Men Elite,373 km,GT.A.Stage,Na,Na,Na,Na,Evian,Mulhouse,n/a,958,? - let us know!,Na
+708,15 July 1925,-,24.91 km/h,Na,ME - Men Elite,334 km,GT.A.Stage,Na,Na,Na,Na,Mulhouse,Metz,n/a,958,? - let us know!,Na
+709,17 July 1925,-,25.29 km/h,Na,ME - Men Elite,433 km,GT.A.Stage,Na,Na,Na,Na,Metz,Dunkerque,n/a,958,? - let us know!,Na
+710,19 July 1925,-,23.04 km/h,Na,ME - Men Elite,343 km,GT.A.Stage,Na,Na,Na,Na,Dunkerque,Paris,n/a,958,? - let us know!,Na
+711,22 June 1924,-,25.31 km/h,Na,ME - Men Elite,381 km,GT.A.Stage,Na,Na,Na,Na,Paris,Le Havre,n/a,1186,? - let us know!,Na
+712,24 June 1924,-,25.45 km/h,Na,ME - Men Elite,371 km,GT.A.Stage,Na,Na,Na,Na,Le Havre,Cherbourg,n/a,1186,? - let us know!,Na
+713,26 June 1924,-,25.74 km/h,Na,ME - Men Elite,405 km,GT.A.Stage,Na,Na,Na,Na,Cherbourg,Brest,n/a,1186,? - let us know!,Na
+714,28 June 1924,-,25 km/h,Na,ME - Men Elite,412 km,GT.A.Stage,Na,Na,Na,Na,Brest,Les Sables d'Olonne,n/a,1186,? - let us know!,Na
+715,30 June 1924,-,24.51 km/h,Na,ME - Men Elite,482 km,GT.A.Stage,Na,Na,Na,Na,Les Sables d'Olonne,Bayonne,n/a,1186,? - let us know!,Na
+716,02 July 1924,-,21.16 km/h,Na,ME - Men Elite,326 km,GT.A.Stage,Na,Na,Na,Na,Bayonne,Luchon,n/a,1186,? - let us know!,Na
+717,04 July 1924,-,25.49 km/h,Na,ME - Men Elite,323 km,GT.A.Stage,Na,Na,Na,Na,Luchon,Perpignan,n/a,1186,? - let us know!,Na
+718,06 July 1924,-,25 km/h,Na,ME - Men Elite,427 km,GT.A.Stage,Na,Na,Na,Na,Perpignan,Toulon,n/a,1186,? - let us know!,Na
+719,08 July 1924,-,23.59 km/h,Na,ME - Men Elite,280 km,GT.A.Stage,Na,Na,Na,Na,Toulon,Nice,n/a,1186,? - let us know!,Na
+720,10 July 1924,-,21.4 km/h,Na,ME - Men Elite,275 km,GT.A.Stage,Na,Na,Na,Na,Nice,Briançon,n/a,1186,? - let us know!,Na
+721,12 July 1924,-,25.45 km/h,Na,ME - Men Elite,307 km,GT.A.Stage,Na,Na,Na,Na,Briançon,Gex,n/a,1186,? - let us know!,Na
+722,14 July 1924,-,22.71 km/h,Na,ME - Men Elite,360 km,GT.A.Stage,Na,Na,Na,Na,Gex,Strasbourg,n/a,1186,? - let us know!,Na
+723,16 July 1924,-,25.85 km/h,Na,ME - Men Elite,300 km,GT.A.Stage,Na,Na,Na,Na,Strasbourg,Metz,n/a,1186,? - let us know!,Na
+724,20 July 1924,-,23.25 km/h,Na,ME - Men Elite,343 km,GT.A.Stage,Na,Na,Na,Na,Dunkerque,Paris,n/a,1186,? - let us know!,Na
+725,24 June 1923,-,27.48 km/h,Na,ME - Men Elite,381 km,GT.A.Stage,Na,Na,Na,Na,Paris,Le Havre,n/a,947,? - let us know!,Na
+726,26 June 1923,-,26.14 km/h,Na,ME - Men Elite,371 km,GT.A.Stage,Na,Na,Na,Na,Le Havre,Cherbourg,n/a,947,? - let us know!,Na
+727,28 June 1923,-,25.73 km/h,Na,ME - Men Elite,405 km,GT.A.Stage,Na,Na,Na,Na,Cherbourg,Brest,n/a,947,? - let us know!,Na
+728,30 June 1923,-,27.06 km/h,Na,ME - Men Elite,412 km,GT.A.Stage,Na,Na,Na,Na,Brest,Les Sables d'Olonne,n/a,947,? - let us know!,Na
+729,02 July 1923,-,23.77 km/h,Na,ME - Men Elite,482 km,GT.A.Stage,Na,Na,Na,Na,Les Sables d'Olonne,Bayonne,n/a,947,? - let us know!,Na
+730,04 July 1923,-,20.26 km/h,Na,ME - Men Elite,326 km,GT.A.Stage,Na,Na,Na,Na,Bayonne,Luchon,n/a,947,? - let us know!,Na
+731,06 July 1923,-,25.24 km/h,Na,ME - Men Elite,323 km,GT.A.Stage,Na,Na,Na,Na,Luchon,Perpignan,n/a,947,? - let us know!,Na
+732,08 July 1923,-,26.26 km/h,Na,ME - Men Elite,427 km,GT.A.Stage,Na,Na,Na,Na,Perpignan,Toulon,n/a,947,? - let us know!,Na
+733,10 July 1923,-,23.08 km/h,Na,ME - Men Elite,281 km,GT.A.Stage,Na,Na,Na,Na,Toulon,Nice,n/a,947,? - let us know!,Na
+734,12 July 1923,-,21.56 km/h,Na,ME - Men Elite,275 km,GT.A.Stage,Na,Na,Na,Na,Nice,Briançon,n/a,947,? - let us know!,Na
+735,14 July 1923,-,26.43 km/h,Na,ME - Men Elite,260 km,GT.A.Stage,Na,Na,Na,Na,Briançon,Genève,n/a,947,? - let us know!,Na
+736,16 July 1923,-,24.89 km/h,Na,ME - Men Elite,377 km,GT.A.Stage,Na,Na,Na,Na,Genève,Strasbourg,n/a,947,? - let us know!,Na
+737,18 July 1923,-,25.86 km/h,Na,ME - Men Elite,300 km,GT.A.Stage,Na,Na,Na,Na,Strasbourg,Metz,n/a,947,? - let us know!,Na
+738,22 July 1923,-,22.38 km/h,Na,ME - Men Elite,343 km,GT.A.Stage,Na,Na,Na,Na,Dunkerque,Paris,n/a,947,? - let us know!,Na
+739,25 June 1922,-,25.53 km/h,Na,ME - Men Elite,388 km,GT.A.Stage,Na,Na,Na,Na,Paris,Le Havre,n/a,943,? - let us know!,Na
+740,27 June 1922,-,24.06 km/h,Na,ME - Men Elite,364 km,GT.A.Stage,Na,Na,Na,Na,Le Havre,Cherbourg,n/a,943,? - let us know!,Na
+741,29 June 1922,-,23.04 km/h,Na,ME - Men Elite,405 km,GT.A.Stage,Na,Na,Na,Na,Cherbourg,Brest,n/a,943,? - let us know!,Na
+742,01 July 1922,-,26.98 km/h,Na,ME - Men Elite,412 km,GT.A.Stage,Na,Na,Na,Na,Brest,Les Sables d'Olonne,n/a,943,? - let us know!,Na
+743,03 July 1922,-,24.77 km/h,Na,ME - Men Elite,482 km,GT.A.Stage,Na,Na,Na,Na,Les Sables d'Olonne,Bayonne,n/a,943,? - let us know!,Na
+744,05 July 1922,-,22.52 km/h,Na,ME - Men Elite,326 km,GT.A.Stage,Na,Na,Na,Na,Bayonne,Luchon,n/a,943,? - let us know!,Na
+745,07 July 1922,-,26.7 km/h,Na,ME - Men Elite,323 km,GT.A.Stage,Na,Na,Na,Na,Luchon,Perpignan,n/a,943,? - let us know!,Na
+746,09 July 1922,-,26.03 km/h,Na,ME - Men Elite,411 km,GT.A.Stage,Na,Na,Na,Na,Perpignan,Toulon,n/a,943,? - let us know!,Na
+747,11 July 1922,-,24.34 km/h,Na,ME - Men Elite,284 km,GT.A.Stage,Na,Na,Na,Na,Toulon,Nice,n/a,943,? - let us know!,Na
+748,13 July 1922,-,21.35 km/h,Na,ME - Men Elite,274 km,GT.A.Stage,Na,Na,Na,Na,Nice,Briançon,n/a,943,? - let us know!,Na
+749,15 July 1922,-,24.03 km/h,Na,ME - Men Elite,260 km,GT.A.Stage,Na,Na,Na,Na,Briançon,Geneva,n/a,943,? - let us know!,Na
+750,17 July 1922,-,24.31 km/h,Na,ME - Men Elite,371 km,GT.A.Stage,Na,Na,Na,Na,Geneva,Strasbourg,n/a,943,? - let us know!,Na
+751,19 July 1922,-,24.91 km/h,Na,ME - Men Elite,300 km,GT.A.Stage,Na,Na,Na,Na,Strasbourg,Metz,n/a,943,? - let us know!,Na
+752,23 July 1922,-,23.26 km/h,Na,ME - Men Elite,340 km,GT.A.Stage,Na,Na,Na,Na,Dunkerque,Paris,n/a,943,? - let us know!,Na
+753,26 June 1921,-,25.08 km/h,Na,ME - Men Elite,388 km,GT.A.Stage,Na,Na,Na,Na,Paris,Le Havre,n/a,1049,? - let us know!,Na
+754,28 June 1921,-,27.72 km/h,Na,ME - Men Elite,364 km,GT.A.Stage,Na,Na,Na,Na,Le Havre,Cherbourg,n/a,1049,? - let us know!,Na
+755,30 June 1921,-,26.74 km/h,Na,ME - Men Elite,405 km,GT.A.Stage,Na,Na,Na,Na,Cherbourg,Brest,n/a,1049,? - let us know!,Na
+756,02 July 1921,-,26.53 km/h,Na,ME - Men Elite,412 km,GT.A.Stage,Na,Na,Na,Na,Brest,Les Sables d'Olonne,n/a,1049,? - let us know!,Na
+757,04 July 1921,-,25.65 km/h,Na,ME - Men Elite,482 km,GT.A.Stage,Na,Na,Na,Na,Les Sables d'Olonne,Bayonne,n/a,1049,? - let us know!,Na
+758,06 July 1921,-,21.5 km/h,Na,ME - Men Elite,326 km,GT.A.Stage,Na,Na,Na,Na,Bayonne,Luchon,n/a,1049,? - let us know!,Na
+759,08 July 1921,-,24.9 km/h,Na,ME - Men Elite,323 km,GT.A.Stage,Na,Na,Na,Na,Luchon,Perpignan,n/a,1049,? - let us know!,Na
+760,10 July 1921,-,25.51 km/h,Na,ME - Men Elite,411 km,GT.A.Stage,Na,Na,Na,Na,Perpignan,Toulon,n/a,1049,? - let us know!,Na
+761,12 July 1921,-,23.78 km/h,Na,ME - Men Elite,272 km,GT.A.Stage,Na,Na,Na,Na,Toulon,Nice,n/a,1049,? - let us know!,Na
+762,14 July 1921,-,23.72 km/h,Na,ME - Men Elite,333 km,GT.A.Stage,Na,Na,Na,Na,Nice,Grenoble,n/a,1049,? - let us know!,Na
+763,16 July 1921,-,23.1 km/h,Na,ME - Men Elite,325 km,GT.A.Stage,Na,Na,Na,Na,Grenoble,Geneva,n/a,1049,? - let us know!,Na
+764,18 July 1921,-,24.52 km/h,Na,ME - Men Elite,371 km,GT.A.Stage,Na,Na,Na,Na,Geneva,Strasbourg,n/a,1049,? - let us know!,Na
+765,20 July 1921,-,29.58 km/h,Na,ME - Men Elite,300 km,GT.A.Stage,Na,Na,Na,Na,Strasbourg,Metz,n/a,1049,? - let us know!,Na
+766,24 July 1921,-,22.05 km/h,Na,ME - Men Elite,340 km,GT.A.Stage,Na,Na,Na,Na,Dunkerque,Paris,n/a,1049,? - let us know!,Na
+767,27 June 1920,-,26.13 km/h,Na,ME - Men Elite,388 km,GT.A.Stage,Na,Na,Na,Na,Paris,Le Havre,n/a,994,? - let us know!,Na
+768,29 June 1920,-,23.8 km/h,Na,ME - Men Elite,364 km,GT.A.Stage,Na,Na,Na,Na,Le Havre,Cherbourg,n/a,994,? - let us know!,Na
+769,01 July 1920,-,25.08 km/h,Na,ME - Men Elite,405 km,GT.A.Stage,Na,Na,Na,Na,Cherbourg,Brest,n/a,994,? - let us know!,Na
+770,03 July 1920,-,25.76 km/h,Na,ME - Men Elite,412 km,GT.A.Stage,Na,Na,Na,Na,Brest,Les Sables d'Olonne,n/a,994,? - let us know!,Na
+771,05 July 1920,-,24.43 km/h,Na,ME - Men Elite,482 km,GT.A.Stage,Na,Na,Na,Na,Les Sables d'Olonne,Bayonne,n/a,994,? - let us know!,Na
+772,07 July 1920,-,21.37 km/h,Na,ME - Men Elite,326 km,GT.A.Stage,Na,Na,Na,Na,Bayonne,Luchon,n/a,994,? - let us know!,Na
+773,09 July 1920,-,23.58 km/h,Na,ME - Men Elite,323 km,GT.A.Stage,Na,Na,Na,Na,Luchon,Perpignan,n/a,994,? - let us know!,Na
+774,11 July 1920,-,26.63 km/h,Na,ME - Men Elite,325 km,GT.A.Stage,Na,Na,Na,Na,Perpignan,Aix-en-Provence,n/a,994,? - let us know!,Na
+775,14 July 1920,-,21.89 km/h,Na,ME - Men Elite,356 km,GT.A.Stage,Na,Na,Na,Na,Aix-en-Provence,Nice,n/a,994,? - let us know!,Na
+776,16 July 1920,-,22.51 km/h,Na,ME - Men Elite,333 km,GT.A.Stage,Na,Na,Na,Na,Nice,Grenoble,n/a,994,? - let us know!,Na
+777,18 July 1920,-,23.34 km/h,Na,ME - Men Elite,362 km,GT.A.Stage,Na,Na,Na,Na,Grenoble,Gex,n/a,994,? - let us know!,Na
+778,20 July 1920,-,24.72 km/h,Na,ME - Men Elite,354 km,GT.A.Stage,Na,Na,Na,Na,Gex,Strasbourg,n/a,994,? - let us know!,Na
+779,22 July 1920,-,26.72 km/h,Na,ME - Men Elite,300 km,GT.A.Stage,Na,Na,Na,Na,Strasbourg,Metz,n/a,994,? - let us know!,Na
+780,27 July 1920,-,23.4 km/h,Na,ME - Men Elite,340 km,GT.A.Stage,Na,Na,Na,Na,Dunkerque,Paris,n/a,994,? - let us know!,Na
+781,29 June 1919,-,24.35 km/h,Na,ME - Men Elite,388 km,GT.A.Stage,Na,Na,Na,Na,Paris,Le Havre,n/a,250,? - let us know!,Na
+782,01 July 1919,-,22.96 km/h,Na,ME - Men Elite,364 km,GT.A.Stage,Na,Na,Na,Na,Le Havre,Cherbourg,n/a,250,? - let us know!,Na
+783,03 July 1919,-,26.13 km/h,Na,ME - Men Elite,405 km,GT.A.Stage,Na,Na,Na,Na,Cherbourg,Brest,n/a,250,? - let us know!,Na
+784,05 July 1919,-,25.97 km/h,Na,ME - Men Elite,412 km,GT.A.Stage,Na,Na,Na,Na,Brest,Les Sables d'Olonne,n/a,250,? - let us know!,Na
+785,07 July 1919,-,25.5 km/h,Na,ME - Men Elite,482 km,GT.A.Stage,Na,Na,Na,Na,Les Sables-d'Olonne,Bayonne,n/a,250,? - let us know!,Na
+786,09 July 1919,-,20.77 km/h,Na,ME - Men Elite,326 km,GT.A.Stage,Na,Na,Na,Na,Bayonne,Luchon,n/a,250,? - let us know!,Na
+787,11 July 1919,-,24.45 km/h,Na,ME - Men Elite,323 km,GT.A.Stage,Na,Na,Na,Na,Luchon,Perpignan,n/a,250,? - let us know!,Na
+788,13 July 1919,-,26.73 km/h,Na,ME - Men Elite,370 km,GT.A.Stage,Na,Na,Na,Na,Perpignan,Marseille,n/a,250,? - let us know!,Na
+789,15 July 1919,-,24.74 km/h,Na,ME - Men Elite,338 km,GT.A.Stage,Na,Na,Na,Na,Marseille,Nice,n/a,250,? - let us know!,Na
+790,17 July 1919,-,25.35 km/h,Na,ME - Men Elite,333 km,GT.A.Stage,Na,Na,Na,Na,Nice,Grenoble,n/a,250,? - let us know!,Na
+791,19 July 1919,-,25.43 km/h,Na,ME - Men Elite,325 km,GT.A.Stage,Na,Na,Na,Na,Grenoble,Geneva,n/a,250,? - let us know!,Na
+792,21 July 1919,-,24.5 km/h,Na,ME - Men Elite,371 km,GT.A.Stage,Na,Na,Na,Na,Geneva,Strasbourg,n/a,250,? - let us know!,Na
+793,23 July 1919,-,26.43 km/h,Na,ME - Men Elite,315 km,GT.A.Stage,Na,Na,Na,Na,Strasbourg,Metz,n/a,250,? - let us know!,Na
+794,27 July 1919,-,22.64 km/h,Na,ME - Men Elite,340 km,GT.A.Stage,Na,Na,Na,Na,Dunkerque,Paris,n/a,250,? - let us know!,Na
+795,28 June 1914,-,29.16 km/h,Na,ME - Men Elite,388 km,GT.A.Stage,Na,Na,Na,Na,Paris,Le Havre,n/a,1145,? - let us know!,Na
+796,30 June 1914,-,29.7 km/h,Na,ME - Men Elite,364 km,GT.A.Stage,Na,Na,Na,Na,Le Havre,Cherbourg,n/a,1145,? - let us know!,Na
+797,02 July 1914,-,27.06 km/h,Na,ME - Men Elite,405 km,GT.A.Stage,Na,Na,Na,Na,Cherbourg,Brest,n/a,1145,? - let us know!,Na
+798,04 July 1914,-,28.96 km/h,Na,ME - Men Elite,470 km,GT.A.Stage,Na,Na,Na,Na,Brest,La Rochelle,n/a,1145,? - let us know!,Na
+799,05 July 1914,-,28.01 km/h,Na,ME - Men Elite,376 km,GT.A.Stage,Na,Na,Na,Na,La Rochelle,Bayonne,n/a,1145,? - let us know!,Na
+800,06 July 1914,-,22.25 km/h,Na,ME - Men Elite,326 km,GT.A.Stage,Na,Na,Na,Na,Bayonne,Luchon,n/a,1145,? - let us know!,Na
+801,08 July 1914,-,27.41 km/h,Na,ME - Men Elite,323 km,GT.A.Stage,Na,Na,Na,Na,Luchon,Perpignan,n/a,1145,? - let us know!,Na
+802,10 July 1914,-,28.46 km/h,Na,ME - Men Elite,370 km,GT.A.Stage,Na,Na,Na,Na,Perpignan,Marseille,n/a,1145,? - let us know!,Na
+803,12 July 1914,-,26.84 km/h,Na,ME - Men Elite,338 km,GT.A.Stage,Na,Na,Na,Na,Marseille,Nice,n/a,1145,? - let us know!,Na
+804,14 July 1914,-,24.16 km/h,Na,ME - Men Elite,323 km,GT.A.Stage,Na,Na,Na,Na,Nice,Grenoble,n/a,1145,? - let us know!,Na
+805,16 July 1914,-,26.03 km/h,Na,ME - Men Elite,325 km,GT.A.Stage,Na,Na,Na,Na,Grenoble,Geneva,n/a,1145,? - let us know!,Na
+806,18 July 1914,-,25.93 km/h,Na,ME - Men Elite,325 km,GT.A.Stage,Na,Na,Na,Na,Geneva,Belfort,n/a,1145,? - let us know!,Na
+807,20 July 1914,-,30.92 km/h,Na,ME - Men Elite,325 km,GT.A.Stage,Na,Na,Na,Na,Belfort,Longwy,n/a,1145,? - let us know!,Na
+808,22 July 1914,-,25.91 km/h,Na,ME - Men Elite,390 km,GT.A.Stage,Na,Na,Na,Na,Longwy,Dunkerque,n/a,1145,? - let us know!,Na
+809,24 July 1914,-,25.46 km/h,Na,ME - Men Elite,340 km,GT.A.Stage,Na,Na,Na,Na,Dunkerque,Paris,n/a,1145,? - let us know!,Na
+810,29 June 1913,-,27.4 km/h,Na,ME - Men Elite,388 km,GT.A.Stage,Na,Na,Na,Na,Paris,Le Havre,n/a,1099,? - let us know!,Na
+811,01 July 1913,-,29.51 km/h,Na,ME - Men Elite,364 km,GT.A.Stage,Na,Na,Na,Na,Le Havre,Cherbourg,n/a,1099,? - let us know!,Na
+812,03 July 1913,-,28.97 km/h,Na,ME - Men Elite,405 km,GT.A.Stage,Na,Na,Na,Na,Cherbourg,Brest,n/a,1099,? - let us know!,Na
+813,05 July 1913,-,29.06 km/h,Na,ME - Men Elite,470 km,GT.A.Stage,Na,Na,Na,Na,Brest,La Rochelle,n/a,1099,? - let us know!,Na
+814,07 July 1913,-,29.9 km/h,Na,ME - Men Elite,379 km,GT.A.Stage,Na,Na,Na,Na,La Rochelle,Bayonne,n/a,1099,? - let us know!,Na
+815,09 July 1913,-,23.44 km/h,Na,ME - Men Elite,326 km,GT.A.Stage,Na,Na,Na,Na,Bayonne,Luchon,n/a,1099,? - let us know!,Na
+816,11 July 1913,-,27.16 km/h,Na,ME - Men Elite,324 km,GT.A.Stage,Na,Na,Na,Na,Luchon,Perpignan,n/a,1099,? - let us know!,Na
+817,13 July 1913,-,30.36 km/h,Na,ME - Men Elite,325 km,GT.A.Stage,Na,Na,Na,Na,Perpignan,Aix-en-Provence,n/a,1099,? - let us know!,Na
+818,15 July 1913,-,26.23 km/h,Na,ME - Men Elite,356 km,GT.A.Stage,Na,Na,Na,Na,Aix-en-Provence,Nice,n/a,1099,? - let us know!,Na
+819,17 July 1913,-,25.34 km/h,Na,ME - Men Elite,333 km,GT.A.Stage,Na,Na,Na,Na,Nice,Grenoble,n/a,1099,? - let us know!,Na
+820,19 July 1913,-,27.02 km/h,Na,ME - Men Elite,325 km,GT.A.Stage,Na,Na,Na,Na,Grenoble,Geneva,n/a,1099,? - let us know!,Na
+821,21 July 1913,-,26.76 km/h,Na,ME - Men Elite,335 km,GT.A.Stage,Na,Na,Na,Na,Geneva,Belfort,n/a,1099,? - let us know!,Na
+822,23 July 1913,-,28.29 km/h,Na,ME - Men Elite,325 km,GT.A.Stage,Na,Na,Na,Na,Belfort,Longwy,n/a,1099,? - let us know!,Na
+823,25 July 1913,-,27.36 km/h,Na,ME - Men Elite,393 km,GT.A.Stage,Na,Na,Na,Na,Longwy,Dunkerque,n/a,1099,? - let us know!,Na
+824,27 July 1913,-,28.27 km/h,Na,ME - Men Elite,340 km,GT.A.Stage,Na,Na,Na,Na,Dunkerque,Paris,n/a,1099,? - let us know!,Na
+825,30 June 1912,-,30.1 km/h,Na,ME - Men Elite,351 km,GT.A.Stage,Na,Na,Na,Na,Paris,Dunkerque,n/a,1061,? - let us know!,Na
+826,02 July 1912,-,29.8 km/h,Na,ME - Men Elite,388 km,GT.A.Stage,Na,Na,Na,Na,Dunkerque,Longwy,n/a,1061,? - let us know!,Na
+827,04 July 1912,-,29.87 km/h,Na,ME - Men Elite,331 km,GT.A.Stage,Na,Na,Na,Na,Longwy,Belfort,n/a,1061,? - let us know!,Na
+828,06 July 1912,-,28.5 km/h,Na,ME - Men Elite,344 km,GT.A.Stage,Na,Na,Na,Na,Belfort,Chamonix,n/a,1061,? - let us know!,Na
+829,08 July 1912,-,26.77 km/h,Na,ME - Men Elite,366 km,GT.A.Stage,Na,Na,Na,Na,Chamonix,Grenoble,n/a,1061,? - let us know!,Na
+830,10 July 1912,-,26.69 km/h,Na,ME - Men Elite,323 km,GT.A.Stage,Na,Na,Na,Na,Grenoble,Nice,n/a,1061,? - let us know!,Na
+831,12 July 1912,-,27.6 km/h,Na,ME - Men Elite,334 km,GT.A.Stage,Na,Na,Na,Na,Nice,Marseille,n/a,1061,? - let us know!,Na
+832,14 July 1912,-,26.17 km/h,Na,ME - Men Elite,335 km,GT.A.Stage,Na,Na,Na,Na,Marseille,Perpignan,n/a,1061,? - let us know!,Na
+833,16 July 1912,-,27.75 km/h,Na,ME - Men Elite,289 km,GT.A.Stage,Na,Na,Na,Na,Perpignan,Luchon,n/a,1061,? - let us know!,Na
+834,18 July 1912,-,22.76 km/h,Na,ME - Men Elite,326 km,GT.A.Stage,Na,Na,Na,Na,Luchon,Bayonne,n/a,1061,? - let us know!,Na
+835,20 July 1912,-,28.75 km/h,Na,ME - Men Elite,379 km,GT.A.Stage,Na,Na,Na,Na,Bayonne,La Rochelle,n/a,1061,? - let us know!,Na
+836,22 July 1912,-,29.14 km/h,Na,ME - Men Elite,470 km,GT.A.Stage,Na,Na,Na,Na,La Rochelle,Brest,n/a,1061,? - let us know!,Na
+837,24 July 1912,-,27.45 km/h,Na,ME - Men Elite,405 km,GT.A.Stage,Na,Na,Na,Na,Brest,Cherbourg,n/a,1061,? - let us know!,Na
+838,26 July 1912,-,28.8 km/h,Na,ME - Men Elite,361 km,GT.A.Stage,Na,Na,Na,Na,Cherbourg,Le Havre,n/a,1061,? - let us know!,Na
+839,28 July 1912,-,29 km/h,Na,ME - Men Elite,317 km,GT.A.Stage,Na,Na,Na,Na,Le Havre,Paris,n/a,1061,? - let us know!,Na
+840,02 July 1911,-,28.01 km/h,Na,ME - Men Elite,351 km,GT.A.Stage,Na,Na,Na,Na,Paris,Dunkerque,n/a,838,? - let us know!,Na
+841,04 July 1911,-,28.74 km/h,Na,ME - Men Elite,388 km,GT.A.Stage,Na,Na,Na,Na,Dunkerque,Longwy,n/a,838,? - let us know!,Na
+842,06 July 1911,-,30.55 km/h,Na,ME - Men Elite,331 km,GT.A.Stage,Na,Na,Na,Na,Longwy,Belfort,n/a,838,? - let us know!,Na
+843,08 July 1911,-,29.24 km/h,Na,ME - Men Elite,344 km,GT.A.Stage,Na,Na,Na,Na,Belfort,Chamonix,n/a,838,? - let us know!,Na
+844,10 July 1911,-,26.94 km/h,Na,ME - Men Elite,366 km,GT.A.Stage,Na,Na,Na,Na,Chamonix,Grenoble,n/a,838,? - let us know!,Na
+845,12 July 1911,-,26.2 km/h,Na,ME - Men Elite,348 km,GT.A.Stage,Na,Na,Na,Na,Grenoble,Nice,n/a,838,? - let us know!,Na
+846,14 July 1911,-,27.3 km/h,Na,ME - Men Elite,334 km,GT.A.Stage,Na,Na,Na,Na,Nice,Marseille,n/a,838,? - let us know!,Na
+847,16 July 1911,-,30.27 km/h,Na,ME - Men Elite,335 km,GT.A.Stage,Na,Na,Na,Na,Marseille,Perpignan,n/a,838,? - let us know!,Na
+848,18 July 1911,-,25.88 km/h,Na,ME - Men Elite,289 km,GT.A.Stage,Na,Na,Na,Na,Perpignan,Luchon,n/a,838,? - let us know!,Na
+849,20 July 1911,-,24.27 km/h,Na,ME - Men Elite,326 km,GT.A.Stage,Na,Na,Na,Na,Luchon,Bayonne,n/a,838,? - let us know!,Na
+850,22 July 1911,-,29.23 km/h,Na,ME - Men Elite,379 km,GT.A.Stage,Na,Na,Na,Na,Bayonne,La Rochelle,n/a,838,? - let us know!,Na
+851,23 July 1911,-,26.6 km/h,Na,ME - Men Elite,470 km,GT.A.Stage,Na,Na,Na,Na,La Rochelle,Brest,n/a,838,? - let us know!,Na
+852,26 July 1911,-,29.49 km/h,Na,ME - Men Elite,405 km,GT.A.Stage,Na,Na,Na,Na,Brest,Cherbourg,n/a,838,? - let us know!,Na
+853,28 July 1911,-,30.04 km/h,Na,ME - Men Elite,361 km,GT.A.Stage,Na,Na,Na,Na,Cherbourg,Le Havre,n/a,838,? - let us know!,Na
+854,30 July 1911,-,29.31 km/h,Na,ME - Men Elite,317 km,GT.A.Stage,Na,Na,Na,Na,Le Havre,Paris,n/a,838,? - let us know!,Na
+855,03 July 1910,-,30.22 km/h,Na,ME - Men Elite,269 km,GT.A.Stage,Na,Na,Na,Na,Paris,Roubaix,n/a,775,? - let us know!,Na
+856,05 July 1910,-,30.3 km/h,Na,ME - Men Elite,398 km,GT.A.Stage,Na,Na,Na,Na,Roubaix,Metz,n/a,775,? - let us know!,Na
+857,07 July 1910,-,28.41 km/h,Na,ME - Men Elite,259 km,GT.A.Stage,Na,Na,Na,Na,Metz,Belfort,n/a,775,? - let us know!,Na
+858,09 July 1910,-,31.75 km/h,Na,ME - Men Elite,309 km,GT.A.Stage,Na,Na,Na,Na,Belfort,Lyon,n/a,775,? - let us know!,Na
+859,11 July 1910,-,29.02 km/h,Na,ME - Men Elite,311 km,GT.A.Stage,Na,Na,Na,Na,Lyon,Grenoble,n/a,775,? - let us know!,Na
+860,13 July 1910,-,29.32 km/h,Na,ME - Men Elite,345 km,GT.A.Stage,Na,Na,Na,Na,Grenoble,Nice,n/a,775,? - let us know!,Na
+861,15 July 1910,-,29.24 km/h,Na,ME - Men Elite,345 km,GT.A.Stage,Na,Na,Na,Na,Nice,Nîmes,n/a,775,? - let us know!,Na
+862,17 July 1910,-,34.65 km/h,Na,ME - Men Elite,216 km,GT.A.Stage,Na,Na,Na,Na,Nîmes,Perpignan,n/a,775,? - let us know!,Na
+863,19 July 1910,-,26.55 km/h,Na,ME - Men Elite,289 km,GT.A.Stage,Na,Na,Na,Na,Perpignan,Luchon,n/a,775,? - let us know!,Na
+864,21 July 1910,-,23.01 km/h,Na,ME - Men Elite,326 km,GT.A.Stage,Na,Na,Na,Na,Luchon,Bayonne,n/a,775,? - let us know!,Na
+865,23 July 1910,-,32.8 km/h,Na,ME - Men Elite,269 km,GT.A.Stage,Na,Na,Na,Na,Bayonne,Bordeaux,n/a,775,? - let us know!,Na
+866,25 July 1910,-,29.03 km/h,Na,ME - Men Elite,391 km,GT.A.Stage,Na,Na,Na,Na,Bordeaux,Nantes,n/a,775,? - let us know!,Na
+867,27 July 1910,-,29.14 km/h,Na,ME - Men Elite,321 km,GT.A.Stage,Na,Na,Na,Na,Nantes,Brest,n/a,775,? - let us know!,Na
+868,29 July 1910,-,28.97 km/h,Na,ME - Men Elite,424 km,GT.A.Stage,Na,Na,Na,Na,Brest,Caen,n/a,775,? - let us know!,Na
+869,31 July 1910,-,31.6 km/h,Na,ME - Men Elite,262 km,GT.A.Stage,Na,Na,Na,Na,Caen,Paris,n/a,775,? - let us know!,Na
+870,05 July 1909,-,29.25 km/h,Na,ME - Men Elite,272 km,GT.A.Stage,Na,Na,Na,Na,Paris,Roubaix,n/a,793,? - let us know!,Na
+871,07 July 1909,-,28.13 km/h,Na,ME - Men Elite,398 km,GT.A.Stage,Na,Na,Na,Na,Roubaix,Metz,n/a,793,? - let us know!,Na
+872,09 July 1909,-,27.36 km/h,Na,ME - Men Elite,259 km,GT.A.Stage,Na,Na,Na,Na,Metz,Belfort,n/a,793,? - let us know!,Na
+873,11 July 1909,-,28.79 km/h,Na,ME - Men Elite,309 km,GT.A.Stage,Na,Na,Na,Na,Belfort,Lyon,n/a,793,? - let us know!,Na
+874,13 July 1909,-,27.77 km/h,Na,ME - Men Elite,311 km,GT.A.Stage,Na,Na,Na,Na,Lyon,Grenoble,n/a,793,? - let us know!,Na
+875,15 July 1909,-,28.48 km/h,Na,ME - Men Elite,346 km,GT.A.Stage,Na,Na,Na,Na,Grenoble,Nice,n/a,793,? - let us know!,Na
+876,17 July 1909,-,27.13 km/h,Na,ME - Men Elite,345 km,GT.A.Stage,Na,Na,Na,Na,Nice,Nîmes,n/a,793,? - let us know!,Na
+877,19 July 1909,-,29.8 km/h,Na,ME - Men Elite,303 km,GT.A.Stage,Na,Na,Na,Na,Nîmes,Toulouse,n/a,793,? - let us know!,Na
+878,21 July 1909,-,29.95 km/h,Na,ME - Men Elite,299 km,GT.A.Stage,Na,Na,Na,Na,Toulouse,Bayonne,n/a,793,? - let us know!,Na
+879,23 July 1909,-,33.49 km/h,Na,ME - Men Elite,269 km,GT.A.Stage,Na,Na,Na,Na,Bayonne,Bordeaux,n/a,793,? - let us know!,Na
+880,25 July 1909,-,30.59 km/h,Na,ME - Men Elite,391 km,GT.A.Stage,Na,Na,Na,Na,Bordeaux,Nantes,n/a,793,? - let us know!,Na
+881,27 July 1909,-,28.41 km/h,Na,ME - Men Elite,321 km,GT.A.Stage,Na,Na,Na,Na,Nantes,Brest,n/a,793,? - let us know!,Na
+882,29 July 1909,-,28.2 km/h,Na,ME - Men Elite,424 km,GT.A.Stage,Na,Na,Na,Na,Brest,Caen,n/a,793,? - let us know!,Na
+883,01 August 1909,-,28.14 km/h,Na,ME - Men Elite,250 km,GT.A.Stage,Na,Na,Na,Na,Caen,Paris,n/a,793,? - let us know!,Na
+884,13 July 1908,-,32.19 km/h,Na,ME - Men Elite,272 km,GT.A.Stage,Na,Na,Na,Na,Paris,Roubaix,n/a,1195,? - let us know!,Na
+885,15 July 1908,-,30.15 km/h,Na,ME - Men Elite,398 km,GT.A.Stage,Na,Na,Na,Na,Roubaix,Metz,n/a,1195,? - let us know!,Na
+886,17 July 1908,-,28.1 km/h,Na,ME - Men Elite,259 km,GT.A.Stage,Na,Na,Na,Na,Metz,Belfort,n/a,1195,? - let us know!,Na
+887,19 July 1908,-,31.31 km/h,Na,ME - Men Elite,309 km,GT.A.Stage,Na,Na,Na,Na,Belfort,Lyon,n/a,1195,? - let us know!,Na
+888,21 July 1908,-,27.93 km/h,Na,ME - Men Elite,311 km,GT.A.Stage,Na,Na,Na,Na,Lyon,Grenoble,n/a,1195,? - let us know!,Na
+889,23 July 1908,-,28.28 km/h,Na,ME - Men Elite,345 km,GT.A.Stage,Na,Na,Na,Na,Grenoble,Nice,n/a,1195,? - let us know!,Na
+890,25 July 1908,-,29.3 km/h,Na,ME - Men Elite,354 km,GT.A.Stage,Na,Na,Na,Na,Nice,Nîmes,n/a,1195,? - let us know!,Na
+891,27 July 1908,-,27.22 km/h,Na,ME - Men Elite,303 km,GT.A.Stage,Na,Na,Na,Na,Nîmes,Toulouse,n/a,1195,? - let us know!,Na
+892,29 July 1908,-,29.56 km/h,Na,ME - Men Elite,299 km,GT.A.Stage,Na,Na,Na,Na,Toulouse,Bayonne,n/a,1195,? - let us know!,Na
+893,31 July 1908,-,31.96 km/h,Na,ME - Men Elite,269 km,GT.A.Stage,Na,Na,Na,Na,Bayonne,Bordeaux,n/a,1195,? - let us know!,Na
+894,02 August 1908,-,27.76 km/h,Na,ME - Men Elite,391 km,GT.A.Stage,Na,Na,Na,Na,Bordeaux,Nantes,n/a,1195,? - let us know!,Na
+895,04 August 1908,-,28.83 km/h,Na,ME - Men Elite,321 km,GT.A.Stage,Na,Na,Na,Na,Nantes,Brest,n/a,1195,? - let us know!,Na
+896,06 August 1908,-,25.33 km/h,Na,ME - Men Elite,415 km,GT.A.Stage,Na,Na,Na,Na,Brest,Caen,n/a,1195,? - let us know!,Na
+897,09 August 1908,-,28.89 km/h,Na,ME - Men Elite,251 km,GT.A.Stage,Na,Na,Na,Na,Caen,Paris,n/a,1195,? - let us know!,Na
+898,08 July 1907,-,30.82 km/h,Na,ME - Men Elite,272 km,GT.A.Stage,Na,Na,Na,Na,Paris,Roubaix,n/a,870,? - let us know!,Na
+899,10 July 1907,-,29.15 km/h,Na,ME - Men Elite,398 km,GT.A.Stage,Na,Na,Na,Na,Roubaix,Metz,n/a,870,? - let us know!,Na
+900,12 July 1907,-,33.33 km/h,Na,ME - Men Elite,259 km,GT.A.Stage,Na,Na,Na,Na,Metz,Belfort,n/a,870,? - let us know!,Na
+901,14 July 1907,-,32.7 km/h,Na,ME - Men Elite,309 km,GT.A.Stage,Na,Na,Na,Na,Belfort,Lyon,n/a,870,? - let us know!,Na
+902,16 July 1907,-,27.56 km/h,Na,ME - Men Elite,311 km,GT.A.Stage,Na,Na,Na,Na,Lyon,Grenoble,n/a,870,? - let us know!,Na
+903,18 July 1907,-,28.2 km/h,Na,ME - Men Elite,345 km,GT.A.Stage,Na,Na,Na,Na,Grenoble,Nice,n/a,870,? - let us know!,Na
+904,20 July 1907,-,27.38 km/h,Na,ME - Men Elite,345 km,GT.A.Stage,Na,Na,Na,Na,Nice,Nîmes,n/a,870,? - let us know!,Na
+905,22 July 1907,-,27.46 km/h,Na,ME - Men Elite,303 km,GT.A.Stage,Na,Na,Na,Na,Nîmes,Toulouse,n/a,870,? - let us know!,Na
+906,24 July 1907,-,29.03 km/h,Na,ME - Men Elite,299 km,GT.A.Stage,Na,Na,Na,Na,Toulouse,Bayonne,n/a,870,? - let us know!,Na
+907,26 July 1907,-,33.09 km/h,Na,ME - Men Elite,269 km,GT.A.Stage,Na,Na,Na,Na,Bayonne,Bordeaux,n/a,870,? - let us know!,Na
+908,28 July 1907,-,26.86 km/h,Na,ME - Men Elite,391 km,GT.A.Stage,Na,Na,Na,Na,Bordeaux,Nantes,n/a,870,? - let us know!,Na
+909,30 July 1907,-,25.92 km/h,Na,ME - Men Elite,321 km,GT.A.Stage,Na,Na,Na,Na,Nantes,Brest,n/a,870,? - let us know!,Na
+910,01 August 1907,-,25.58 km/h,Na,ME - Men Elite,415 km,GT.A.Stage,Na,Na,Na,Na,Brest,Caen,n/a,870,? - let us know!,Na
+911,04 August 1907,-,28.69 km/h,Na,ME - Men Elite,251 km,GT.A.Stage,Na,Na,Na,Na,Caen,Paris,n/a,870,? - let us know!,Na
+912,04 July 1906,-,27.08 km/h,Na,ME - Men Elite,275 km,GT.A.Stage,Na,Na,Na,Na,Paris,Lille,n/a,675,? - let us know!,Na
+913,06 July 1906,-,27.86 km/h,Na,ME - Men Elite,400 km,GT.A.Stage,Na,Na,Na,Na,Douai,Nancy,n/a,675,? - let us know!,Na
+914,08 July 1906,-,27.17 km/h,Na,ME - Men Elite,416 km,GT.A.Stage,Na,Na,Na,Na,Nancy,Dijon,n/a,675,? - let us know!,Na
+915,10 July 1906,-,29.5 km/h,Na,ME - Men Elite,311 km,GT.A.Stage,Na,Na,Na,Na,Dijon,Grenoble,n/a,675,? - let us know!,Na
+916,12 July 1906,-,27.71 km/h,Na,ME - Men Elite,345 km,GT.A.Stage,Na,Na,Na,Na,Grenoble,Nice,n/a,675,? - let us know!,Na
+917,16 July 1906,-,27.59 km/h,Na,ME - Men Elite,480 km,GT.A.Stage,Na,Na,Na,Na,Marseille,Toulouse,n/a,675,? - let us know!,Na
+918,18 July 1906,-,27.86 km/h,Na,ME - Men Elite,300 km,GT.A.Stage,Na,Na,Na,Na,Toulouse,Bayonne,n/a,675,? - let us know!,Na
+919,22 July 1906,-,25.47 km/h,Na,ME - Men Elite,391 km,GT.A.Stage,Na,Na,Na,Na,Bordeaux,Nantes,n/a,675,? - let us know!,Na
+920,24 July 1906,-,24.88 km/h,Na,ME - Men Elite,321 km,GT.A.Stage,Na,Na,Na,Na,Nantes,Brest,n/a,675,? - let us know!,Na
+921,26 July 1906,-,22.53 km/h,Na,ME - Men Elite,415 km,GT.A.Stage,Na,Na,Na,Na,Brest,Caen,n/a,675,? - let us know!,Na
+922,29 July 1906,-,32.05 km/h,Na,ME - Men Elite,259 km,GT.A.Stage,Na,Na,Na,Na,Caen,Paris,n/a,675,? - let us know!,Na
+923,09 July 1905,-,29.78 km/h,Na,ME - Men Elite,340 km,GT.A.Stage,Na,Na,Na,Na,Paris,Nancy,n/a,515,? - let us know!,Na
+924,11 July 1905,-,29.36 km/h,Na,ME - Men Elite,299 km,GT.A.Stage,Na,Na,Na,Na,Nancy,Besançon,n/a,515,? - let us know!,Na
+925,18 July 1905,-,25.95 km/h,Na,ME - Men Elite,192 km,GT.A.Stage,Na,Na,Na,Na,Toulon,Nîmes,n/a,515,? - let us know!,Na
+926,20 July 1905,-,25.31 km/h,Na,ME - Men Elite,307 km,GT.A.Stage,Na,Na,Na,Na,Nîmes,Toulouse,n/a,515,? - let us know!,Na
+927,29 July 1905,-,33.73 km/h,Na,ME - Men Elite,253 km,GT.A.Stage,Na,Na,Na,Na,Caen,Paris,n/a,515,? - let us know!,Na
+928,02 July 1904,-,26.31 km/h,Na,ME - Men Elite,467 km,GT.A.Stage,Na,Na,Na,Na,Paris,Lyon,n/a,550,? - let us know!,Na
+929,09 July 1904,-,24.686 km/h,Na,ME - Men Elite,374 km,GT.A.Stage,Na,Na,Na,Na,Lyon,Marseille,n/a,550,? - let us know!,Na
+930,13 July 1904,-,26.952 km/h,Na,ME - Men Elite,424 km,GT.A.Stage,Na,Na,Na,Na,Marseille,Toulouse,n/a,550,? - let us know!,Na
+931,20 July 1904,-,25.252 km/h,Na,ME - Men Elite,425 km,GT.A.Stage,Na,Na,Na,Na,Bordeaux,Nantes,n/a,550,? - let us know!,Na
+932,23 July 1904,-,24.2 km/h,Na,ME - Men Elite,471 km,GT.A.Stage,Na,Na,Na,Na,Ville d'Avray,Paris,n/a,550,? - let us know!,Na
+933,01 July 1903,-,26.3 km/h,Na,ME - Men Elite,467 km,GT.A.Stage,Na,Na,Na,Na,Montgeron,Lyon,n/a,310,0.2 km solo,Na
+934,05 July 1903,-,25.83 km/h,Na,ME - Men Elite,374 km,GT.A.Stage,Na,Na,Na,Na,Lyon,Marseille,n/a,310,Sprint à deux,Na
+935,08 July 1903,-,23.61 km/h,Na,ME - Men Elite,423 km,GT.A.Stage,Na,Na,Na,Na,Marseille,Toulouse,n/a,310,? km solo,Na
+936,13 July 1903,-,25.849 km/h,Na,ME - Men Elite,425 km,GT.A.Stage,Na,Na,Na,Na,Bordeaux,Nantes,n/a,310,? - let us know!,Na
+937,18 July 1903,-,25.95 km/h,Na,ME - Men Elite,471 km,GT.A.Stage,Na,Na,Na,Na,Nantes,Paris,n/a,310,? - let us know!,Na
