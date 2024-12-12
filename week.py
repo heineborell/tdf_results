@@ -36,7 +36,7 @@ df["year"] = pd.to_numeric(df["year"])
 # stage column
 df["stage"] = df["stage"].str.split("|").str[0]
 
-# time column
+# time column changed
 df = df.drop(
     df.loc[df["time"].str.contains(r"-\d+") == True].index
 )  # 45 records have - time infront of them for some reason I don't understand, so I had to drop them out
