@@ -12,4 +12,4 @@ df_schema = {
     "profile_score": Integer,
     "vertical_meters": Integer,
 }
-test1.csv_uploader(df_schema=df_schema)
+test1.csv_uploader(df_schema=df_schema, table_name="giro_results")

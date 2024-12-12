@@ -24,8 +24,6 @@ connection.close()
 
 df1 = pd.read_csv("../pro_cycling_db/pro_tdf/protdf_2024_1962.csv")
 df2 = pd.read_csv("../pro_cycling_db/pro_tdf/protdf_1962_1903.csv")
-df_ids = pd.read_csv("../strava/strava_ids_fin.csv", usecols=["name", "strava_id"])
-
 
 df = pd.concat([df1, df2]).drop(
     columns=[
@@ -103,16 +101,11 @@ df["avg_temperature"] = df["avg_temperature"].replace(
 df["avg_temperature"] = pd.to_numeric(df["avg_temperature"])
 
 # read the pandas dataframe
-df_ids = df_ids.dropna()
 
 engine = create_engine(
     f"mysql+pymysql://{MYSQL_USER}:{MYSQL_PASSWORD}@{MYSQL_HOST}:{MYSQL_PORT}/{MYSQL_DATABASE}"
 )
 
-df_name_schema = {
-    "name": String(64),
-    "strava_id": Integer,
-}
 df_schema = {
     "name": String(64),
     "year": Integer,
@@ -124,18 +117,9 @@ with engine.connect() as connection:
     df.to_sql(
         "tdf_results", connection, if_exists="replace", dtype=df_schema, index=False
     )
-    df_ids.to_sql(
-        "strava_names",
-        connection,
-        if_exists="replace",
-        dtype=df_name_schema,
-        index=False,
-    )
 
 print("database uploaded")
 
-# with engine.connect() as connection:
-#    connection.execute(text(" ALTER TABLE df_names ADD PRIMARY KEY(strava_id); "))
 
 connection.close()
 engine.dispose()
