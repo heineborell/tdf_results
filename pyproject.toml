@@ -1,7 +1,18 @@
 [build-system]
-requires = ["setuptools"]
-build-backend = "setuptools.build_meta"
-[tool.pytest.ini_options]
-pythonpath = [
-  "src"]
+requires=["setuptools","setuptools-scm"]
+build-backend="setuptools.build_meta"
 
+[project]
+name='grand_tours'
+version="0.1"
+dependencies = [
+    "selenium",
+    "numpy",
+    "pandas",
+    "sqlalchemy",
+    "pymysql",
+    "mysqlclient"
+]
+
+[project.optional-dependencies]
+dev = ["black", "flake8", "isort", "pre-commit"]

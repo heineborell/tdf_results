@@ -5,6 +5,7 @@ import time
 
 import numpy as np
 import pandas as pd
+import pymysql as MySQLdb
 from selenium import webdriver
 from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.chrome.options import Options

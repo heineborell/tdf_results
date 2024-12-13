@@ -1,4 +1,4 @@
-from scrape import activity_scrape, ride_scrape
+from grand_tours import activity_scrape, ride_scrape
 
 if __name__ == "__main__":
 

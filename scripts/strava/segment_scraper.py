@@ -26,7 +26,7 @@ options.add_argument("--blink-settings=imagesEnabled=false")
 options.add_experimental_option("detach", True)
 options.add_experimental_option("excludeSwitches", ["enable-automation"])
 options.add_argument(
-    "user-data-dir=/Users/deniz/Library/Application Support/Google/Chrome/Profile 1"
+    "user-data-dir=/Users/dmini/Library/Application Support/Google/Chrome/Profile 1"
 )
 ## options.add_argument("--disable-dev-shm-usage")
 options.page_load_strategy = (
@@ -46,7 +46,7 @@ wait = WebDriverWait(driver, 5)
 #    30583511,
 #    4402228117,
 # ]
-activity_no_list = pd.read_csv("activity_list_2024.csv")["activity"].values.tolist()
+activity_no_list = pd.read_csv("../activity_list.csv")["activity"].values.tolist()
 last_index = activity_no_list.index(11903125943)
 activity_no_list = activity_no_list[2300:]
 print(activity_no_list)
