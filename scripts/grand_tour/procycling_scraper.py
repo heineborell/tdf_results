@@ -50,28 +50,11 @@ for year in year_list:
             + stage.split(" ")[1]
         )
         time.sleep(2)
-        getters.get_tables(
-            driver,
-        )
         try:
-            table = driver.find_element(
-                By.CSS_SELECTOR, ".results.basic.moblist11"
-            )  # this exception is for stages with relegations they have moblist11
-
-            rank_lst = table.find_elements(By.TAG_NAME, "tr")
-            time_table = table.find_elements(By.CSS_SELECTOR, ".time.ar")
-            info_table = driver.find_element(By.CSS_SELECTOR, ".infolist")
-            info_element = info_table.find_elements(By.TAG_NAME, "li")
-            name_lst = []
-            time_lst = []
-
-            for rank in rank_lst:
-                if len(rank.text.split("\n")) > 2:
-                    name_lst.append(rank.text.split("\n")[1])
-
-            for k, t in enumerate(time_table):
-                if k > 0:
-                    time_lst.append(t.text)
+            main_list = getters.get_tables(driver, ".results.basic.moblist11")
+            name_lst = main_list[0]
+            time_lst = main_list[1]
+            info_element = main_list[2]
 
             print(time_lst)
             ttt_val = 0
@@ -84,22 +67,10 @@ for year in year_list:
             except NoSuchElementException:
                 ttt_val = 0
                 print("It is a normal stage.")
-                table = driver.find_element(By.CSS_SELECTOR, ".results.basic.moblist10")
-
-                rank_lst = table.find_elements(By.TAG_NAME, "tr")
-                time_table = table.find_elements(By.CSS_SELECTOR, ".time.ar")
-                info_table = driver.find_element(By.CSS_SELECTOR, ".infolist")
-                info_element = info_table.find_elements(By.TAG_NAME, "li")
-                name_lst = []
-                time_lst = []
-
-                for rank in rank_lst:
-                    if len(rank.text.split("\n")) > 2:
-                        name_lst.append(rank.text.split("\n")[1])
-
-                for k, t in enumerate(time_table):
-                    if k > 0:
-                        time_lst.append(t.text)
+                main_list = getters.get_tables(driver, ".results.basic.moblist10")
+                name_lst = main_list[0]
+                time_lst = main_list[1]
+                info_element = main_list[2]
 
                 print(time_lst)
         if ttt_val == 0 and not all([el != ",," for el in time_lst]):
