@@ -10,7 +10,8 @@ from selenium.webdriver.support.ui import WebDriverWait
 from grand_tours import chrome_driver, getters
 
 driver = chrome_driver.start_driver()
-GRAND_TOUR = "tour-de-france"
+# GRAND_TOUR = "tour-de-france"
+GRAND_TOUR = "giro-d-italia"
 
 driver.get(f"https://www.procyclingstats.com/race/{GRAND_TOUR}/2024/stage-11")
 df = pd.DataFrame(columns=["year", "stage", "name", "time"])
@@ -25,13 +26,13 @@ year_element = drop_list[0].find_elements(By.TAG_NAME, "option")
 year_list = [year.text for year in year_element]
 
 # use this to choose what year you want to scrape
-year_list = year_list[95:]
+# year_list = year_list[95:]
 del year_list[0]
 print(year_list)
 
 for year in year_list:
     print(year)
-    driver.get("https://www.procyclingstats.com/race/tour-de-france/" + year + "/")
+    driver.get(f"https://www.procyclingstats.com/race/{GRAND_TOUR}/" + year + "/")
     drop_list = driver.find_elements(By.CLASS_NAME, "pageSelectNav ")
     time.sleep(2)
     if len(drop_list) == 2:
@@ -44,19 +45,16 @@ for year in year_list:
     for i, stage in enumerate(stage_list):
         print(stage)
         driver.get(
-            "https://www.procyclingstats.com/race/tour-de-france/"
+            f"https://www.procyclingstats.com/race/{GRAND_TOUR}/"
             + year
             + "/stage-"
             + stage.split(" ")[1]
         )
-        time.sleep(2)
+        time.sleep(3)
         try:
             main_list = getters.get_tables(driver, ".results.basic.moblist11")
-            name_lst = main_list[0]
-            time_lst = main_list[1]
-            info_element = main_list[2]
 
-            print(time_lst)
+            print(main_list[1])
             ttt_val = 0
         except NoSuchElementException:
 
@@ -68,20 +66,17 @@ for year in year_list:
                 ttt_val = 0
                 print("It is a normal stage.")
                 main_list = getters.get_tables(driver, ".results.basic.moblist10")
-                name_lst = main_list[0]
-                time_lst = main_list[1]
-                info_element = main_list[2]
 
-                print(time_lst)
-        if ttt_val == 0 and not all([el != ",," for el in time_lst]):
+                print(main_list[1])
+        if ttt_val == 0 and not all([el != ",," for el in main_list[1]]):
 
-            for j, _ in enumerate(time_lst):
+            for j, _ in enumerate(main_list[1]):
 
-                if time_lst[j] != ",," and "-" not in time_lst[j]:
+                if main_list[1][j] != ",," and "-" not in main_list[1][j]:
                     try:
                         # The following exceptions area for time formats ans their parsing
-                        t = datetime.strptime(time_lst[j], "%H:%M:%S")
-                        time_lst[j] = int(
+                        t = datetime.strptime(main_list[1][j], "%H:%M:%S")
+                        main_list[1][j] = int(
                             timedelta(
                                 hours=t.hour, minutes=t.minute, seconds=t.second
                             ).total_seconds()
@@ -90,17 +85,19 @@ for year in year_list:
                     except ValueError:
                         # This final exception is for the results that don't fit any time format
                         try:
-                            if "," not in time_lst[j]:
-                                t = datetime.strptime(time_lst[j], "%M:%S")
-                                time_lst[j] = int(
+                            if "," not in main_list[1][j]:
+                                t = datetime.strptime(main_list[1][j], "%M:%S")
+                                main_list[1][j] = int(
                                     timedelta(
                                         hours=t.hour, minutes=t.minute, seconds=t.second
                                     ).total_seconds()
                                 )
                             else:
-                                stripped_t = time_lst[j][0 : time_lst[j].index(",")]
+                                stripped_t = main_list[1][j][
+                                    0 : main_list[1][j].index(",")
+                                ]
                                 t = datetime.strptime(stripped_t, "%M.%S")
-                                time_lst[j] = int(
+                                main_list[1][j] = int(
                                     timedelta(
                                         hours=t.hour, minutes=t.minute, seconds=t.second
                                     ).total_seconds()
@@ -108,15 +105,15 @@ for year in year_list:
                         except ValueError:
                             print("No time format fits.")
             # this part is for dealing with '' and time increments
-            for j, _ in enumerate(time_lst):
-                if isinstance(time_lst[j], int) and j > 0:
-                    time_lst[j] = time_lst[j] + time_lst[0]
+            for j, _ in enumerate(main_list[1]):
+                if isinstance(main_list[1][j], int) and j > 0:
+                    main_list[1][j] = main_list[1][j] + main_list[1][0]
 
-            for j, _ in enumerate(time_lst):
-                if time_lst[j] == ",,":
-                    time_lst[j] = time_lst[j - 1]
+            for j, _ in enumerate(main_list[1]):
+                if main_list[1][j] == ",,":
+                    main_list[1][j] = main_list[1][j - 1]
 
-            info_lst = [info.text for info in info_element]
+            info_lst = [info.text for info in main_list[2]]
             final_info_lst = []
             for i in info_lst:
                 if len(i.split("\n")) == 1:
@@ -137,12 +134,12 @@ for year in year_list:
                 [info_df, pd.DataFrame.from_dict(info_dict)], ignore_index=True
             )
             final_dict = {
-                "year": [int(year)] * len(name_lst),
-                "stage": [stage] * len(name_lst),
-                "name": name_lst,
-                "time": time_lst,
+                "year": [int(year)] * len(main_list[0]),
+                "stage": [stage] * len(main_list[0]),
+                "name": main_list[0],
+                "time": main_list[1],
             }
-            info_dict_ext = {k: v * len(name_lst) for k, v in info_dict.items()}
+            info_dict_ext = {k: v * len(main_list[0]) for k, v in info_dict.items()}
             final_dict = final_dict | info_dict_ext
 
             df = pd.concat(
