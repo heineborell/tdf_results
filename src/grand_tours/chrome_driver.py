@@ -6,9 +6,9 @@ from selenium.webdriver.chrome.service import Service
 
 
 def start_driver():
+    """Initialize Chrome Driver with options"""
     service = Service()
     username = getpass.getuser()
-    # Set up options for headless Chrome
     options = Options()
     options.add_argument("--blink-settings=imagesEnabled=false")
     options.add_experimental_option("detach", True)
@@ -20,6 +20,4 @@ def start_driver():
         "eager"  # Scraper doesn't wait for browser to load all the page
     )
 
-    # Initialize Chrome with the specified options
-    driver = webdriver.Chrome(service=service, options=options)
-    return driver
+    return webdriver.Chrome(service=service, options=options)

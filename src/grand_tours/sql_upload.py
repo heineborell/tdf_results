@@ -9,6 +9,7 @@ class SqlUploader:
     def __init__(
         self, mysql_user, mysql_password, mysql_host, mysql_port, mysql_database
     ) -> None:
+        """Initialize the class with server and login info"""
         self.mysql_user = mysql_user
         self.mysql_password = mysql_password
         self.mysql_host = mysql_host
@@ -16,6 +17,7 @@ class SqlUploader:
         self.mysql_database = mysql_database
 
     def create_db(self):
+        """Create Database"""
         connection = pymysql.connect(
             host=self.mysql_host,
             port=self.mysql_port,
@@ -29,6 +31,7 @@ class SqlUploader:
         connection.close()
 
     def clean_pro_table(self, table_list):
+        """Clean the tables from procycling stats"""
         self.df = pd.concat([pd.read_csv(k) for k in table_list]).drop(
             columns=[
                 "Unnamed: 0",
@@ -125,7 +128,7 @@ class SqlUploader:
                 index=False,
             )
 
-        print("database uploaded")
+        print("Database Uploaded")
 
         connection.close()
         engine.dispose()
