@@ -7,7 +7,7 @@ from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 
-from grand_tours import chrome_driver
+from grand_tours import chrome_driver, getters
 
 driver = chrome_driver.start_driver()
 GRAND_TOUR = "tour-de-france"
@@ -15,23 +15,8 @@ GRAND_TOUR = "tour-de-france"
 driver.get(f"https://www.procyclingstats.com/race/{GRAND_TOUR}/2024/stage-11")
 df = pd.DataFrame(columns=["year", "stage", "name", "time"])
 
-# info table part
-info_table = driver.find_element(By.CSS_SELECTOR, ".infolist")
-info_element = info_table.find_elements(By.TAG_NAME, "li")
-info_lst = info_table.text.split("\n")
 
-info_lst = [info.text for info in info_element]
-final_info_lst = []
-for i in info_lst:
-    if len(i.split("\n")) == 1:
-        single_el = i.split("\n")
-        single_el.append("EMPTY")
-        final_info_lst.append(single_el)
-    else:
-        final_info_lst.append(i.split("\n"))
-
-final_info_lst = np.array(final_info_lst).flatten()
-info_dict = dict(zip(final_info_lst[0::2], final_info_lst[1::2]))
+info_dict = getters.get_info_dict(driver)
 
 info_df = pd.DataFrame(columns=list(info_dict.keys()))
 
@@ -65,6 +50,9 @@ for year in year_list:
             + stage.split(" ")[1]
         )
         time.sleep(2)
+        getters.get_tables(
+            driver,
+        )
         try:
             table = driver.find_element(
                 By.CSS_SELECTOR, ".results.basic.moblist11"
