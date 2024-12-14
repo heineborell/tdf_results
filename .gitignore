@@ -3,6 +3,7 @@
 #For MAC files
 **.DS_Store
 *.swp
+*.csv
 .venv
 __pycache__
 *egg*

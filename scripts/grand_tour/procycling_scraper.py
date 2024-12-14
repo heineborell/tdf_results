@@ -1,5 +1,8 @@
+import pathlib
 import time
 from datetime import datetime, timedelta
+from pathlib import Path
+from sys import path
 
 import numpy as np
 import pandas as pd
@@ -9,9 +12,14 @@ from selenium.webdriver.support.ui import WebDriverWait
 
 from grand_tours import chrome_driver, getters
 
-driver = chrome_driver.start_driver()
 # GRAND_TOUR = "tour-de-france"
 GRAND_TOUR = "giro-d-italia"
+if GRAND_TOUR == "tour-de-france":
+    pro_path = Path.cwd().parent.parent / "data/pro_tdf/"
+elif GRAND_TOUR == "giro-d-italia":
+    pro_path = Path.cwd().parent.parent / "data/pro_giro/"
+
+driver = chrome_driver.start_driver()
 
 driver.get(f"https://www.procyclingstats.com/race/{GRAND_TOUR}/2024/stage-11")
 df = pd.DataFrame(columns=["year", "stage", "name", "time"])
@@ -148,12 +156,19 @@ for year in year_list:
                     pd.DataFrame(final_dict),
                 ]
             )
-            df.to_csv(
-                "/Users/dmini/Library/Mobile Documents/com~apple~CloudDocs/Research/Data Science/Projects/TDF_data/pro_cycling_db/pro_tdf/protdf.csv"
-            )
-            info_df.to_csv(
-                "/Users/dmini/Library/Mobile Documents/com~apple~CloudDocs/Research/Data Science/Projects/TDF_data/pro_cycling_db/pro_tdf/info/infodf.csv"
-            )
+            if (pro_path / f"pro_{year_list[0]}_{int(year)+1}.csv").exists():
+                pathlib.Path.unlink(pro_path / f"pro_{year_list[0]}_{int(year)+1}.csv")
+
+            if (
+                pro_path / "info" / f"infodf_{year_list[0]}_{int(year)+1}.csv"
+            ).exists():
+                pathlib.Path.unlink(
+                    pro_path / "info" / f"infodf_{year_list[0]}_{int(year)+1}.csv"
+                )
+
+            df.to_csv(pro_path / f"pro_{year_list[0]}_{year}.csv")
+            info_df.to_csv(pro_path / "info" / f"infodf_{year_list[0]}_{year}.csv")
+
         else:
             # This is the TTT exception we made way above
             print("If its normal the entries are empty if its not it is a TTT stage")
