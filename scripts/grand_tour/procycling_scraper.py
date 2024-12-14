@@ -34,7 +34,7 @@ year_element = drop_list[0].find_elements(By.TAG_NAME, "option")
 year_list = [year.text for year in year_element]
 
 # use this to choose what year you want to scrape
-# year_list = year_list[95:]
+year_list = year_list[11:]
 del year_list[0]
 print(year_list)
 
@@ -59,6 +59,11 @@ for year in year_list:
             + stage.split(" ")[1]
         )
         time.sleep(3)
+
+        # Throwing the stages with no moblist
+        if (driver.page_source.find("moblist")) == -1:
+            continue
+
         try:
             main_list = getters.get_tables(driver, ".results.basic.moblist11")
 
