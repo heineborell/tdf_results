@@ -2,7 +2,6 @@ import pathlib
 import time
 from datetime import datetime, timedelta
 from pathlib import Path
-from sys import path
 
 import numpy as np
 import pandas as pd
@@ -10,7 +9,7 @@ from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 
-from grand_tours import chrome_driver, getters
+from grand_tours import chrome_driver, getters, logger_config
 
 # GRAND_TOUR = "tour-de-france"
 GRAND_TOUR = "giro-d-italia"
@@ -19,6 +18,10 @@ if GRAND_TOUR == "tour-de-france":
 elif GRAND_TOUR == "giro-d-italia":
     pro_path = Path.cwd().parent.parent / "data/pro_giro/"
 
+# Logger
+logger = logger_config.setup_logger()
+
+# Driver
 driver = chrome_driver.start_driver()
 
 driver.get(f"https://www.procyclingstats.com/race/{GRAND_TOUR}/2024/stage-11")
@@ -34,12 +37,11 @@ year_element = drop_list[0].find_elements(By.TAG_NAME, "option")
 year_list = [year.text for year in year_element]
 
 # use this to choose what year you want to scrape
-year_list = year_list[11:]
+# year_list = year_list[12:]
 del year_list[0]
-print(year_list)
 
 for year in year_list:
-    print(year)
+    logger.info(f"------{year}------")
     driver.get(f"https://www.procyclingstats.com/race/{GRAND_TOUR}/" + year + "/")
     drop_list = driver.find_elements(By.CLASS_NAME, "pageSelectNav ")
     time.sleep(2)
@@ -51,7 +53,7 @@ for year in year_list:
         stage_list = [stage.text for stage in stage_element if "Stage" in stage.text]
 
     for i, stage in enumerate(stage_list):
-        print(stage)
+        logger.info(f"----{stage}")
         driver.get(
             f"https://www.procyclingstats.com/race/{GRAND_TOUR}/"
             + year
@@ -62,12 +64,12 @@ for year in year_list:
 
         # Throwing the stages with no moblist
         if (driver.page_source.find("moblist")) == -1:
+            logger.info("No moblist!")
             continue
 
         try:
             main_list = getters.get_tables(driver, ".results.basic.moblist11")
 
-            print(main_list[1])
             ttt_val = 0
         except NoSuchElementException:
 
@@ -77,10 +79,9 @@ for year in year_list:
                 ttt_val = 1
             except NoSuchElementException:
                 ttt_val = 0
-                print("It is a normal stage.")
+                logger.info("It is a normal stage.")
                 main_list = getters.get_tables(driver, ".results.basic.moblist10")
 
-                print(main_list[1])
         if ttt_val == 0 and not all([el != ",," for el in main_list[1]]):
 
             for j, _ in enumerate(main_list[1]):
@@ -116,7 +117,7 @@ for year in year_list:
                                     ).total_seconds()
                                 )
                         except ValueError:
-                            print("No time format fits.")
+                            logger.error("No time format fits!")
             # this part is for dealing with '' and time increments
             for j, _ in enumerate(main_list[1]):
                 if isinstance(main_list[1][j], int) and j > 0:
@@ -176,6 +177,8 @@ for year in year_list:
 
         else:
             # This is the TTT exception we made way above
-            print("If its normal the entries are empty if its not it is a TTT stage")
+            logger.info(
+                "If its normal the entries are empty if its not it is a TTT stage"
+            )
 
 driver.quit()
