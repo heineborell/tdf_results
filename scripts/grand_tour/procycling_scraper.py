@@ -37,7 +37,7 @@ year_element = drop_list[0].find_elements(By.TAG_NAME, "option")
 year_list = [year.text for year in year_element]
 
 # use this to choose what year you want to scrape
-# year_list = year_list[12:]
+year_list = year_list[86:]
 del year_list[0]
 
 for year in year_list:
@@ -78,9 +78,14 @@ for year in year_list:
                 ttt_test = driver.find_element(By.CLASS_NAME, "results-ttt")
                 ttt_val = 1
             except NoSuchElementException:
-                ttt_val = 0
-                logger.info("It is a normal stage.")
-                main_list = getters.get_tables(driver, ".results.basic.moblist10")
+                try:
+                    ttt_val = 0
+                    main_list = getters.get_tables(driver, ".results.basic.moblist10")
+                    logger.info("It is a normal stage.")
+                except NoSuchElementException:
+                    ttt_val = 0
+                    main_list = getters.get_tables(driver, ".results.basic.moblist12")
+                    logger.info("It is a normal stage.")
 
         if ttt_val == 0 and not all([el != ",," for el in main_list[1]]):
 

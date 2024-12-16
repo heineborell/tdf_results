@@ -16,8 +16,8 @@ def start_driver():
     options.add_argument(
         f"user-data-dir=/Users/{username}/Library/Application Support/Google/Chrome/Profile 1"
     )
-    options.page_load_strategy = (
-        "eager"  # Scraper doesn't wait for browser to load all the page
-    )
+    # options.page_load_strategy = (
+    #     "eager"  # Scraper doesn't wait for browser to load all the page
+    # )
 
     return webdriver.Chrome(service=service, options=options)
