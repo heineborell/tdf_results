@@ -1,9 +1,14 @@
+from scrape import sql_upload
 from sqlalchemy.types import *
 
-from scrape import sql_upload
-
 test1 = sql_upload.SqlUploader("root", "Abrakadabra69!", "127.0.0.1", 3306, "test_db")
-test1.clean_pro_table(["../data/pro_cycling_db/pro_tdf/protdf_giro_2024_2008.csv"])
+test1.clean_pro_table(
+    [
+        # "~/iCloud/Research/Data_Science/Projects/data/pro_giro/pro_2024_1991.csv",
+        "~/iCloud/Research/Data_Science/Projects/data/pro_giro/pro_1991_1933.csv",
+        "~/iCloud/Research/Data_Science/Projects/data/pro_giro/pro_1933_1923.csv",
+    ]
+)
 
 df_schema = {
     "name": String(64),
