@@ -17,7 +17,8 @@ from sqlalchemy import create_engine
 engine = create_engine("mysql+mysqldb://root:Abrakadabra69!@127.0.0.1:3306/grand_tours")
 conn = engine.connect()
 
-name_query = "SELECT DISTINCT(`name`) FROM tdf_results WHERE `year` > 2010 "
+name_query = "(select DISTINCT(name) from tdf_results where `year`> 2005) union (select DISTINCT(name) from giro_results where `year`> 2005)"
+
 
 service = Service()
 # Set up options for headless Chrome
@@ -26,7 +27,7 @@ options.add_argument("--blink-settings=imagesEnabled=false")
 options.add_experimental_option("detach", True)
 options.add_experimental_option("excludeSwitches", ["enable-automation"])
 options.add_argument(
-    "user-data-dir=/Users/deniz/Library/Application Support/Google/Chrome/Profile 1"
+    "user-data-dir=/Users/dmini/Library/Application Support/Google/Chrome/Profile 1"
 )
 options.page_load_strategy = (
     "eager"  # Scraper doesn't wait for browser to load all the page
@@ -84,7 +85,7 @@ for name in name_list:
 
     strava_df = pd.concat([strava_df, pd.DataFrame.from_dict(strava_dict)])
     strava_df.to_csv(
-        "../../data/strava/pro_id/strava_ids_test.csv"
+        "~/iCloud/Research/Data_Science/Projects/data/strava/strava_ids.csv"
     )  # Note that the end result will have null fields for the strava_id column
 
 
