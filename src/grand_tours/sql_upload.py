@@ -114,7 +114,14 @@ class SqlUploader:
 
         return self.df
 
+    def single_df(self, dataframe_path):
+        """Import a dataframe"""
+        self.df = pd.read_csv(dataframe_path)
+
+        return self.df
+
     def csv_uploader(self, df_schema, table_name):
+        """Upload the dataframe defined (either cleaned or direct)"""
         engine = create_engine(
             f"mysql+pymysql://{self.mysql_user}:{self.mysql_password}@{self.mysql_host}:{self.mysql_port}/{self.mysql_database}"
         )
