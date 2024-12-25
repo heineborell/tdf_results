@@ -17,7 +17,7 @@ from sqlalchemy import create_engine
 engine = create_engine("mysql+mysqldb://root:Abrakadabra69!@127.0.0.1:3306/grand_tours")
 conn = engine.connect()
 
-name_query = "(select DISTINCT(name) from tdf_results where `year`> 2005) union (select DISTINCT(name) from giro_results where `year`> 2005)"
+name_query = "(select DISTINCT(name) from tdf_results where `year`> 2010) union (select DISTINCT(name) from giro_results where `year`> 2010)"
 
 
 service = Service()

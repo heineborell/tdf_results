@@ -114,10 +114,9 @@ class SqlUploader:
 
         return self.df
 
-    def single_df(self, dataframe_path):
-        """Import a dataframe"""
-        self.df = pd.read_csv(dataframe_path)
-
+    def direct_loader(self, data):
+        """Directly Load DataFrame without cleaning"""
+        self.df = data
         return self.df
 
     def csv_uploader(self, df_schema, table_name):
