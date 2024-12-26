@@ -33,7 +33,7 @@ def ride_scraper(pro_id, date):
         + "&interval_type=week&chart_type=miles&year_offset=0"
     )
     driver.get(homepage)
-    time.sleep(5)
+    time.sleep(13)
     activities = []
     for m in driver.find_elements(By.CSS_SELECTOR, "a[data-testid='activity_name']"):
         activities.append(m.get_attribute("href").split("/")[-1])

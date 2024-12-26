@@ -13,15 +13,6 @@ from selenium.webdriver.support.ui import WebDriverWait
 service = Service()
 # Set up options for headless Chrome
 options = Options()
-# options.headless = True  # Enable headless mode for invisible operation
-# options.add_argument("--window-size=1920,1200")  # Define the window size of the browser
-# options.add_experimental_option("detach", True)
-
-# options.add_argument("--no-sandbox")
-# options.add_argument("--headless")
-# options.add_argument("--no-proxy-server")
-# options.add_argument("--proxy-server='direct://'")
-# options.add_argument("--proxy-bypass-list=*")
 options.add_argument("--blink-settings=imagesEnabled=false")
 options.add_experimental_option("detach", True)
 options.add_experimental_option("excludeSwitches", ["enable-automation"])
@@ -37,15 +28,6 @@ options.page_load_strategy = (
 driver = webdriver.Chrome(service=service, options=options)
 wait = WebDriverWait(driver, 5)
 
-# activity_no_list = [
-#    11888473406,
-#    11888654604,
-#    11879168103,
-#    11878904744,
-#    12828517984,
-#    30583511,
-#    4402228117,
-# ]
 activity_no_list = pd.read_csv("../activity_list.csv")["activity"].values.tolist()
 last_index = activity_no_list.index(11903125943)
 activity_no_list = activity_no_list[2300:]

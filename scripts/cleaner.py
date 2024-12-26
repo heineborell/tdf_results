@@ -1,3 +1,5 @@
+"""This is for cleaning some part of the giro results"""
+
 import re
 from datetime import datetime, timedelta
 
