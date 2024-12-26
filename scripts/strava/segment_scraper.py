@@ -10,6 +10,10 @@ from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 
+grand_tour = "giro"
+# grand_tour = "tdf"
+year = 2024
+
 service = Service()
 # Set up options for headless Chrome
 options = Options()
@@ -28,10 +32,16 @@ options.page_load_strategy = (
 driver = webdriver.Chrome(service=service, options=options)
 wait = WebDriverWait(driver, 5)
 
-activity_no_list = pd.read_csv("../activity_list.csv")["activity"].values.tolist()
-last_index = activity_no_list.index(11903125943)
-activity_no_list = activity_no_list[2300:]
-print(activity_no_list)
+activity_no_list = (
+    pd.read_csv(
+        f"~/iCloud/Research/Data_Science/Projects/data/strava/activity_list/activity_list_{grand_tour}_{year}.csv"
+    )
+    .drop_duplicates(subset=["activity"])["activity"]
+    .values.tolist()
+)
+# last_index = activity_no_list.index(11903125943)
+# activity_no_list = activity_no_list[110:]
+print(len(activity_no_list))
 activity_dict_list = {"activities": []}
 stat_dict_list = {"stats": []}
 
@@ -63,6 +73,24 @@ for p, activity_no in enumerate(activity_no_list):
         "distance": distance,
         "segments": [],
     }
+
+    # Extract the activity_type from the lightboxData JavaScript object
+    # Find the script element containing pageProps
+    script_element = driver.find_element(
+        By.XPATH, "//script[contains(text(), 'pageProps')]"
+    )
+
+    # Get text content and parse activity_type
+    script_text = script_element.get_attribute("innerHTML")
+    activity_type = script_text.split('activity_type":"')[1].split('"')[0]
+    print(activity_type)
+
+    # Check if the activity type is "NordicSki"
+    if activity_type == "ride":
+        print("Found ride activity type!")
+    else:
+        print("Ride activity type not found.")
+        continue
 
     try:
         segment_table = driver.find_element(
@@ -160,19 +188,19 @@ for p, activity_no in enumerate(activity_no_list):
 
     if p % 2 == 0:
         json_string = json.dumps(activity_dict_list)
-        with open("segment.json", "w") as f:
+        with open(
+            f"segment_{year}_{grand_tour}.json",
+            "w",
+        ) as f:
             f.write(json_string)
         json_string = json.dumps(stat_dict_list)
-        with open("stat.json", "w") as f:
+        with open(
+            f"stat_{year}_{grand_tour}.json",
+            "w",
+        ) as f:
             f.write(json_string)
     # if p % 100 == 0:
     time.sleep(3)
 
 
-json_string = json.dumps(activity_dict_list)
-with open("../../data/strava/segment/segment.json", "w") as f:
-    f.write(json_string)
-json_string = json.dumps(stat_dict_list)
-with open("../../data/strava/stat/stat.json", "w") as f:
-    f.write(json_string)
 driver.quit()

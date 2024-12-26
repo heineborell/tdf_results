@@ -4,6 +4,7 @@
 **.DS_Store
 *.swp
 *.csv
+*.json
 *.log
 .venv
 __pycache__
