@@ -12,7 +12,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 
 grand_tour = "giro"
 # grand_tour = "tdf"
-year = 2024
+year = 2023
 
 service = Service()
 # Set up options for headless Chrome
@@ -39,8 +39,8 @@ activity_no_list = (
     .drop_duplicates(subset=["activity"])["activity"]
     .values.tolist()
 )
-# last_index = activity_no_list.index(11903125943)
-# activity_no_list = activity_no_list[110:]
+# last_index = activity_no_list.index(7528518968)
+# activity_no_list = activity_no_list[last_index:]
 print(len(activity_no_list))
 activity_dict_list = {"activities": []}
 stat_dict_list = {"stats": []}
@@ -49,6 +49,24 @@ for p, activity_no in enumerate(activity_no_list):
     activity = "https://www.strava.com/activities/" + str(activity_no)
     driver.get(activity)
     time.sleep(np.abs(np.random.randn()))
+
+    # Extract the activity_type from the lightboxData JavaScript object
+    # Find the script element containing pageProps
+    script_element = driver.find_element(
+        By.XPATH, "//script[contains(text(), 'pageProps')]"
+    )
+
+    # Get text content and parse activity_type
+    script_text = script_element.get_attribute("innerHTML")
+    activity_type = script_text.split('activity_type":"')[1].split('"')[0]
+    print(activity_type)
+
+    # Check if the activity type is "NordicSki"
+    if activity_type == "ride":
+        print("Found ride activity type!")
+    else:
+        print("Ride activity type not found.")
+        continue
 
     summary_container = driver.find_element(
         By.CSS_SELECTOR, ".row.no-margins.activity-summary-container"
@@ -73,24 +91,6 @@ for p, activity_no in enumerate(activity_no_list):
         "distance": distance,
         "segments": [],
     }
-
-    # Extract the activity_type from the lightboxData JavaScript object
-    # Find the script element containing pageProps
-    script_element = driver.find_element(
-        By.XPATH, "//script[contains(text(), 'pageProps')]"
-    )
-
-    # Get text content and parse activity_type
-    script_text = script_element.get_attribute("innerHTML")
-    activity_type = script_text.split('activity_type":"')[1].split('"')[0]
-    print(activity_type)
-
-    # Check if the activity type is "NordicSki"
-    if activity_type == "ride":
-        print("Found ride activity type!")
-    else:
-        print("Ride activity type not found.")
-        continue
 
     try:
         segment_table = driver.find_element(
@@ -145,46 +145,49 @@ for p, activity_no in enumerate(activity_no_list):
         activity_dict["segments"].append(segment_dict)
         activity_dict_list["activities"].append(activity_dict)
 
-        stats = driver.find_element(By.XPATH, '//*[@id="heading"]/div/div/div[2]')
-        stat_list = stats.text.split("\n")
-        stat_list.remove("Show More")
-        stat_dict = {}
-        for i, stat in enumerate(stat_list):
-            if stat == "Distance":
-                stat_dict.update(
-                    {
-                        "activity_id": activity_no,
-                        "athlete_id": name,
-                        "dist": stat_list[i - 1],
-                    }
-                )
-            if stat == "Moving Time":
-                stat_dict.update({"move_time": stat_list[i - 1]})
-            if stat == "Elevation":
-                stat_dict.update({"elevation": stat_list[i - 1]})
-            if stat == "Weighted Avg Power":
-                stat_dict.update({"wap": stat_list[i - 1]})
-            if stat == "total work":
-                stat_dict.update({"tw": stat_list[i - 1]})
-            if stat == "Avg Max":
-                stat_dict.update({"avg_max": stat_list[i + 1]})
-            if "Elapsed Time" in stat:
-                stat_dict.update({"elapsed": stat_list[i].split(" ")[-1]})
-            if stat == "Temperature":
-                stat_dict.update({"temp": stat_list[i + 1]})
-            if stat == "Humidity":
-                stat_dict.update({"humd": stat_list[i + 1]})
-            if stat == "Feels like":
-                stat_dict.update({"feels": stat_list[i + 1]})
-            if stat == "Wind Speed":
-                stat_dict.update({"wind_speed": stat_list[i + 1]})
-            if stat == "Wind Direction":
-                stat_dict.update({"wind_direction": stat_list[i + 1]})
-            if i == len(stat_list) - 1:
-                stat_dict.update({"device": stat_list[i]})
+        try:
+            stats = driver.find_element(By.XPATH, '//*[@id="heading"]/div/div/div[2]')
+            stat_list = stats.text.split("\n")
+            stat_list.remove("Show More")
+            stat_dict = {}
+            for i, stat in enumerate(stat_list):
+                if stat == "Distance":
+                    stat_dict.update(
+                        {
+                            "activity_id": activity_no,
+                            "athlete_id": name,
+                            "dist": stat_list[i - 1],
+                        }
+                    )
+                if stat == "Moving Time":
+                    stat_dict.update({"move_time": stat_list[i - 1]})
+                if stat == "Elevation":
+                    stat_dict.update({"elevation": stat_list[i - 1]})
+                if stat == "Weighted Avg Power":
+                    stat_dict.update({"wap": stat_list[i - 1]})
+                if stat == "total work":
+                    stat_dict.update({"tw": stat_list[i - 1]})
+                if stat == "Avg Max":
+                    stat_dict.update({"avg_max": stat_list[i + 1]})
+                if "Elapsed Time" in stat:
+                    stat_dict.update({"elapsed": stat_list[i].split(" ")[-1]})
+                if stat == "Temperature":
+                    stat_dict.update({"temp": stat_list[i + 1]})
+                if stat == "Humidity":
+                    stat_dict.update({"humd": stat_list[i + 1]})
+                if stat == "Feels like":
+                    stat_dict.update({"feels": stat_list[i + 1]})
+                if stat == "Wind Speed":
+                    stat_dict.update({"wind_speed": stat_list[i + 1]})
+                if stat == "Wind Direction":
+                    stat_dict.update({"wind_direction": stat_list[i + 1]})
+                if i == len(stat_list) - 1:
+                    stat_dict.update({"device": stat_list[i]})
 
-        stat_dict_list["stats"].append(stat_dict)
-        print(stat_dict)
+            stat_dict_list["stats"].append(stat_dict)
+            print(stat_dict)
+        except ValueError:
+            print("No more stat")
 
     if p % 2 == 0:
         json_string = json.dumps(activity_dict_list)
