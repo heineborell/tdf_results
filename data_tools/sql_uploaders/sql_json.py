@@ -1,4 +1,6 @@
+import getpass
 import json
+from pathlib import Path
 
 from sqlalchemy import CHAR, JSON, Column, Float, Integer, String, create_engine, text
 from sqlalchemy.exc import OperationalError
@@ -15,6 +17,18 @@ MYSQL_DATABASE = "grand_tours"
 
 # Define database connection URL
 DATABASE_URL = "mysql+pymysql://root:Abrakadabra69!@127.0.0.1:3306/grand_tours"
+
+# grand_tour = "giro"
+grand_tour = "tdf"
+year = 2024
+username = getpass.getuser()
+
+segment_range = Path(
+    f"/Users/{username}/iCloud/Research/Data_Science/Projects/data/strava/segments/"
+)
+stat_range = Path(
+    f"/Users/{username}/iCloud/Research/Data_Science/Projects/data/strava/stats/"
+)
 
 # Initialize SQLAlchemy base
 Base = declarative_base()
@@ -71,9 +85,14 @@ except OperationalError:
 # Create the table in the database (if not exists)
 Base.metadata.create_all(engine)
 id_list = []
-for j in range(1, 7):
-    if j == 3:
-        with open(f"segment_{j}_2024.json", "r") as f:
+for j in range(
+    1, len(sorted(segment_range.glob(f"segment_{year}_{grand_tour}_*"))) + 1
+):
+    if j == 3 and year == 2024:
+        with open(
+            f"/Users/{username}/iCloud/Research/Data_Science/Projects/data/strava/segments/segment_{year}_{grand_tour}_{j}.json",
+            "r",
+        ) as f:
             json_data = json.loads(f.read())
 
         for activity in json_data:
@@ -88,12 +107,16 @@ for j in range(1, 7):
                 session.add(row)
                 session.commit()
                 id_list.append(activity["activity_id"])
-                print(f"{j} segment uploaded")
+                print(f"{j} segment {grand_tour} {year} uploaded")
             else:
                 pass
     else:
 
-        with open(f"segment_{j}_2024.json", "r") as f:
+        with open(
+            f"/Users/{username}/iCloud/Research/Data_Science/Projects/data/strava/segments/segment_{year}_{grand_tour}_{j}.json",
+            "r",
+        ) as f:
+
             json_data = json.loads(f.read())
 
         for activity in json_data[0]["activities"]:
@@ -108,12 +131,15 @@ for j in range(1, 7):
                 session.add(row)
                 session.commit()
                 id_list.append(activity["activity_id"])
-                print(f"{j} segment uploaded")
+                print(f"{j} segment {grand_tour} {year} uploaded")
             else:
                 pass
 id_list = []
-for j in range(1, 7):
-    with open(f"stat_{j}_2024.json", "r") as f:
+for j in range(1, len(sorted(stat_range.glob(f"stat_{year}_{grand_tour}_*"))) + 1):
+    with open(
+        f"/Users/{username}/iCloud/Research/Data_Science/Projects/data/strava/stats/stat_{year}_{grand_tour}_{j}.json",
+        "r",
+    ) as f:
         json_data = json.loads(f.read())
 
     for activity in json_data[0]["stats"]:
@@ -126,7 +152,7 @@ for j in range(1, 7):
             session.add(row)
             session.commit()
             id_list.append(activity["activity_id"])
-            print(f"{j} segment uploaded")
+            print(f"{j} stats {grand_tour} {year} uploaded")
         else:
             pass
 
