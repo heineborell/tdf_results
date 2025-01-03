@@ -19,7 +19,7 @@ MYSQL_DATABASE = "grand_tours"
 DATABASE_URL = "mysql+pymysql://root:Abrakadabra69!@127.0.0.1:3306/grand_tours"
 
 grand_tours = ["tdf", "giro"]
-years = [2023]
+years = [2024, 2023]
 username = getpass.getuser()
 
 segment_range = Path(
@@ -82,64 +82,39 @@ except OperationalError:
     print("Tables do not exist")
 
 # Create the table in the database (if not exists)
+id_list_stat = []
+id_list_segment = []
 for grand_tour in grand_tours:
     for year in years:
         Base.metadata.create_all(engine)
-        id_list = []
         for j in range(
             1, len(sorted(segment_range.glob(f"segment_{year}_{grand_tour}_*"))) + 1
         ):
-            if j == 3 and year == 2024 and grand_tour == "tdf":
-                with open(
-                    f"/Users/{username}/iCloud/Research/Data_Science/Projects/data/strava/segments/segment_{year}_{grand_tour}_{j}.json",
-                    "r",
-                ) as f:
-                    json_data = json.loads(f.read())
 
-                for activity in json_data:
-                    if activity["activity_id"] not in id_list:
-                        row = RawJSONData(
-                            str(activity["activity_id"]),
-                            str(activity["athlete_id"]),
-                            str(activity["date"])
-                            .replace("June", "Jun")
-                            .replace("July", "Jul"),
-                            float(activity["distance"]),
-                            activity["segments"][0],
-                        )
-                        session.add(row)
-                        session.commit()
-                        id_list.append(activity["activity_id"])
-                        print(f"{j} segment {grand_tour} {year} uploaded")
-                    else:
-                        pass
-            else:
+            with open(
+                f"/Users/{username}/iCloud/Research/Data_Science/Projects/data/strava/segments/segment_{year}_{grand_tour}_{j}.json",
+                "r",
+            ) as f:
 
-                with open(
-                    f"/Users/{username}/iCloud/Research/Data_Science/Projects/data/strava/segments/segment_{year}_{grand_tour}_{j}.json",
-                    "r",
-                ) as f:
+                json_data = json.loads(f.read())
 
-                    json_data = json.loads(f.read())
-
-                for activity in json_data["activities"]:
-                    if activity["activity_id"] not in id_list:
-                        row = RawJSONData(
-                            str(activity["activity_id"]),
-                            str(activity["athlete_id"]),
-                            str(activity["date"])
-                            .replace("June", "Jun")
-                            .replace("July", "Jul"),
-                            float(activity["distance"]),
-                            activity["segments"][0],
-                        )
-                        session.add(row)
-                        session.commit()
-                        id_list.append(activity["activity_id"])
-                        print(f"{j} segment {grand_tour} {year} uploaded")
-                    else:
-                        pass
-        id_list = []
+            for activity in json_data["activities"]:
+                if activity["activity_id"] not in id_list_segment:
+                    row = RawJSONData(
+                        str(activity["activity_id"]),
+                        str(activity["athlete_id"]),
+                        str(activity["date"])
+                        .replace("June", "Jun")
+                        .replace("July", "Jul"),
+                        float(activity["distance"]),
+                        activity["segments"][0],
+                    )
+                    session.add(row)
+                    session.commit()
+                    id_list_segment.append(activity["activity_id"])
+                    print(f"{j} segment {grand_tour} {year} uploaded")
+                else:
+                    pass
         for j in range(
             1, len(sorted(stat_range.glob(f"stat_{year}_{grand_tour}_*"))) + 1
         ):
@@ -150,7 +125,7 @@ for grand_tour in grand_tours:
                 json_data = json.loads(f.read())
 
             for activity in json_data["stats"]:
-                if activity["activity_id"] not in id_list:
+                if activity["activity_id"] not in id_list_stat:
                     row = RawJSONData_2(
                         str(activity["activity_id"]),
                         str(activity["athlete_id"]),
@@ -158,7 +133,7 @@ for grand_tour in grand_tours:
                     )
                     session.add(row)
                     session.commit()
-                    id_list.append(activity["activity_id"])
+                    id_list_stat.append(activity["activity_id"])
                     print(f"{j} stats {grand_tour} {year} uploaded")
                 else:
                     pass
