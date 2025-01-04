@@ -50,7 +50,7 @@ year_element = drop_list[0].find_elements(By.TAG_NAME, "option")
 year_list = [year.text for year in year_element]
 
 # use this to choose what year you want to scrape
-year_list = year_list[29:]
+year_list = year_list[98:]
 del year_list[0]
 
 for year in year_list:
@@ -144,6 +144,7 @@ for year in year_list:
                                 )
                         except ValueError:
                             logger.error("No time format fits!")
+                            break
             # this part is for dealing with '' and time increments
             for j, _ in enumerate(main_list[1]):
                 if isinstance(main_list[1][j], int) and j > 0:
