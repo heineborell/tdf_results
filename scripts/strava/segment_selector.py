@@ -46,27 +46,37 @@ segment_table = driver.find_element(
 
 
 driver.find_elements(By.XPATH, '//*[@id="show-hidden-efforts"]')[0].click()
-blocks = []
+segment_no = []
+segment_name = []
+end_points = []
+
 for j, segment in enumerate(segment_table.find_elements(By.TAG_NAME, "tr")):
     if j > 0:
-        inside = []
+        ends = []
         segment.click()
         time.sleep(4)
         clipper = driver.find_elements(By.CSS_SELECTOR, "[id^='view']")
         rects = clipper[0].find_elements(By.TAG_NAME, "rect")
-        inside.append(segment.get_attribute("data-segment-effort-id"))
-        inside.append(rects[0].get_attribute("x"))
-        inside.append(
+        segment_no.append(segment.get_attribute("data-segment-effort-id"))
+        ends.append(rects[0].get_attribute("x"))
+        ends.append(
             float(rects[0].get_attribute("x")) + float(rects[0].get_attribute("width"))
         )
         for i, field in enumerate(segment.find_elements(By.TAG_NAME, "td")):
             if i == 3:
-                inside.append(field.text.split("\n")[0])
+                segment_name.append(field.text.split("\n")[0])
 
-        print(inside)
-        blocks.append(inside)
+        end_points.append(ends)
+print("-------TEST------")
 
-print(len(blocks))
+segment_dict = {
+    "segment_no": segment_no,
+    "segment_name": segment_name,
+    "end_points": end_points,
+}
+print(segment_dict)
+print(segment_dict.keys())
+print(segment_dict.values())
 
 # segment_name = []
 # for segment in segment_table.find_elements(By.TAG_NAME, "tr"):
