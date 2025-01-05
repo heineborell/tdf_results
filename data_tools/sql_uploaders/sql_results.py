@@ -25,8 +25,9 @@ test1.csv_uploader(df_schema=df_schema, table_name="giro_results")
 
 test1.clean_pro_table(
     [
-        "~/iCloud/Research/Data_Science/Projects/data/pro_tdf_before/protdf_1919_1903.csv",
-        "~/iCloud/Research/Data_Science/Projects/data/pro_tdf_before/protdf_2024_1919.csv",
+        "~/iCloud/Research/Data_Science/Projects/data/pro_tdf/pro_1919_1903.csv",
+        "~/iCloud/Research/Data_Science/Projects/data/pro_tdf/pro_1995_1919.csv",
+        "~/iCloud/Research/Data_Science/Projects/data/pro_tdf/pro_2024_1995.csv",
     ]
 )
 

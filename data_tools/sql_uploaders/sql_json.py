@@ -19,7 +19,7 @@ MYSQL_DATABASE = "grand_tours"
 DATABASE_URL = "mysql+pymysql://root:Abrakadabra69!@127.0.0.1:3306/grand_tours"
 
 grand_tours = ["tdf", "giro"]
-years = [2024, 2023, 2022]
+years = [2024, 2023, 2022, 2020]
 username = getpass.getuser()
 
 segment_range = Path(
@@ -105,7 +105,9 @@ for grand_tour in grand_tours:
                         str(activity["athlete_id"]),
                         str(activity["date"])
                         .replace("June", "Jun")
-                        .replace("July", "Jul"),
+                        .replace("July", "Jul")
+                        .replace("August", "Aug")
+                        .replace("September", "Sep"),
                         float(activity["distance"]),
                         activity["segments"][0],
                     )
