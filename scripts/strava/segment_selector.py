@@ -31,7 +31,8 @@ options.add_argument(
 driver = webdriver.Chrome(service=service, options=options)
 wait = WebDriverWait(driver, 5)
 
-activity_no = 13238398951
+# activity_no = 13238398951
+activity_no = 4069408520
 activity_dict_list = {"activities": []}
 stat_dict_list = {"stats": []}
 
@@ -49,7 +50,7 @@ driver.find_elements(By.XPATH, '//*[@id="show-hidden-efforts"]')[0].click()
 segment_no = []
 segment_name = []
 end_points = []
-
+dict_list = []
 for j, segment in enumerate(segment_table.find_elements(By.TAG_NAME, "tr")):
     if j > 0:
         ends = []
@@ -57,7 +58,6 @@ for j, segment in enumerate(segment_table.find_elements(By.TAG_NAME, "tr")):
         time.sleep(4)
         clipper = driver.find_elements(By.CSS_SELECTOR, "[id^='view']")
         rects = clipper[0].find_elements(By.TAG_NAME, "rect")
-        segment_no.append(segment.get_attribute("data-segment-effort-id"))
         ends.append(rects[0].get_attribute("x"))
         ends.append(
             float(rects[0].get_attribute("x")) + float(rects[0].get_attribute("width"))
@@ -66,17 +66,22 @@ for j, segment in enumerate(segment_table.find_elements(By.TAG_NAME, "tr")):
             if i == 3:
                 segment_name.append(field.text.split("\n")[0])
 
-        end_points.append(ends)
+        segment_dict = {
+            "segment_no": segment.get_attribute("data-segment-effort-id"),
+            "segment_name": segment_name[j - 1],
+            "end_points": ends,
+        }
+        dict_list.append(segment_dict)
 print("-------TEST------")
 
-segment_dict = {
-    "segment_no": segment_no,
-    "segment_name": segment_name,
-    "end_points": end_points,
-}
-print(segment_dict)
-print(segment_dict.keys())
-print(segment_dict.values())
+print(dict_list)
+
+json_string = json.dumps(dict_list)
+with open(
+    f"selection.json",
+    "w",
+) as f:
+    f.write(json_string)
 
 # segment_name = []
 # for segment in segment_table.find_elements(By.TAG_NAME, "tr"):
