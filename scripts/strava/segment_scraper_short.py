@@ -4,11 +4,17 @@ import time
 import numpy as np
 import pandas as pd
 from selenium import webdriver
-from selenium.common.exceptions import NoSuchElementException
+from selenium.common.exceptions import NoSuchElementException, TimeoutException
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
+from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
+from sqlalchemy import create_engine
+
+engine = create_engine("mysql+mysqldb://root:Abrakadabra69!@127.0.0.1:3306/grand_tours")
+conn = engine.connect()
+
 
 # grand_tour = "giro"
 grand_tour = "tdf"
@@ -17,30 +23,32 @@ year = 2024
 service = Service()
 # Set up options for headless Chrome
 options = Options()
+# options.add_experimental_option("detach", True)
+options.add_argument("--no-sandbox")
+options.add_argument("--headless")
+options.add_argument("--disable-dev-shm-usage")
+options.add_argument("--no-proxy-server")
+options.add_argument("--proxy-server='direct://'")
+options.add_argument("--proxy-bypass-list=*")
 options.add_argument("--blink-settings=imagesEnabled=false")
-options.add_experimental_option("detach", True)
-options.add_experimental_option("excludeSwitches", ["enable-automation"])
+# options.add_experimental_option("excludeSwitches", ["enable-automation"])
 options.add_argument(
     "user-data-dir=/Users/dmini/Library/Application Support/Google/Chrome/Profile 1"
 )
 ## options.add_argument("--disable-dev-shm-usage")
-options.page_load_strategy = (
-    "eager"  # Scraper doesn't wait for browser to load all the page
-)
+# options.page_load_strategy = (
+#    "eager"  # Scraper doesn't wait for browser to load all the page
+# )
 
 # Initialize Chrome with the specified options
 driver = webdriver.Chrome(service=service, options=options)
 wait = WebDriverWait(driver, 5)
 
-activity_no_list = (
-    pd.read_csv(
-        f"~/iCloud/Research/Data_Science/Projects/data/strava/activity_list/activity_short_list_{grand_tour}_{year}.csv"
-    )
-    .drop_duplicates(subset=["activity"])["activity"]
-    .values.tolist()
-)
-# last_index = activity_no_list.index(7528518968)
-# activity_no_list = activity_no_list[last_index:]
+sql_list = """select p.activity,p.tour , p.date from( select  activity_id as activity,cast(REGEXP_SUBSTR(`date`, '[0-9]{4}$') as UNSIGNED) AS date, tour from strava_table where tour = 'tdf') as p where p.date=2024"""
+
+activity_no_list = pd.read_sql_query(sql_list, conn)["activity"].values.tolist()
+last_index = activity_no_list.index("11790858955")
+activity_no_list = activity_no_list[last_index:]
 print(len(activity_no_list))
 activity_dict_list = {"activities": []}
 stat_dict_list = {"stats": []}
@@ -94,19 +102,54 @@ for p, activity_no in enumerate(activity_no_list):
 
     try:
         driver.find_elements(By.XPATH, '//*[@id="show-hidden-efforts"]')[0].click()
-        segment_table = driver.find_element(
-            By.CSS_SELECTOR, ".dense.hoverable.marginless.segments"
+        # time.sleep(10)
+
+        WebDriverWait(driver, 10).until(
+            lambda driver: driver.execute_script("return document.readyState")
+            == "complete"
         )
+
         segment_tables = driver.find_elements(
             By.CSS_SELECTOR, ".dense.hoverable.marginless.segments"
+        )
+        WebDriverWait(driver, 20).until(
+            EC.visibility_of_element_located(
+                (By.CSS_SELECTOR, ".dense.hidden-segments.hoverable.marginless")
+            )
         )
         segment_tables.append(
             driver.find_element(
                 By.CSS_SELECTOR, ".dense.hidden-segments.hoverable.marginless"
             )
         )
-    except NoSuchElementException:
-        print("no segments")
+    except TimeoutException:
+
+        print("Timeout while waiting for the page to load. Reloading...")
+        driver.refresh()  # Refresh the page
+        driver.find_elements(By.XPATH, '//*[@id="show-hidden-efforts"]')[0].click()
+        # time.sleep(10)
+
+        WebDriverWait(driver, 10).until(
+            lambda driver: driver.execute_script("return document.readyState")
+            == "complete"
+        )
+
+        segment_tables = driver.find_elements(
+            By.CSS_SELECTOR, ".dense.hoverable.marginless.segments"
+        )
+        WebDriverWait(driver, 20).until(
+            EC.visibility_of_element_located(
+                (By.CSS_SELECTOR, ".dense.hidden-segments.hoverable.marginless")
+            )
+        )
+        segment_tables.append(
+            driver.find_element(
+                By.CSS_SELECTOR, ".dense.hidden-segments.hoverable.marginless"
+            )
+        )
+
+    # except NoSuchElementException:
+    #    print("no segments")
 
     else:
         print(activity_no, p)
@@ -128,6 +171,7 @@ for p, activity_no in enumerate(activity_no_list):
                     segment_no.append(segment.get_attribute("data-segment-effort-id"))
                 for i, field in enumerate(segment.find_elements(By.TAG_NAME, "td")):
                     if i == 3:
+                        #     print(field.text.split("\n"))
                         segment_name.append(field.text.split("\n")[0])
                         segment_distance.append(field.text.split("\n")[1].split(" ")[0])
                         segment_vert.append(field.text.split("\n")[1].split(" ")[2])
@@ -201,19 +245,18 @@ for p, activity_no in enumerate(activity_no_list):
                     stat_dict.update({"device": stat_list[i]})
 
             stat_dict_list["stats"].append(stat_dict)
-            print(stat_dict)
         except ValueError:
             print("No more stat")
 
         json_string = json.dumps(activity_dict_list)
         with open(
-            f"segment_{year}_{grand_tour}.json",
+            f"segment_{year}_{grand_tour}_short.json",
             "w",
         ) as f:
             f.write(json_string)
         json_string = json.dumps(stat_dict_list)
         with open(
-            f"stat_{year}_{grand_tour}.json",
+            f"stat_{year}_{grand_tour}_short.json",
             "w",
         ) as f:
             f.write(json_string)
