@@ -41,6 +41,7 @@ activity_no_list = (
 )
 # last_index = activity_no_list.index(7528518968)
 # activity_no_list = activity_no_list[last_index:]
+activity_no_list = [4069408520]
 print(len(activity_no_list))
 activity_dict_list = {"activities": []}
 stat_dict_list = {"stats": []}
@@ -61,7 +62,7 @@ for p, activity_no in enumerate(activity_no_list):
     activity_type = script_text.split('activity_type":"')[1].split('"')[0]
     print(activity_type)
 
-    # Check if the activity type is "NordicSki"
+    # Check if the activity type is 'Ride'
     if activity_type == "ride":
         print("Found ride activity type!")
     else:
@@ -93,14 +94,24 @@ for p, activity_no in enumerate(activity_no_list):
     }
 
     try:
+        driver.find_elements(By.XPATH, '//*[@id="show-hidden-efforts"]')[0].click()
         segment_table = driver.find_element(
             By.CSS_SELECTOR, ".dense.hoverable.marginless.segments"
+        )
+        segment_tables = driver.find_elements(
+            By.CSS_SELECTOR, ".dense.hoverable.marginless.segments"
+        )
+        segment_tables.append(
+            driver.find_element(
+                By.CSS_SELECTOR, ".dense.hidden-segments.hoverable.marginless"
+            )
         )
     except NoSuchElementException:
         print("no segments")
 
     else:
         print(activity_no, p)
+        segment_no = []
         segment_name = []
         segment_distance = []
         segment_vert = []
@@ -110,27 +121,33 @@ for p, activity_no in enumerate(activity_no_list):
         watt = []
         heart_rate = []
         VAM = []
-        for segment in segment_table.find_elements(By.TAG_NAME, "tr"):
-            for i, field in enumerate(segment.find_elements(By.TAG_NAME, "td")):
-                if i == 3:
-                    segment_name.append(field.text.split("\n")[0])
-                    segment_distance.append(field.text.split("\n")[1].split(" ")[0])
-                    segment_vert.append(field.text.split("\n")[1].split(" ")[2])
-                    segment_grade.append(
-                        field.text.split("\n")[1].split(" ")[4].split("%")[0]
-                    )
-                elif i == 5:
-                    segment_time.append(field.text)
-                elif i == 6:
-                    segment_speed.append(field.text.split(" ")[0])
-                elif i == 7:
-                    watt.append(field.text.split(" ")[0])
-                elif i == 8:
-                    VAM.append(field.text)
-                elif i == 9:
-                    heart_rate.append(field.text.split("b")[0])
+        for g, segment_table in enumerate(segment_tables):
+            for m, segment in enumerate(segment_table.find_elements(By.TAG_NAME, "tr")):
+                if m == 0 and g == 0:
+                    pass
+                else:
+                    segment_no.append(segment.get_attribute("data-segment-effort-id"))
+                for i, field in enumerate(segment.find_elements(By.TAG_NAME, "td")):
+                    if i == 3:
+                        segment_name.append(field.text.split("\n")[0])
+                        segment_distance.append(field.text.split("\n")[1].split(" ")[0])
+                        segment_vert.append(field.text.split("\n")[1].split(" ")[2])
+                        segment_grade.append(
+                            field.text.split("\n")[1].split(" ")[4].split("%")[0]
+                        )
+                    elif i == 5:
+                        segment_time.append(field.text)
+                    elif i == 6:
+                        segment_speed.append(field.text.split(" ")[0])
+                    elif i == 7:
+                        watt.append(field.text.split(" ")[0])
+                    elif i == 8:
+                        VAM.append(field.text)
+                    elif i == 9:
+                        heart_rate.append(field.text.split("b")[0])
 
         segment_dict = {
+            "segment_no": segment_no,
             "segment_name": segment_name,
             "segment_time": segment_time,
             "segment_speed": segment_speed,
@@ -189,7 +206,6 @@ for p, activity_no in enumerate(activity_no_list):
         except ValueError:
             print("No more stat")
 
-    if p % 2 == 0:
         json_string = json.dumps(activity_dict_list)
         with open(
             f"segment_{year}_{grand_tour}.json",
@@ -202,7 +218,6 @@ for p, activity_no in enumerate(activity_no_list):
             "w",
         ) as f:
             f.write(json_string)
-    # if p % 100 == 0:
     time.sleep(3)
 
 
