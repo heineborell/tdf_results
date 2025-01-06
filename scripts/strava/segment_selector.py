@@ -41,53 +41,69 @@ driver.get(activity)
 time.sleep(np.abs(np.random.randn()))
 
 
-segment_table = driver.find_element(
+driver.find_elements(By.XPATH, '//*[@id="show-hidden-efforts"]')[0].click()
+
+
+segment_tables = driver.find_elements(
     By.CSS_SELECTOR, ".dense.hoverable.marginless.segments"
 )
-
-
-driver.find_elements(By.XPATH, '//*[@id="show-hidden-efforts"]')[0].click()
+segment_tables.append(
+    driver.find_element(By.CSS_SELECTOR, ".dense.hidden-segments.hoverable.marginless")
+)
+time.sleep(1)
 segment_no = []
 segment_name = []
 end_points = []
 dict_list = []
-for j, segment in enumerate(segment_table.find_elements(By.TAG_NAME, "tr")):
-    if j > 0:
-        ends = []
-        segment.click()
-        time.sleep(4)
-        clipper = driver.find_elements(By.CSS_SELECTOR, "[id^='view']")
-        rects = clipper[0].find_elements(By.TAG_NAME, "rect")
-        ends.append(rects[0].get_attribute("x"))
-        ends.append(
-            float(rects[0].get_attribute("x")) + float(rects[0].get_attribute("width"))
-        )
-        for i, field in enumerate(segment.find_elements(By.TAG_NAME, "td")):
-            if i == 3:
-                segment_name.append(field.text.split("\n")[0])
+for k, segment_table in enumerate(segment_tables):
+    if k == 0:
+        hidden = False
+    else:
+        hidden = True
+    for j, segment in enumerate(segment_table.find_elements(By.TAG_NAME, "tr")):
+        if j == 0 and k == 0:
+            pass
+        else:
+            ends = []
+            driver.execute_script(
+                "arguments[0].click()", segment
+            )  # This one is for clicking the element through Java as the usual way don't work on big screens
+            time.sleep(4)
+            clipper = driver.find_elements(By.CSS_SELECTOR, "[id^='view']")
+            rects = clipper[0].find_elements(By.TAG_NAME, "rect")
+            ends.append(float(rects[0].get_attribute("x")))
+            ends.append(
+                float(rects[0].get_attribute("x"))
+                + float(rects[0].get_attribute("width"))
+            )
+            try:
+                cat = (
+                    segment.find_element(By.CSS_SELECTOR, "td.climb-cat-col")
+                    .find_element(By.TAG_NAME, "span")
+                    .get_attribute("title")
+                )
+            except NoSuchElementException:
+                cat = None
+                print("No category")
 
-        segment_dict = {
-            "segment_no": segment.get_attribute("data-segment-effort-id"),
-            "segment_name": segment_name[j - 1],
-            "end_points": ends,
-        }
-        dict_list.append(segment_dict)
-print("-------TEST------")
+            segment_dict = {
+                "activity_no": activity_no,
+                "segment_no": segment.get_attribute("data-segment-effort-id"),
+                "segment_name": segment.find_element(By.CSS_SELECTOR, "div.name").text,
+                "end_points": ends,
+                "category": cat,
+                "hidden": hidden,
+            }
+            print(segment_dict)
+            dict_list.append(segment_dict)
+    print("-------hidden segments------")
 
-print(dict_list)
 
 json_string = json.dumps(dict_list)
 with open(
-    f"selection.json",
+    f"segments.json",
     "w",
 ) as f:
     f.write(json_string)
 
-# segment_name = []
-# for segment in segment_table.find_elements(By.TAG_NAME, "tr"):
-#    for i, field in enumerate(segment.find_elements(By.TAG_NAME, "td")):
-#        if i == 3:
-#            segment_name.append(field.text.split("\n")[0])
-# print(len(segment_name))
-# print(segment_name)
 # driver.quit()
