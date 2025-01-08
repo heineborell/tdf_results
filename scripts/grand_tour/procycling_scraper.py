@@ -18,11 +18,24 @@ if GRAND_TOUR == "tour-de-france":
 elif GRAND_TOUR == "giro-d-italia":
     pro_path = Path.cwd().parent.parent / "data/pro_giro/"
 
+
+if pro_path.exists():
+    print("Folder pro_path exists.")
+else:
+    pro_path.mkdir()
+    print("Folder pro_path created.")
+
+if (pro_path / "info").exists():
+    print("Folder pro_path/info exists.")
+else:
+    (pro_path / "info").mkdir()
+    print("Folder pro_path/info created.")
+
 # Logger
 logger = logger_config.setup_logger()
 
 # Driver
-driver = chrome_driver.start_driver()
+driver = chrome_driver.start_driver(detach=False, additional_options={"headless": True})
 
 driver.get(f"https://www.procyclingstats.com/race/{GRAND_TOUR}/2024/stage-11")
 df = pd.DataFrame(columns=["year", "stage", "name", "time"])
@@ -37,7 +50,7 @@ year_element = drop_list[0].find_elements(By.TAG_NAME, "option")
 year_list = [year.text for year in year_element]
 
 # use this to choose what year you want to scrape
-year_list = year_list[86:]
+# year_list = year_list[98:]
 del year_list[0]
 
 for year in year_list:
@@ -82,12 +95,20 @@ for year in year_list:
                     ttt_val = 0
                     main_list = getters.get_tables(driver, ".results.basic.moblist10")
                     logger.info("It is a normal stage.")
+                    if (
+                        len(main_list[1]) == 0
+                    ):  # this is basically to continue down to moblist12 if moblist10 empty
+                        raise NoSuchElementException("Empty list.")
                 except NoSuchElementException:
                     ttt_val = 0
                     main_list = getters.get_tables(driver, ".results.basic.moblist12")
                     logger.info("It is a normal stage.")
 
-        if ttt_val == 0 and not all([el != ",," for el in main_list[1]]):
+        if (
+            ttt_val == 0
+            and not set(main_list[1]) == {",,"}
+            and not set(main_list[1]) == {""}
+        ):
 
             for j, _ in enumerate(main_list[1]):
 
@@ -123,6 +144,7 @@ for year in year_list:
                                 )
                         except ValueError:
                             logger.error("No time format fits!")
+                            break
             # this part is for dealing with '' and time increments
             for j, _ in enumerate(main_list[1]):
                 if isinstance(main_list[1][j], int) and j > 0:
