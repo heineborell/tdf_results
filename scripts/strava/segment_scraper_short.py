@@ -46,8 +46,8 @@ wait = WebDriverWait(driver, 5)
 
 
 def clicker(wait_time):
+
     driver.find_elements(By.XPATH, '//*[@id="show-hidden-efforts"]')[0].click()
-    # time.sleep(10)
 
     WebDriverWait(driver, 10).until(
         lambda driver: driver.execute_script("return document.readyState") == "complete"
@@ -73,8 +73,8 @@ def clicker(wait_time):
 sql_list = """select p.activity,p.tour , p.date from( select  activity_id as activity,cast(REGEXP_SUBSTR(`date`, '[0-9]{4}$') as UNSIGNED) AS date, tour from strava_table where tour = 'tdf') as p where p.date=2023"""
 
 activity_no_list = pd.read_sql_query(sql_list, conn)["activity"].values.tolist()
-# last_index = activity_no_list.index("11790858955")
-# activity_no_list = activity_no_list[last_index:]
+last_index = activity_no_list.index("9406303142")
+activity_no_list = activity_no_list[last_index:]
 print(len(activity_no_list))
 activity_dict_list = {"activities": []}
 stat_dict_list = {"stats": []}
@@ -130,132 +130,135 @@ for p, activity_no in enumerate(activity_no_list):
     retry_count = 0  # Track retries
     segment_tables = []
 
-    while len(segment_tables) != 2:
-        try:
-            segment_tables = clicker(20)
-        except TimeoutException:
+    if len(driver.find_elements(By.XPATH, '//*[@id="show-hidden-efforts"]')) != 0:
+        while len(segment_tables) != 2:
+            try:
+                segment_tables = clicker(20)
+            except TimeoutException:
 
-            print("Timeout while waiting for the page to load. Reloading...")
-            driver.refresh()  # Refresh the page
-            segment_tables = clicker(20)
-            retry_count += 1
-            if retry_count >= max_retries:
-                print("Max retries reached. Exiting.")
+                print("Timeout while waiting for the page to load. Reloading...")
+                driver.refresh()  # Refresh the page
+                segment_tables = clicker(20)
+                retry_count += 1
+                if retry_count >= max_retries:
+                    print("Max retries reached. Exiting.")
+                    break
+
+            except NoSuchElementException:
+                print("no segments")
                 break
-
-        except NoSuchElementException:
-            print("no segments")
-            break
-
     else:
-        print(activity_no, f"{p}-{len(activity_no_list)}")
-        segment_no = []
-        segment_name = []
-        segment_distance = []
-        segment_vert = []
-        segment_grade = []
-        segment_time = []
-        segment_speed = []
-        watt = []
-        heart_rate = []
-        VAM = []
-        for g, segment_table in enumerate(segment_tables):
-            for m, segment in enumerate(segment_table.find_elements(By.TAG_NAME, "tr")):
-                if m == 0 and g == 0:
-                    pass
-                else:
-                    segment_no.append(segment.get_attribute("data-segment-effort-id"))
-                for i, field in enumerate(segment.find_elements(By.TAG_NAME, "td")):
-                    if i == 3:
-                        #     print(field.text.split("\n"))
-                        segment_name.append(field.text.split("\n")[0])
-                        segment_distance.append(field.text.split("\n")[1].split(" ")[0])
-                        segment_vert.append(field.text.split("\n")[1].split(" ")[2])
-                        segment_grade.append(
-                            field.text.split("\n")[1].split(" ")[4].split("%")[0]
-                        )
-                    elif i == 5:
-                        segment_time.append(field.text)
-                    elif i == 6:
-                        segment_speed.append(field.text.split(" ")[0])
-                    elif i == 7:
-                        watt.append(field.text.split(" ")[0])
-                    elif i == 8:
-                        VAM.append(field.text)
-                    elif i == 9:
-                        heart_rate.append(field.text.split("b")[0])
+        print("No hidden segments.")
+        segment_tables = driver.find_elements(
+            By.CSS_SELECTOR, ".dense.hoverable.marginless.segments"
+        )
 
-        segment_dict = {
-            "segment_no": segment_no,
-            "segment_name": segment_name,
-            "segment_time": segment_time,
-            "segment_speed": segment_speed,
-            "watt": watt,
-            "heart_rate": heart_rate,
-            "segment_distance": segment_distance,
-            "segment_vert": segment_vert,
-            "segment_grade": segment_grade,
-            "VAM": VAM,
-        }
-        # activity_dict["activities"][0]['activity_id'].append(activity_no)
-        activity_dict["segments"].append(segment_dict)
-        activity_dict_list["activities"].append(activity_dict)
-
-        try:
-            stats = driver.find_element(By.XPATH, '//*[@id="heading"]/div/div/div[2]')
-            stat_list = stats.text.split("\n")
-            stat_list.remove("Show More")
-            stat_dict = {}
-            for i, stat in enumerate(stat_list):
-                if stat == "Distance":
-                    stat_dict.update(
-                        {
-                            "activity_id": activity_no,
-                            "athlete_id": name,
-                            "dist": stat_list[i - 1],
-                        }
+    print(activity_no, f"{p}-{len(activity_no_list)}")
+    segment_no = []
+    segment_name = []
+    segment_distance = []
+    segment_vert = []
+    segment_grade = []
+    segment_time = []
+    segment_speed = []
+    watt = []
+    heart_rate = []
+    VAM = []
+    for g, segment_table in enumerate(segment_tables):
+        for m, segment in enumerate(segment_table.find_elements(By.TAG_NAME, "tr")):
+            if m == 0 and g == 0:
+                pass
+            else:
+                segment_no.append(segment.get_attribute("data-segment-effort-id"))
+            for i, field in enumerate(segment.find_elements(By.TAG_NAME, "td")):
+                if i == 3:
+                    segment_name.append(field.text.split("\n")[0])
+                    segment_distance.append(field.text.split("\n")[1].split(" ")[0])
+                    segment_vert.append(field.text.split("\n")[1].split(" ")[2])
+                    segment_grade.append(
+                        field.text.split("\n")[1].split(" ")[4].split("%")[0]
                     )
-                if stat == "Moving Time":
-                    stat_dict.update({"move_time": stat_list[i - 1]})
-                if stat == "Elevation":
-                    stat_dict.update({"elevation": stat_list[i - 1]})
-                if stat == "Weighted Avg Power":
-                    stat_dict.update({"wap": stat_list[i - 1]})
-                if stat == "total work":
-                    stat_dict.update({"tw": stat_list[i - 1]})
-                if stat == "Avg Max":
-                    stat_dict.update({"avg_max": stat_list[i + 1]})
-                if "Elapsed Time" in stat:
-                    stat_dict.update({"elapsed": stat_list[i].split(" ")[-1]})
-                if stat == "Temperature":
-                    stat_dict.update({"temp": stat_list[i + 1]})
-                if stat == "Humidity":
-                    stat_dict.update({"humd": stat_list[i + 1]})
-                if stat == "Feels like":
-                    stat_dict.update({"feels": stat_list[i + 1]})
-                if stat == "Wind Speed":
-                    stat_dict.update({"wind_speed": stat_list[i + 1]})
-                if stat == "Wind Direction":
-                    stat_dict.update({"wind_direction": stat_list[i + 1]})
-                if i == len(stat_list) - 1:
-                    stat_dict.update({"device": stat_list[i]})
+                elif i == 5:
+                    segment_time.append(field.text)
+                elif i == 6:
+                    segment_speed.append(field.text.split(" ")[0])
+                elif i == 7:
+                    watt.append(field.text.split(" ")[0])
+                elif i == 8:
+                    VAM.append(field.text)
+                elif i == 9:
+                    heart_rate.append(field.text.split("b")[0])
 
-            stat_dict_list["stats"].append(stat_dict)
-        except ValueError:
-            print("No more stat")
+    segment_dict = {
+        "segment_no": segment_no,
+        "segment_time": segment_time,
+        "segment_speed": segment_speed,
+        "watt": watt,
+        "heart_rate": heart_rate,
+        "segment_distance": segment_distance,
+        "segment_vert": segment_vert,
+        "segment_grade": segment_grade,
+        "VAM": VAM,
+    }
+    # activity_dict["activities"][0]['activity_id'].append(activity_no)
+    activity_dict["segments"].append(segment_dict)
+    activity_dict_list["activities"].append(activity_dict)
 
-        json_string = json.dumps(activity_dict_list)
-        with open(
-            f"segment_{year}_{grand_tour}_short.json",
-            "w",
-        ) as f:
-            f.write(json_string)
-        json_string = json.dumps(stat_dict_list)
-        with open(
-            f"stat_{year}_{grand_tour}_short.json",
-            "w",
-        ) as f:
-            f.write(json_string)
+    try:
+        stats = driver.find_element(By.XPATH, '//*[@id="heading"]/div/div/div[2]')
+        stat_list = stats.text.split("\n")
+        stat_list.remove("Show More")
+        stat_dict = {}
+        for i, stat in enumerate(stat_list):
+            if stat == "Distance":
+                stat_dict.update(
+                    {
+                        "activity_id": activity_no,
+                        "athlete_id": name,
+                        "dist": stat_list[i - 1],
+                    }
+                )
+            if stat == "Moving Time":
+                stat_dict.update({"move_time": stat_list[i - 1]})
+            if stat == "Elevation":
+                stat_dict.update({"elevation": stat_list[i - 1]})
+            if stat == "Weighted Avg Power":
+                stat_dict.update({"wap": stat_list[i - 1]})
+            if stat == "total work":
+                stat_dict.update({"tw": stat_list[i - 1]})
+            if stat == "Avg Max":
+                stat_dict.update({"avg_max": stat_list[i + 1]})
+            if "Elapsed Time" in stat:
+                stat_dict.update({"elapsed": stat_list[i].split(" ")[-1]})
+            if stat == "Temperature":
+                stat_dict.update({"temp": stat_list[i + 1]})
+            if stat == "Humidity":
+                stat_dict.update({"humd": stat_list[i + 1]})
+            if stat == "Feels like":
+                stat_dict.update({"feels": stat_list[i + 1]})
+            if stat == "Wind Speed":
+                stat_dict.update({"wind_speed": stat_list[i + 1]})
+            if stat == "Wind Direction":
+                stat_dict.update({"wind_direction": stat_list[i + 1]})
+            if i == len(stat_list) - 1:
+                stat_dict.update({"device": stat_list[i]})
+
+        stat_dict_list["stats"].append(stat_dict)
+    except ValueError:
+        print("No more stat")
+
+    json_string = json.dumps(activity_dict_list)
+    with open(
+        f"segment_{year}_{grand_tour}_short.json",
+        "w",
+    ) as f:
+        f.write(json_string)
+    json_string = json.dumps(stat_dict_list)
+    with open(
+        f"stat_{year}_{grand_tour}_short.json",
+        "w",
+    ) as f:
+        f.write(json_string)
     time.sleep(3)
 
 

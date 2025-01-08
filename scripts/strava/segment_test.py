@@ -9,28 +9,25 @@ with open("segments_italy.json", "r") as f:
 
 ordered_list = sorted(json_data, key=lambda x: x["end_points"][1])
 reduced_list = []
+
 for i, elmt in enumerate(ordered_list):
     if i == 0:
-        reduced_list.append(elmt)
+        reduced_list.append(elmt["end_points"])
     elif i > 0:
-        if reduced_list[-1]["end_points"][1] < float(elmt["end_points"][0]):
-            reduced_list.append(elmt)
+        if float(reduced_list[-1][-1]) < float(elmt["end_points"][0]):
+            reduced_list.append(elmt["end_points"])
         else:
             pass
-
-graph_list = []
-for i in reduced_list:
-    graph_list.extend(i["end_points"])
-print(len(reduced_list))
-print(len(ordered_list))
-print(graph_list)
+print(reduced_list)
 
 
 plt.figure()
 
-for i in reduced_list:
-    plt.plot(i["end_points"], [1, 1], linewidth=5)
-for i in ordered_list:
-    plt.plot(i["end_points"], [0.5, 0.5], linewidth=5)
+for j, data in enumerate(reduced_list):
+    if j % 2 == 0:
+        plt.plot(data, [0.5, 0.5], linewidth=5)
+    else:
+        plt.plot(data, [0.51, 0.51], linewidth=5)
 
+plt.ylim(0.49, 0.52)
 plt.show()
