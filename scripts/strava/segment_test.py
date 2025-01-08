@@ -1,6 +1,9 @@
 import json
 
-with open("selection.json", "r") as f:
+import matplotlib.pyplot as plt
+import numpy as np
+
+with open("segments_italy.json", "r") as f:
     json_data = json.loads(f.read())
 
 
@@ -15,7 +18,19 @@ for i, elmt in enumerate(ordered_list):
         else:
             pass
 
+graph_list = []
 for i in reduced_list:
-    print(i)
+    graph_list.extend(i["end_points"])
 print(len(reduced_list))
 print(len(ordered_list))
+print(graph_list)
+
+
+plt.figure()
+
+for i in reduced_list:
+    plt.plot(i["end_points"], [1, 1], linewidth=5)
+for i in ordered_list:
+    plt.plot(i["end_points"], [0.5, 0.5], linewidth=5)
+
+plt.show()
