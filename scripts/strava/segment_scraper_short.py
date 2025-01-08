@@ -18,7 +18,7 @@ conn = engine.connect()
 
 # grand_tour = "giro"
 grand_tour = "tdf"
-year = 2024
+year = 2023
 
 service = Service()
 # Set up options for headless Chrome
@@ -44,11 +44,37 @@ options.add_argument(
 driver = webdriver.Chrome(service=service, options=options)
 wait = WebDriverWait(driver, 5)
 
-sql_list = """select p.activity,p.tour , p.date from( select  activity_id as activity,cast(REGEXP_SUBSTR(`date`, '[0-9]{4}$') as UNSIGNED) AS date, tour from strava_table where tour = 'tdf') as p where p.date=2024"""
+
+def clicker(wait_time):
+    driver.find_elements(By.XPATH, '//*[@id="show-hidden-efforts"]')[0].click()
+    # time.sleep(10)
+
+    WebDriverWait(driver, 10).until(
+        lambda driver: driver.execute_script("return document.readyState") == "complete"
+    )
+
+    tables = driver.find_elements(
+        By.CSS_SELECTOR, ".dense.hoverable.marginless.segments"
+    )
+    WebDriverWait(driver, wait_time).until(
+        EC.visibility_of_element_located(
+            (By.CSS_SELECTOR, ".dense.hidden-segments.hoverable.marginless")
+        )
+    )
+    tables.append(
+        driver.find_element(
+            By.CSS_SELECTOR, ".dense.hidden-segments.hoverable.marginless"
+        )
+    )
+
+    return tables
+
+
+sql_list = """select p.activity,p.tour , p.date from( select  activity_id as activity,cast(REGEXP_SUBSTR(`date`, '[0-9]{4}$') as UNSIGNED) AS date, tour from strava_table where tour = 'tdf') as p where p.date=2023"""
 
 activity_no_list = pd.read_sql_query(sql_list, conn)["activity"].values.tolist()
-last_index = activity_no_list.index("11790858955")
-activity_no_list = activity_no_list[last_index:]
+# last_index = activity_no_list.index("11790858955")
+# activity_no_list = activity_no_list[last_index:]
 print(len(activity_no_list))
 activity_dict_list = {"activities": []}
 stat_dict_list = {"stats": []}
@@ -100,59 +126,29 @@ for p, activity_no in enumerate(activity_no_list):
         "segments": [],
     }
 
-    try:
-        driver.find_elements(By.XPATH, '//*[@id="show-hidden-efforts"]')[0].click()
-        # time.sleep(10)
+    max_retries = 2  # Maximum number of retries (optional, for safety)
+    retry_count = 0  # Track retries
+    segment_tables = []
 
-        WebDriverWait(driver, 10).until(
-            lambda driver: driver.execute_script("return document.readyState")
-            == "complete"
-        )
+    while len(segment_tables) != 2:
+        try:
+            segment_tables = clicker(20)
+        except TimeoutException:
 
-        segment_tables = driver.find_elements(
-            By.CSS_SELECTOR, ".dense.hoverable.marginless.segments"
-        )
-        WebDriverWait(driver, 20).until(
-            EC.visibility_of_element_located(
-                (By.CSS_SELECTOR, ".dense.hidden-segments.hoverable.marginless")
-            )
-        )
-        segment_tables.append(
-            driver.find_element(
-                By.CSS_SELECTOR, ".dense.hidden-segments.hoverable.marginless"
-            )
-        )
-    except TimeoutException:
+            print("Timeout while waiting for the page to load. Reloading...")
+            driver.refresh()  # Refresh the page
+            segment_tables = clicker(20)
+            retry_count += 1
+            if retry_count >= max_retries:
+                print("Max retries reached. Exiting.")
+                break
 
-        print("Timeout while waiting for the page to load. Reloading...")
-        driver.refresh()  # Refresh the page
-        driver.find_elements(By.XPATH, '//*[@id="show-hidden-efforts"]')[0].click()
-        # time.sleep(10)
-
-        WebDriverWait(driver, 10).until(
-            lambda driver: driver.execute_script("return document.readyState")
-            == "complete"
-        )
-
-        segment_tables = driver.find_elements(
-            By.CSS_SELECTOR, ".dense.hoverable.marginless.segments"
-        )
-        WebDriverWait(driver, 20).until(
-            EC.visibility_of_element_located(
-                (By.CSS_SELECTOR, ".dense.hidden-segments.hoverable.marginless")
-            )
-        )
-        segment_tables.append(
-            driver.find_element(
-                By.CSS_SELECTOR, ".dense.hidden-segments.hoverable.marginless"
-            )
-        )
-
-    # except NoSuchElementException:
-    #    print("no segments")
+        except NoSuchElementException:
+            print("no segments")
+            break
 
     else:
-        print(activity_no, p)
+        print(activity_no, f"{p}-{len(activity_no_list)}")
         segment_no = []
         segment_name = []
         segment_distance = []
