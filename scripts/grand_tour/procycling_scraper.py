@@ -50,7 +50,7 @@ year_element = drop_list[0].find_elements(By.TAG_NAME, "option")
 year_list = [year.text for year in year_element]
 
 # use this to choose what year you want to scrape
-year_list = year_list[98:]
+# year_list = year_list[98:]
 del year_list[0]
 
 for year in year_list:
