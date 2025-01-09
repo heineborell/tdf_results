@@ -3,23 +3,26 @@ import json
 import matplotlib.pyplot as plt
 import numpy as np
 
-with open("segments_italy.json", "r") as f:
+with open("../muhittin_segments.json", "r") as f:
     json_data = json.loads(f.read())
 
 
-ordered_list = sorted(json_data, key=lambda x: x["end_points"][1])
-reduced_list = []
-
-
-for i, elmt in enumerate(ordered_list):
-    if i == 0:
-        reduced_list.append(elmt["end_points"])
-    elif i > 0:
-        if float(reduced_list[-1][-1]) < float(elmt["end_points"][0]):
-            reduced_list.append(elmt["end_points"])
-        else:
-            pass
-
+ordered_list = json_data
+ordered_list = [k for k in ordered_list if k["activity_no"] == 13238398951]
+print(len(ordered_list))
+# ordered_list = sorted(json_data, key=lambda x: x["end_points"][1])
+# reduced_list = []
+#
+#
+# for i, elmt in enumerate(ordered_list):
+#    if i == 0:
+#        reduced_list.append(elmt["end_points"])
+#    elif i > 0:
+#        if float(reduced_list[-1][-1]) < float(elmt["end_points"][0]):
+#            reduced_list.append(elmt["end_points"])
+#        else:
+#            pass
+#
 
 # offset = 1e-7
 # plt.figure()
@@ -198,5 +201,14 @@ def example():
 
 
 example()
-# Example usage
-# Example segments as [start, end] lists
+
+
+import gpxpy
+import gpxpy.gpx
+
+gpx_file_path = "muhittin.gpx"
+with open(gpx_file_path, "r") as gpx_file:
+    gpx = gpxpy.parse(gpx_file)
+
+
+print(gpx)

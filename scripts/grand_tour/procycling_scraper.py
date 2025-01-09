@@ -32,7 +32,7 @@ else:
     print("Folder pro_path/info created.")
 
 # Logger
-logger = logger_config.setup_logger()
+logger = logger_config.setup_logger("app.log")
 
 # Driver
 driver = chrome_driver.start_driver(detach=False, additional_options={"headless": True})
