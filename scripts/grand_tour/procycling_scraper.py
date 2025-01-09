@@ -50,7 +50,7 @@ year_element = drop_list[0].find_elements(By.TAG_NAME, "option")
 year_list = [year.text for year in year_element]
 
 # use this to choose what year you want to scrape
-# year_list = year_list[98:]
+year_list = year_list[23:]
 del year_list[0]
 
 for year in year_list:
@@ -65,7 +65,7 @@ for year in year_list:
         stage_element = drop_list[2].find_elements(By.TAG_NAME, "option")
         stage_list = [stage.text for stage in stage_element if "Stage" in stage.text]
 
-    for i, stage in enumerate(stage_list):
+    for i, stage in enumerate(stage_list[16:]):
         logger.info(f"----{stage}")
         driver.get(
             f"https://www.procyclingstats.com/race/{GRAND_TOUR}/"
@@ -100,10 +100,14 @@ for year in year_list:
                     ):  # this is basically to continue down to moblist12 if moblist10 empty
                         raise NoSuchElementException("Empty list.")
                 except NoSuchElementException:
-                    ttt_val = 0
-                    main_list = getters.get_tables(driver, ".results.basic.moblist12")
-                    logger.info("It is a normal stage.")
-
+                    try:
+                        ttt_val = 0
+                        main_list = getters.get_tables(
+                            driver, ".results.basic.moblist12"
+                        )
+                        logger.info("It is a normal stage.")
+                    except NoSuchElementException:
+                        logger.info("No moblist!")
         if (
             ttt_val == 0
             and not set(main_list[1]) == {",,"}
