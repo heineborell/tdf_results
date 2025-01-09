@@ -18,7 +18,7 @@ conn = engine.connect()
 
 # grand_tour = "giro"
 grand_tour = "tdf"
-year = 2023
+year = 2024
 
 service = Service()
 # Set up options for headless Chrome
@@ -70,11 +70,11 @@ def clicker(wait_time):
     return tables
 
 
-sql_list = """select p.activity,p.tour , p.date from( select  activity_id as activity,cast(REGEXP_SUBSTR(`date`, '[0-9]{4}$') as UNSIGNED) AS date, tour from strava_table where tour = 'tdf') as p where p.date=2023"""
+sql_list = """select p.activity,p.tour , p.date from( select  activity_id as activity,cast(REGEXP_SUBSTR(`date`, '[0-9]{4}$') as UNSIGNED) AS date, tour from strava_table where tour = 'tdf') as p where p.date=2024"""
 
 activity_no_list = pd.read_sql_query(sql_list, conn)["activity"].values.tolist()
-last_index = activity_no_list.index("9406303142")
-activity_no_list = activity_no_list[last_index:]
+# last_index = activity_no_list.index("9406303142")
+# activity_no_list = activity_no_list[last_index:]
 print(len(activity_no_list))
 activity_dict_list = {"activities": []}
 stat_dict_list = {"stats": []}
