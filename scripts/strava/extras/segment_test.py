@@ -15,20 +15,22 @@ import plotly.express as px
 from shapely.geometry import LineString
 
 # Parse GPX file
-gpx = ezgpx.GPX("file.gpx")
+gpx = ezgpx.GPX("tdf_1.gpx")
 # Convert to Pandas Dataframe
 df = gpx.to_dataframe(["lat", "lon", "ele"])
 
 with open(
-    "/Users/deniz/iCloud/Research/Data_Science/Projects/tdf_data_fin/mapping/muhittin_segments.json",
+    "/Users/deniz/iCloud/Research/Data_Science/Projects/tdf_data_fin/mapping/tdf_2024.json",
     "r",
 ) as f:
     json_data = json.loads(f.read())
 
 
 ordered_list = json_data
-ordered_list = [k for k in ordered_list if k["activity_no"] == 13238398951]
-print(ordered_list[0]["end_points"][0], ordered_list[-1]["end_points"][-1])
+ordered_list = [k for k in ordered_list if k["activity_no"] == "11768746162"]
+ordered_list = [
+    i for i in ordered_list if i["end_points"][1] - i["end_points"][0] < 868 * 0.1
+]
 # ordered_list = sorted(json_data, key=lambda x: x["end_points"][1])
 # reduced_list = []
 #
@@ -221,8 +223,21 @@ def example():
 
 longest_seg, max_cov = example()
 
-# Here comes the csv for the ride 868
+index_list = []
+for seg in longest_seg:
+    index_list.append([k["end_points"] for k in ordered_list].index(seg))
 
+(
+    [
+        print(
+            k + 1,
+            ordered_list[index]["segment_name"],
+            f"---index in ordered_list = {index}",
+            ordered_list[index]["hidden"],
+        )
+        for k, index in enumerate(index_list)
+    ]
+)
 seg_start = longest_seg[0][0]
 seg_end = longest_seg[-1][1]
 len_df = len(df["ele"])
@@ -237,19 +252,23 @@ df_segment = []
 for no in df_list_no:
     df_segment.append(df[no[0] : no[1] + 1])
 
-import pandas as pd
+# df = pd.concat(df_segment)
+gdf_list = []
+for df in df_segment:
+    # Extract coordinates from DataFrame
+    coordinates = list(zip(df["lon"], df["lat"]))  # GeoPandas expects (lon, lat)
 
-df = pd.concat(df_segment)
-# Extract coordinates from DataFrame
-coordinates = list(zip(df["lon"], df["lat"]))  # GeoPandas expects (lon, lat)
+    # Convert coordinates to a LineString
+    route = LineString(coordinates)
 
-# Convert coordinates to a LineString
-route = LineString(coordinates)
+    # Create a GeoDataFrame
+    gdf = gpd.GeoDataFrame(index=[0], crs="EPSG:4326", geometry=[route])
+    gdf_list.append(gdf)
 
-# Create a GeoDataFrame
-gdf = gpd.GeoDataFrame(index=[0], crs="EPSG:4326", geometry=[route])
+    # Reproject GeoDataFrame to match the background map's CRS (Web Mercator: EPSG:3857)
 
-# Reproject GeoDataFrame to match the background map's CRS (Web Mercator: EPSG:3857)
+
+gdf = pd.concat(gdf_list)
 gdf = gdf.to_crs(epsg=3857)
 
 # Plot the route with a background map
@@ -258,8 +277,9 @@ gdf.plot(ax=ax, color="blue", linewidth=2)
 ctx.add_basemap(
     ax, source=ctx.providers.CartoDB.Voyager, crs=gdf.crs
 )  # Add background map
-ax.set_title("Route with Background Map")
 plt.show()
+
+
 # CartoDB Positron
 
 # fig = px.density_map(
