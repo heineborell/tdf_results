@@ -1,15 +1,34 @@
 import json
+import math
 
+import contextily as cx
+import contextily as ctx
+import ezgpx
+import folium
+import geodatasets
+import geopandas
+import geopandas as gpd
 import matplotlib.pyplot as plt
 import numpy as np
+import pandas as pd
+import plotly.express as px
+from shapely.geometry import LineString
 
-with open("../muhittin_segments.json", "r") as f:
+# Parse GPX file
+gpx = ezgpx.GPX("file.gpx")
+# Convert to Pandas Dataframe
+df = gpx.to_dataframe(["lat", "lon", "ele"])
+
+with open(
+    "/Users/deniz/iCloud/Research/Data_Science/Projects/tdf_data_fin/mapping/muhittin_segments.json",
+    "r",
+) as f:
     json_data = json.loads(f.read())
 
 
 ordered_list = json_data
 ordered_list = [k for k in ordered_list if k["activity_no"] == 13238398951]
-print(len(ordered_list))
+print(ordered_list[0]["end_points"][0], ordered_list[-1]["end_points"][-1])
 # ordered_list = sorted(json_data, key=lambda x: x["end_points"][1])
 # reduced_list = []
 #
@@ -200,15 +219,57 @@ def example():
     return longest_segments, max_coverage
 
 
-example()
+longest_seg, max_cov = example()
 
+# Here comes the csv for the ride 868
 
-import gpxpy
-import gpxpy.gpx
+seg_start = longest_seg[0][0]
+seg_end = longest_seg[-1][1]
+len_df = len(df["ele"])
+strava_len = 868
+scale = len_df / strava_len
 
-gpx_file_path = "muhittin.gpx"
-with open(gpx_file_path, "r") as gpx_file:
-    gpx = gpxpy.parse(gpx_file)
+df_list_no = []
+for seg in longest_seg:
+    df_list_no.append([math.ceil(f * scale) for f in seg])
 
+df_segment = []
+for no in df_list_no:
+    df_segment.append(df[no[0] : no[1] + 1])
 
-print(gpx)
+import pandas as pd
+
+df = pd.concat(df_segment)
+# Extract coordinates from DataFrame
+coordinates = list(zip(df["lon"], df["lat"]))  # GeoPandas expects (lon, lat)
+
+# Convert coordinates to a LineString
+route = LineString(coordinates)
+
+# Create a GeoDataFrame
+gdf = gpd.GeoDataFrame(index=[0], crs="EPSG:4326", geometry=[route])
+
+# Reproject GeoDataFrame to match the background map's CRS (Web Mercator: EPSG:3857)
+gdf = gdf.to_crs(epsg=3857)
+
+# Plot the route with a background map
+fig, ax = plt.subplots(figsize=(10, 8))
+gdf.plot(ax=ax, color="blue", linewidth=2)
+ctx.add_basemap(
+    ax, source=ctx.providers.CartoDB.Voyager, crs=gdf.crs
+)  # Add background map
+ax.set_title("Route with Background Map")
+plt.show()
+# CartoDB Positron
+
+# fig = px.density_map(
+#    df,
+#    lat="lat",
+#    lon="lon",
+#    z="ele",
+#    radius=10,
+#    center=dict(lat=0, lon=180),
+#    zoom=0,
+#    map_style="open-street-map",
+# )
+# fig.show()
