@@ -12,7 +12,7 @@ data_cleaning = sql_upload.SqlUploader(
 )
 df = data_cleaning.clean_pro_table(
     [
-        "/Users/dmini/iCloud/Research/Data_Science/Projects/tdf_data_fin/pro_tdf/pro_2024_1995.csv",
+        f"/Users/{username}/iCloud/Research/Data_Science/Projects/tdf_data_fin/pro_tdf/pro_2024_1995.csv",
     ]
 )
 df = df.drop_duplicates()
