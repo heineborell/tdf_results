@@ -6,6 +6,10 @@
 *.csv
 *.json
 *.log
+*.tif
+*.gpx
+*.png
+*.pdf
 .venv
 __pycache__
 *egg*

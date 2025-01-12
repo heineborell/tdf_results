@@ -55,6 +55,13 @@ def segment_details_scrape(activity_no: int, driver):
                 )  # This one is for clicking the element through Java as the usual way don't work on big screens
                 time.sleep(4)
                 clipper = driver.find_elements(By.CSS_SELECTOR, "[id^='view']")
+                main_rect = driver.find_element(
+                    By.XPATH,
+                    '//*[@id="grid"]',
+                )
+                total_length = main_rect.find_element(
+                    By.TAG_NAME, "rect"
+                ).get_attribute("width")
                 rects = clipper[0].find_elements(By.TAG_NAME, "rect")
                 ends.append(float(rects[0].get_attribute("x")))
                 ends.append(
@@ -78,6 +85,7 @@ def segment_details_scrape(activity_no: int, driver):
                         By.CSS_SELECTOR, "div.name"
                     ).text,
                     "end_points": ends,
+                    "total_length": total_length,
                     "category": cat,
                     "hidden": hidden,
                 }
