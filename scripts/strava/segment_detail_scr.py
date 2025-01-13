@@ -20,7 +20,6 @@ if __name__ == "__main__":
     sql_list = f"""SELECT * FROM ( SELECT ROW_NUMBER() OVER(PARTITION BY stage, year, tour ORDER BY ABS(dist_strava - avg_dist)) AS strava_rank, activity_id, dist_strava, avg_dist, tour, stage, year FROM ( SELECT *, AVG(dist_strava) OVER(PARTITION BY stage, year, tour) AS avg_dist FROM ( SELECT *, CAST(REGEXP_SUBSTR(`date`,'[0-9]{{4}}$') AS UNSIGNED) AS year FROM strava_table) t1) t2) ranked WHERE strava_rank = 1 and year= {year} and tour = 'tdf' """
 
     activity_no_list = pd.read_sql_query(sql_list, conn)["activity_id"].values.tolist()
-    # activity_no_list = [13071005082, 13238398951]
 
     logger = logger_config.setup_logger("segment.log")
     print(len(activity_no_list))

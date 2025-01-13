@@ -6,7 +6,7 @@ from grand_tours import ride_scrape
 if __name__ == "__main__":
     grand_tour = "giro"
     # grand_tour = "tdf"
-    year = 2022
+    year = 2018
 
     engine = create_engine(
         "mysql+mysqldb://root:Abrakadabra69!@127.0.0.1:3306/grand_tours"

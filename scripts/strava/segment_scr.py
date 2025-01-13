@@ -18,7 +18,7 @@ conn = engine.connect()
 
 # grand_tour = "giro"
 grand_tour = "tdf"
-year = 2012
+year = 2024
 
 service = Service()
 # Set up options for headless Chrome
@@ -200,6 +200,7 @@ for p, activity_no in enumerate(activity_no_list):
 
     segment_dict = {
         "segment_no": segment_no,
+        "segment_name": segment_name,
         "segment_time": segment_time,
         "segment_speed": segment_speed,
         "watt": watt,
