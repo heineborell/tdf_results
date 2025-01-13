@@ -18,7 +18,7 @@ conn = engine.connect()
 
 # grand_tour = "giro"
 grand_tour = "tdf"
-year = 2024
+year = 2012
 
 service = Service()
 # Set up options for headless Chrome
@@ -71,17 +71,17 @@ def clicker(wait_time):
 
 
 # Choose your activity_list either from sql or from a csv file
-sql_list = """select p.activity,p.tour , p.date from( select  activity_id as activity,cast(REGEXP_SUBSTR(`date`, '[0-9]{4}$') as UNSIGNED) AS date, tour from strava_table where tour = 'tdf') as p where p.date=2024"""
+# sql_list = """select p.activity,p.tour , p.date from( select  activity_id as activity,cast(REGEXP_SUBSTR(`date`, '[0-9]{4}$') as UNSIGNED) AS date, tour from strava_table where tour = 'tdf') as p where p.date=2024"""
 
-# activity_no_list = (
-#    pd.read_csv(
-#        f"~/iCloud/Research/Data_Science/Projects/data/strava/activity_list/activity_short_list_{grand_tour}_{year}.csv"
-#    )
-#    .drop_duplicates(subset=["activity"])["activity"]
-#    .values.tolist()
-# )
+activity_no_list = (
+    pd.read_csv(
+        f"~/iCloud/Research/Data_Science/Projects/data/strava/activity_list/activity_list_{grand_tour}_{year}.csv"
+    )
+    .drop_duplicates(subset=["activity"])["activity"]
+    .values.tolist()
+)
 
-activity_no_list = pd.read_sql_query(sql_list, conn)["activity"].values.tolist()
+# activity_no_list = pd.read_sql_query(sql_list, conn)["activity"].values.tolist()
 # last_index = activity_no_list.index("9406303142")
 # activity_no_list = activity_no_list[last_index:]
 print(len(activity_no_list))
