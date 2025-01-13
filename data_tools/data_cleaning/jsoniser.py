@@ -29,23 +29,38 @@ with open(
 ) as f:
 
     json_data = json.loads(f.read())
-
-# print(json_data["activities"][2]["segments"][0]["segment_no"])
-for activity in json_data["activities"][0:1]:
+json_data_list = []
+for activity in json_data["activities"]:
     key_list = list(activity["segments"][0].keys())
     len_vecs = len(activity["segments"][0]["segment_no"])
     activity_list = []
+    dict_list = []
+    seg_no_list = []
+    activity_dict = []
     for j in range(len_vecs):
+        seg_no_list.append(activity["segments"][0]["segment_no"][j])
         if j % 9 == 0:
             pass
         else:
             for key in key_list[1:]:
                 activity_list.append(activity["segments"][0][key][j])
 
-            print(dict(zip(key_list[1:] * len_vecs, activity_list)))
-    # print(dict(zip(key_list[1:] * len_vecs, activity_list)))
+                dict_list.append(dict(zip(key_list[1:] * len_vecs, activity_list)))
 
-# print(dict(zip(key_list * len_vecs, activity["segments"][0][key][j])))
+        activity_dict.append(dict(zip(seg_no_list * len_vecs, dict_list)))
 
+    json_data = {
+        "activity_id": activity["activity_id"],
+        "athelete_id": activity["athlete_id"],
+        "date": activity["date"],
+        "distance": activity["distance"],
+    }
+    json_data.update(dict(zip(["segment_no"] * len(activity_dict), activity_dict)))
+    json_data_list.append(json_data)
 
-## Create the table in the database (if not exists)
+json_string = json.dumps(json_data_list)
+with open(
+    f"jsoniser_test.json",
+    "w",
+) as f:
+    f.write(json_string)
