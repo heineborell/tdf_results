@@ -24,7 +24,7 @@ details_range = Path(
 )
 
 with open(
-    f"/Users/{username}/iCloud/Research/Data_Science/Projects/tdf_data_fin/strava/segments/segment_{year}_{grand_tour}_1.json",
+    f"/Users/{username}/iCloud/Research/Data_Science/Projects/data/strava/segments/segment_{year}_{grand_tour}_1.json",
     "r",
 ) as f:
 
@@ -32,13 +32,13 @@ with open(
 json_data_list = []
 for activity in json_data["activities"]:
     key_list = list(activity["segments"][0].keys())
-    len_vecs = len(activity["segments"][0]["segment_no"])
+    len_vecs = len(activity["segments"][0]["segment_name"])
     activity_list = []
     dict_list = []
     seg_no_list = []
     activity_dict = []
     for j in range(len_vecs):
-        seg_no_list.append(activity["segments"][0]["segment_no"][j])
+        seg_no_list.append(activity["segments"][0]["segment_name"][j])
         if j % 9 == 0:
             pass
         else:
@@ -51,16 +51,27 @@ for activity in json_data["activities"]:
 
     json_data = {
         "activity_id": activity["activity_id"],
-        "athelete_id": activity["athlete_id"],
+        "athlete_id": activity["athlete_id"],
         "date": activity["date"],
         "distance": activity["distance"],
     }
-    json_data.update(dict(zip(["segment_no"] * len(activity_dict), activity_dict)))
+    json_data.update(dict(zip(["segments"] * len(activity_dict), activity_dict)))
     json_data_list.append(json_data)
 
 json_string = json.dumps(json_data_list)
 with open(
-    f"jsoniser_test.json",
+    f"jsoniser_test_2.json",
     "w",
 ) as f:
     f.write(json_string)
+
+
+with open(
+    f"/Users/deniz/Projects/tdf_results/data_tools/data_cleaning/jsoniser_test_2.json",
+    "r",
+) as f:
+
+    json_data = json.loads(f.read())
+
+for activity in json_data[1:2]:
+    print(activity["segments"])

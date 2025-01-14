@@ -37,6 +37,9 @@ try:
 
     with conn as connection:
         connection.execute("DROP TABLE segment_details_data")
+
+    with conn as connection:
+        connection.execute("DROP TABLE segments_json")
 except sqlite3.OperationalError:
     print("Tables do not exist")
 
@@ -71,6 +74,19 @@ CREATE TABLE segment_details_data (
     category TEXT,
     hidden TEXT,
     end_points BLOB
+)
+"""
+)
+
+
+cursor.execute(
+    """
+CREATE TABLE segments_json (
+    activity_id INTEGER PRIMARY KEY,
+    athlete_id INTEGER,
+    date TEXT,
+    distance FLOAT,
+    segments BLOB
 )
 """
 )
@@ -171,5 +187,34 @@ for grand_tour in grand_tours:
                 else:
                     pass
 print("JSON data uploaded successfully.")
+
+with open(
+    f"/Users/deniz/Projects/tdf_results/data_tools/data_cleaning/jsoniser_test_2.json",
+    "r",
+) as f:
+
+    json_data = json.loads(f.read())
+
+id_list_json = []
+for activity in json_data:
+    if activity["activity_id"] not in id_list_json:
+        cursor.execute(
+            """ INSERT INTO segments_json (activity_id, athlete_id, date, distance, segments) VALUES (?, ?, ?, ?, ?) """,
+            (
+                str(activity["activity_id"]),
+                str(activity["athlete_id"]),
+                str(activity["date"])
+                .replace("June", "Jun")
+                .replace("July", "Jul")
+                .replace("August", "Aug")
+                .replace("September", "Sep"),
+                float(activity["distance"]),
+                json.dumps(activity["segments"]),
+            ),
+        )
+        id_list_json.append(activity["activity_id"])
+        # print(f"{j} segment {grand_tour} {year} uploaded")
+    else:
+        pass
 conn.commit()
 conn.close()
