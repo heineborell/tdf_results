@@ -24,10 +24,9 @@ details_range = Path(
 )
 
 with open(
-    f"/Users/{username}/iCloud/Research/Data_Science/Projects/data/strava/segments/segment_{year}_{grand_tour}_1.json",
+    f"/Users/dmini/Projects/TDF/scripts/strava/segment_2024_tdf_1.json",
     "r",
 ) as f:
-
     json_data = json.loads(f.read())
 json_data_list = []
 for activity in json_data["activities"]:
@@ -64,14 +63,3 @@ with open(
     "w",
 ) as f:
     f.write(json_string)
-
-
-with open(
-    f"/Users/deniz/Projects/tdf_results/data_tools/data_cleaning/jsoniser_test_2.json",
-    "r",
-) as f:
-
-    json_data = json.loads(f.read())
-
-for activity in json_data[1:2]:
-    print(activity["segments"])
