@@ -82,8 +82,8 @@ sql_list = """select p.activity,p.tour , p.date from( select  activity_id as act
 # )
 #
 activity_no_list = pd.read_sql_query(sql_list, conn)["activity"].values.tolist()
-# last_index = activity_no_list.index("9406303142")
-# activity_no_list = activity_no_list[last_index:]
+last_index = activity_no_list.index("11847071287")
+activity_no_list = activity_no_list[last_index:]
 print(len(activity_no_list))
 activity_dict_list = {"activities": []}
 stat_dict_list = {"stats": []}
