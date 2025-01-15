@@ -3,7 +3,13 @@ from pathlib import Path
 import pandas as pd
 from selenium.webdriver.common.by import By
 
-from grand_tours import chrome_driver, getters, logger_config, proscraper
+from grand_tours import (
+    chrome_driver,
+    chrome_grid_driver,
+    getters,
+    logger_config,
+    proscraper,
+)
 
 # GRAND_TOUR = "tour-de-france"
 GRAND_TOUR = "giro-d-italia"
@@ -29,7 +35,9 @@ else:
 logger = logger_config.setup_logger("app.log")
 
 # Driver
-driver = chrome_driver.start_driver(detach=False, additional_options={"headless": True})
+driver = chrome_grid_driver.start_driver(
+    detach=False, additional_options={"headless": True}
+)
 
 driver.get(f"https://www.procyclingstats.com/race/{GRAND_TOUR}/2024/stage-11")
 
