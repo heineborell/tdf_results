@@ -10,6 +10,7 @@
 *.gpx
 *.png
 *.pdf
+*.pkl
 .venv
 __pycache__
 *egg*

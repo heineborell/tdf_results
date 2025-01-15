@@ -1,12 +1,6 @@
-import pathlib
-import pickle
-import time
-from datetime import datetime, timedelta
 from pathlib import Path
 
-import numpy as np
 import pandas as pd
-from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.common.by import By
 
 from grand_tours import chrome_driver, getters, logger_config, proscraper
@@ -51,10 +45,9 @@ year_list = [year.text for year in year_element]
 del year_list[0]
 
 df = pd.DataFrame(columns=["year", "stage", "name", "time"])
-for year in year_list:
 
-    stage_list = proscraper.stage_getter(year, GRAND_TOUR, driver, logger)
-    proscraper.main_list_getter(year, GRAND_TOUR, stage_list, driver, logger, pro_path)
+scraper = proscraper.ProCycling(GRAND_TOUR, year_list[9:], driver, logger, pro_path)
+scraper.pro_scraper()
 
 
 #        if (
