@@ -35,9 +35,7 @@ else:
 logger = logger_config.setup_logger("app.log")
 
 # Driver
-driver = chrome_grid_driver.start_driver(
-    detach=False, additional_options={"headless": True}
-)
+driver = chrome_driver.start_driver(detach=False, additional_options={"headless": True})
 
 driver.get(f"https://www.procyclingstats.com/race/{GRAND_TOUR}/2024/stage-11")
 
@@ -162,4 +160,3 @@ scraper.pro_scraper()
 #                "If its normal the entries are empty if its not it is a TTT stage"
 #            )
 #
-driver.quit()
