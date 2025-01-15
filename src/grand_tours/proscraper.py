@@ -10,13 +10,27 @@ from grand_tours import getters
 
 
 class ProCycling:
-    def __init__(self, grand_tour, year_list, driver, logger, pro_path) -> None:
+    def __init__(self, grand_tour, year_whole_list, driver, logger, pro_path) -> None:
+        max_workers = 2
+
         self.driver = driver
         self.logger = logger
         self.grand_tour = grand_tour
-        self.year_list = year_list
+        self.year_whole_list = year_whole_list
         self.pro_path = pro_path
         self.main_list_pickle = []
+        self.year_whole_list = self._split_into_n(self.year_whole_list, max_workers)
+
+    def _split_into_n(self, lst, n):
+        avg_size = len(lst) // n
+        remainder = len(lst) % n
+        sublists = []
+        start = 0
+        for i in range(n):
+            end = start + avg_size + (1 if i < remainder else 0)
+            sublists.append(lst[start:end])
+            start = end
+        return sublists
 
     def _stage_getter(self, year):
 
@@ -39,7 +53,7 @@ class ProCycling:
 
         return stage_list
 
-    def _main_list_getter(self, year, stage_list, pro_path):
+    def _main_list_getter(self, year, year_list, stage_list, pro_path):
         for stage in stage_list:
             self.logger.info(f"----{stage}")
             self.driver.get(
@@ -95,16 +109,19 @@ class ProCycling:
 
             # Pickling the main list
 
-            if (pro_path / f"main_{self.year_list[0]}_{int(year)+1}.pkl").exists():
-                pathlib.Path.unlink(
-                    pro_path / f"main_{self.year_list[0]}_{int(year)+1}.pkl"
-                )
+            if (pro_path / f"main_{year_list[0]}_{int(year)+1}.pkl").exists():
+                pathlib.Path.unlink(pro_path / f"main_{year_list[0]}_{int(year)+1}.pkl")
 
             with open(
-                pro_path / f"main_{self.year_list[0]}_{year}.pkl", "wb"
+                pro_path / f"main_{year_list[0]}_{year}.pkl", "wb"
             ) as fp:  # Pickling
                 pickle.dump(self.main_list_pickle, fp)
 
+        self.driver.quit()
+
     def pro_scraper(self):
-        for year in self.year_list:
-            self._main_list_getter(year, self._stage_getter(year), self.pro_path)
+        for year_list in self.year_whole_list:
+            for year in year_list:
+                self._main_list_getter(
+                    year, year_list, self._stage_getter(year), self.pro_path
+                )
