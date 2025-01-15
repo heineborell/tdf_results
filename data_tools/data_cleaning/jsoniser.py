@@ -1,13 +1,6 @@
 import getpass
 import json
-import sqlite3
 from pathlib import Path
-from sqlite3 import OperationalError
-
-from sqlalchemy import CHAR, JSON, Column, Float, Integer, String, create_engine, text
-from sqlalchemy.exc import OperationalError
-from sqlalchemy.ext.declarative import declarative_base
-from sqlalchemy.orm import sessionmaker
 
 grand_tour = "tdf"
 year = 2024
