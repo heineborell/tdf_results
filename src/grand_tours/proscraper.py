@@ -1,22 +1,27 @@
 import concurrent.futures
 import pathlib
 import pickle
+import threading
 import time
-from pathlib import Path
 
-from selenium.common.exceptions import NoSuchElementException
+from rich import print as rprint
+from selenium.common.exceptions import NoSuchElementException, TimeoutException
 from selenium.webdriver.common.by import By
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.support.ui import WebDriverWait
 
 from grand_tours import chrome_grid_driver, getters
 
 
 class ProCycling:
 
-    def __init__(self, grand_tour, year_whole_list, logger, pro_path) -> None:
+    def __init__(
+        self, grand_tour, year_whole_list, logger, max_workers, pro_path
+    ) -> None:
 
         self.logger = logger
         self.grand_tour = grand_tour
-        self.max_workers = 8
+        self.max_workers = max_workers
         self.year_whole_list = year_whole_list
         self.pro_path = pro_path
         self.year_whole_list = self._split_into_n(
@@ -55,19 +60,41 @@ class ProCycling:
 
         return stage_list
 
+    def _load_page_with_retry(self, driver, year, stage, max_retries=5):
+        retries = 0
+        url = f"https://www.procyclingstats.com/race/{self.grand_tour}/{year}/stage-{stage.split(' ')[1]}"
+        while retries < max_retries:
+            try:
+                rprint(
+                    f"[bold yellow] Attempt {retries + 1}: Trying to load URL: {year}-stage-{stage} [/bold yellow]"
+                )
+                driver.get(url)
+
+                # Wait for a specific element to confirm page load
+                WebDriverWait(driver, 10).until(
+                    EC.presence_of_element_located(
+                        (By.TAG_NAME, "body")
+                    )  # Replace with a specific element for better accuracy
+                )
+                rprint("[bold green] Page loaded successfully! [/bold green]")
+                break  # Exit the loop if the page loads successfully
+            except TimeoutException:
+                retries += 1
+                rprint(
+                    f"[bold red] Retry {retries}/{max_retries}: Page did not load completely. Retrying...[/bold red]"
+                )
+                time.sleep(3)  # Optional wait before retrying
+        else:
+            print("Max retries reached. Could not load the page.")
+
     def _main_list_getter(self, year_list):
+        thread_id = threading.get_ident()
         driver = chrome_grid_driver.start_driver()
         main_list_pickle = []
         for year in year_list:
             stage_list = self._stage_getter(year, driver)
             for stage in stage_list:
-                driver.get(
-                    f"https://www.procyclingstats.com/race/{self.grand_tour}/"
-                    + year
-                    + "/stage-"
-                    + stage.split(" ")[1]
-                )
-                time.sleep(3)
+                self._load_page_with_retry(driver, year, stage)
 
                 # Throwing the stages with no moblist
                 if (driver.page_source.find("moblist")) == -1:
@@ -114,13 +141,15 @@ class ProCycling:
                         main_list,
                     ]
                 )
-                if (self.pro_path / f"main_{year_list[0]}_{int(year)+1}.pkl").exists():
+                if (
+                    self.pro_path / f"{thread_id}_{year_list[0]}_{int(year)+1}.pkl"
+                ).exists():
                     pathlib.Path.unlink(
-                        self.pro_path / f"main_{year_list[0]}_{int(year)+1}.pkl"
+                        self.pro_path / f"{thread_id}_{year_list[0]}_{int(year)+1}.pkl"
                     )
 
                 with open(
-                    self.pro_path / f"main_{year_list[0]}_{year}.pkl", "wb"
+                    self.pro_path / f"{thread_id}_{year_list[0]}_{year}.pkl", "wb"
                 ) as fp:  # Pickling
                     pickle.dump(main_list_pickle, fp)
         driver.quit()
