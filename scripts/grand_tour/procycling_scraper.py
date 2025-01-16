@@ -35,24 +35,37 @@ else:
 logger = logger_config.setup_logger("app.log")
 
 # Driver
-driver = chrome_driver.start_driver(detach=False, additional_options={"headless": True})
 
-driver.get(f"https://www.procyclingstats.com/race/{GRAND_TOUR}/2024/stage-11")
-
-
-info_dict = getters.get_info_dict(driver)
-info_df = pd.DataFrame(columns=list(info_dict.keys()))
-drop_list = driver.find_elements(By.CLASS_NAME, "pageSelectNav ")
-year_element = drop_list[0].find_elements(By.TAG_NAME, "option")
-year_list = [year.text for year in year_element]
+# driver.get(f"https://www.procyclingstats.com/race/{GRAND_TOUR}/2024/stage-11")
+#
+#
+# info_dict = getters.get_info_dict(driver)
+# info_df = pd.DataFrame(columns=list(info_dict.keys()))
+# drop_list = driver.find_elements(By.CLASS_NAME, "pageSelectNav ")
+# year_element = drop_list[0].find_elements(By.TAG_NAME, "option")
+# year_list = [year.text for year in year_element]
 
 # use this to choose what year you want to scrape
 # year_list = year_list[23:]
+year_list = [
+    "2015",
+    "2014",
+    "2013",
+    "2012",
+    "2011",
+    "2010",
+    "2009",
+    "2008",
+    "2007",
+    "2006",
+    "2005",
+    "2004",
+    "2003",
+]
 del year_list[0]
 
-df = pd.DataFrame(columns=["year", "stage", "name", "time"])
 
-scraper = proscraper.ProCycling(GRAND_TOUR, year_list[9:], driver, logger, pro_path)
+scraper = proscraper.ProCycling(GRAND_TOUR, year_list, logger, pro_path)
 scraper.pro_scraper()
 
 
