@@ -23,5 +23,7 @@ def start_driver():
         Configured Chrome WebDriver instance
     """
     options = webdriver.ChromeOptions()
+    options.page_load_strategy = "eager"
+    options.add_argument("--blink-settings=imagesEnabled=false")
     grid_url: str = "http://localhost:4444"
     return webdriver.Remote(command_executor=grid_url, options=options)

@@ -16,7 +16,7 @@ class ProCycling:
 
         self.logger = logger
         self.grand_tour = grand_tour
-        self.max_workers = 3
+        self.max_workers = 8
         self.year_whole_list = year_whole_list
         self.pro_path = pro_path
         self.year_whole_list = self._split_into_n(
@@ -114,7 +114,6 @@ class ProCycling:
                         main_list,
                     ]
                 )
-            try:
                 if (self.pro_path / f"main_{year_list[0]}_{int(year)+1}.pkl").exists():
                     pathlib.Path.unlink(
                         self.pro_path / f"main_{year_list[0]}_{int(year)+1}.pkl"
@@ -124,8 +123,7 @@ class ProCycling:
                     self.pro_path / f"main_{year_list[0]}_{year}.pkl", "wb"
                 ) as fp:  # Pickling
                     pickle.dump(main_list_pickle, fp)
-            finally:
-                driver.quit()
+        driver.quit()
 
     def pro_scraper(self):
         with concurrent.futures.ThreadPoolExecutor(
