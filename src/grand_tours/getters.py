@@ -50,12 +50,14 @@ def get_tables_ttt(driver, moblist_ttt):
     try:
         table = driver.find_element(By.CLASS_NAME, moblist_ttt)
         main_list = [
-            time.text for time in table.find_elements(By.CSS_SELECTOR, "tr.team")
+            [time.text for time in table.find_elements(By.CSS_SELECTOR, "tr.team")],
+            [],
+            [],
         ]
 
     except NoSuchElementException:
         print("Nothing in TTT list.")
-        main_list = []
+        main_list = [[], [], []]
 
     return main_list
     # find_elements(By.CSS_SELECTOR, "team").text

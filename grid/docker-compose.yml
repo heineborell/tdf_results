@@ -7,6 +7,8 @@ services:
       - "4442:4442"
       - "4443:4443"
       - "4444:4444"
+    environment:
+      - GRID_SESSION_TIMEOUT=60000  # Set session timeout to 60 seconds (60000 ms)
 
   chrome:
     image: seleniarm/node-chromium:latest

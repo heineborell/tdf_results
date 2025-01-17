@@ -133,7 +133,7 @@ class ProCycling:
                                 )
                             except NoSuchElementException:
                                 self.logger.info(f"---{year}---{stage}---No moblist!")
-                                main_list = []
+                                main_list = [[], [], []]
                 main_list_pickle.append(
                     [
                         [int(year)] * len(main_list[0]),
@@ -153,9 +153,23 @@ class ProCycling:
                 ) as fp:  # Pickling
                     pickle.dump(main_list_pickle, fp)
         driver.quit()
+        return "Finished ok!"
 
     def pro_scraper(self):
         with concurrent.futures.ThreadPoolExecutor(
             max_workers=self.max_workers
         ) as executor:
-            (executor.map(self._main_list_getter, self.year_whole_list))
+            futures = {
+                executor.submit(self._main_list_getter, i): i
+                for i in self.year_whole_list
+            }
+
+            for future in concurrent.futures.as_completed(futures):
+                try:
+                    result = future.result()
+                    rprint(f"[turquoise2] Task result:{result} [/turquoise2]")
+                except Exception as e:
+                    task_id = futures[future]
+                    rprint(
+                        f"[bright red] Task {task_id} generated an exception: {e} [/bright red]"
+                    )

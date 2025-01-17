@@ -25,5 +25,7 @@ def start_driver():
     options = webdriver.ChromeOptions()
     # options.page_load_strategy = "eager"
     options.add_argument("--blink-settings=imagesEnabled=false")
+    options.add_argument("--disable-dev-shm-usage")
+    options.add_argument("--no-sandbox")
     grid_url: str = "http://localhost:4444"
     return webdriver.Remote(command_executor=grid_url, options=options)
