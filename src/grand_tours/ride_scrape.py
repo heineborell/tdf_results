@@ -1,3 +1,5 @@
+"""This is for scraping the rides from week page of a rider. Basically populates the activity_list!"""
+
 import getpass
 import time
 

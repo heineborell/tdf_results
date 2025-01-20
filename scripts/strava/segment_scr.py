@@ -3,6 +3,7 @@ import time
 
 import numpy as np
 import pandas as pd
+from rich import print as rprint
 from selenium import webdriver
 from selenium.common.exceptions import NoSuchElementException, TimeoutException
 from selenium.webdriver.chrome.options import Options
