@@ -54,10 +54,10 @@ sql_list = """select p.activity,p.tour , p.date from( select  activity_id as act
 ##
 activity_no_list = pd.read_sql_query(sql_list, conn)["activity"].values.tolist()
 # last_index = activity_no_list.index("9406303142")
-activity_no_list = activity_no_list[:6]
+activity_no_list = activity_no_list[:12]
 print(len(activity_no_list))
 
-scraper = segment_scraper.SegmentScrape("tdf", 2024, activity_no_list, 1)
+scraper = segment_scraper.SegmentScrape("tdf", 2024, activity_no_list, 2)
 scraper.segment_scraper()
 # def clicker(wait_time):
 #
