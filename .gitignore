@@ -6,6 +6,7 @@
 *.csv
 *.json
 *.log
+.env
 *.tif
 *.gpx
 *.png
