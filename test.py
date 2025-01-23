@@ -10,10 +10,12 @@ driver = uc.Chrome(
     browser_executable_path="/opt/chrome/chrome-linux64/chrome",
     headless=True)
 
-driver.get("https://www.strava.com/login")
+driver.get("https://www.strava.com")
 
  # Give the browser time to load all content.
 time.sleep(2)
+
+driver.find_element(By.XPATH,'//*[@id="__next"]/div[2]/div[1]/nav/div/div[1]/div[2]/button').click()
 
 print(driver.page_source)
 # Find element by tag
