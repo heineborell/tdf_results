@@ -37,39 +37,40 @@ ENV PATH=$CHROMEDRIVER_DIR:$PATH
 # Clean upa
 RUN rm /tmp/chrome-linux64.zip /tmp/chromedriver-linux64.zip /tmp/versions.json
 
-# python dependencies
-RUN pip install selenium
+RUN apt-get install mysql-server mysql-client libmysqlclient-dev pkg-config -y  
 
-RUN apt-get install software-properties-common -y &&\
-add-apt-repository ppa:neovim-ppa/unstable -y && \
-apt update && \
-apt install make gcc ripgrep xclip neovim -y
+
+#RUN apt-get install software-properties-common -y &&\
+#add-apt-repository ppa:neovim-ppa/unstable -y && \
+#apt update && \
+#apt install make gcc ripgrep xclip neovim -y
 
 
 # Set up project directory
-WORKDIR /project
+WORKDIR /root/env
 
 # Create a virtual environment and clone the repository
-RUN virtualenv -p python3 env && \
-    git clone https://github.com/heineborell/tdf_results
+RUN virtualenv -p python3 tdf
+#    git clone https://github.com/heineborell/tdf_results
+
 
 # Set the virtual environment as default
-ENV PATH="/project/env/bin:$PATH"
+ENV PATH="/root/env/tdf/bin:$PATH"
 
 # Create a directory; -p ensures parent directories are created if they don't exist
-RUN mkdir -p /root/.config/
+# RUN mkdir -p /root/.config/
 
 # Set the working directory to /root
-WORKDIR /root
+# WORKDIR /root
 
-RUN apt-get update && apt-get install -y \
-    && add-apt-repository ppa:neovim-ppa/stable \
-    && apt-get update && apt-get install -y neovim \
-    && apt-get clean
-
-# Clone the dot-files repository directly into /root/.config
-RUN git clone https://github.com/heineborell/dot-files /root/.config/
-
+#RUN apt-get update && apt-get install -y \
+#    && add-apt-repository ppa:neovim-ppa/stable \
+#    && apt-get update && apt-get install -y neovim \
+#    && apt-get clean
+#
+## Clone the dot-files repository directly into /root/.config
+#RUN git clone https://github.com/heineborell/dot-files /root/.config/
+#
 # Set Zsh as the default shell
 RUN chsh -s /bin/zsh
 
