@@ -1,10 +1,13 @@
 import concurrent.futures
 import json
+import os
 import threading
 import time
 
 import numpy as np
 import pandas as pd
+import undetected_chromedriver as uc
+from dotenv import load_dotenv
 from rich import print as rprint
 from selenium import webdriver
 from selenium.common.exceptions import NoSuchElementException, TimeoutException
@@ -120,21 +123,88 @@ class SegmentScrape:
                         f"[bright red] Task {task_id} generated an exception: {e} [/bright red]"
                     )
 
+    def _strava_login(self, driver, email, password):
+
+        print(email)
+        print(password)
+        driver.delete_all_cookies()
+        # open strava
+        driver.get("https://www.strava.com")
+
+        # Give the browser time to load all content.
+        time.sleep(5)
+
+        # click login button
+        driver.find_element(
+            By.XPATH, '//*[@id="__next"]/div[2]/div[1]/nav/div/div[1]/div[2]/button'
+        ).click()
+
+        time.sleep(5)
+
+        # click cookies button
+        driver.find_element(
+            By.XPATH, ' //*[@id="__next"]/div[1]/div/div/button[1] '
+        ).click()
+
+        # WebDriverWait(driver, 10).until(
+        #     EC.presence_of_element_located(
+        #         (
+        #             By.XPATH,
+        #             '//*[@id="__next"]/div[2]/div[1]/nav/div/div[1]/div[2]/button',
+        #         )
+        #     )
+        # )
+        # click don't remember me
+        driver.find_element(
+            By.XPATH,
+            '//*[@id="__next"]/div/div[2]/div[2]/div/div[2]/form/div[3]/label',
+        ).click()
+        time.sleep(5)
+
+        # enter email
+        driver.find_element(By.XPATH, '//*[@id="desktop-email"]').send_keys(f"{email}")
+
+        WebDriverWait(driver, 10).until(
+            EC.element_to_be_clickable((By.XPATH, '//*[@id="desktop-login-button"]'))
+        )
+        # click first login for email
+        driver.find_element(By.XPATH, '//*[@id="desktop-login-button"]').click()
+        time.sleep(5)
+
+        # enter password
+        driver.find_element(
+            By.XPATH,
+            '//*[@id="__next"]/div/div[2]/div[2]/div/div/form/div[1]/div[2]/div/input',
+        ).send_keys(f"{password}")
+
+        time.sleep(5)
+
+        WebDriverWait(driver, 10).until(
+            EC.element_to_be_clickable(
+                (
+                    By.XPATH,
+                    '//*[@id="__next"]/div/div[2]/div[2]/div/div/form/div[2]/button',
+                )
+            )
+        )
+        driver.find_element(
+            By.XPATH,
+            '//*[@id="__next"]/div/div[2]/div[2]/div/div/form/div[2]/button',
+        ).click()
+
+        time.sleep(5)
+
     def _activity_data_getter(self, account_no, activity_no_list):
         print(f"for the account no {account_no} we have the table {activity_no_list}")
         thread_id = threading.get_ident()
         activity_dict_list = {"activities": []}
         stat_dict_list = {"stats": []}
-        driver = chrome_driver.start_driver(
-            profile_number=account_no + 1,
-            additional_options={
-                "no-sandbox": True,
-                # "headless": True,
-                # "disable-dev-shm-usage": True,
-                # "no-proxy-server": True,
-                # "proxy-server='direct://'": True,
-                # "proxy-bypass-list=*": True,
-            },
+        driver = uc.Chrome(use_subprocess=True)
+        load_dotenv()
+        self._strava_login(
+            driver,
+            os.getenv(f"STRAVA_EMAIL_{account_no}"),
+            os.getenv(f"STRAVA_PASSWORD_{account_no}"),
         )
 
         for p, activity_no in enumerate(activity_no_list):
