@@ -27,7 +27,6 @@ class ProCycling:
         self.year_whole_list = self._split_into_n(
             self.year_whole_list, self.max_workers
         )
-        print(self.year_whole_list)
 
     def _split_into_n(self, lst, n):
         avg_size = len(lst) // n

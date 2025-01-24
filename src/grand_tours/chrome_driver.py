@@ -7,11 +7,11 @@ from selenium.webdriver.chrome.service import Service
 
 
 def start_driver(
+    profile_number,
     disable_images: bool = True,
     detach: bool = True,
     disable_automation: bool = True,
     use_profile: bool = True,
-    profile_number: int = 1,
     page_load_strategy: Optional[str] = None,
     additional_options: Optional[Dict[str, Any]] = None,
 ) -> webdriver.Chrome:
@@ -48,9 +48,12 @@ def start_driver(
     # Configure user profile
     if use_profile:
         username = getpass.getuser()
+
         options.add_argument(
-            f"user-data-dir=/Users/{username}/Library/Application Support/Google/Chrome/Profile {profile_number}"
+            f"--user-data-dir=/Users/{username}/Library/Application Support/Google/Chrome/"
         )
+        print(f"this is the profile number {profile_number}")
+        options.add_argument(f"--profile-directory=Profile {profile_number}")
 
     # Configure page load strategy
     if page_load_strategy:

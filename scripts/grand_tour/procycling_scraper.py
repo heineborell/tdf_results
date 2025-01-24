@@ -6,11 +6,15 @@ from selenium.webdriver.common.by import By
 from grand_tours import chrome_driver, getters, logger_config, proscraper
 
 # GRAND_TOUR = "tour-de-france"
-GRAND_TOUR = "giro-d-italia"
+# GRAND_TOUR = "giro-d-italia"
+GRAND_TOUR = "vuelta-a-espana"
+
 if GRAND_TOUR == "tour-de-france":
     pro_path = Path.cwd().parent.parent / "data/pro_tdf/"
 elif GRAND_TOUR == "giro-d-italia":
     pro_path = Path.cwd().parent.parent / "data/pro_giro/"
+elif GRAND_TOUR == "vuelta-a-espana":
+    pro_path = Path.cwd().parent.parent / "data/pro_vuelta/"
 
 
 if pro_path.exists():
