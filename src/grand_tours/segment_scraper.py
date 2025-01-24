@@ -19,7 +19,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from sqlalchemy import create_engine
 
 import grand_tours
-from grand_tours import chrome_driver, chrome_grid_driver
+from grand_tours import chrome_driver, chrome_driver_stealth, chrome_grid_driver
 
 
 class SegmentScrape:
