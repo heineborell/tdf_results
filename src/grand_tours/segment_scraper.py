@@ -19,7 +19,12 @@ from selenium.webdriver.support.ui import WebDriverWait
 from sqlalchemy import create_engine
 
 import grand_tours
-from grand_tours import chrome_driver, chrome_driver_stealth, chrome_grid_driver
+from grand_tours import (
+    chrome_driver,
+    chrome_driver_single,
+    chrome_driver_stealth,
+    chrome_grid_driver,
+)
 
 
 class SegmentScrape:
@@ -199,13 +204,14 @@ class SegmentScrape:
         thread_id = threading.get_ident()
         activity_dict_list = {"activities": []}
         stat_dict_list = {"stats": []}
-        driver = uc.Chrome(use_subprocess=True)
-        load_dotenv()
-        self._strava_login(
-            driver,
-            os.getenv(f"STRAVA_EMAIL_{account_no}"),
-            os.getenv(f"STRAVA_PASSWORD_{account_no}"),
-        )
+        driver = chrome_driver_single.driver_single()
+        # driver = uc.Chrome(use_subprocess=True)
+        # load_dotenv()
+        # self._strava_login(
+        #     driver,
+        #     os.getenv(f"STRAVA_EMAIL_{account_no}"),
+        #     os.getenv(f"STRAVA_PASSWORD_{account_no}"),
+        # )
 
         for p, activity_no in enumerate(activity_no_list):
             activity = "https://www.strava.com/activities/" + str(activity_no)
@@ -331,7 +337,7 @@ class SegmentScrape:
                             heart_rate.append(field.text.split("b")[0])
 
             segment_dict = {
-                "segment_no": segment_no,
+                # "segment_no": segment_no,
                 "segment_name": segment_name,
                 "segment_time": segment_time,
                 "segment_speed": segment_speed,
