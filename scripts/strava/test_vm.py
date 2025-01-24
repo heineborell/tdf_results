@@ -1,11 +1,10 @@
-import time
-
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.service import Service
-from selenium.webdriver.common.by import By
 from selenium_stealth import stealth
-from webdriver_manager.chrome import ChromeDriverManager
+
+# ChromeDriver path
+CHROMEDRIVER_PATH = "/usr/local/bin/chromedriver"  # Adjust to your actual path
 
 # Configure Chrome options
 chrome_options = Options()
@@ -16,8 +15,8 @@ chrome_options.add_argument("--headless=new")  # Enable headless mode
 chrome_options.add_argument("--disable-gpu")
 chrome_options.add_argument("--window-size=1920,1080")
 
-# Set up ChromeDriver
-service = Service(ChromeDriverManager().install())
+# Set up ChromeDriver with explicit path
+service = Service(executable_path=CHROMEDRIVER_PATH)
 driver = webdriver.Chrome(service=service, options=chrome_options)
 
 # Apply stealth settings
@@ -33,16 +32,6 @@ stealth(
 
 # Test the stealth setup
 driver.get("https://www.strava.com")
-
-# Give the browser time to load all content.
-time.sleep(5)
-
-# click login button
-driver.find_element(
-    By.XPATH, '//*[@id="__next"]/div[2]/div[1]/nav/div/div[1]/div[2]/button'
-).click()
-
-time.sleep(5)
 print(driver.page_source)
 
 # Close the browser
