@@ -4,10 +4,13 @@ from selenium.webdriver.chrome.service import Service
 from selenium_stealth import stealth
 
 # ChromeDriver path
-CHROMEDRIVER_PATH = "/usr/local/bin/chromedriver"  # Adjust to your actual path
+CHROMEDRIVER_PATH = "/opt/chromedriver/chromedriver-linux64/chromedriver"  # Adjust to your actual path
+CHROME_BINARY_PATH = "/opt/chrome/chrome-linux64/chrome"
+# /opt/chrome/chrome-linux64
 
 # Configure Chrome options
 chrome_options = Options()
+chrome_options.binary_location = CHROME_BINARY_PATH
 chrome_options.add_argument("--no-sandbox")
 chrome_options.add_argument("--disable-dev-shm-usage")
 chrome_options.add_argument("--disable-blink-features=AutomationControlled")
@@ -31,7 +34,7 @@ stealth(
 )
 
 # Test the stealth setup
-driver.get("https://www.strava.com")
+driver.get("https://www.strava.com/login")
 print(driver.page_source)
 
 # Close the browser
