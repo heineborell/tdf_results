@@ -12,6 +12,7 @@
 *.png
 *.pdf
 *.pkl
+*.pkl.gz
 .venv
 __pycache__
 *egg*
