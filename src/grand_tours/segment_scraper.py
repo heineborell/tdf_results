@@ -113,10 +113,11 @@ class SegmentScrape:
         with concurrent.futures.ThreadPoolExecutor(
             max_workers=self.max_workers
         ) as executor:
-            futures = {
-                executor.submit(self._activity_data_getter, i + 1, j): j
-                for i, j in enumerate(self.activity_whole_list)
-            }
+            futures = {}
+            for i, j in enumerate(self.activity_whole_list):
+                # Submit each task with a slight delay
+                futures[executor.submit(self._activity_data_getter, i + 1, j)] = j
+                time.sleep(10)  # Adjust the sleep time as needed
 
             for future in concurrent.futures.as_completed(futures):
                 try:
@@ -205,7 +206,7 @@ class SegmentScrape:
         activity_dict_list = {"activities": []}
         stat_dict_list = {"stats": []}
         # driver = chrome_driver_single.driver_single()
-        driver = uc.Chrome(use_subprocess=True)
+        driver = uc.Chrome(use_subprocess=True, version_main=131)
         load_dotenv()
         self._strava_login(
             driver,
