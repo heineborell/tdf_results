@@ -24,5 +24,5 @@ if __name__ == "__main__":
     # activity_no_list = activity_no_list[:12]
     print(len(activity_no_list))
 
-    # scraper = segment_scraper.SegmentScrape(grand_tour, year, activity_no_list, 2)
-    # scraper.segment_scraper()
+    scraper = segment_scraper.SegmentScrape(grand_tour, year, activity_no_list, 2)
+    scraper.segment_scraper()
