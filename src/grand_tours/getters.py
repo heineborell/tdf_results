@@ -1,6 +1,20 @@
+import json
+from pathlib import Path
+
 import numpy as np
 from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.common.by import By
+
+
+def get_duplicates(year, grand_tour):
+    id_list = []
+    path = Path.cwd()
+    for file in path.glob(f"segment_*_{year}_{grand_tour}.json"):
+        with open(file) as f:
+            json_data = json.loads(f.read())
+
+        [id_list.append(id["activity_id"]) for id in json_data["activities"]]
+    return id_list
 
 
 def get_info_dict(driver):

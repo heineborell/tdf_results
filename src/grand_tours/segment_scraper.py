@@ -204,14 +204,14 @@ class SegmentScrape:
         thread_id = threading.get_ident()
         activity_dict_list = {"activities": []}
         stat_dict_list = {"stats": []}
-        driver = chrome_driver_single.driver_single()
-        # driver = uc.Chrome(use_subprocess=True)
-        # load_dotenv()
-        # self._strava_login(
-        #     driver,
-        #     os.getenv(f"STRAVA_EMAIL_{account_no}"),
-        #     os.getenv(f"STRAVA_PASSWORD_{account_no}"),
-        # )
+        # driver = chrome_driver_single.driver_single()
+        driver = uc.Chrome(use_subprocess=True)
+        load_dotenv()
+        self._strava_login(
+            driver,
+            os.getenv(f"STRAVA_EMAIL_{account_no}"),
+            os.getenv(f"STRAVA_PASSWORD_{account_no}"),
+        )
 
         for p, activity_no in enumerate(activity_no_list):
             activity = "https://www.strava.com/activities/" + str(activity_no)
