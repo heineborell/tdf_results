@@ -5,7 +5,7 @@ from grand_tours import getters, segment_scraper
 if __name__ == "__main__":
     # grand_tour = "giro"
     grand_tour = "tdf"
-    year = 2013
+    year = 2016
 
     activity_no_list = (
         pd.read_csv(
@@ -24,5 +24,5 @@ if __name__ == "__main__":
     # activity_no_list = activity_no_list[:12]
     print(len(activity_no_list))
 
-    scraper = segment_scraper.SegmentScrape(grand_tour, year, activity_no_list, 1)
-    scraper.segment_scraper()
+    # scraper = segment_scraper.SegmentScrape(grand_tour, year, activity_no_list, 2)
+    # scraper.segment_scraper()

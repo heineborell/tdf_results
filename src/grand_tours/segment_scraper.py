@@ -1,13 +1,11 @@
 import concurrent.futures
 import gzip
-import json
 import os
 import pickle
 import threading
 import time
 
 import numpy as np
-import pandas as pd
 import undetected_chromedriver as uc
 from dotenv import load_dotenv
 from rich import print as rprint
@@ -206,14 +204,14 @@ class SegmentScrape:
         print(f"for the account no {account_no} we have the table {activity_no_list}")
         thread_id = threading.get_ident()
         activity_main_list = []
-        driver = chrome_driver_single.driver_single()
-        # driver = uc.Chrome(use_subprocess=True, version_main=131)
-        # load_dotenv()
-        # self._strava_login(
-        #     driver,
-        #     os.getenv(f"STRAVA_EMAIL_{account_no}"),
-        #     os.getenv(f"STRAVA_PASSWORD_{account_no}"),
-        # )
+        # driver = chrome_driver_single.driver_single()
+        driver = uc.Chrome(use_subprocess=True, version_main=132)
+        load_dotenv()
+        self._strava_login(
+            driver,
+            os.getenv(f"STRAVA_EMAIL_{account_no}"),
+            os.getenv(f"STRAVA_PASSWORD_{account_no}"),
+        )
 
         for p, activity_no in enumerate(activity_no_list):
             activity_big_list = []
@@ -344,11 +342,11 @@ class SegmentScrape:
 
             activity_main_list.append(activity_big_list)
             with gzip.open(
-                f"segment{thread_id}_{self.year}_{self.grand_tour}.pkl.gz", "wb"
+                f"segment_{thread_id}_{self.year}_{self.grand_tour}.pkl.gz", "wb"
             ) as fp:  # Pickling
                 pickle.dump(activity_main_list, fp)
 
             time.sleep(3)
 
-        # driver.quit()
+        driver.quit()
         return "All of the list scraped."
