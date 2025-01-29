@@ -1,5 +1,4 @@
 import gzip
-import json
 import pickle
 import time
 
@@ -12,7 +11,6 @@ from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
-from sqlalchemy import create_engine
 
 # grand_tour = "giro"
 grand_tour = "tdf"
@@ -31,7 +29,7 @@ options.add_argument("--proxy-bypass-list=*")
 options.add_argument("--blink-settings=imagesEnabled=false")
 # options.add_experimental_option("excludeSwitches", ["enable-automation"])
 options.add_argument(
-    "user-data-dir=/Users/dmini/Library/Application Support/Google/Chrome/Profile 1"
+    "user-data-dir=/Users/deniz/Library/Application Support/Google/Chrome/Profile 1"
 )
 ## options.add_argument("--disable-dev-shm-usage")
 # options.page_load_strategy = (
@@ -76,7 +74,7 @@ activity_no_list = (
     .values.tolist()
 )
 
-# activity_no_list = [11768507848]
+activity_no_list = [659892658]
 print(len(activity_no_list))
 activity_main_list = []
 for p, activity_no in enumerate(activity_no_list):
@@ -109,23 +107,31 @@ for p, activity_no in enumerate(activity_no_list):
             ]
         )
         print("no activity type")
+
+        activity_main_list.append(activity_big_list)
+        with gzip.open(f"segment_{year}_{grand_tour}.pkl.gz", "wb") as fp:  # Pickling
+            pickle.dump(activity_main_list, fp)
+
         continue
 
     # Check if the activity type is 'Ride' if not skip this activity
     if activity_type == "ride":
         print("Found ride activity type!")
     else:
-        activity_big_list.append(
+        activity_big_list[0].extend(
             [
-                [activity_no],
-                [f"{activity_type} activity type found."],
                 [],
                 [],
                 [],
                 [],
             ]
         )
-        print("Ride activity type not found.")
+        print(f"{activity_type} activity type found.")
+        print(activity_big_list)
+        activity_main_list.append(activity_big_list)
+        with gzip.open(f"segment_{year}_{grand_tour}.pkl.gz", "wb") as fp:  # Pickling
+            pickle.dump(activity_main_list, fp)
+
         continue
 
     # Get the summary container if it exists

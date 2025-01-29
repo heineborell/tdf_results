@@ -23,6 +23,8 @@ if __name__ == "__main__":
     # last_index = activity_no_list.index("9406303142")
     # activity_no_list = activity_no_list[:12]
     print(len(activity_no_list))
+    print(activity_no_list)
+    
 
-    # scraper = segment_scraper.SegmentScrape(grand_tour, year, activity_no_list, 2)
-    # scraper.segment_scraper()
+    #scraper = segment_scraper.SegmentScrape(grand_tour, year, activity_no_list, 2)
+    #scraper.segment_scraper()
