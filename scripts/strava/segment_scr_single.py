@@ -16,9 +16,9 @@ if __name__ == "__main__":
     )
     # Turn to this on for removing duplicates
 
-    # print(len(activity_no_list))
-    # duplicate_list = getters.get_duplicates(year, grand_tour)
-    # activity_no_list = [i for i in activity_no_list if i not in duplicate_list]
+    print(len(activity_no_list))
+    duplicate_list = getters.get_duplicates(year, grand_tour)
+    activity_no_list = [i for i in activity_no_list if i not in duplicate_list]
 
     # last_index = activity_no_list.index("9406303142")
     # activity_no_list = activity_no_list[:12]

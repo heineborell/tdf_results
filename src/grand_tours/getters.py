@@ -1,4 +1,6 @@
+import gzip
 import json
+import pickle
 from pathlib import Path
 
 import numpy as np
@@ -9,11 +11,11 @@ from selenium.webdriver.common.by import By
 def get_duplicates(year, grand_tour):
     id_list = []
     path = Path.cwd()
-    for file in path.glob(f"segment_*_{year}_{grand_tour}.json"):
-        with open(file) as f:
-            json_data = json.loads(f.read())
+    for file in path.glob(f"segment_*_{year}_{grand_tour}.pkl.gz"):
+        with gzip.open(file, "rb") as fp:  # Pickling
+            data = pickle.load(fp)
 
-        [id_list.append(id["activity_id"]) for id in json_data["activities"]]
+        [id_list.append(id) for id in [i[0][0][0] for i in data]]
     return id_list
 
 
