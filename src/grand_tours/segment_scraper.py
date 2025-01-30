@@ -9,14 +9,10 @@ import numpy as np
 import undetected_chromedriver as uc
 from dotenv import load_dotenv
 from rich import print as rprint
-from selenium import webdriver
 from selenium.common.exceptions import NoSuchElementException, TimeoutException
-from selenium.webdriver.chrome.options import Options
-from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
-from sqlalchemy import create_engine
 
 import grand_tours
 from grand_tours import (
@@ -205,13 +201,22 @@ class SegmentScrape:
         thread_id = threading.get_ident()
         activity_main_list = []
         # driver = chrome_driver_single.driver_single()
-        driver = uc.Chrome(use_subprocess=True, version_main=132)
-        load_dotenv()
-        self._strava_login(
-            driver,
-            os.getenv(f"STRAVA_EMAIL_{account_no}"),
-            os.getenv(f"STRAVA_PASSWORD_{account_no}"),
+        options = uc.ChromeOptions()
+
+        # setting profile
+        # options.add_experimental_option("detach", "true")
+
+        driver = uc.Chrome(
+            user_data_dir=f"user-data-dir=/Users/deniz/Library/Application Support/Google/Chrome/Profile {account_no}",
+            use_subprocess=True,
+            version_main=132,
         )
+        # load_dotenv()
+        # self._strava_login(
+        #    driver,
+        #    os.getenv(f"STRAVA_EMAIL_{account_no}"),
+        #    os.getenv(f"STRAVA_PASSWORD_{account_no}"),
+        # )
 
         for p, activity_no in enumerate(activity_no_list):
             activity_big_list = []
@@ -249,17 +254,23 @@ class SegmentScrape:
             if activity_type == "ride":
                 print("Found ride activity type!")
             else:
-                activity_big_list.append(
+                activity_big_list[0].extend(
                     [
-                        [activity_no],
-                        [f"{activity_type} activity type found."],
                         [],
                         [],
                         [],
                         [],
                     ]
                 )
-                print("Ride activity type not found.")
+                print(f"{activity_type} activity type found.")
+                activity_main_list.append(activity_big_list)
+                with gzip.open(
+                    f"/Users/deniz/iCloud/Research/Data_Science/Projects/data/strava/{self.grand_tour}_pickles/segment_{thread_id}_{self.year}_{self.grand_tour}.pkl.gz",
+                    "wb",
+                ) as fp:  # Pickling
+                    pickle.dump(activity_main_list, fp)
+
+                time.sleep(3)
                 continue
 
             # Get the summary container if it exists
@@ -342,7 +353,8 @@ class SegmentScrape:
 
             activity_main_list.append(activity_big_list)
             with gzip.open(
-                f"segment_{thread_id}_{self.year}_{self.grand_tour}.pkl.gz", "wb"
+                f"/Users/deniz/iCloud/Research/Data_Science/Projects/data/strava/{self.grand_tour}_pickles/segment_{thread_id}_{self.year}_{self.grand_tour}.pkl.gz",
+                "wb",
             ) as fp:  # Pickling
                 pickle.dump(activity_main_list, fp)
 
