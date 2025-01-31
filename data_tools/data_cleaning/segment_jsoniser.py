@@ -3,20 +3,48 @@ import pickle
 
 import numpy as np
 import pandas as pd
+from bs4 import BeautifulSoup
 
 with gzip.open(
-    f"../../scripts/strava/segment_6151368704_2013_tdf.pkl.gz", "rb"
+    "/Users/deniz/iCloud/Research/Data_Science/Projects/data/strava/tdf_pickles/segment_6182498304_2024_tdf.pkl.gz",
+    "rb",
 ) as fp:  # Pickling
     data = pickle.load(fp)
 
 
 activity_id_list = [i[0][0][0] for i in data]
 activity_type_list = [i[0][1][0] for i in data]
-athelete_id_list = [i[0][3][0] for i in data]
-date_list = [
-    (i[0][2][0].split(",")[1]) + " " + (i[0][2][0].split(",")[2].split(" ")[1])
-    for i in data
-]
+
+athelete_id_list = []
+for key, value in enumerate(data):
+    try:
+        athelete_id_list.append(value[0][3][0])
+    except IndexError:
+        athelete_id_list.append("no id")
+        print("No athelete id", key)
+
+date_list = []
+for key, value in enumerate(data):
+    try:
+        date_list.append(
+            (value[0][2][0].split(",")[1]).strip()
+            + " "
+            + (value[0][2][0].split(",")[2].split(" ")[1]).strip()
+        )
+    except IndexError:
+        date_list.append("No date")
+        print("no date", key)
+
+distance_list = []
+for i in data:
+    try:
+        distance_list.append(
+            i[0][2][0].split("\n")[i[0][2][0].split("\n").index("Distance") - 1]
+        )
+    except (ValueError, IndexError):
+        distance_list.append("No distance")
+
+
 activity_dict_list = [{"activity_id": i} for i in activity_id_list]
 
 for i, no in enumerate(activity_dict_list):
@@ -28,14 +56,157 @@ for i, no in enumerate(activity_dict_list):
 for i, no in enumerate(activity_dict_list):
     no = no.update({"date": date_list[i]})
 
-#    try:
-#        distance = summary_container.text.split("\n")[
-#            summary_container.text.split("\n").index("Distance") - 1
-#        ].split(" ")[0]
-#    except ValueError:
-#        print("No Distance")
+for i, no in enumerate(activity_dict_list):
+    no = no.update({"distance": distance_list[i]})
+
+# soup_list = [i[0][0] for i in data]
+# Parse the HTML
+# soup = BeautifulSoup((data[0][0][4]), "html.parser")
+
+# Find all segment tables
+# segment_tables = soup.select("dense.hoverable.marginless.segments") + soup.select(
+#    ".dense.hidden-segments.hoverable.marginless"
+# )
+# print(data[2][0][4])
+for key, element in enumerate(data[1:20]):
+    segment_table = BeautifulSoup(element[0][4][0], "html.parser")
+    # Initialize empty dictionary
+    segment_dict = {}
+
+    segment_no = []
+    segment_name = []
+    segment_distance = []
+    segment_vert = []
+    segment_grade = []
+    segment_time = []
+    segment_speed = []
+    watt = []
+    heart_rate = []
+    VAM = []
+
+    for m, segment in enumerate(segment_table.find_all("tr")):
+        if m == 0:
+            continue  # Skip the first row (header)
+
+        # <td class="name-col">
+        # <div class="name">
+        #    Manson Charada DD
+        #  </div>
+        # <div class="stats">
+        # <span title="Distance">
+        #      0.78<abbr class="unit" title="kilometers"> km</abbr>
+        # </span>
+        # <span title="Elevation difference">
+        #      32<abbr class="unit" title="meters"> m</abbr>
+        # </span>
+        # <span title="Average grade">
+        #      -3.7<abbr class="unit" title="percent">%</abbr>
+        # </span>
+        # </div>
+        # <div class="segment-effort-detail">
+        # <div class="content"></div>
+        # </div>
+        # </td>
+
+        # Get segment effort ID
+        segment_no.append(segment.get("data-segment-effort-id", "N/A"))
+
+        name_td = segment.find("td", class_="name-col")
+        if name_td:
+            # Extract the full text content inside <td>
+            full_text = name_td.get_text(separator=" | ", strip=True)
+
+            # Extract specific elements
+            name = (
+                name_td.find("div", class_="name").get_text(strip=True)
+                if name_td.find("div", class_="name")
+                else "N/A"
+            )
+            segment_name.append(name)
+
+            stats_div = name_td.find("div", class_="stats")
+            if stats_div:
+                stats_text = stats_div.get_text(separator=" | ", strip=True)
+            else:
+                stats_text = "N/A"
+
+            # Extract individual stats
+            distance = (
+                stats_div.find("span", {"title": "Distance"})
+                .get_text(strip=True)
+                .replace("\n", " ")
+                if stats_div
+                else "N/A"
+            )
+            segment_distance.append(distance)
+            elevation = (
+                stats_div.find("span", {"title": "Elevation difference"})
+                .get_text(strip=True)
+                .replace("\n", " ")
+                if stats_div
+                else "N/A"
+            )
+            segment_vert.append(elevation)
+            grade = (
+                stats_div.find("span", {"title": "Average grade"})
+                .get_text(strip=True)
+                .replace("\n", " ")
+                if stats_div
+                else "N/A"
+            )
+            segment_grade.append(grade)
+        else:
+            segment_dict = {}
+
+        ## Assign extracted data to the dictionary
+        segment_dict = {
+            "segment_no": segment_no,
+            "segment_name": segment_name,
+            #    "segment_time": segment_time,
+            #    "segment_speed": segment_speed,
+            #    "watt": watt,
+            #    "heart_rate": heart_rate,
+            "segment_distance": segment_distance,
+            "segment_vert": segment_vert,
+            "segment_grade": segment_grade,
+            #    "VAM": VAM,
+        }
+    activity_dict_list[key].update({"segments": segment_dict})
+
 
 print(activity_dict_list)
+
+# if len(fields) > 5:
+#    segment_time.append(fields[5].get_text())
+
+# if len(fields) > 6:
+#    segment_speed.append(fields[6].get_text().split(" ")[0])
+
+# if len(fields) > 7:
+#    watt.append(fields[7].get_text().split(" ")[0])
+
+# if len(fields) > 8:
+#    VAM.append(fields[8].get_text())
+
+# if len(fields) > 9:
+#    heart_rate.append(fields[9].get_text().split("b")[0])
+
+## Assign extracted data to the dictionary
+# segment_dict = {
+#    "segment_no": segment_no,
+#    "segment_name": segment_name,
+#    "segment_time": segment_time,
+#    "segment_speed": segment_speed,
+#    "watt": watt,
+#    "heart_rate": heart_rate,
+#    "segment_distance": segment_distance,
+#    "segment_vert": segment_vert,
+#    "segment_grade": segment_grade,
+#    "VAM": VAM,
+# }
+
+# Print the result
+# print(segment_dict)
 # stat_dict_list = []
 
 # for p, activity_no in enumerate(activity_no_list):
@@ -69,13 +240,6 @@ print(activity_dict_list)
 #    for i in driver.find_elements(By.XPATH, "//*[@id='heading']/header/h2/span/a"):
 #        name = i.get_attribute("href").split("/")[-1]
 #
-activity_dict = {
-    #    "activity_id": activity_no,
-    #        "athlete_id": name,
-    #        "date": date,
-    #        "distance": distance,
-    #        "segments": [],
-}
 #
 #    try:
 #        driver.find_elements(By.XPATH, '//*[@id="show-hidden-efforts"]')[0].click()

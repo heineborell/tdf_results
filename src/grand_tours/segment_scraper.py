@@ -207,7 +207,7 @@ class SegmentScrape:
         # options.add_experimental_option("detach", "true")
 
         driver = uc.Chrome(
-            user_data_dir=f"user-data-dir=/Users/deniz/Library/Application Support/Google/Chrome/Profile {account_no}",
+            user_data_dir=f"user-data-dir=/Users/deniz/Library/Application Support/Google/Chrome/Profile {2}",
             use_subprocess=True,
             version_main=132,
         )
