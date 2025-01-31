@@ -1,6 +1,7 @@
 import getpass
 import gzip
 import pickle
+import re
 
 import numpy as np
 import pandas as pd
@@ -28,11 +29,14 @@ for key, value in enumerate(data):
 date_list = []
 for key, value in enumerate(data):
     try:
-        date_list.append(
+        pattern = r"\b([A-Z][a-z]+) (\d{1,2}) (\d{4})\b"
+        matching = re.findall(
+            pattern,
             (value[0][2][0].split(",")[1]).strip()
             + " "
-            + (value[0][2][0].split(",")[2].split(" ")[1]).strip()
+            + (value[0][2][0].split(",")[2].split(" ")[1]).strip(),
         )
+        date_list.append(f"{matching[0][0]} {matching[0][1]} {matching[0][2]}")
     except IndexError:
         date_list.append("No date")
         print("no date", key)
@@ -175,8 +179,8 @@ for key, element in enumerate(data[1:20]):
         }
     activity_dict_list[key].update({"segments": segment_dict})
 
-
 print(activity_dict_list)
+
 
 # if len(fields) > 5:
 #    segment_time.append(fields[5].get_text())
