@@ -1,3 +1,4 @@
+import getpass
 import gzip
 import pickle
 
@@ -5,8 +6,9 @@ import numpy as np
 import pandas as pd
 from bs4 import BeautifulSoup
 
+username = getpass.getuser()
 with gzip.open(
-    "/Users/deniz/iCloud/Research/Data_Science/Projects/data/strava/tdf_pickles/segment_6182498304_2024_tdf.pkl.gz",
+    f"/Users/{username}/iCloud/Research/Data_Science/Projects/data/strava/tdf_pickles/segment_6182498304_2024_tdf.pkl.gz",
     "rb",
 ) as fp:  # Pickling
     data = pickle.load(fp)
