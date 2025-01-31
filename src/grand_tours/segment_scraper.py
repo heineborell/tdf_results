@@ -1,20 +1,17 @@
 import concurrent.futures
 import gzip
-import os
 import pickle
 import threading
 import time
 
 import numpy as np
 import undetected_chromedriver as uc
-from dotenv import load_dotenv
 from rich import print as rprint
 from selenium.common.exceptions import NoSuchElementException, TimeoutException
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 
-import grand_tours
 from grand_tours import (
     chrome_driver,
     chrome_driver_single,
@@ -25,8 +22,9 @@ from grand_tours import (
 
 class SegmentScrape:
     def __init__(
-        self, grand_tour: str, year: int, activity_whole_list, max_workers
+        self, username, grand_tour: str, year: int, activity_whole_list, max_workers
     ) -> None:
+        self.username = username
         self.grand_tour = grand_tour
         self.year = year
         self.max_workers = max_workers
@@ -201,7 +199,6 @@ class SegmentScrape:
         thread_id = threading.get_ident()
         activity_main_list = []
         # driver = chrome_driver_single.driver_single()
-        options = uc.ChromeOptions()
 
         # setting profile
         # options.add_experimental_option("detach", "true")
@@ -265,7 +262,7 @@ class SegmentScrape:
                 print(f"{activity_type} activity type found.")
                 activity_main_list.append(activity_big_list)
                 with gzip.open(
-                    f"/Users/deniz/iCloud/Research/Data_Science/Projects/data/strava/{self.grand_tour}_pickles/segment_{thread_id}_{self.year}_{self.grand_tour}.pkl.gz",
+                    f"/Users/{self.username}/iCloud/Research/Data_Science/Projects/data/strava/{self.grand_tour}_pickles/segment_{thread_id}_{self.year}_{self.grand_tour}.pkl.gz",
                     "wb",
                 ) as fp:  # Pickling
                     pickle.dump(activity_main_list, fp)
@@ -353,12 +350,12 @@ class SegmentScrape:
 
             activity_main_list.append(activity_big_list)
             with gzip.open(
-                f"/Users/deniz/iCloud/Research/Data_Science/Projects/data/strava/{self.grand_tour}_pickles/segment_{thread_id}_{self.year}_{self.grand_tour}.pkl.gz",
+                f"/Users/{self.username}/iCloud/Research/Data_Science/Projects/data/strava/{self.grand_tour}_pickles/segment_{thread_id}_{self.year}_{self.grand_tour}.pkl.gz",
                 "wb",
             ) as fp:  # Pickling
                 pickle.dump(activity_main_list, fp)
 
-            time.sleep(3)
+            time.sleep(4)
 
         driver.quit()
         return "All of the list scraped."

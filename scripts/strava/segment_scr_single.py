@@ -7,7 +7,7 @@ from grand_tours import getters, segment_scraper
 if __name__ == "__main__":
     # grand_tour = "giro"
     grand_tour = "tdf"
-    year = 2017
+    year = 2019
     username = getpass.getuser()
 
     activity_no_list = (
@@ -23,9 +23,9 @@ if __name__ == "__main__":
     duplicate_list = getters.get_duplicates(year, grand_tour, username)
     activity_no_list = [i for i in activity_no_list if i not in duplicate_list]
 
-    # last_index = activity_no_list.index("9406303142")
-    # activity_no_list = activity_no_list[:12]
     print(len(activity_no_list))
 
-    # scraper = segment_scraper.SegmentScrape(grand_tour, year, activity_no_list, 1)
-    # scraper.segment_scraper()
+    scraper = segment_scraper.SegmentScrape(
+        username, grand_tour, year, activity_no_list, 2
+    )
+    scraper.segment_scraper()
