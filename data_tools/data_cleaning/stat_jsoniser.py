@@ -56,18 +56,24 @@ for i, no in enumerate(stat_dict_list):
     no = no.update({"athlete_id": athelete_id_list[i]})
 
 stat_list = [i[0][-1] for i in data]
+print(activity_id_list[257])
 for p, stats in enumerate(stat_list):
+    stat_dict = {}
+    stat_dict.update(
+        {
+            "activity_id": activity_id_list[p],
+            "athlete_id": athelete_id_list[p],
+        }
+    )
     try:
         stats.remove("Show More")
     except ValueError:
         print("No more stat", p)
-    stat_dict = {}
+
     for i, stat in enumerate(stats):
         if stat == "Distance":
             stat_dict.update(
                 {
-                    "activity_id": activity_id_list[p],
-                    "athlete_id": athelete_id_list[p],
                     "dist": stats[i - 1],
                 }
             )
@@ -104,4 +110,3 @@ for p, stats in enumerate(stat_list):
         "w",
     ) as f:
         f.write(json_string)
-print(stat_dict_list[116])
