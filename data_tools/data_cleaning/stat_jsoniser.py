@@ -4,7 +4,6 @@ import json
 import pickle
 import re
 
-from bs4 import BeautifulSoup
 
 username = getpass.getuser()
 with gzip.open(
@@ -56,7 +55,6 @@ for i, no in enumerate(stat_dict_list):
     no = no.update({"athlete_id": athelete_id_list[i]})
 
 stat_list = [i[0][-1] for i in data]
-print(activity_id_list[257])
 for p, stats in enumerate(stat_list):
     stat_dict = {}
     stat_dict.update(
