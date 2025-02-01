@@ -1,7 +1,7 @@
 import numpy as np
 import pandas as pd
 import pymysql
-from sqlalchemy import create_engine, text
+from sqlalchemy import create_engine
 from sqlalchemy.types import *
 
 
@@ -30,11 +30,10 @@ class SqlUploader:
         cursor.close()
         connection.close()
 
-    def clean_pro_table(self, table_list):
+    def clean_pro_table(self, df):
         """Clean the tables from procycling stats"""
-        self.df = pd.concat([pd.read_csv(k) for k in table_list]).drop(
+        self.df = df.drop(
             columns=[
-                "Unnamed: 0",
                 "Classification:",
                 "Race category:",
                 "Points scale:",
@@ -49,12 +48,7 @@ class SqlUploader:
         # stage column
         self.df["stage"] = self.df["stage"].str.split("|").str[0]
 
-        # time column
-        self.df = self.df.drop(
-            self.df.loc[self.df["time"].str.contains(r"-\d+") == True].index
-        )  # 45 records have - time infront of them for some reason I don't understand, so I had to drop them out
         self.df["time"] = self.df["time"].replace("-", np.nan)  # replace dnf by nan
-        self.df["time"] = pd.to_numeric(self.df["time"])
 
         # date column
         self.df = self.df.rename(columns={"Date:": "date"})

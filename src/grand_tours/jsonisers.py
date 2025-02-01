@@ -6,6 +6,7 @@ import re
 import numpy as np
 import pandas as pd
 from bs4 import BeautifulSoup
+from sqlalchemy import except_
 
 
 def pro_csv(path):
@@ -53,9 +54,14 @@ def pro_csv(path):
 
             df = pd.concat([df, df_joined])
         else:
-            print(
-                data[i][0][0], data[i][1][0], "---------the index lengths are not same."
-            )
+            try:
+                print(
+                    data[i][0][0],
+                    data[i][1][0],
+                    "---------the index lengths are not same.",
+                )
+            except IndexError:
+                print(data[i], "------ that is problematic")
     return df
 
 
