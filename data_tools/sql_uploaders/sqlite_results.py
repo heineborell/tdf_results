@@ -8,7 +8,9 @@ from grand_tours import jsonisers, sql_upload
 
 if __name__ == "__main__":
     username = getpass.getuser()
-    path = Path("../../data/pro_tdf/")
+    # grand_tour = "giro"
+    grand_tour = "vuelta"
+    path = Path(f"../../data/pro_{grand_tour}/")
     main_df = pd.DataFrame()
     for file in path.glob("*.pkl"):
         print(file)
@@ -25,5 +27,4 @@ if __name__ == "__main__":
         f"/Users/{username}/iCloud/Research/Data_Science/Projects/data/grand_tours.db"
     )
 
-    df.to_sql("tdf_results", connection, if_exists="replace", index=False)
-    df.to_csv("test.csv")
+    df.to_sql(f"{grand_tour}_results", connection, if_exists="replace", index=False)
