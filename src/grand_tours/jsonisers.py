@@ -9,7 +9,7 @@ from bs4 import BeautifulSoup
 from sqlalchemy import except_
 
 
-def pro_csv(path):
+def pro_csv(path, logger):
     with open(path, "rb") as fp:  # Pickling
         data = pickle.load(fp)
 
@@ -55,21 +55,16 @@ def pro_csv(path):
             df = pd.concat([df, df_joined])
         else:
             try:
-                print(
-                    data[i][0][0],
-                    data[i][1][0],
-                    "---------the index lengths are not same.",
+                logger.info(
+                    f"{data[i][0][0], data[i][1][0]}, ---------the index lengths are not same."
                 )
             except IndexError:
-                print(data[i], "------ that is problematic")
+                logger.info(f"{data[i]}, ------ that is problematic")
     return df
 
 
-def segment_jsoniser(username, grand_tour, year):
-    with gzip.open(
-        f"/Users/{username}/iCloud/Research/Data_Science/Projects/data/strava/{grand_tour}_pickles/segment_6175322112_{year}_{grand_tour}.pkl.gz",
-        "rb",
-    ) as fp:  # Pickling
+def segment_jsoniser(filepath):
+    with gzip.open(filepath, "rb") as fp:  # Pickling
         data = pickle.load(fp)
 
     activity_id_list = [i[0][0][0] for i in data]
@@ -280,11 +275,8 @@ def segment_jsoniser(username, grand_tour, year):
     return json_string
 
 
-def stat_jsoniser(username, grand_tour, year):
-    with gzip.open(
-        f"/Users/{username}/iCloud/Research/Data_Science/Projects/data/strava/{grand_tour}_pickles/segment_6175322112_{year}_{grand_tour}.pkl.gz",
-        "rb",
-    ) as fp:  # Pickling
+def stat_jsoniser(filepath):
+    with gzip.open(filepath, "rb") as fp:  # Pickling
         data = pickle.load(fp)
 
     activity_id_list = [i[0][0][0] for i in data]
