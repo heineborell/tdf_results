@@ -4,10 +4,9 @@ import json
 import pickle
 import re
 
-
 username = getpass.getuser()
 with gzip.open(
-    f"/Users/{username}/iCloud/Research/Data_Science/Projects/data/strava/tdf_pickles/segment_6175322112_2018_tdf.pkl.gz",
+    f"/Users/{username}/iCloud/Research/Data_Science/Projects/data/strava/tdf_pickles/segment_6119911424_2020_tdf.pkl.gz",
     "rb",
 ) as fp:  # Pickling
     data = pickle.load(fp)

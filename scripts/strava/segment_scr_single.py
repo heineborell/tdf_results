@@ -7,7 +7,7 @@ from grand_tours import getters, segment_scraper
 if __name__ == "__main__":
     # grand_tour = "giro"
     grand_tour = "tdf"
-    year = 2019
+    year = 2021
     username = getpass.getuser()
 
     activity_no_list = (
@@ -25,7 +25,7 @@ if __name__ == "__main__":
 
     print(len(activity_no_list))
 
-# scraper = segment_scraper.SegmentScrape(
-#     username, grand_tour, year, activity_no_list, 2
-# )
-# scraper.segment_scraper()
+    scraper = segment_scraper.SegmentScrape(
+        username, grand_tour, year, activity_no_list, 2
+    )
+    scraper.segment_scraper()
