@@ -7,8 +7,8 @@ from pathlib import Path
 from grand_tours import jsonisers
 
 grand_tours = ["tdf"]
-years = [2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020]
-# years = [2013]
+# years = [2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021]
+years = [2021]
 username = getpass.getuser()
 
 # stat_range = Path(
@@ -113,6 +113,7 @@ for grand_tour in grand_tours:
                 if (
                     activity["activity_id"] not in id_list_segment
                     and activity["athlete_id"] != "no id"
+                    and activity["distance"] != "No distance"
                 ):
                     cursor.execute(
                         """ INSERT INTO segments_data (activity_id, athlete_id, date, tour_year, distance, segment) VALUES (?, ?, ?, ?, ?, ?) """,
@@ -125,7 +126,7 @@ for grand_tour in grand_tours:
                             .replace("August", "Aug")
                             .replace("September", "Sep"),
                             str(f"{grand_tour}-{year}"),
-                            str(activity["distance"]),
+                            float(activity["distance"]),
                             json.dumps(activity["segments"]),
                         ),
                     )

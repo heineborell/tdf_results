@@ -97,7 +97,14 @@ def segment_jsoniser(filepath):
     for i in data:
         try:
             distance_list.append(
-                i[0][2][0].split("\n")[i[0][2][0].split("\n").index("Distance") - 1]
+                float(
+                    re.search(
+                        r"\d+(\.\d+)?",
+                        i[0][2][0].split("\n")[
+                            i[0][2][0].split("\n").index("Distance") - 1
+                        ],
+                    ).group()
+                )
             )
         except (ValueError, IndexError):
             distance_list.append("No distance")
@@ -309,7 +316,14 @@ def stat_jsoniser(filepath):
     for i in data:
         try:
             distance_list.append(
-                i[0][2][0].split("\n")[i[0][2][0].split("\n").index("Distance") - 1]
+                float(
+                    re.search(
+                        r"\d+(\.\d+)?",
+                        i[0][2][0].split("\n")[
+                            i[0][2][0].split("\n").index("Distance") - 1
+                        ],
+                    ).group()
+                )
             )
         except (ValueError, IndexError):
             distance_list.append("No distance")
