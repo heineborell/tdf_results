@@ -12,13 +12,6 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 
-from grand_tours import (
-    chrome_driver,
-    chrome_driver_single,
-    chrome_driver_stealth,
-    chrome_grid_driver,
-)
-
 
 class SegmentScrape:
     def __init__(

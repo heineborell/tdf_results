@@ -63,7 +63,7 @@ def pro_csv(path, logger):
     return df
 
 
-def segment_jsoniser(filepath):
+def segment_jsoniser(filepath,logger):
     with gzip.open(filepath, "rb") as fp:  # Pickling
         data = pickle.load(fp)
 
@@ -76,7 +76,7 @@ def segment_jsoniser(filepath):
             athelete_id_list.append(value[0][3][0])
         except IndexError:
             athelete_id_list.append("no id")
-            print("No athelete id", key)
+            logger.info(f"No athelete id for {activity_id_list[key]}")
 
     date_list = []
     for key, value in enumerate(data):
@@ -91,7 +91,7 @@ def segment_jsoniser(filepath):
             date_list.append(f"{matching[0][0]} {matching[0][1]} {matching[0][2]}")
         except IndexError:
             date_list.append("No date")
-            print("no date", key)
+            logger.info(f"No date {activity_id_list[key]}")
 
     distance_list = []
     for i in data:
@@ -282,7 +282,7 @@ def segment_jsoniser(filepath):
     return json_string
 
 
-def stat_jsoniser(filepath):
+def stat_jsoniser(filepath,logger):
     with gzip.open(filepath, "rb") as fp:  # Pickling
         data = pickle.load(fp)
 
@@ -295,7 +295,7 @@ def stat_jsoniser(filepath):
             athelete_id_list.append(value[0][3][0])
         except IndexError:
             athelete_id_list.append("no id")
-            print("No athelete id", key)
+            logger.info(f"No athelete id for {activity_id_list[key]}")
 
     date_list = []
     for key, value in enumerate(data):
@@ -310,7 +310,7 @@ def stat_jsoniser(filepath):
             date_list.append(f"{matching[0][0]} {matching[0][1]} {matching[0][2]}")
         except IndexError:
             date_list.append("No date")
-            print("no date", key)
+            logger.info(f"No date {activity_id_list[key]}")
 
     distance_list = []
     for i in data:
@@ -345,7 +345,7 @@ def stat_jsoniser(filepath):
         try:
             stats.remove("Show More")
         except ValueError:
-            print("No more stat", p)
+            logger.info(f"No more stat for {activity_id_list[p]}")
 
         for i, stat in enumerate(stats):
             if stat == "Distance":

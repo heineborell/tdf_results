@@ -4,7 +4,9 @@ import re
 import sqlite3
 from pathlib import Path
 
-from grand_tours import jsonisers
+from rich import print as rprint
+
+from grand_tours import jsonisers, logger_config
 
 grand_tours = ["tdf"]
 # years = [2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021]
@@ -23,6 +25,9 @@ conn = sqlite3.connect(
     f"/Users/{username}/iCloud/Research/Data_Science/Projects/tdf_data_fin/grand_tours.db"
 )
 cursor = conn.cursor()
+logger = logger_config.setup_logger(
+    f"/Users/{username}/iCloud/Research/Data_Science/Projects/tdf_data_fin/grand_tours.log"
+)
 
 
 try:
@@ -100,14 +105,14 @@ for grand_tour in grand_tours:
     )
     for year in years:
         # Define the regex pattern
-        print(grand_tour, year)
+        rprint(f'[bold yellow] ----------------{grand_tour}, {year}-------------- [/bold yellow]')
         pattern = re.compile(rf"segment_\d+_{year}_{grand_tour}\.pkl\.gz")
         # Use glob to find files and filter with regex
         matching_files = [
             file for file in segment_range.glob("*") if pattern.match(file.name)
         ]
         for file in matching_files:
-            json_data = json.loads(jsonisers.segment_jsoniser(file))
+            json_data = json.loads(jsonisers.segment_jsoniser(file,logger))
 
             for activity in json_data:
                 if (
@@ -135,7 +140,7 @@ for grand_tour in grand_tours:
                 else:
                     pass
 
-            json_data = json.loads(jsonisers.stat_jsoniser(file))
+            json_data = json.loads(jsonisers.stat_jsoniser(file,logger))
 
             for activity in json_data:
                 if (
