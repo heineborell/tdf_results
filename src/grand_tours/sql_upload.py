@@ -43,7 +43,7 @@ class SqlUploader:
             ]
         )
         #  year column
-        self.df["year"] = pd.to_numeric(self.df["year"])
+        self.df["year"] = pd.to_numeric(self.df["year"],downcast='integer')
 
         # stage column
         self.df["stage"] = self.df["stage"].str.split("|").str[0]
