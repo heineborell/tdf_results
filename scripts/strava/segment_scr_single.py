@@ -5,9 +5,9 @@ import pandas as pd
 from grand_tours import getters, segment_scraper
 
 if __name__ == "__main__":
-    # grand_tour = "giro"
-    grand_tour = "tdf"
-    year = 2024
+    grand_tour = "giro"
+    #grand_tour = "tdf"
+    year = 2017
     username = getpass.getuser()
 
     activity_no_list = (

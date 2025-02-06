@@ -9,8 +9,8 @@ from rich import print as rprint
 from grand_tours import jsonisers, logger_config
 
 grand_tours = ["tdf"]
-# years = [2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021]
-years = [2021]
+years = [2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021,2022,2023,2024]
+#years = [2021]
 username = getpass.getuser()
 
 # stat_range = Path(
@@ -22,11 +22,11 @@ username = getpass.getuser()
 # )
 
 conn = sqlite3.connect(
-    f"/Users/{username}/iCloud/Research/Data_Science/Projects/tdf_data_fin/grand_tours.db"
+    f"/Users/{username}/iCloud/Research/Data_Science/Projects/data/grand_tours.db"
 )
 cursor = conn.cursor()
 logger = logger_config.setup_logger(
-    f"/Users/{username}/iCloud/Research/Data_Science/Projects/tdf_data_fin/grand_tours.log"
+    f"/Users/{username}/iCloud/Research/Data_Science/Projects/data/grand_tours.log"
 )
 
 
