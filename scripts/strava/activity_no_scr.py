@@ -1,41 +1,49 @@
+import getpass
+import sqlite3
+
 import pandas as pd
-from sqlalchemy import create_engine
 
 from grand_tours import ride_scrape
 
 if __name__ == "__main__":
+    username = getpass.getuser() 
     grand_tour = "giro"
-    # grand_tour = "tdf"
-    year = 2018
+    #grand_tour = "vuelta"
+    year = 2020
 
-    engine = create_engine(
-        "mysql+mysqldb://root:Abrakadabra69!@127.0.0.1:3306/grand_tours"
+    conn = sqlite3.connect(
+        f"/Users/{username}/iCloud/Research/Data_Science/Projects/data/grand_tours.db"
     )
-    conn = engine.connect()
 
-    query = f"SELECT DISTINCT(x.week), x.year FROM( SELECT `year`, EXTRACT(week FROM `date`) week FROM {grand_tour}_results) AS x "
+    query = f"SELECT DISTINCT x.week, x.year FROM ( SELECT `year`, strftime('%W', `date`) AS week FROM {grand_tour}_results) AS x "
     df = pd.read_sql_query(query, conn)
     df = df.loc[df["year"] == year]
+    print(df)
 
     query_id = f"""
     SELECT * 
     FROM strava_names AS y 
     LEFT JOIN (
-        SELECT *
-        FROM {grand_tour}_results
-        WHERE stage LIKE %s AND `year` = %s
+        SELECT * 
+        FROM {grand_tour}_results 
+        WHERE stage LIKE ? AND `year` = ?
     ) AS x 
     ON y.`name` = x.`name`
-    WHERE `year` IS NOT NULL
+    WHERE x.`year` IS NOT NULL;
     """
 
     # Define parameters for the query
     params = ("Stage 1 %", year)
 
     # Execute the query
-    df_id = pd.read_sql_query(query_id, engine, params=params)
+    df_id = pd.read_sql_query(query_id, conn, params=params)
+    if df_id.size == 0:
+        # Define parameters for the query
+        params = ("Stage 2 %", year)
+        df_id = pd.read_sql_query(query_id, conn, params=params)
+
     df_id.to_csv(f"{year}_{grand_tour}_list.csv")
-    # print(df_id["strava_id"].values[3])
+    print(df_id["strava_id"].values[3])
     pro_id = df_id["strava_id"].values
     df_activity = pd.DataFrame(columns=["pro_id", "activity"])
     for id in pro_id:
