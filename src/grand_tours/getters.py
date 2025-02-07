@@ -11,7 +11,7 @@ from selenium.webdriver.common.by import By
 def get_duplicates(year, grand_tour, username):
     id_list = []
     path = Path(
-        f"/Users/{username}/iCloud/Research/Data_Science/Projects/data/strava/tdf_pickles/"
+        f"/Users/{username}/iCloud/Research/Data_Science/Projects/data/strava/{grand_tour}_pickles/"
     )
     for file in path.glob(f"segment_*_{year}_{grand_tour}.pkl.gz"):
         with gzip.open(file, "rb") as fp:  # Pickling
