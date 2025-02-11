@@ -4,6 +4,7 @@
 **.DS_Store
 *.swp
 *.csv
+*.txt
 *.json
 *.log
 .env
@@ -12,8 +13,10 @@
 *.png
 *.pdf
 *.pkl
+*.pkl.gz
 .venv
 __pycache__
 *egg*
 build
 dist/
+user-data-dir=/

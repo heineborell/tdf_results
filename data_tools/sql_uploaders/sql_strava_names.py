@@ -23,8 +23,3 @@ names.direct_loader(df_ids)
 
 names.csv_uploader(df_schema=df_name_schema, table_name="strava_names")
 
-# with engine.connect() as connection:
-#    connection.execute(text(" ALTER TABLE strava_names ADD PRIMARY KEY(strava_id); "))
-#
-# connection.close()
-# engine.dispose()
