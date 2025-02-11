@@ -8,9 +8,9 @@ from rich import print as rprint
 
 from grand_tours import jsonisers, logger_config
 
-grand_tours = ["tdf"]
-years = [2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021,2022,2023,2024]
-#years = [2021]
+grand_tours = ["giro","tdf"]
+years = [2013, 2014, 2015, 2016]#2017, 2018] #2019, 2020, 2021,2022,2023,2024]
+# years = [2023]
 username = getpass.getuser()
 
 # stat_range = Path(
