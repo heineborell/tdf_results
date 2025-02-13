@@ -1,13 +1,14 @@
 import getpass
 
 import pandas as pd
+from rich import print
 
 from grand_tours import getters, segment_scraper
 
 if __name__ == "__main__":
     grand_tour = "giro"
     #grand_tour = "tdf"
-    year = 2023
+    year = 2013
     username = getpass.getuser()
 
     activity_no_list = (
@@ -24,8 +25,9 @@ if __name__ == "__main__":
     activity_no_list = [i for i in activity_no_list if i not in duplicate_list]
 
     print(len(activity_no_list))
+    activity_no_list = activity_no_list[1:]
 
-    scraper = segment_scraper.SegmentScrape(
-        username, grand_tour, year, activity_no_list, 2
-    )
-    scraper.segment_scraper()
+    # scraper = segment_scraper.SegmentScrape(
+    #     username, grand_tour, year, activity_no_list, 2
+    # )
+    # scraper.segment_scraper()
