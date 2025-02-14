@@ -6,6 +6,7 @@ import time
 
 import numpy as np
 import undetected_chromedriver as uc
+from rich import print
 from rich import print as rprint
 from selenium.common.exceptions import NoSuchElementException, TimeoutException
 from selenium.webdriver.common.by import By
