@@ -28,21 +28,30 @@ CREATE TABLE strava_names (
 """
 )
 
-df_ids = pd.read_csv(f"/Users/{username}/iCloud/Research/Data_Science/Projects/data/strava/strava_ids.csv", 
-                      usecols=["name", "strava_id"]).dropna()
+df_ids = pd.concat(
+    [
+        pd.read_csv(
+            f"/Users/{username}/iCloud/Research/Data_Science/Projects/data/strava/strava_ids.csv",
+            usecols=["name", "strava_id"],
+            index_col=False,
+        ).dropna(),
+        pd.read_csv(
+            f"/Users/{username}/iCloud/Research/Data_Science/Projects/data/strava/strava_ids_2.csv",
+            usecols=["name", "strava_id"],
+            index_col=False,
+        ).dropna(),
+    ],
+    ignore_index=True,
+)
+
 
 ## Create the table in the database (if not exists)
-id_list= []
-for index in df_ids.index:
-    if (
-        df_ids["strava_id"][index] not in id_list
-    ):
+id_list = []
+for index in list(df_ids.index):
+    if df_ids["strava_id"][index] not in id_list:
         cursor.execute(
             """ INSERT INTO strava_names (athlete_id, name) VALUES (?, ?) """,
-            (
-                int(df_ids["strava_id"][index]),
-                str(df_ids["name"][index])
-            ),
+            (int(df_ids["strava_id"][index]), str(df_ids["name"][index])),
         )
         id_list.append(df_ids["strava_id"][index])
     else:

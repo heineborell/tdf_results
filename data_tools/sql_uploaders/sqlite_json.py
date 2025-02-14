@@ -4,12 +4,12 @@ import re
 import sqlite3
 from pathlib import Path
 
-from rich import print as rprint
+from rich import print
 
 from grand_tours import jsonisers, logger_config
 
-grand_tours = ["giro","tdf"]
-years = [2013, 2014, 2015, 2016]#2017, 2018] #2019, 2020, 2021,2022,2023,2024]
+grand_tours = ["giro", "tdf"]
+years = [2013, 2014, 2015, 2016, 2017, 2018]  # 2019, 2020, 2021,2022,2023,2024]
 # years = [2023]
 username = getpass.getuser()
 
@@ -105,14 +105,16 @@ for grand_tour in grand_tours:
     )
     for year in years:
         # Define the regex pattern
-        rprint(f'[bold yellow] ----------------{grand_tour}, {year}-------------- [/bold yellow]')
+        print(
+            f"[bold yellow] ----------------{grand_tour}, {year}-------------- [/bold yellow]"
+        )
         pattern = re.compile(rf"segment_\d+_{year}_{grand_tour}\.pkl\.gz")
         # Use glob to find files and filter with regex
         matching_files = [
             file for file in segment_range.glob("*") if pattern.match(file.name)
         ]
         for file in matching_files:
-            json_data = json.loads(jsonisers.segment_jsoniser(file,logger))
+            json_data = json.loads(jsonisers.segment_jsoniser(file, logger))
 
             for activity in json_data:
                 if (
@@ -140,7 +142,7 @@ for grand_tour in grand_tours:
                 else:
                     pass
 
-            json_data = json.loads(jsonisers.stat_jsoniser(file,logger))
+            json_data = json.loads(jsonisers.stat_jsoniser(file, logger))
 
             for activity in json_data:
                 if (
