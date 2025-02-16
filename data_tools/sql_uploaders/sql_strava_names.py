@@ -4,7 +4,7 @@ from sqlalchemy.types import *
 
 from grand_tours import sql_upload
 
-names = sql_upload.SqlUploader("root", "Abrakadabra69!", "127.0.0.1", 3306, "grand_tours")
+names = sql_upload.SqlUploader("root", "password", "127.0.0.1", 3306, "grand_tours")
 
 df_ids = pd.read_csv(
     "~/iCloud/Research/Data_Science/Projects/data/strava/strava_ids.csv",

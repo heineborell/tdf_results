@@ -7,7 +7,7 @@ from sqlalchemy import create_engine
 from grand_tours import chrome_driver, logger_config, segment_details
 
 if __name__ == "__main__":
-    engine = create_engine("mysql+mysqldb://root:Abrakadabra69!@127.0.0.1:3306/grand_tours")
+    engine = create_engine("mysql+mysqldb://root:password@127.0.0.1:3306/grand_tours")
     conn = engine.connect()
 
     grand_tour = "tdf"

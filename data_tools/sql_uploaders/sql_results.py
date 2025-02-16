@@ -2,7 +2,7 @@ from sqlalchemy.types import *
 
 from grand_tours import sql_upload
 
-test1 = sql_upload.SqlUploader("root", "Abrakadabra69!", "127.0.0.1", 3306, "grand_tours")
+test1 = sql_upload.SqlUploader("root", "password", "127.0.0.1", 3306, "grand_tours")
 test1.create_db()
 test1.clean_pro_table(
     [

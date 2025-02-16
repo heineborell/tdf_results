@@ -9,14 +9,14 @@ from sqlalchemy.orm import sessionmaker
 
 # Define your MySQL connection parameters
 MYSQL_USER = "root"
-MYSQL_PASSWORD = "Abrakadabra69!"
+MYSQL_PASSWORD = "password"
 MYSQL_HOST = "127.0.0.1"
 MYSQL_PORT = 3306
 MYSQL_DATABASE = "grand_tours"
 
 
 # Define database connection URL
-DATABASE_URL = "mysql+pymysql://root:Abrakadabra69!@127.0.0.1:3306/grand_tours"
+DATABASE_URL = "mysql+pymysql://root:password@127.0.0.1:3306/grand_tours"
 
 grand_tours = ["tdf", "giro"]
 years = [2024, 2023, 2022, 2020]
