@@ -6,9 +6,7 @@ from sqlalchemy.types import *
 
 
 class SqlUploader:
-    def __init__(
-        self, mysql_user, mysql_password, mysql_host, mysql_port, mysql_database
-    ) -> None:
+    def __init__(self, mysql_user, mysql_password, mysql_host, mysql_port, mysql_database) -> None:
         """Initialize the class with server and login info"""
         self.mysql_user = mysql_user
         self.mysql_password = mysql_password
@@ -43,7 +41,7 @@ class SqlUploader:
             ]
         )
         #  year column
-        self.df["year"] = pd.to_numeric(self.df["year"],downcast='integer')
+        self.df["year"] = pd.to_numeric(self.df["year"], downcast="integer")
 
         # stage column
         self.df["stage"] = self.df["stage"].str.split("|").str[0]
@@ -59,9 +57,7 @@ class SqlUploader:
 
         # avg speed winner
         self.df = self.df.rename(columns={"Avg. speed winner:": "winner_avg_speed"})
-        self.df["winner_avg_speed"] = self.df["winner_avg_speed"].replace(
-            "-", np.nan
-        )  # replace dnf by nan
+        self.df["winner_avg_speed"] = self.df["winner_avg_speed"].replace("-", np.nan)  # replace dnf by nan
         self.df["winner_avg_speed"] = self.df["winner_avg_speed"].str.split(" ").str[0]
         self.df["winner_avg_speed"] = pd.to_numeric(self.df["winner_avg_speed"])
         # distance
@@ -71,39 +67,27 @@ class SqlUploader:
 
         # profile score
         self.df = self.df.rename(columns={"ProfileScore:": "profile_score"})
-        self.df["profile_score"] = self.df["profile_score"].replace(
-            "Na", np.nan
-        )  # replace dnf by nan
+        self.df["profile_score"] = self.df["profile_score"].replace("Na", np.nan)  # replace dnf by nan
         self.df["profile_score"] = pd.to_numeric(self.df["profile_score"])
 
         # vertical meters
         self.df = self.df.rename(columns={"Vertical meters:": "vertical_meters"})
-        self.df["vertical_meters"] = self.df["vertical_meters"].replace(
-            "Na", np.nan
-        )  # replace dnf by nan
+        self.df["vertical_meters"] = self.df["vertical_meters"].replace("Na", np.nan)  # replace dnf by nan
         self.df["vertical_meters"] = pd.to_numeric(self.df["vertical_meters"])
 
         # startlist quality
-        self.df = self.df.rename(
-            columns={"Startlist quality score:": "startlist_quality"}
-        )
-        self.df["startlist_quality"] = self.df["startlist_quality"].replace(
-            "Na", np.nan
-        )  # replace dnf by nan
+        self.df = self.df.rename(columns={"Startlist quality score:": "startlist_quality"})
+        self.df["startlist_quality"] = self.df["startlist_quality"].replace("Na", np.nan)  # replace dnf by nan
         self.df["startlist_quality"] = pd.to_numeric(self.df["startlist_quality"])
 
         # won how
         self.df = self.df.rename(columns={"Won how:": "won_how"})
-        self.df["won_how"] = self.df["won_how"].replace(
-            "Na", np.nan
-        )  # replace dnf by nan
+        self.df["won_how"] = self.df["won_how"].replace("Na", np.nan)  # replace dnf by nan
 
         # avg temperature
         self.df = self.df.rename(columns={"Avg. temperature:": "avg_temperature"})
         self.df["avg_temperature"] = self.df["avg_temperature"].str.split(" ").str[0]
-        self.df["avg_temperature"] = self.df["avg_temperature"].replace(
-            "Na", np.nan
-        )  # replace dnf by nan
+        self.df["avg_temperature"] = self.df["avg_temperature"].replace("Na", np.nan)  # replace dnf by nan
         self.df["avg_temperature"] = pd.to_numeric(self.df["avg_temperature"])
 
         return self.df

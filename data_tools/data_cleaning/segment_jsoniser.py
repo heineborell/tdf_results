@@ -31,9 +31,7 @@ for key, value in enumerate(data):
         pattern = r"\b([A-Z][a-z]+) (\d{1,2}) (\d{4})\b"
         matching = re.findall(
             pattern,
-            (value[0][2][0].split(",")[1]).strip()
-            + " "
-            + (value[0][2][0].split(",")[2].split(" ")[1]).strip(),
+            (value[0][2][0].split(",")[1]).strip() + " " + (value[0][2][0].split(",")[2].split(" ")[1]).strip(),
         )
         date_list.append(f"{matching[0][0]} {matching[0][1]} {matching[0][2]}")
     except IndexError:
@@ -43,9 +41,7 @@ for key, value in enumerate(data):
 distance_list = []
 for i in data:
     try:
-        distance_list.append(
-            i[0][2][0].split("\n")[i[0][2][0].split("\n").index("Distance") - 1]
-        )
+        distance_list.append(i[0][2][0].split("\n")[i[0][2][0].split("\n").index("Distance") - 1])
     except (ValueError, IndexError):
         distance_list.append("No distance")
 
@@ -127,9 +123,7 @@ for key, element in enumerate(data):
 
             # Extract specific elements
             name = (
-                name_td.find("div", class_="name").get_text(strip=True)
-                if name_td.find("div", class_="name")
-                else "N/A"
+                name_td.find("div", class_="name").get_text(strip=True) if name_td.find("div", class_="name") else "N/A"
             )
             segment_name.append(name)
 
@@ -141,25 +135,19 @@ for key, element in enumerate(data):
 
             # Extract individual stats
             distance = (
-                stats_div.find("span", {"title": "Distance"})
-                .get_text(strip=True)
-                .replace("\n", " ")
+                stats_div.find("span", {"title": "Distance"}).get_text(strip=True).replace("\n", " ")
                 if stats_div
                 else "N/A"
             )
             segment_distance.append(distance)
             elevation = (
-                stats_div.find("span", {"title": "Elevation difference"})
-                .get_text(strip=True)
-                .replace("\n", " ")
+                stats_div.find("span", {"title": "Elevation difference"}).get_text(strip=True).replace("\n", " ")
                 if stats_div
                 else "N/A"
             )
             segment_vert.append(elevation)
             grade = (
-                stats_div.find("span", {"title": "Average grade"})
-                .get_text(strip=True)
-                .replace("\n", " ")
+                stats_div.find("span", {"title": "Average grade"}).get_text(strip=True).replace("\n", " ")
                 if stats_div
                 else "N/A"
             )
@@ -202,12 +190,8 @@ for key, element in enumerate(data):
         VAM.append(vam_td.get_text(strip=True) if vam_td else "N/A")
 
         # Extract Heart Rate
-        heart_rate_td = (
-            segment.find_all("td")[9] if len(segment.find_all("td")) > 9 else None
-        )
-        heart_rate.append(
-            heart_rate_td.get_text(strip=True) if heart_rate_td else "N/A"
-        )
+        heart_rate_td = segment.find_all("td")[9] if len(segment.find_all("td")) > 9 else None
+        heart_rate.append(heart_rate_td.get_text(strip=True) if heart_rate_td else "N/A")
 
         ## Assign extracted data to the dictionary
         segment_dict = {
@@ -227,7 +211,7 @@ for key, element in enumerate(data):
 
     json_string = json.dumps(activity_dict_list)
     with open(
-        f"segment.json",
+        "segment.json",
         "w",
     ) as f:
         f.write(json_string)

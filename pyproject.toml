@@ -21,7 +21,7 @@ dev = [ "pre-commit","ruff"]
 [tool.ruff]
 # Enable pycodestyle (`E`) and Pyflakes (`F`) codes by default.
 lint.select = ["E", "F", "I001"]
-lint.ignore = []
+lint.ignore = ["F403","F405"]
 
 # Allow autofix for all enabled rules (when `--fix`) is provided.
 lint.fixable = ["A", "B", "C", "D", "E", "F", "I001"]

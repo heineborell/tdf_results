@@ -14,19 +14,13 @@ from grand_tours import chrome_grid_driver, getters
 
 
 class ProCycling:
-
-    def __init__(
-        self, grand_tour, year_whole_list, logger, max_workers, pro_path
-    ) -> None:
-
+    def __init__(self, grand_tour, year_whole_list, logger, max_workers, pro_path) -> None:
         self.logger = logger
         self.grand_tour = grand_tour
         self.max_workers = max_workers
         self.year_whole_list = year_whole_list
         self.pro_path = pro_path
-        self.year_whole_list = self._split_into_n(
-            self.year_whole_list, self.max_workers
-        )
+        self.year_whole_list = self._split_into_n(self.year_whole_list, self.max_workers)
 
     def _split_into_n(self, lst, n):
         avg_size = len(lst) // n
@@ -40,22 +34,15 @@ class ProCycling:
         return sublists
 
     def _stage_getter(self, year, driver):
-
-        driver.get(
-            f"https://www.procyclingstats.com/race/{self.grand_tour}/" + year + "/"
-        )
+        driver.get(f"https://www.procyclingstats.com/race/{self.grand_tour}/" + year + "/")
         drop_list = driver.find_elements(By.CLASS_NAME, "pageSelectNav ")
         time.sleep(2)
         if len(drop_list) == 2:
             stage_element = drop_list[1].find_elements(By.TAG_NAME, "option")
-            stage_list = [
-                stage.text for stage in stage_element if "Stage" in stage.text
-            ]
+            stage_list = [stage.text for stage in stage_element if "Stage" in stage.text]
         elif len(drop_list) == 3:
             stage_element = drop_list[2].find_elements(By.TAG_NAME, "option")
-            stage_list = [
-                stage.text for stage in stage_element if "Stage" in stage.text
-            ]
+            stage_list = [stage.text for stage in stage_element if "Stage" in stage.text]
 
         return stage_list
 
@@ -64,9 +51,7 @@ class ProCycling:
         url = f"https://www.procyclingstats.com/race/{self.grand_tour}/{year}/stage-{stage.split(' ')[1]}"
         while retries < max_retries:
             try:
-                rprint(
-                    f"[bold yellow] Attempt {retries + 1}: Trying to load URL: {year}-stage-{stage} [/bold yellow]"
-                )
+                rprint(f"[bold yellow] Attempt {retries + 1}: Trying to load URL: {year}-stage-{stage} [/bold yellow]")
                 driver.get(url)
 
                 # Wait for a specific element to confirm page load
@@ -104,7 +89,6 @@ class ProCycling:
                     main_list = getters.get_tables(driver, ".results.basic.moblist11")
 
                 except NoSuchElementException:
-
                     try:
                         # this exception for ttt stages which I just dropped out
                         driver.find_element(By.CLASS_NAME, "results-ttt")
@@ -112,24 +96,16 @@ class ProCycling:
                         self.logger.info(f"---{year}---{stage}---Its a TTT stage!")
                     except NoSuchElementException:
                         try:
-                            main_list = getters.get_tables(
-                                driver, ".results.basic.moblist10"
-                            )
-                            self.logger.info(
-                                f"---{year}---{stage}---Its a normal stage!"
-                            )
+                            main_list = getters.get_tables(driver, ".results.basic.moblist10")
+                            self.logger.info(f"---{year}---{stage}---Its a normal stage!")
                             if (
                                 len(main_list[1]) == 0
                             ):  # this is basically to continue down to moblist12 if moblist10 empty
                                 raise NoSuchElementException("Empty list.")
                         except NoSuchElementException:
                             try:
-                                main_list = getters.get_tables(
-                                    driver, ".results.basic.moblist12"
-                                )
-                                self.logger.info(
-                                    f"---{year}---{stage}---Its a normal stage!"
-                                )
+                                main_list = getters.get_tables(driver, ".results.basic.moblist12")
+                                self.logger.info(f"---{year}---{stage}---Its a normal stage!")
                             except NoSuchElementException:
                                 self.logger.info(f"---{year}---{stage}---No moblist!")
                                 main_list = [[], [], []]
@@ -140,28 +116,17 @@ class ProCycling:
                         main_list,
                     ]
                 )
-                if (
-                    self.pro_path / f"{thread_id}_{year_list[0]}_{int(year)+1}.pkl"
-                ).exists():
-                    pathlib.Path.unlink(
-                        self.pro_path / f"{thread_id}_{year_list[0]}_{int(year)+1}.pkl"
-                    )
+                if (self.pro_path / f"{thread_id}_{year_list[0]}_{int(year) + 1}.pkl").exists():
+                    pathlib.Path.unlink(self.pro_path / f"{thread_id}_{year_list[0]}_{int(year) + 1}.pkl")
 
-                with open(
-                    self.pro_path / f"{thread_id}_{year_list[0]}_{year}.pkl", "wb"
-                ) as fp:  # Pickling
+                with open(self.pro_path / f"{thread_id}_{year_list[0]}_{year}.pkl", "wb") as fp:  # Pickling
                     pickle.dump(main_list_pickle, fp)
         driver.quit()
         return "Finished ok!"
 
     def pro_scraper(self):
-        with concurrent.futures.ThreadPoolExecutor(
-            max_workers=self.max_workers
-        ) as executor:
-            futures = {
-                executor.submit(self._main_list_getter, i): i
-                for i in self.year_whole_list
-            }
+        with concurrent.futures.ThreadPoolExecutor(max_workers=self.max_workers) as executor:
+            futures = {executor.submit(self._main_list_getter, i): i for i in self.year_whole_list}
 
             for future in concurrent.futures.as_completed(futures):
                 try:
@@ -169,6 +134,4 @@ class ProCycling:
                     rprint(f"[turquoise2] Task result:{result} [/turquoise2]")
                 except Exception as e:
                     task_id = futures[future]
-                    rprint(
-                        f"[bright red] Task {task_id} generated an exception: {e} [/bright red]"
-                    )
+                    rprint(f"[bright red] Task {task_id} generated an exception: {e} [/bright red]")

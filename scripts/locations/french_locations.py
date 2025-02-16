@@ -2,12 +2,10 @@
 
 import re
 import time
-from datetime import datetime, timedelta
 
 import numpy as np
 import pandas as pd
 from selenium import webdriver
-from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
@@ -21,9 +19,7 @@ options.add_argument("--proxy-server='direct://'")
 options.add_argument("--proxy-bypass-list=*")
 options.add_argument("--blink-settings=imagesEnabled=false")
 options.add_argument("--disable-dev-shm-usage")
-options.page_load_strategy = (
-    "eager"  # Scraper doesn't wait for browser to load all the page
-)
+options.page_load_strategy = "eager"  # Scraper doesn't wait for browser to load all the page
 options.add_experimental_option("detach", True)
 
 # Initialize Chrome with the specified options

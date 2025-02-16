@@ -10,7 +10,7 @@ for activity in json_data["activities"]:
 
 json_data = json.dumps(json_data)
 with open(
-    f"segment_2024_tdf_short_2_new.json",
+    "segment_2024_tdf_short_2_new.json",
     "w",
 ) as f:
     f.write(json_data)

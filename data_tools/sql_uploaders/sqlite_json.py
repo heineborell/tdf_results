@@ -21,13 +21,9 @@ username = getpass.getuser()
 #    f"/Users/{username}/iCloud/Research/Data_Science/Projects/tdf_data_fin/strava/mapping/"
 # )
 
-conn = sqlite3.connect(
-    f"/Users/{username}/iCloud/Research/Data_Science/Projects/data/grand_tours.db"
-)
+conn = sqlite3.connect(f"/Users/{username}/iCloud/Research/Data_Science/Projects/data/grand_tours.db")
 cursor = conn.cursor()
-logger = logger_config.setup_logger(
-    f"/Users/{username}/iCloud/Research/Data_Science/Projects/data/grand_tours.log"
-)
+logger = logger_config.setup_logger(f"/Users/{username}/iCloud/Research/Data_Science/Projects/data/grand_tours.log")
 
 
 try:
@@ -100,19 +96,13 @@ id_list_stat = []
 id_list_segment = []
 id_list_details = []
 for grand_tour in grand_tours:
-    segment_range = Path(
-        f"/Users/{username}/iCloud/Research/Data_Science/Projects/data/strava/{grand_tour}_pickles"
-    )
+    segment_range = Path(f"/Users/{username}/iCloud/Research/Data_Science/Projects/data/strava/{grand_tour}_pickles")
     for year in years:
         # Define the regex pattern
-        print(
-            f"[bold yellow] ----------------{grand_tour}, {year}-------------- [/bold yellow]"
-        )
+        print(f"[bold yellow] ----------------{grand_tour}, {year}-------------- [/bold yellow]")
         pattern = re.compile(rf"segment_\d+_{year}_{grand_tour}\.pkl\.gz")
         # Use glob to find files and filter with regex
-        matching_files = [
-            file for file in segment_range.glob("*") if pattern.match(file.name)
-        ]
+        matching_files = [file for file in segment_range.glob("*") if pattern.match(file.name)]
         for file in matching_files:
             json_data = json.loads(jsonisers.segment_jsoniser(file, logger))
 
@@ -123,7 +113,12 @@ for grand_tour in grand_tours:
                     and activity["distance"] != "No distance"
                 ):
                     cursor.execute(
-                        """ INSERT INTO segments_data (activity_id, athlete_id, date, tour_year, distance, segment) VALUES (?, ?, ?, ?, ?, ?) """,
+                        """
+                        INSERT INTO segments_data (
+                            activity_id, athlete_id, date, tour_year, distance, segment
+                        )
+                        VALUES (?, ?, ?, ?, ?, ?)
+                        """,
                         (
                             int(activity["activity_id"]),
                             int(activity["athlete_id"]),
@@ -145,10 +140,7 @@ for grand_tour in grand_tours:
             json_data = json.loads(jsonisers.stat_jsoniser(file, logger))
 
             for activity in json_data:
-                if (
-                    activity["activity_id"] not in id_list_stat
-                    and activity["athlete_id"] != "no id"
-                ):
+                if activity["activity_id"] not in id_list_stat and activity["athlete_id"] != "no id":
                     cursor.execute(
                         """ INSERT INTO stats_data (activity_id, athlete_id, tour_year , stat) VALUES (?,?, ?, ? ) """,
                         (
@@ -169,7 +161,9 @@ for grand_tour in grand_tours:
     #    + 1,
     # ):
     #    with open(
-    #        f"/Users/{username}/iCloud/Research/Data_Science/Projects/tdf_data_fin/strava/mapping/segment_details_{year}_{grand_tour}_{j}.json",
+    # file_path = (
+    #     f"/Users/{username}/iCloud/Research/Data_Science/Projects/"
+    #     f"tdf_data_fin/strava/mapping/segment_details_{year}_{grand_tour}_{j}.json")
     #        "r",
     #    ) as f:
     #        json_data = json.loads(f.read())
@@ -181,21 +175,26 @@ for grand_tour in grand_tours:
     #            except KeyError:
     #                segment["category"] = None
 
-    #            cursor.execute(
-    #                """ INSERT INTO segment_details_data  (segment_id, activity_id, segment_name, category, hidden, end_points) VALUES (?, ?, ?, ?, ?, ? ) """,
-    #                (
-    #                    str(segment["segment_no"]),
-    #                    str(segment["activity_no"]),
-    #                    segment["segment_name"],
-    #                    str(segment["category"]),
-    #                    str(segment["hidden"]),
-    #                    json.dumps(segment["end_points"]),
-    #                ),
-    #            )
-    #            id_list_details.append(segment["segment_no"])
-    #            print(f"{j} segment_details {grand_tour} {year} uploaded")
-    #        else:
-    #            pass
+# cursor.execute(
+#     """
+#     INSERT INTO segment_details_data (
+#         segment_id, activity_id, segment_name, category, hidden, end_points
+#     )
+#     VALUES (?, ?, ?, ?, ?, ?)
+#     """,
+#     (
+#         str(segment["segment_no"]),
+#         str(segment["activity_no"]),
+#         segment["segment_name"],
+#         str(segment["category"]),
+#         str(segment["hidden"]),
+#         json.dumps(segment["end_points"]),
+#     ),
+# )
+#            id_list_details.append(segment["segment_no"])
+#            print(f"{j} segment_details {grand_tour} {year} uploaded")
+#        else:
+#            pass
 print("JSON data uploaded successfully.")
 
 # with open(
@@ -208,20 +207,25 @@ print("JSON data uploaded successfully.")
 # id_list_json = []
 # for activity in json_data:
 #    if activity["activity_id"] not in id_list_json:
-#        cursor.execute(
-#            """ INSERT INTO segments_json (activity_id, athlete_id, date, distance, segments) VALUES (?, ?, ?, ?, ?) """,
-#            (
-#                str(activity["activity_id"]),
-#                str(activity["athlete_id"]),
-#                str(activity["date"])
-#                .replace("June", "Jun")
-#                .replace("July", "Jul")
-#                .replace("August", "Aug")
-#                .replace("September", "Sep"),
-#                float(activity["distance"]),
-#                json.dumps(activity["segments"]),
-#            ),
-#        )
+# cursor.execute(
+#     """
+#     INSERT INTO segments_json (
+#         activity_id, athlete_id, date, distance, segments
+#     )
+#     VALUES (?, ?, ?, ?, ?)
+#     """,
+#     (
+#         str(activity["activity_id"]),
+#         str(activity["athlete_id"]),
+#         str(activity["date"])
+#         .replace("June", "Jun")
+#         .replace("July", "Jul")
+#         .replace("August", "Aug")
+#         .replace("September", "Sep"),
+#         float(activity["distance"]),
+#         json.dumps(activity["segments"]),
+#     ),
+# )
 #        id_list_json.append(activity["activity_id"])
 #        # print(f"{j} segment {grand_tour} {year} uploaded")
 #    else:

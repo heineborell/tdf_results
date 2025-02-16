@@ -2,18 +2,10 @@ import json
 import math
 
 import contextily as cx
-import contextily as ctx
 import ezgpx
-import folium
-import geodatasets
-import geopandas
 import geopandas as gpd
 import matplotlib.pyplot as plt
-import numpy as np
 import pandas as pd
-import plotly.express as px
-import rasterio
-from rasterio.plot import show as rioshow
 from shapely.geometry import LineString
 
 # Parse GPX file
@@ -30,14 +22,8 @@ with open(
 
 ordered_list = json_data
 diff_no = [set([i["activity_no"] for i in ordered_list])]
-ordered_list = [
-    k
-    for k in ordered_list
-    if k["activity_no"] == "11768746162" and k["hidden"] == False
-]
-ordered_list = [
-    i for i in ordered_list if i["end_points"][1] - i["end_points"][0] < 868 * 0.1
-]
+ordered_list = [k for k in ordered_list if k["activity_no"] == "11768746162" and not k["hidden"]]
+ordered_list = [i for i in ordered_list if i["end_points"][1] - i["end_points"][0] < 868 * 0.1]
 
 ordered_list_mine = sorted(json_data, key=lambda x: x["end_points"][1])
 reduced_list = []
@@ -88,9 +74,7 @@ def find_compatible_segments(segments: list[list[int]], current_idx: int) -> lis
     return compatible
 
 
-def optimize_segments(
-    segments: list[list[int]], prefer_longest_segments: bool = True
-) -> list[list[int]]:
+def optimize_segments(segments: list[list[int]], prefer_longest_segments: bool = True) -> list[list[int]]:
     """
     Find the optimal non-overlapping segments that either:
     1. Maximize total distance covered (prefer_longest_segments=False)
@@ -103,10 +87,7 @@ def optimize_segments(
         selected = []
         for segment in sorted_segments:
             # Check if this segment overlaps with any selected segments
-            is_overlapping = any(
-                check_overlap(segment, selected_segment)
-                for selected_segment in selected
-            )
+            is_overlapping = any(check_overlap(segment, selected_segment) for selected_segment in selected)
 
             if not is_overlapping:
                 # Check if this segment contains or is contained by other segments
@@ -114,16 +95,10 @@ def optimize_segments(
                 selected_to_remove = []
 
                 for selected_segment in selected:
-                    if (
-                        segment[0] <= selected_segment[0]
-                        and segment[1] >= selected_segment[1]
-                    ):
+                    if segment[0] <= selected_segment[0] and segment[1] >= selected_segment[1]:
                         # Current segment completely contains a selected segment
                         selected_to_remove.append(selected_segment)
-                    elif (
-                        selected_segment[0] <= segment[0]
-                        and selected_segment[1] >= segment[1]
-                    ):
+                    elif selected_segment[0] <= segment[0] and selected_segment[1] >= segment[1]:
                         # Current segment is contained within a selected segment
                         contains_smaller = True
                         break
@@ -136,9 +111,7 @@ def optimize_segments(
 
     else:
         # For maximum coverage, use dynamic programming with overlap checking
-        sorted_segments = sorted(
-            segments, key=lambda x: (x[0], -x[1])
-        )  # Sort by start, then length
+        sorted_segments = sorted(segments, key=lambda x: (x[0], -x[1]))  # Sort by start, then length
         n = len(segments)
 
         if n == 0:
@@ -209,9 +182,9 @@ def analyze_solution(segments: list[list[int]], result: list[list[int]]):
     print(f"Number of segments: {len(result)}")
     print(f"Total coverage: {total_coverage} meters")
     print(f"Average segment length: {avg_segment_length:.2f} meters")
-    print(f"Individual segments:")
+    print("Individual segments:")
     for start, end in result:
-        print(f"  {start}-{end} ({end-start}m)")
+        print(f"  {start}-{end} ({end - start}m)")
 
 
 # Example usage

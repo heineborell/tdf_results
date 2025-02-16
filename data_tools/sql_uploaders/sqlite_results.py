@@ -14,9 +14,7 @@ if __name__ == "__main__":
     # grand_tour = "tdf"
     path = Path(f"/Users/{username}/iCloud/Research/Data_Science/Projects/data/pro_{grand_tour}")
     main_df = pd.DataFrame()
-    logger = setup_logger(
-        f"/Users/{username}/iCloud/Research/Data_Science/Projects/data/{grand_tour}.log"
-    )
+    logger = setup_logger(f"/Users/{username}/iCloud/Research/Data_Science/Projects/data/{grand_tour}.log")
     for file in path.glob("*.pkl"):
         df = jsonisers.pro_csv(file, logger)
         main_df = pd.concat([main_df, df])
@@ -31,8 +29,6 @@ if __name__ == "__main__":
 
     df = data_cleaning.clean_pro_table(main_df)
     df = df.drop_duplicates()
-    connection = sqlite3.connect(
-        f"/Users/{username}/iCloud/Research/Data_Science/Projects/data/grand_tours.db"
-    )
+    connection = sqlite3.connect(f"/Users/{username}/iCloud/Research/Data_Science/Projects/data/grand_tours.db")
 
     df.to_sql(f"{grand_tour}_results", connection, if_exists="replace", index=False)

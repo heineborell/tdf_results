@@ -15,18 +15,14 @@ from selenium.webdriver.support.ui import WebDriverWait
 
 
 class SegmentScrape:
-    def __init__(
-        self, username, grand_tour: str, year: int, activity_whole_list, max_workers
-    ) -> None:
+    def __init__(self, username, grand_tour: str, year: int, activity_whole_list, max_workers) -> None:
         self.username = username
         self.grand_tour = grand_tour
         self.year = year
         self.max_workers = max_workers
         self.activity_whole_list = activity_whole_list
         print(len(activity_whole_list))
-        self.activity_whole_list = self._split_into_n(
-            self.activity_whole_list, self.max_workers
-        )
+        self.activity_whole_list = self._split_into_n(self.activity_whole_list, self.max_workers)
 
     def _split_into_n(self, lst, n):
         avg_size = len(lst) // n
@@ -40,27 +36,17 @@ class SegmentScrape:
         return sublists
 
     def _clicker(self, driver, wait_time):
-
         driver.find_elements(By.XPATH, '//*[@id="show-hidden-efforts"]')[0].click()
 
         WebDriverWait(driver, 10).until(
-            lambda driver: driver.execute_script("return document.readyState")
-            == "complete"
+            lambda driver: driver.execute_script("return document.readyState") == "complete"
         )
 
-        tables = driver.find_elements(
-            By.CSS_SELECTOR, ".dense.hoverable.marginless.segments"
-        )
+        tables = driver.find_elements(By.CSS_SELECTOR, ".dense.hoverable.marginless.segments")
         WebDriverWait(driver, wait_time).until(
-            EC.visibility_of_element_located(
-                (By.CSS_SELECTOR, ".dense.hidden-segments.hoverable.marginless")
-            )
+            EC.visibility_of_element_located((By.CSS_SELECTOR, ".dense.hidden-segments.hoverable.marginless"))
         )
-        tables.append(
-            driver.find_element(
-                By.CSS_SELECTOR, ".dense.hidden-segments.hoverable.marginless"
-            )
-        )
+        tables.append(driver.find_element(By.CSS_SELECTOR, ".dense.hidden-segments.hoverable.marginless"))
 
         return tables
 
@@ -68,12 +54,8 @@ class SegmentScrape:
         retries = 0
         while retries < max_retries:
             try:
-                rprint(
-                    f"[bold yellow] Attempt {retries + 1}: Trying to load URL: {url}[/bold yellow]"
-                )
-                driver.execute_script(
-                    "Object.defineProperty(navigator, 'webdrier', {get: () => undefined})"
-                )
+                rprint(f"[bold yellow] Attempt {retries + 1}: Trying to load URL: {url}[/bold yellow]")
+                driver.execute_script("Object.defineProperty(navigator, 'webdrier', {get: () => undefined})")
                 driver.get(url)
 
                 # Wait for a specific element to confirm page load
@@ -92,15 +74,11 @@ class SegmentScrape:
                 )
                 time.sleep(3)  # Optional wait before retrying
         else:
-            rprint(
-                "[bold red] Max retries reached. Could not load the page. [/bold red]"
-            )
+            rprint("[bold red] Max retries reached. Could not load the page. [/bold red]")
 
     def segment_scraper(self):
         print(self.activity_whole_list)
-        with concurrent.futures.ThreadPoolExecutor(
-            max_workers=self.max_workers
-        ) as executor:
+        with concurrent.futures.ThreadPoolExecutor(max_workers=self.max_workers) as executor:
             futures = {}
             for i, j in enumerate(self.activity_whole_list):
                 # Submit each task with a slight delay
@@ -113,10 +91,7 @@ class SegmentScrape:
                     rprint(f"[turquoise2] Task result:{result} [/turquoise2]")
                 except Exception as e:
                     task_id = futures[future]
-                    rprint(
-                        f"[bright red] Task {task_id} generated an exception: {e} [/bright red]"
-                    )
-
+                    rprint(f"[bright red] Task {task_id} generated an exception: {e} [/bright red]")
 
     def _activity_data_getter(self, account_no, activity_no_list):
         print(f"for the account no {account_no} we have the table {activity_no_list}")
@@ -127,7 +102,7 @@ class SegmentScrape:
         # options.add_experimental_option("detach", "true")
         options = uc.ChromeOptions()
         proxy_server = "http://156.253.171.203:3128"
-        options.add_argument(f'--proxy-server={proxy_server}')
+        options.add_argument(f"--proxy-server={proxy_server}")
         driver = uc.Chrome(
             user_data_dir=f"user-data-dir=/Users/deniz/Library/Application Support/Google/Chrome/Profile {account_no}",
             use_subprocess=True,
@@ -142,9 +117,7 @@ class SegmentScrape:
 
             # Extract the activity_type from the lightboxData JavaScript object
             # Find the script element containing pageProps
-            script_element = driver.find_element(
-                By.XPATH, "//script[contains(text(), 'pageProps')]"
-            )
+            script_element = driver.find_element(By.XPATH, "//script[contains(text(), 'pageProps')]")
 
             # Get text content and parse activity_type
             try:
@@ -191,9 +164,7 @@ class SegmentScrape:
 
             # Get the summary container if it exists
             try:
-                summary_container = driver.find_element(
-                    By.CSS_SELECTOR, ".row.no-margins.activity-summary-container"
-                )
+                summary_container = driver.find_element(By.CSS_SELECTOR, ".row.no-margins.activity-summary-container")
                 activity_big_list[0].append([summary_container.text])
             except NoSuchElementException:
                 activity_big_list[0].append(["No summary container"])
@@ -201,9 +172,7 @@ class SegmentScrape:
 
             # Get the athlete id
             try:
-                for i in driver.find_elements(
-                    By.XPATH, "//*[@id='heading']/header/h2/span/a"
-                ):
+                for i in driver.find_elements(By.XPATH, "//*[@id='heading']/header/h2/span/a"):
                     print(i.get_attribute("href"))
                     name = i.get_attribute("href").split("/")[-1]
                     activity_big_list[0].append([name])
@@ -216,26 +185,16 @@ class SegmentScrape:
             segment_tables = []
 
             # First look for hidden segments then push save the segment tables as html to parse with beatiful soup
-            if (
-                len(driver.find_elements(By.XPATH, '//*[@id="show-hidden-efforts"]'))
-                != 0
-            ):
+            if len(driver.find_elements(By.XPATH, '//*[@id="show-hidden-efforts"]')) != 0:
                 while len(segment_tables) != 2:
                     try:
                         segment_tables = self._clicker(driver, 20)
-                        segment_tables = [
-                            i.get_attribute("innerHTML") for i in segment_tables
-                        ]
+                        segment_tables = [i.get_attribute("innerHTML") for i in segment_tables]
                     except TimeoutException:
-
-                        print(
-                            "Timeout while waiting for the page to load. Reloading..."
-                        )
+                        print("Timeout while waiting for the page to load. Reloading...")
                         driver.refresh()  # Refresh the page
                         segment_tables = self._clicker(driver, 20)
-                        segment_tables = [
-                            i.get_attribute("innerHTML") for i in segment_tables
-                        ]
+                        segment_tables = [i.get_attribute("innerHTML") for i in segment_tables]
                         retry_count += 1
                         if retry_count >= max_retries:
                             print("Max retries reached. Exiting.")
@@ -247,9 +206,7 @@ class SegmentScrape:
                         break
             else:
                 print("No hidden segments.")
-                segment_tables = driver.find_elements(
-                    By.CSS_SELECTOR, ".dense.hoverable.marginless.segments"
-                )
+                segment_tables = driver.find_elements(By.CSS_SELECTOR, ".dense.hoverable.marginless.segments")
                 segment_tables = [i.get_attribute("innerHTML") for i in segment_tables]
 
             activity_big_list[0].append(segment_tables)
@@ -258,9 +215,7 @@ class SegmentScrape:
 
             # Finally look for more stats and if it exists save
             try:
-                stats = driver.find_element(
-                    By.XPATH, '//*[@id="heading"]/div/div/div[2]'
-                )
+                stats = driver.find_element(By.XPATH, '//*[@id="heading"]/div/div/div[2]')
                 stat_list = stats.text.split("\n")
                 activity_big_list[0].append(stat_list)
             except ValueError:

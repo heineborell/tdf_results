@@ -22,9 +22,7 @@ def ride_scraper(pro_id, date):
     options.add_argument("--proxy-bypass-list=*")
     options.add_argument("--blink-settings=imagesEnabled=false")
     # options.add_experimental_option("detach", True)
-    options.add_argument(
-        f"user-data-dir=/Users/{username}/Library/Application Support/Google/Chrome/Profile 1"
-    )
+    options.add_argument(f"user-data-dir=/Users/{username}/Library/Application Support/Google/Chrome/Profile 1")
 
     driver = webdriver.Chrome(service=service, options=options)
     homepage = (

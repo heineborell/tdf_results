@@ -16,29 +16,35 @@ from selenium.webdriver.support.ui import WebDriverWait
 
 username = getpass.getuser()
 
-name_query = " SELECT name FROM tdf_results WHERE year > 2010 UNION SELECT name FROM giro_results WHERE year > 2010 UNION SELECT name FROM vuelta_results WHERE year > 2010"
-
-conn = sqlite3.connect(
-    f"/Users/{username}/iCloud/Research/Data_Science/Projects/data/grand_tours.db"
-)
+name_query = """
+SELECT name
+FROM tdf_results
+WHERE year > 2010
+UNION
+SELECT name
+FROM giro_results
+WHERE year > 2010
+UNION
+SELECT name
+FROM vuelta_results
+WHERE year > 2010
+"""
+conn = sqlite3.connect(f"/Users/{username}/iCloud/Research/Data_Science/Projects/data/grand_tours.db")
 
 df_names = pd.read_sql_query(name_query, conn)
-df_collected =pd.read_csv(f"/Users/{username}/iCloud/Research/Data_Science/Projects/data/strava/strava_ids.csv", 
-                      usecols=["name", "strava_id"]) # these are the ones I already collected from tdf and giro
-merged = df_names.merge(df_collected,'left',['name'],indicator=True)
-df_names = (merged.loc[merged['_merge'] == 'left_only'].drop(columns = ['_merge','strava_id']))
+df_collected = pd.read_csv(
+    f"/Users/{username}/iCloud/Research/Data_Science/Projects/data/strava/strava_ids.csv", usecols=["name", "strava_id"]
+)  # these are the ones I already collected from tdf and giro
+merged = df_names.merge(df_collected, "left", ["name"], indicator=True)
+df_names = merged.loc[merged["_merge"] == "left_only"].drop(columns=["_merge", "strava_id"])
 service = Service()
 # Set up options for headless Chrome
 options = Options()
 options.add_argument("--blink-settings=imagesEnabled=false")
 options.add_experimental_option("detach", True)
 options.add_experimental_option("excludeSwitches", ["enable-automation"])
-options.add_argument(
-    f"user-data-dir=/Users/{username}/Library/Application Support/Google/Chrome/Profile 1"
-)
-options.page_load_strategy = (
-    "eager"  # Scraper doesn't wait for browser to load all the page
-)
+options.add_argument(f"user-data-dir=/Users/{username}/Library/Application Support/Google/Chrome/Profile 1")
+options.page_load_strategy = "eager"  # Scraper doesn't wait for browser to load all the page
 
 # Initialize Chrome with the specified options
 driver = webdriver.Chrome(service=service, options=options)
@@ -67,22 +73,19 @@ for name in name_list:
     try:
         athelete = driver.find_element(
             By.XPATH,
-            "//*[contains(@class, 'app-icon') and contains(@class, 'icon-badge-pro')]/ancestor::*[contains(@class, 'spans6')]",
+            (
+                "//*[contains(@class, 'app-icon') and contains(@class, 'icon-badge-pro')]"
+                "/ancestor::*[contains(@class, 'spans6')]"
+            ),
         )
         athelete_details = athelete.find_element(By.CLASS_NAME, "athlete-details")
         print(athelete_details.text.split("\n")[0])
-        print(
-            athelete_details.find_element(By.CLASS_NAME, "follow-action").get_attribute(
-                "data-athlete-id"
-            )
-        )
+        print(athelete_details.find_element(By.CLASS_NAME, "follow-action").get_attribute("data-athlete-id"))
         strava_dict.update(
             {
                 "name": [name[0] + name[1]],
                 "strava_id": [
-                    athelete_details.find_element(
-                        By.CLASS_NAME, "follow-action"
-                    ).get_attribute("data-athlete-id")
+                    athelete_details.find_element(By.CLASS_NAME, "follow-action").get_attribute("data-athlete-id")
                 ],
             }
         )

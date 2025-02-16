@@ -9,7 +9,7 @@ if __name__ == "__main__":
     # grand_tour = "giro"
     grand_tour = "vuelta"
     # grand_tour = "tdf"
-    year = 2023
+    year = 2022
     username = getpass.getuser()
 
     activity_no_list = (

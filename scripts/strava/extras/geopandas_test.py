@@ -22,8 +22,6 @@ gdf = gdf.to_crs(epsg=3857)
 # Plot the route with a background map
 fig, ax = plt.subplots(figsize=(10, 8))
 gdf.plot(ax=ax, color="blue", linewidth=2)
-ctx.add_basemap(
-    ax, source=ctx.providers.CartoDB.Voyager, crs=gdf.crs
-)  # Add background map
+ctx.add_basemap(ax, source=ctx.providers.CartoDB.Voyager, crs=gdf.crs)  # Add background map
 ax.set_title("Route with Background Map")
 plt.show()

@@ -6,7 +6,6 @@ import re
 import numpy as np
 import pandas as pd
 from bs4 import BeautifulSoup
-from sqlalchemy import except_
 
 
 def pro_csv(path, logger):
@@ -16,12 +15,7 @@ def pro_csv(path, logger):
     final_dict = {}
     df = pd.DataFrame()
     for i in range(len(data)):
-        if (
-            len(data[i][0])
-            == len(data[i][1])
-            == len(data[i][2][0])
-            == len(data[i][2][1])
-        ):
+        if len(data[i][0]) == len(data[i][1]) == len(data[i][2][0]) == len(data[i][2][1]):
             final_dict.update(
                 {
                     "year": data[i][0],
@@ -44,9 +38,7 @@ def pro_csv(path, logger):
 
             # construct info table dictionary
             info_dict = dict(zip(final_info_lst[0::2], final_info_lst[1::2]))
-            info_dict = {
-                key: [value] * len(data[i][0]) for key, value in info_dict.items()
-            }
+            info_dict = {key: [value] * len(data[i][0]) for key, value in info_dict.items()}
             df_joined = pd.concat(
                 [pd.DataFrame.from_dict(final_dict), pd.DataFrame.from_dict(info_dict)],
                 axis=1,
@@ -55,15 +47,13 @@ def pro_csv(path, logger):
             df = pd.concat([df, df_joined])
         else:
             try:
-                logger.info(
-                    f"{data[i][0][0], data[i][1][0]}, ---------the index lengths are not same."
-                )
+                logger.info(f"{data[i][0][0], data[i][1][0]}, ---------the index lengths are not same.")
             except IndexError:
                 logger.info(f"{data[i]}, ------ that is problematic")
     return df
 
 
-def segment_jsoniser(filepath,logger):
+def segment_jsoniser(filepath, logger):
     with gzip.open(filepath, "rb") as fp:  # Pickling
         data = pickle.load(fp)
 
@@ -84,9 +74,7 @@ def segment_jsoniser(filepath,logger):
             pattern = r"\b([A-Z][a-z]+) (\d{1,2}) (\d{4})\b"
             matching = re.findall(
                 pattern,
-                (value[0][2][0].split(",")[1]).strip()
-                + " "
-                + (value[0][2][0].split(",")[2].split(" ")[1]).strip(),
+                (value[0][2][0].split(",")[1]).strip() + " " + (value[0][2][0].split(",")[2].split(" ")[1]).strip(),
             )
             date_list.append(f"{matching[0][0]} {matching[0][1]} {matching[0][2]}")
         except IndexError:
@@ -100,9 +88,7 @@ def segment_jsoniser(filepath,logger):
                 float(
                     re.search(
                         r"\d+(\.\d+)?",
-                        i[0][2][0].split("\n")[
-                            i[0][2][0].split("\n").index("Distance") - 1
-                        ],
+                        i[0][2][0].split("\n")[i[0][2][0].split("\n").index("Distance") - 1],
                     ).group()
                 )
             )
@@ -172,9 +158,6 @@ def segment_jsoniser(filepath,logger):
 
             name_td = segment.find("td", class_="name-col")
             if name_td:
-                # Extract the full text content inside <td>
-                full_text = name_td.get_text(separator=" | ", strip=True)
-
                 # Extract specific elements
                 name = (
                     name_td.find("div", class_="name").get_text(strip=True)
@@ -184,32 +167,22 @@ def segment_jsoniser(filepath,logger):
                 segment_name.append(name)
 
                 stats_div = name_td.find("div", class_="stats")
-                if stats_div:
-                    stats_text = stats_div.get_text(separator=" | ", strip=True)
-                else:
-                    stats_text = "N/A"
 
                 # Extract individual stats
                 distance = (
-                    stats_div.find("span", {"title": "Distance"})
-                    .get_text(strip=True)
-                    .replace("\n", " ")
+                    stats_div.find("span", {"title": "Distance"}).get_text(strip=True).replace("\n", " ")
                     if stats_div
                     else "N/A"
                 )
                 segment_distance.append(distance)
                 elevation = (
-                    stats_div.find("span", {"title": "Elevation difference"})
-                    .get_text(strip=True)
-                    .replace("\n", " ")
+                    stats_div.find("span", {"title": "Elevation difference"}).get_text(strip=True).replace("\n", " ")
                     if stats_div
                     else "N/A"
                 )
                 segment_vert.append(elevation)
                 grade = (
-                    stats_div.find("span", {"title": "Average grade"})
-                    .get_text(strip=True)
-                    .replace("\n", " ")
+                    stats_div.find("span", {"title": "Average grade"}).get_text(strip=True).replace("\n", " ")
                     if stats_div
                     else "N/A"
                 )
@@ -231,10 +204,6 @@ def segment_jsoniser(filepath,logger):
             #  137<abbr class="unit" title="beats per minute">bpm</abbr></td>
             # <td>
 
-            # Extract Climb Category
-            climb_td = segment.find("td", class_="climb-cat-col")
-            climb_category = climb_td.text.strip() if climb_td else "N/A"
-
             # Extract Time
             time_td = segment.find("td", class_="time-col")
             segment_time.append(time_td.get_text(strip=True) if time_td else "N/A")
@@ -248,23 +217,16 @@ def segment_jsoniser(filepath,logger):
             watt.append(watts_td.get_text(strip=True) if watts_td else "N/A")
 
             # Extract VAM (optional, may not exist)
-            vam_td = (
-                segment.find_all("td")[8] if len(segment.find_all("td")) > 8 else None
-            )
+            vam_td = segment.find_all("td")[8] if len(segment.find_all("td")) > 8 else None
             VAM.append(vam_td.get_text(strip=True) if vam_td else "N/A")
 
             # Extract Heart Rate
-            heart_rate_td = (
-                segment.find_all("td")[9] if len(segment.find_all("td")) > 9 else None
-            )
-            heart_rate.append(
-                heart_rate_td.get_text(strip=True) if heart_rate_td else "N/A"
-            )
+            heart_rate_td = segment.find_all("td")[9] if len(segment.find_all("td")) > 9 else None
+            heart_rate.append(heart_rate_td.get_text(strip=True) if heart_rate_td else "N/A")
 
             ## Assign extracted data to the dictionary
             segment_dict = {
                 # "segment_no": segment_no,
-                # 'climb_category': climb_category,
                 "segment_name": segment_name,
                 "segment_time": segment_time,
                 "segment_speed": segment_speed,
@@ -282,12 +244,11 @@ def segment_jsoniser(filepath,logger):
     return json_string
 
 
-def stat_jsoniser(filepath,logger):
+def stat_jsoniser(filepath, logger):
     with gzip.open(filepath, "rb") as fp:  # Pickling
         data = pickle.load(fp)
 
     activity_id_list = [i[0][0][0] for i in data]
-    activity_type_list = [i[0][1][0] for i in data]
 
     athelete_id_list = []
     for key, value in enumerate(data):
@@ -303,9 +264,7 @@ def stat_jsoniser(filepath,logger):
             pattern = r"\b([A-Z][a-z]+) (\d{1,2}) (\d{4})\b"
             matching = re.findall(
                 pattern,
-                (value[0][2][0].split(",")[1]).strip()
-                + " "
-                + (value[0][2][0].split(",")[2].split(" ")[1]).strip(),
+                (value[0][2][0].split(",")[1]).strip() + " " + (value[0][2][0].split(",")[2].split(" ")[1]).strip(),
             )
             date_list.append(f"{matching[0][0]} {matching[0][1]} {matching[0][2]}")
         except IndexError:
@@ -319,9 +278,7 @@ def stat_jsoniser(filepath,logger):
                 float(
                     re.search(
                         r"\d+(\.\d+)?",
-                        i[0][2][0].split("\n")[
-                            i[0][2][0].split("\n").index("Distance") - 1
-                        ],
+                        i[0][2][0].split("\n")[i[0][2][0].split("\n").index("Distance") - 1],
                     ).group()
                 )
             )

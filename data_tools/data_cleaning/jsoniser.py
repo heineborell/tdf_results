@@ -6,18 +6,12 @@ grand_tour = "tdf"
 year = 2024
 username = getpass.getuser()
 
-segment_range = Path(
-    f"/Users/{username}/iCloud/Research/Data_Science/Projects/tdf_data_fin/strava/segments/"
-)
-stat_range = Path(
-    f"/Users/{username}/iCloud/Research/Data_Science/Projects/tdf_data_fin/strava/stats/"
-)
-details_range = Path(
-    f"/Users/{username}/iCloud/Research/Data_Science/Projects/tdf_data_fin/strava/mapping/"
-)
+segment_range = Path(f"/Users/{username}/iCloud/Research/Data_Science/Projects/tdf_data_fin/strava/segments/")
+stat_range = Path(f"/Users/{username}/iCloud/Research/Data_Science/Projects/tdf_data_fin/strava/stats/")
+details_range = Path(f"/Users/{username}/iCloud/Research/Data_Science/Projects/tdf_data_fin/strava/mapping/")
 
 with open(
-    f"/Users/dmini/Projects/TDF/scripts/strava/segment_2024_tdf_1.json",
+    "/Users/dmini/Projects/TDF/scripts/strava/segment_2024_tdf_1.json",
     "r",
 ) as f:
     json_data = json.loads(f.read())
@@ -52,7 +46,7 @@ for activity in json_data["activities"]:
 
 json_string = json.dumps(json_data_list)
 with open(
-    f"jsoniser_test_2.json",
+    "jsoniser_test_2.json",
     "w",
 ) as f:
     f.write(json_string)

@@ -42,10 +42,7 @@ year_options = driver.find_elements(
 year_len = len(year_options)
 
 year_extr = driver.find_element(By.CSS_SELECTOR, ".custom-select.custom-select--year")
-year_lst = [
-    year.get_attribute("text")
-    for year in year_extr.find_elements(By.TAG_NAME, "option")
-]
+year_lst = [year.get_attribute("text") for year in year_extr.find_elements(By.TAG_NAME, "option")]
 
 df = pd.DataFrame(columns=["year", "stage", "name", "team_name", "timing"])
 
@@ -68,19 +65,13 @@ for p, year in enumerate(year_options):
         print("year clicked")
         time.sleep(2)
         stages_dd = driver.find_element(By.ID, "stageSelect")
-        stages = [
-            stage.get_attribute("text")
-            for stage in stages_dd.find_elements(By.TAG_NAME, "option")
-        ]
+        stages = [stage.get_attribute("text") for stage in stages_dd.find_elements(By.TAG_NAME, "option")]
         print(stages)
         for j in range(0, len(stages)):
-
             # # choose individual drop down
             driver.find_element(
                 By.XPATH,
-                "//*[@id="
-                + str(year_lst[i])
-                + "]/div[3]/div[2]/div[1]/div[1]/div[2]/div[1]",
+                "//*[@id=" + str(year_lst[i]) + "]/div[3]/div[2]/div[1]/div[1]/div[2]/div[1]",
             ).click()
             # individual select
             try:
@@ -88,9 +79,7 @@ for p, year in enumerate(year_options):
                     EC.presence_of_element_located(
                         (
                             By.XPATH,
-                            "//*[@id="
-                            + str(year_lst[i])
-                            + "]/div[3]/div[2]/div[1]/div[1]/div[2]/div[2]/div[2]",
+                            "//*[@id=" + str(year_lst[i]) + "]/div[3]/div[2]/div[1]/div[1]/div[2]/div[2]/div[2]",
                         )
                     )
                 )
@@ -98,12 +87,9 @@ for p, year in enumerate(year_options):
             except TimeoutException:
                 print("individual stage click not exist")
             else:
-
                 driver.find_element(
                     By.XPATH,
-                    "//*[@id="
-                    + str(year_lst[i])
-                    + "]/div[3]/div[2]/div[1]/div[1]/div[2]/div[2]/div[2]",
+                    "//*[@id=" + str(year_lst[i]) + "]/div[3]/div[2]/div[1]/div[1]/div[2]/div[2]/div[2]",
                 ).click()
                 time.sleep(2)
                 print("individual clicked")
@@ -113,16 +99,11 @@ for p, year in enumerate(year_options):
             # again choose stage dropdown to choose new stage
             driver.find_element(
                 By.XPATH,
-                "//*[@id="
-                + str(year_lst[i])
-                + "]/div[3]/div[2]/div[1]/div[1]/div[1]/div[1]",
+                "//*[@id=" + str(year_lst[i]) + "]/div[3]/div[2]/div[1]/div[1]/div[1]/div[1]",
             ).click()
             driver.find_element(
                 By.XPATH,
-                "//*[@id="
-                + str(year_lst[i])
-                + "]/div[3]/div[2]/div[1]/div[1]/div[1]/div[2]/div"
-                + str([j + 1]),
+                "//*[@id=" + str(year_lst[i]) + "]/div[3]/div[2]/div[1]/div[1]/div[1]/div[2]/div" + str([j + 1]),
             ).click()
             time.sleep(2)
             print("stage clicked")
@@ -133,9 +114,7 @@ for p, year in enumerate(year_options):
                     EC.presence_of_element_located(
                         (
                             By.XPATH,
-                            "//*[@id="
-                            + str(year_lst[i])
-                            + "]/div[3]/div[2]/div[1]/div[3]/a",
+                            "//*[@id=" + str(year_lst[i]) + "]/div[3]/div[2]/div[1]/div[3]/a",
                         )
                     )
                 )
@@ -171,18 +150,13 @@ for p, year in enumerate(year_options):
             except IndexError:
                 print("the ranking table is empty or some other index problem")
             else:
-
                 df = pd.concat(
                     [
                         df,
                         pd.DataFrame(
                             {
-                                "year": [
-                                    year_lst[i] for _ in range(1, ranking.shape[0] + 1)
-                                ],
-                                "stage": [
-                                    stages[j] for _ in range(1, ranking.shape[0] + 1)
-                                ],
+                                "year": [year_lst[i] for _ in range(1, ranking.shape[0] + 1)],
+                                "stage": [stages[j] for _ in range(1, ranking.shape[0] + 1)],
                                 "name": name_lst,
                                 "team_name": team_lst,
                                 "timing": timing_lst,

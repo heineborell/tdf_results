@@ -49,9 +49,7 @@ def start_driver(
     if use_profile:
         username = getpass.getuser()
 
-        options.add_argument(
-            f"--user-data-dir=/Users/{username}/Library/Application Support/Google/Chrome/"
-        )
+        options.add_argument(f"--user-data-dir=/Users/{username}/Library/Application Support/Google/Chrome/")
         print(f"this is the profile number {profile_number}")
         options.add_argument(f"--profile-directory=Profile {profile_number}")
 

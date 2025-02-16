@@ -6,28 +6,32 @@ import pandas as pd
 from grand_tours import ride_scrape
 
 if __name__ == "__main__":
-    username = getpass.getuser() 
+    username = getpass.getuser()
     grand_tour = "giro"
-    #grand_tour = "vuelta"
+    # grand_tour = "vuelta"
     year = 2020
 
-    conn = sqlite3.connect(
-        f"/Users/{username}/iCloud/Research/Data_Science/Projects/data/grand_tours.db"
-    )
+    conn = sqlite3.connect(f"/Users/{username}/iCloud/Research/Data_Science/Projects/data/grand_tours.db")
 
-    query = f"SELECT DISTINCT x.week, x.year FROM ( SELECT `year`, strftime('%W', `date`) AS week FROM {grand_tour}_results) AS x "
+    query = (
+        f"SELECT DISTINCT x.week, x.year "
+        f"FROM ( "
+        f"    SELECT `year`, strftime('%W', `date`) AS week "
+        f"    FROM {grand_tour}_results "
+        f") AS x"
+    )
     df = pd.read_sql_query(query, conn)
     df = df.loc[df["year"] == year]
     print(df)
 
     query_id = f"""
-    SELECT * 
-    FROM strava_names AS y 
+    SELECT *
+    FROM strava_names AS y
     LEFT JOIN (
-        SELECT * 
-        FROM {grand_tour}_results 
+        SELECT *
+        FROM {grand_tour}_results
         WHERE stage LIKE ? AND `year` = ?
-    ) AS x 
+    ) AS x
     ON y.`name` = x.`name`
     WHERE x.`year` IS NOT NULL;
     """
@@ -53,9 +57,7 @@ if __name__ == "__main__":
             print(year)
             for week in df["week"].values:
                 print(week)
-                activity_list.extend(
-                    ride_scrape.ride_scraper(pro_id=id, date=str(year) + str(week))
-                )
+                activity_list.extend(ride_scrape.ride_scraper(pro_id=id, date=str(year) + str(week)))
                 print(activity_list)
         activity_dict = {
             "pro_id": len(activity_list) * [id],

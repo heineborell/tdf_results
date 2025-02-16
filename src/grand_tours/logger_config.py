@@ -13,9 +13,7 @@ def setup_logger(log_filename):
     logger.setLevel(logging.INFO)  # Set the minimum logging level for the logger
 
     # Create a file handler to save logs to a file (mode='w' overwrites the file each time)
-    file_handler = logging.FileHandler(
-        f"{log_filename}", mode="w"
-    )  # Overwrite the file each time
+    file_handler = logging.FileHandler(f"{log_filename}", mode="w")  # Overwrite the file each time
     file_handler.setLevel(logging.INFO)  # Log level for file handler
 
     # Create a stream handler to print logs to the console

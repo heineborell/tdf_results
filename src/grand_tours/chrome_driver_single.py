@@ -21,8 +21,6 @@ def driver_single():
     # options.add_argument(
     #    "user-data-dir=/Users/dmini/Library/Application Support/Google/Chrome/Profile 1"
     # )
-    options.add_argument(
-        f"--user-data-dir=/Users/{username}/Library/Application Support/Google/Chrome/"
-    )
-    options.add_argument(f"--profile-directory=Profile 1")
+    options.add_argument(f"--user-data-dir=/Users/{username}/Library/Application Support/Google/Chrome/")
+    options.add_argument("--profile-directory=Profile 1")
     return webdriver.Chrome(service=service, options=options)

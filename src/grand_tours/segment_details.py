@@ -1,6 +1,5 @@
 """Module for scraping some segment details like endpoints, category"""
 
-import json
 import time
 
 import numpy as np
@@ -11,32 +10,21 @@ from selenium.webdriver.support.ui import WebDriverWait
 
 
 def segment_details_scrape(activity_no: int, driver):
-
     activity = "https://www.strava.com/activities/" + str(activity_no)
     driver.get(activity)
     time.sleep(np.abs(np.random.randn()))
 
     try:
         driver.find_elements(By.XPATH, '//*[@id="show-hidden-efforts"]')[0].click()
-        segment_tables = driver.find_elements(
-            By.CSS_SELECTOR, ".dense.hoverable.marginless.segments"
-        )
+        segment_tables = driver.find_elements(By.CSS_SELECTOR, ".dense.hoverable.marginless.segments")
 
         WebDriverWait(driver, 10).until(
-            EC.visibility_of_element_located(
-                (By.CSS_SELECTOR, ".dense.hidden-segments.hoverable.marginless")
-            )
+            EC.visibility_of_element_located((By.CSS_SELECTOR, ".dense.hidden-segments.hoverable.marginless"))
         )
-        segment_tables.append(
-            driver.find_element(
-                By.CSS_SELECTOR, ".dense.hidden-segments.hoverable.marginless"
-            )
-        )
+        segment_tables.append(driver.find_element(By.CSS_SELECTOR, ".dense.hidden-segments.hoverable.marginless"))
     except IndexError:
         print("No hidden segment")
-        segment_tables = driver.find_elements(
-            By.CSS_SELECTOR, ".dense.hoverable.marginless.segments"
-        )
+        segment_tables = driver.find_elements(By.CSS_SELECTOR, ".dense.hoverable.marginless.segments")
 
     time.sleep(1)
     dict_list = []
@@ -59,15 +47,10 @@ def segment_details_scrape(activity_no: int, driver):
                     By.XPATH,
                     '//*[@id="grid"]',
                 )
-                total_length = main_rect.find_element(
-                    By.TAG_NAME, "rect"
-                ).get_attribute("width")
+                total_length = main_rect.find_element(By.TAG_NAME, "rect").get_attribute("width")
                 rects = clipper[0].find_elements(By.TAG_NAME, "rect")
                 ends.append(float(rects[0].get_attribute("x")))
-                ends.append(
-                    float(rects[0].get_attribute("x"))
-                    + float(rects[0].get_attribute("width"))
-                )
+                ends.append(float(rects[0].get_attribute("x")) + float(rects[0].get_attribute("width")))
                 try:
                     cat = (
                         segment.find_element(By.CSS_SELECTOR, "td.climb-cat-col")
@@ -81,9 +64,7 @@ def segment_details_scrape(activity_no: int, driver):
                 segment_dict = {
                     "activity_no": activity_no,
                     "segment_no": segment.get_attribute("data-segment-effort-id"),
-                    "segment_name": segment.find_element(
-                        By.CSS_SELECTOR, "div.name"
-                    ).text,
+                    "segment_name": segment.find_element(By.CSS_SELECTOR, "div.name").text,
                     "end_points": ends,
                     "total_length": total_length,
                     "category": cat,

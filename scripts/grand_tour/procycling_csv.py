@@ -4,7 +4,7 @@ import numpy as np
 import pandas as pd
 
 with open(
-    f"../../data/pro_tdf/6107312128_2024_2013.pkl",
+    "../../data/pro_tdf/6107312128_2024_2013.pkl",
     "rb",
 ) as fp:  # Pickling
     data = pickle.load(fp)

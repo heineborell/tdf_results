@@ -6,9 +6,7 @@ import pandas as pd
 username = getpass.getuser()
 
 
-conn = sqlite3.connect(
-    f"/Users/{username}/iCloud/Research/Data_Science/Projects/data/grand_tours.db"
-)
+conn = sqlite3.connect(f"/Users/{username}/iCloud/Research/Data_Science/Projects/data/grand_tours.db")
 cursor = conn.cursor()
 
 

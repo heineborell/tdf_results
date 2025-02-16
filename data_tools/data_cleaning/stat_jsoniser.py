@@ -29,9 +29,7 @@ for key, value in enumerate(data):
         pattern = r"\b([A-Z][a-z]+) (\d{1,2}) (\d{4})\b"
         matching = re.findall(
             pattern,
-            (value[0][2][0].split(",")[1]).strip()
-            + " "
-            + (value[0][2][0].split(",")[2].split(" ")[1]).strip(),
+            (value[0][2][0].split(",")[1]).strip() + " " + (value[0][2][0].split(",")[2].split(" ")[1]).strip(),
         )
         date_list.append(f"{matching[0][0]} {matching[0][1]} {matching[0][2]}")
     except IndexError:
@@ -41,9 +39,7 @@ for key, value in enumerate(data):
 distance_list = []
 for i in data:
     try:
-        distance_list.append(
-            i[0][2][0].split("\n")[i[0][2][0].split("\n").index("Distance") - 1]
-        )
+        distance_list.append(i[0][2][0].split("\n")[i[0][2][0].split("\n").index("Distance") - 1])
     except (ValueError, IndexError):
         distance_list.append("No distance")
 
@@ -103,7 +99,7 @@ for p, stats in enumerate(stat_list):
 
     json_string = json.dumps(stat_dict_list)
     with open(
-        f"stat.json",
+        "stat.json",
         "w",
     ) as f:
         f.write(json_string)

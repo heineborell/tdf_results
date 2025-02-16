@@ -2,7 +2,7 @@ FROM ubuntu:22.04
 
 # Install Ubuntu-specific packages including Zsh and other tools
 RUN apt-get update && \
-    apt-get install -y curl wget build-essential git python3 python3-pip zsh unzip && \ 
+    apt-get install -y curl wget build-essential git python3 python3-pip zsh unzip && \
     apt-get install -y virtualenv && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
@@ -37,7 +37,7 @@ ENV PATH=$CHROMEDRIVER_DIR:$PATH
 # Clean upa
 RUN rm /tmp/chrome-linux64.zip /tmp/chromedriver-linux64.zip /tmp/versions.json
 
-RUN apt-get install mysql-server mysql-client libmysqlclient-dev pkg-config -y  
+RUN apt-get install mysql-server mysql-client libmysqlclient-dev pkg-config -y
 
 
 #RUN apt-get install software-properties-common -y &&\
@@ -76,4 +76,3 @@ RUN chsh -s /bin/zsh
 
 # Install the default powerline10k theme with no plugins
 # RUN sh -c "$(wget -O- https://github.com/deluan/zsh-in-docker/releases/download/v1.2.1/zsh-in-docker.sh)"
-

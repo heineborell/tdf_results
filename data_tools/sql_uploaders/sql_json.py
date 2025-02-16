@@ -2,7 +2,7 @@ import getpass
 import json
 from pathlib import Path
 
-from sqlalchemy import CHAR, JSON, Column, Float, Integer, String, create_engine, text
+from sqlalchemy import JSON, Column, Float, String, create_engine, text
 from sqlalchemy.exc import OperationalError
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
@@ -22,12 +22,8 @@ grand_tours = ["tdf", "giro"]
 years = [2024, 2023, 2022, 2020]
 username = getpass.getuser()
 
-segment_range = Path(
-    f"/Users/{username}/iCloud/Research/Data_Science/Projects/data/strava/segments/"
-)
-stat_range = Path(
-    f"/Users/{username}/iCloud/Research/Data_Science/Projects/data/strava/stats/"
-)
+segment_range = Path(f"/Users/{username}/iCloud/Research/Data_Science/Projects/data/strava/segments/")
+stat_range = Path(f"/Users/{username}/iCloud/Research/Data_Science/Projects/data/strava/stats/")
 
 # Initialize SQLAlchemy base
 Base = declarative_base()
@@ -36,9 +32,7 @@ Base = declarative_base()
 # Define the table model with activity_id as the primary key
 class RawJSONData(Base):
     __tablename__ = "segments_data"
-    activity_id = Column(
-        "activity_id", String(20), primary_key=True, unique=True, nullable=False
-    )
+    activity_id = Column("activity_id", String(20), primary_key=True, unique=True, nullable=False)
     athlete_id = Column("athlete_id", String(20))
     date = Column("date", String(20))
     distance = Column("distance", Float)
@@ -55,9 +49,7 @@ class RawJSONData(Base):
 # Define the table model with activity_id as the primary key
 class RawJSONData_2(Base):
     __tablename__ = "stats_data"
-    activity_id = Column(
-        "activity_id", String(20), primary_key=True, unique=True, nullable=False
-    )
+    activity_id = Column("activity_id", String(20), primary_key=True, unique=True, nullable=False)
     athlete_id = Column("athlete_id", String(20))
     stat = Column(JSON)
 
@@ -87,15 +79,11 @@ id_list_segment = []
 for grand_tour in grand_tours:
     for year in years:
         Base.metadata.create_all(engine)
-        for j in range(
-            1, len(sorted(segment_range.glob(f"segment_{year}_{grand_tour}_*"))) + 1
-        ):
-
+        for j in range(1, len(sorted(segment_range.glob(f"segment_{year}_{grand_tour}_*"))) + 1):
             with open(
                 f"/Users/{username}/iCloud/Research/Data_Science/Projects/data/strava/segments/segment_{year}_{grand_tour}_{j}.json",
                 "r",
             ) as f:
-
                 json_data = json.loads(f.read())
 
             for activity in json_data["activities"]:
@@ -117,9 +105,7 @@ for grand_tour in grand_tours:
                     print(f"{j} segment {grand_tour} {year} uploaded")
                 else:
                     pass
-        for j in range(
-            1, len(sorted(stat_range.glob(f"stat_{year}_{grand_tour}_*"))) + 1
-        ):
+        for j in range(1, len(sorted(stat_range.glob(f"stat_{year}_{grand_tour}_*"))) + 1):
             with open(
                 f"/Users/{username}/iCloud/Research/Data_Science/Projects/data/strava/stats/stat_{year}_{grand_tour}_{j}.json",
                 "r",
@@ -141,11 +127,103 @@ for grand_tour in grand_tours:
                     pass
 print("JSON data uploaded successfully.")
 
-query_tdf = """(SELECT activity_id, athlete_id, 'tdf' as tour, f.`date`, cast(REGEXP_SUBSTR(stage,'[0-9]+') as unsigned) as Stage, f.elv_strava, test.vertical_meters, f.dist_strava, test.lower_bound, f.watt, stat, segment FROM ( SELECT x.activity_id, x.athlete_id, x.stat, x.segment, `date`, CAST( REGEXP_SUBSTR( x.watts, '[0-9]+') AS UNSIGNED) AS watt, CAST( REGEXP_SUBSTR( x.dist_strava, '[0-9]+')AS UNSIGNED) AS dist_strava, CAST( REGEXP_REPLACE( REGEXP_SUBSTR( x.elv_strava, '[0-9,]+'), ',', '') AS UNSIGNED) AS elv_strava FROM ( SELECT activity_id, athlete_id, stat, segment, `date`, JSON_EXTRACT( `stat`, "$.wap") AS watts, JSON_EXTRACT( `stat`, "$.elevation") AS elv_strava, JSON_EXTRACT( `stat`, "$.dist") AS dist_strava FROM ( SELECT p2.activity_id, p2.athlete_id, CAST( p2.`date` AS CHAR) AS DATE, p2.segment, l2.stat FROM segments_data AS p2 LEFT JOIN stats_data AS l2 ON l2.activity_id = p2.activity_id WHERE p2.`date`IN( SELECT CAST( x2.tdf_date AS CHAR) AS tdfdate FROM ( SELECT DISTINCT( w2.tdf_date) FROM ( SELECT Date_format( DATE, :s ) AS tdf_date FROM tdf_results)AS w2)AS x2) )AS stravarider) AS x) AS f LEFT JOIN ( SELECT DISTINCT( stage), distance, vertical_meters, Date_format( `date`, :s )AS tdf_date, ROUND( distance * 0.2 + distance, 3)AS upper_bound, ROUND( distance - distance * 0.2, 3)AS lower_bound FROM tdf_results ) AS test ON test.tdf_date = f.`date` 
-WHERE f.dist_strava >= test.lower_bound AND f.dist_strava <= test.upper_bound order by Stage) as tdf_table """
+query_tdf = """
+(SELECT activity_id, athlete_id, 'tdf' as tour, f.`date`,
+        CAST(REGEXP_SUBSTR(stage, '[0-9]+') AS UNSIGNED) AS Stage,
+        f.elv_strava, test.vertical_meters, f.dist_strava, test.lower_bound,
+        f.watt, stat, segment
+ FROM (
+    SELECT x.activity_id, x.athlete_id, x.stat, x.segment, `date`,
+            CAST(REGEXP_SUBSTR(x.watts, '[0-9]+') AS UNSIGNED) AS watt,
+            CAST(REGEXP_SUBSTR(x.dist_strava, '[0-9]+') AS UNSIGNED) AS dist_strava,
+            CAST(REGEXP_REPLACE(REGEXP_SUBSTR(x.elv_strava, '[0-9,]+'), ',', '')
+                AS UNSIGNED) AS elv_strava
+    FROM (
+        SELECT activity_id, athlete_id, stat, segment, `date`,
+                JSON_EXTRACT(`stat`, "$.wap") AS watts,
+                JSON_EXTRACT(`stat`, "$.elevation") AS elv_strava,
+                JSON_EXTRACT(`stat`, "$.dist") AS dist_strava
+        FROM (
+            SELECT p2.activity_id, p2.athlete_id, CAST(p2.`date` AS CHAR) AS DATE,
+                    p2.segment, l2.stat
+            FROM segments_data AS p2
+            LEFT JOIN stats_data AS l2
+            ON l2.activity_id = p2.activity_id
+            WHERE p2.`date` IN (
+                SELECT CAST(x2.tdf_date AS CHAR) AS tdfdate
+                FROM (
+                    SELECT DISTINCT(w2.tdf_date)
+                    FROM (
+                        SELECT DATE_FORMAT(DATE, :s) AS tdf_date
+                        FROM tdf_results
+                    ) AS w2
+                ) AS x2
+            )
+        ) AS stravarider
+    ) AS x
+) AS f
+LEFT JOIN (
+    SELECT DISTINCT(stage), distance, vertical_meters,
+            DATE_FORMAT(`date`, :s) AS tdf_date,
+            ROUND(distance * 0.2 + distance, 3) AS upper_bound,
+            ROUND(distance - distance * 0.2, 3) AS lower_bound
+    FROM tdf_results
+) AS test
+ON test.tdf_date = f.`date`
+WHERE f.dist_strava >= test.lower_bound
+    AND f.dist_strava <= test.upper_bound
+ORDER BY Stage
+) AS tdf_table
+"""
 
-query_giro = """(SELECT activity_id, athlete_id, 'giro' as tour, f.`date`, cast(REGEXP_SUBSTR(stage,'[0-9]+') as unsigned) as Stage, f.elv_strava, test.vertical_meters, f.dist_strava, test.lower_bound, f.watt, stat, segment FROM ( SELECT x.activity_id, x.athlete_id, x.stat, x.segment, `date`, CAST( REGEXP_SUBSTR( x.watts, '[0-9]+') AS UNSIGNED) AS watt, CAST( REGEXP_SUBSTR( x.dist_strava, '[0-9]+')AS UNSIGNED) AS dist_strava, CAST( REGEXP_REPLACE( REGEXP_SUBSTR( x.elv_strava, '[0-9,]+'), ',', '') AS UNSIGNED) AS elv_strava FROM ( SELECT activity_id, athlete_id, stat, segment, `date`, JSON_EXTRACT( `stat`, "$.wap") AS watts, JSON_EXTRACT( `stat`, "$.elevation") AS elv_strava, JSON_EXTRACT( `stat`, "$.dist") AS dist_strava FROM ( SELECT p2.activity_id, p2.athlete_id, CAST( p2.`date` AS CHAR) AS DATE, p2.segment, l2.stat FROM segments_data AS p2 LEFT JOIN stats_data AS l2 ON l2.activity_id = p2.activity_id WHERE p2.`date`IN( SELECT CAST( x2.tdf_date AS CHAR) AS tdfdate FROM ( SELECT DISTINCT( w2.tdf_date) FROM ( SELECT Date_format( DATE, :s ) AS tdf_date FROM giro_results)AS w2)AS x2) )AS stravarider) AS x) AS f LEFT JOIN ( SELECT DISTINCT( stage), distance, vertical_meters, Date_format( `date`, :s )AS tdf_date, ROUND( distance * 0.2 + distance, 3)AS upper_bound, ROUND( distance - distance * 0.2, 3)AS lower_bound FROM giro_results ) AS test ON test.tdf_date = f.`date` WHERE f.dist_strava >= test.lower_bound AND f.dist_strava <= test.upper_bound order by Stage) as giro_table """
-
+query_giro = """
+(SELECT activity_id, athlete_id, 'giro' as tour, f.`date`,
+        CAST(REGEXP_SUBSTR(stage, '[0-9]+') AS UNSIGNED) AS Stage,
+        f.elv_strava, test.vertical_meters, f.dist_strava, test.lower_bound,
+        f.watt, stat, segment
+ FROM (
+    SELECT x.activity_id, x.athlete_id, x.stat, x.segment, `date`,
+            CAST(REGEXP_SUBSTR(x.watts, '[0-9]+') AS UNSIGNED) AS watt,
+            CAST(REGEXP_SUBSTR(x.dist_strava, '[0-9]+') AS UNSIGNED) AS dist_strava,
+            CAST(REGEXP_REPLACE(REGEXP_SUBSTR(x.elv_strava, '[0-9,]+'), ',', '')
+                AS UNSIGNED) AS elv_strava
+    FROM (
+        SELECT activity_id, athlete_id, stat, segment, `date`,
+                JSON_EXTRACT(`stat`, "$.wap") AS watts,
+                JSON_EXTRACT(`stat`, "$.elevation") AS elv_strava,
+                JSON_EXTRACT(`stat`, "$.dist") AS dist_strava
+        FROM (
+            SELECT p2.activity_id, p2.athlete_id, CAST(p2.`date` AS CHAR) AS DATE,
+                    p2.segment, l2.stat
+            FROM segments_data AS p2
+            LEFT JOIN stats_data AS l2
+            ON l2.activity_id = p2.activity_id
+            WHERE p2.`date` IN (
+                SELECT CAST(x2.tdf_date AS CHAR) AS tdfdate
+                FROM (
+                    SELECT DISTINCT(w2.tdf_date)
+                    FROM (
+                        SELECT DATE_FORMAT(DATE, :s) AS tdf_date
+                        FROM giro_results
+                    ) AS w2
+                ) AS x2
+            )
+        ) AS stravarider
+    ) AS x
+) AS f
+LEFT JOIN (
+    SELECT DISTINCT(stage), distance, vertical_meters,
+            DATE_FORMAT(`date`, :s) AS tdf_date,
+            ROUND(distance * 0.2 + distance, 3) AS upper_bound,
+            ROUND(distance - distance * 0.2, 3) AS lower_bound
+    FROM giro_results
+) AS test
+ON test.tdf_date = f.`date`
+WHERE f.dist_strava >= test.lower_bound
+    AND f.dist_strava <= test.upper_bound
+ORDER BY Stage
+) AS giro_table
+"""
 
 # Create database engine and session
 engine = create_engine(DATABASE_URL)
@@ -160,12 +238,7 @@ except OperationalError:
     print("Tables do not exist")
 
 
-query = (
-    "CREATE TABLE strava_table AS SELECT * FROM "
-    + query_tdf
-    + " UNION SELECT * FROM "
-    + query_giro
-)
+query = "CREATE TABLE strava_table AS SELECT * FROM " + query_tdf + " UNION SELECT * FROM " + query_giro
 
 with engine.connect() as connection:
     stmt = text(query)
