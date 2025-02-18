@@ -7,9 +7,9 @@ from grand_tours import ride_scrape
 
 if __name__ == "__main__":
     username = getpass.getuser()
-    grand_tour = "giro"
-    # grand_tour = "vuelta"
-    year = 2020
+    # grand_tour = "giro"
+    grand_tour = "vuelta"
+    year = 2017
 
     conn = sqlite3.connect(f"/Users/{username}/iCloud/Research/Data_Science/Projects/data/grand_tours.db")
 
@@ -47,8 +47,8 @@ if __name__ == "__main__":
         df_id = pd.read_sql_query(query_id, conn, params=params)
 
     df_id.to_csv(f"{year}_{grand_tour}_list.csv")
-    print(df_id["strava_id"].values[3])
-    pro_id = df_id["strava_id"].values
+    print(df_id["athlete_id"].values[3])
+    pro_id = df_id["athlete_id"].values
     df_activity = pd.DataFrame(columns=["pro_id", "activity"])
     for id in pro_id:
         print(id)

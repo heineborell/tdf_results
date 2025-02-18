@@ -30,6 +30,7 @@ for tour in grand_tours:
             t3.strava_distance,
             t1.distance AS official_distance,
             t3.DATE,
+            t1.stage,
             t3.segment,
             t3.stat
         FROM (
