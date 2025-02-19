@@ -9,7 +9,7 @@ if __name__ == "__main__":
     username = getpass.getuser()
     # grand_tour = "giro"
     grand_tour = "vuelta"
-    year = 2017
+    year = 2015
 
     conn = sqlite3.connect(f"/Users/{username}/iCloud/Research/Data_Science/Projects/data/grand_tours.db")
 
