@@ -13,7 +13,7 @@ if __name__ == "__main__":
     conn = sqlite3.connect(f"/Users/{username}/iCloud/Research/Data_Science/Projects/data/grand_tours.db")
 
     grand_tour = "tdf"
-    year = 2018
+    year = 2017
 
     sql_list = f"""
     SELECT *
@@ -38,15 +38,15 @@ if __name__ == "__main__":
     activity_no_list = pd.read_sql_query(sql_list, conn)[["activity_id", "stage"]]
 
     logger = logger_config.setup_logger("segment.log")
+    driver = uc.Chrome(
+        user_data_dir="user-data-dir=/Users/deniz/Library/Application Support/Google/Chrome/Profile 1",
+        use_subprocess=False,
+        version_main=132,
+    )
 
     tour_list = []
     for i, item in enumerate(activity_no_list.values):
         print(item)
-        driver = uc.Chrome(
-            user_data_dir="user-data-dir=/Users/deniz/Library/Application Support/Google/Chrome/Profile 1",
-            use_subprocess=True,
-            version_main=132,
-        )
 
         wait = WebDriverWait(driver, 5)
         logger.info(f"------Stage-{i}, activity_no:{item[0]}")

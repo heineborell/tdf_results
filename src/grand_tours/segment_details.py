@@ -75,6 +75,4 @@ def segment_details_scrape(activity_no: int, tour_year, stage: int, driver):
                 print(segment_dict)
                 dict_list.append(segment_dict)
 
-    driver.quit()
-
     return dict_list
