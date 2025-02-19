@@ -9,7 +9,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 
 
-def segment_details_scrape(activity_no: int, driver):
+def segment_details_scrape(activity_no: int, tour_year, stage: int, driver):
     activity = "https://www.strava.com/activities/" + str(activity_no)
     driver.get(activity)
     time.sleep(np.abs(np.random.randn()))
@@ -63,6 +63,8 @@ def segment_details_scrape(activity_no: int, driver):
 
                 segment_dict = {
                     "activity_no": activity_no,
+                    "stage": stage,
+                    "tour_year": tour_year,
                     "segment_no": segment.get_attribute("data-segment-effort-id"),
                     "segment_name": segment.find_element(By.CSS_SELECTOR, "div.name").text,
                     "end_points": ends,
