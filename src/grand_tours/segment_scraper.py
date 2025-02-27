@@ -100,14 +100,12 @@ class SegmentScrape:
 
         # setting profile
         # options.add_experimental_option("detach", "true")
-        options = uc.ChromeOptions()
-        proxy_server = "http://156.253.171.203:3128"
-        options.add_argument(f"--proxy-server={proxy_server}")
         driver = uc.Chrome(
             user_data_dir=f"user-data-dir=/Users/deniz/Library/Application Support/Google/Chrome/Profile {account_no}",
             use_subprocess=True,
-            version_main=132,
+            version_main=133,
         )
+        print("activated driver")
 
         for p, activity_no in enumerate(activity_no_list):
             activity_big_list = []

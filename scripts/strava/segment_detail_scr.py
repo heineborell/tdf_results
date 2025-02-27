@@ -1,3 +1,4 @@
+import atexit
 import getpass
 import json
 import sqlite3
@@ -13,8 +14,9 @@ if __name__ == "__main__":
     username = getpass.getuser()
     conn = sqlite3.connect(f"/Users/{username}/iCloud/Research/Data_Science/Projects/data/grand_tours.db")
 
-    grand_tour = "tdf"
-    year = 2017
+    # grand_tour = "tdf"
+    grand_tour = "giro"
+    year = 2024
 
     sql_list = f"""
     SELECT *
@@ -56,9 +58,10 @@ if __name__ == "__main__":
 
     driver = uc.Chrome(
         user_data_dir="user-data-dir=/Users/deniz/Library/Application Support/Google/Chrome/Profile 1",
-        use_subprocess=False,
+        use_subprocess=True,
         version_main=132,
     )
+    atexit.register(driver.quit)
 
     for i, item in enumerate(activity_no_list.values):
         if item[1] not in stage_set:
@@ -75,4 +78,4 @@ if __name__ == "__main__":
             ) as f:
                 f.write(json_string)
 
-    driver.quit()
+    # driver.quit()

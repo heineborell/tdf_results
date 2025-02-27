@@ -14,7 +14,7 @@ gpx = ezgpx.GPX("tdf_1.gpx")
 df = gpx.to_dataframe(["lat", "lon", "ele"])
 
 with open(
-    "/Users/deniz/iCloud/Research/Data_Science/Projects/tdf_data_fin/mapping/tdf_2024.json",
+    "/Users/deniz/iCloud/Research/Data_Science/Projects/tdf_data_fin/strava/mapping/tdf_2024.json",
     "r",
 ) as f:
     json_data = json.loads(f.read())
