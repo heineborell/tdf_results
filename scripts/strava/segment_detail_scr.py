@@ -59,7 +59,7 @@ if __name__ == "__main__":
     driver = uc.Chrome(
         user_data_dir="user-data-dir=/Users/deniz/Library/Application Support/Google/Chrome/Profile 1",
         use_subprocess=True,
-        version_main=132,
+        version_main=133,
     )
     atexit.register(driver.quit)
 

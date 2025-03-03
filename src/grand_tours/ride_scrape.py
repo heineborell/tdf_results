@@ -53,22 +53,10 @@ def wait_for_page_activity_to_stop(driver, timeout=10, check_interval=0.5):
     return False  # Timeout reached
 
 
-def ride_scraper_local(pro_id, date):
-    username = getpass.getuser()
+def ride_scraper_local(driver, pro_id, date):
+    # username = getpass.getuser()
     # Initialize Chrome with the specified options
-    service = Service()
-    options = Options()
-    options.add_argument("--no-sandbox")
-    options.add_argument("--headless")
-    options.add_argument("--disable-dev-shm-usage")
-    options.add_argument("--no-proxy-server")
-    options.add_argument("--proxy-server='direct://'")
-    options.add_argument("--proxy-bypass-list=*")
-    options.add_argument("--blink-settings=imagesEnabled=true")
-    # options.add_experimental_option("detach", True)
-    options.add_argument(f"user-data-dir=/Users/{username}/Library/Application Support/Google/Chrome/Profile 1")
 
-    driver = webdriver.Chrome(service=service, options=options)
     homepage = (
         "https://www.strava.com/pros/"
         + str(pro_id)
@@ -78,7 +66,7 @@ def ride_scraper_local(pro_id, date):
     )
     driver.get(homepage)
     # wait_for_page_activity_to_stop(driver)
-    time.sleep(15)
+    time.sleep(13)
     # WebDriverWait(driver, 15).until(
     #     EC.presence_of_element_located((By.TAG_NAME, "body"))  # Replace with a specific element for better accuracy
     # )
@@ -92,6 +80,5 @@ def ride_scraper_local(pro_id, date):
         except IndexError:
             print("sth wrong with pane")
             continue
-    driver.quit()
     print(f"for athlete {pro_id}-{activities}")
     return activities
