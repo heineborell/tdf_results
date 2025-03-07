@@ -14,9 +14,9 @@ if __name__ == "__main__":
     username = getpass.getuser()
     conn = sqlite3.connect(f"/Users/{username}/iCloud/Research/Data_Science/Projects/data/grand_tours.db")
 
-    # grand_tour = "tdf"
-    grand_tour = "giro"
-    year = 2024
+    grand_tour = "tdf"
+    # grand_tour = "giro"
+    year = 2022
 
     sql_list = f"""
     SELECT *

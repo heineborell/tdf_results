@@ -71,6 +71,7 @@ def segment_details_scrape(activity_no: int, tour_year, stage: int, driver):
                     "total_length": total_length,
                     "category": cat,
                     "hidden": hidden,
+                    "segment_number": j,
                 }
                 print(segment_dict)
                 dict_list.append(segment_dict)
