@@ -1,8 +1,6 @@
 import atexit
 import getpass
-import json
 import sqlite3
-from pathlib import Path
 
 import pandas as pd
 import undetected_chromedriver as uc
@@ -41,17 +39,6 @@ if __name__ == "__main__":
     activity_no_list = pd.read_sql_query(sql_list, conn)[["activity_id", "stage"]]
 
     stage_set = set()
-    path = Path(
-        f"/Users/{username}/iCloud/Research/Data_Science/Projects/data/strava/segment_details/segment_details_{year}_{grand_tour}.json"
-    )
-    if path.exists():
-        with open(path, "rb") as fp:  # Pickling
-            tour_list = json.loads(fp.read())
-
-        for item in tour_list:
-            stage_set.add(item["stage"])
-    else:
-        tour_list = []
 
     print("Previously scraped", stage_set)
     logger = logger_config.setup_logger("segment.log")
@@ -64,18 +51,11 @@ if __name__ == "__main__":
     atexit.register(driver.quit)
 
     for i, item in enumerate(activity_no_list.values):
-        if item[1] not in stage_set:
-            print(item)
-            wait = WebDriverWait(driver, 5)
-            logger.info(f"------Stage-{i}, activity_no:{item[0]}")
-            dict_list = segment_details.segment_details_scrape(item[0], f"{grand_tour}-{year}", item[1], driver)
-            tour_list.extend(dict_list)
-
-            json_string = json.dumps(tour_list)
-            with open(
-                f"/Users/{username}/iCloud/Research/Data_Science/Projects/data/strava/segment_details/segment_details_{year}_{grand_tour}.json",
-                "w",
-            ) as f:
-                f.write(json_string)
+        print(item)
+        wait = WebDriverWait(driver, 5)
+        logger.info(f"------Stage-{i}, activity_no:{item[0]}")
+        dict_list = segment_details.segment_details_scrape(
+            item[0], f"{grand_tour}-{year}", item[1], driver, username, year, grand_tour
+        )
 
     # driver.quit()

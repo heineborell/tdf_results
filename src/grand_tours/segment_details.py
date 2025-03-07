@@ -1,6 +1,8 @@
 """Module for scraping some segment details like endpoints, category"""
 
+import json
 import time
+from pathlib import Path
 
 import numpy as np
 from selenium.common.exceptions import NoSuchElementException
@@ -9,10 +11,22 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 
 
-def segment_details_scrape(activity_no: int, tour_year, stage: int, driver):
+def segment_details_scrape(activity_no: int, tour_year, stage: int, driver, username, year, grand_tour):
+    path = Path(
+        f"/Users/{username}/iCloud/Research/Data_Science/Projects/data/strava/segment_details/segment_details_{year}_{grand_tour}.json"
+    )
+    if path.exists():
+        with open(path, "rb") as fp:  # Pickling
+            dict_list = json.loads(fp.read())
+    else:
+        dict_list = []
     activity = "https://www.strava.com/activities/" + str(activity_no)
     driver.get(activity)
     time.sleep(np.abs(np.random.randn()))
+
+    prev_list = []
+    for i in dict_list:
+        prev_list.append([i["activity_no"], i["hidden"], i["segment_number"]])
 
     try:
         driver.find_elements(By.XPATH, '//*[@id="show-hidden-efforts"]')[0].click()
@@ -27,7 +41,6 @@ def segment_details_scrape(activity_no: int, tour_year, stage: int, driver):
         segment_tables = driver.find_elements(By.CSS_SELECTOR, ".dense.hoverable.marginless.segments")
 
     time.sleep(1)
-    dict_list = []
     for k, segment_table in enumerate(segment_tables):
         if k == 0:
             hidden = False
@@ -35,6 +48,8 @@ def segment_details_scrape(activity_no: int, tour_year, stage: int, driver):
             hidden = True
         for j, segment in enumerate(segment_table.find_elements(By.TAG_NAME, "tr")):
             if j == 0 and k == 0:
+                pass
+            elif [activity_no, hidden, j] in prev_list:
                 pass
             else:
                 ends = []
@@ -75,5 +90,12 @@ def segment_details_scrape(activity_no: int, tour_year, stage: int, driver):
                 }
                 print(segment_dict)
                 dict_list.append(segment_dict)
+
+                json_string = json.dumps(dict_list)
+                with open(
+                    f"/Users/{username}/iCloud/Research/Data_Science/Projects/data/strava/segment_details/segment_details_{year}_{grand_tour}.json",
+                    "w",
+                ) as f:
+                    f.write(json_string)
 
     return dict_list
