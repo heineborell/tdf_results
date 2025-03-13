@@ -1,13 +1,12 @@
 import getpass
+import json
 import sqlite3
-import time
+from pathlib import Path
 
 import pandas as pd
 import undetected_chromedriver as uc
-from selenium.webdriver.common.action_chains import ActionChains
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver.support.ui import WebDriverWait
+
+from grand_tours.segment_scraper import anal_scrape
 
 if __name__ == "__main__":
     username = getpass.getuser()
@@ -15,7 +14,7 @@ if __name__ == "__main__":
 
     grand_tour = "tdf"
     # grand_tour = "giro"
-    year = 2022
+    year = 2024
 
     sql_list = f"""
     SELECT *
@@ -46,36 +45,29 @@ if __name__ == "__main__":
     )
     print("activated driver")
 
-    activity_no = 11768501612
-    activity = "https://www.strava.com/activities/" + str(activity_no) + "/analysis "
-    driver.get(activity)
-    time.sleep(5)
-    WebDriverWait(driver, 10).until(
-        EC.presence_of_element_located(
-            (By.XPATH, '//*[@id="segmentBars"]')
-        )  # Replace with a specific element for better accuracy
+    path = Path(
+        f"/Users/{username}/iCloud/Research/Data_Science/Projects/data/strava/analysis/analysis_{year}_{grand_tour}.json"
     )
-    actions = ActionChains(driver)
+    if path.exists():
+        with open(path, "rb") as f:  # Pickling
+            json_data = json.loads(f.read())
+        scraped_ids = {item["activity_id"] for item in json_data}
+    else:
+        pass
 
-    segments_chart = driver.find_element(By.XPATH, '//*[@id="segments-chart"]')
-    segments_box = driver.find_element(By.XPATH, '//*[@id="segmentBars"]')
+    for i, item in enumerate(activity_no_list.values):
+        if item[0] in scraped_ids:
+            pass
+        else:
+            dict_list = anal_scrape(driver, item[0], item[1])
 
-    segments = segments_box.find_elements(By.TAG_NAME, "rect")
+            # json_data = json_data.extend(dict_list)
 
-    for rect_element in segments:
-        # Get attributes
-        x = rect_element.get_attribute("x")
-        y = rect_element.get_attribute("y")
-        width = rect_element.get_attribute("width")
-        height = rect_element.get_attribute("height")
-        class_name = rect_element.get_attribute("class")
-        print(segments_chart.text)
+            json_string = json.dumps(dict_list)
+            with open(
+                f"/Users/{username}/iCloud/Research/Data_Science/Projects/data/strava/analysis/analysis_{year}_{grand_tour}.json",
+                "w",
+            ) as f:
+                f.write(json_string)
 
-        # Hover over the element
-        actions.move_to_element(rect_element).perform()
-        time.sleep(10)
-
-        # Print the attributes
-        print(f"x: {x}, y: {y}, width: {width}, height: {height}, class: {class_name}")
-
-    driver.quit()
+    # atexit.register(driver.quit)
