@@ -1,3 +1,4 @@
+import atexit
 import getpass
 import json
 import sqlite3
@@ -53,21 +54,20 @@ if __name__ == "__main__":
             json_data = json.loads(f.read())
         scraped_ids = {item["activity_id"] for item in json_data}
     else:
-        pass
+        json_data = []
 
     for i, item in enumerate(activity_no_list.values):
         if item[0] in scraped_ids:
             pass
         else:
             dict_list = anal_scrape(driver, item[0], item[1])
-
-            # json_data = json_data.extend(dict_list)
-
-            json_string = json.dumps(dict_list)
+            json_data = json_data.extend(dict_list)
+            json_string = json.dumps(json_data)
+            print(json_string)
             with open(
-                f"/Users/{username}/iCloud/Research/Data_Science/Projects/data/strava/analysis/analysis_{year}_{grand_tour}.json",
+                path,
                 "w",
             ) as f:
                 f.write(json_string)
 
-    # atexit.register(driver.quit)
+    atexit.register(driver.quit)
