@@ -254,7 +254,7 @@ def anal_scrape(driver, activity_no, stage):
     for rect_element in segments:
         # Hover over the element
         actions.move_to_element(rect_element).perform()
-        time.sleep(2)
+        time.sleep(5)
         # Get attributes
         x = rect_element.get_attribute("x")
         y = rect_element.get_attribute("y")

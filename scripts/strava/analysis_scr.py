@@ -55,6 +55,7 @@ if __name__ == "__main__":
         scraped_ids = {item["activity_id"] for item in json_data}
     else:
         json_data = []
+        scraped_ids = {}
 
     for i, item in enumerate(activity_no_list.values):
         if item[0] in scraped_ids:
