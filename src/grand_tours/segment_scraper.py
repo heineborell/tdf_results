@@ -9,6 +9,7 @@ import undetected_chromedriver as uc
 from rich import print
 from rich import print as rprint
 from selenium.common.exceptions import NoSuchElementException, TimeoutException
+from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
@@ -231,3 +232,47 @@ class SegmentScrape:
 
         driver.quit()
         return "All of the list scraped."
+
+
+def anal_scrape(driver, activity_no, stage):
+    dict_list = []
+    activity = "https://www.strava.com/activities/" + str(activity_no) + "/analysis "
+    driver.get(activity)
+    WebDriverWait(driver, 10).until(
+        EC.presence_of_element_located(
+            (By.XPATH, '//*[@id="segmentBars"]')
+        )  # Replace with a specific element for better accuracy
+    )
+    # This one allows the hovering over elements
+    actions = ActionChains(driver)
+
+    segments_chart = driver.find_element(By.XPATH, '//*[@id="segments-chart"]')
+    segments_box = driver.find_element(By.XPATH, '//*[@id="segmentBars"]')
+
+    segments = segments_box.find_elements(By.TAG_NAME, "rect")
+
+    for rect_element in segments:
+        # Hover over the element
+        actions.move_to_element(rect_element).perform()
+        time.sleep(2)
+        # Get attributes
+        x = rect_element.get_attribute("x")
+        y = rect_element.get_attribute("y")
+        width = rect_element.get_attribute("width")
+        segment_name = segments_chart.text.split("\n")[0]
+        extras = segments_chart.text.split("\n")[1]
+
+        # Print the attributes
+        attributes = {
+            "activity_id": activity_no,
+            "stage": stage,
+            "segment_name ": segment_name,
+            "x ": x,
+            "y": y,
+            "width": width,
+            "extras": extras,
+        }
+        print(attributes)
+        dict_list.append(attributes)
+
+    return dict_list
