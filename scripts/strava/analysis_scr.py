@@ -58,11 +58,12 @@ if __name__ == "__main__":
         scraped_ids = {}
 
     for i, item in enumerate(activity_no_list.values):
-        if item[0] in scraped_ids:
+        if item[0] in scraped_ids or i == 0 or i == 1 or i == 2 or i == 3:
             pass
         else:
             dict_list = anal_scrape(driver, item[0], item[1])
-            json_data = json_data.extend(dict_list)
+            json_data.extend(dict_list)
+            print(json_data)
             json_string = json.dumps(json_data)
             print(json_string)
             with open(
