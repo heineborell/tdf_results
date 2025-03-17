@@ -246,24 +246,24 @@ def anal_scrape(driver, activity_no, stage):
     # This one allows the hovering over elements
     actions = ActionChains(driver)
 
-    segments_chart = driver.find_element(By.XPATH, '//*[@id="segments-chart"]')
     segments_box = driver.find_element(By.XPATH, '//*[@id="segmentBars"]')
 
     segments = segments_box.find_elements(By.TAG_NAME, "rect")
 
     for j, rect_element in enumerate(segments):
         retries = 0
-        max_retries = 10
+        max_retries = 5
         # Wait for JavaScript to load completely
         while retries < max_retries:
             try:
                 # Hover over the element
                 actions.move_to_element(rect_element).perform()
-                time.sleep(1)
+                time.sleep(2)
                 # Get attributes
                 x = rect_element.get_attribute("x")
                 y = rect_element.get_attribute("y")
                 width = rect_element.get_attribute("width")
+                segments_chart = driver.find_element(By.XPATH, '//*[@id="segments-chart"]')
                 segment_name = segments_chart.text.split("\n")[0]
                 extras = segments_chart.text.split("\n")[1]
                 break
@@ -272,6 +272,20 @@ def anal_scrape(driver, activity_no, stage):
                 actions.move_to_element(segments[0]).perform()
                 print(f"[bold red] Retry {retries}/{max_retries}: Page did not load completely. Retrying...[/bold red]")
                 time.sleep(3)  # Optional wait before retrying
+
+                if retries < 4:
+                    print(f"Condition retries < 4 is True, retries = {retries}")
+                else:
+                    print(f"Reloading page because retries > 4: retries = {retries}")
+                    segments[0].click()
+                    x = rect_element.get_attribute("x")
+                    y = rect_element.get_attribute("y")
+                    width = rect_element.get_attribute("width")
+                    eff_detail = driver.find_element(By.XPATH, '//*[@id="effort-detail"]')
+                    segment_name = eff_detail.text.split("\n")[0]
+                    extras = eff_detail.text.split("\n")[1]
+                    break
+
         else:
             print("[bold red]Max retries reached. Failed to extract segment data.[/bold red]")
 

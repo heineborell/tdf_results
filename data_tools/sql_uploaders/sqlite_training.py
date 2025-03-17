@@ -14,7 +14,7 @@ if __name__ == "__main__":
     grand_tour = "tdf"
 
     grand_tours = ["tdf_training"]
-    years = [2024]
+    years = [2024, 2023, 2022]
     username = getpass.getuser()
 
     conn = sqlite3.connect(f"/Users/{username}/iCloud/Research/Data_Science/Projects/data/training.db")
