@@ -14,7 +14,7 @@ if __name__ == "__main__":
 
     grand_tour = "tdf"
     # grand_tour = "giro"
-    year = 2022
+    year = 2021
 
     sql_list = f"""
     SELECT *
@@ -46,7 +46,7 @@ if __name__ == "__main__":
     driver = uc.Chrome(
         user_data_dir="user-data-dir=/Users/deniz/Library/Application Support/Google/Chrome/Profile 1",
         use_subprocess=True,
-        version_main=133,
+        version_main=135,
     )
     atexit.register(driver.quit)
 

@@ -13,11 +13,11 @@ if __name__ == "__main__":
     # grand_tour = "vuelta"
     grand_tour = "tdf"
 
-    grand_tours = ["tdf_training"]
-    years = [2024, 2023, 2022]
+    grand_tours = ["tdf_training", "giro_training"]
+    years = [2024, 2023, 2022, 2021]
     username = getpass.getuser()
 
-    conn = sqlite3.connect(f"/Users/{username}/iCloud/Research/Data_Science/Projects/data/training.db")
+    conn = sqlite3.connect(f"/Users/{username}/iCloud/Research/Data_Science/Projects/data/training_v3.db")
     cursor = conn.cursor()
     logger = logger_config.setup_logger(
         f"/Users/{username}/iCloud/Research/Data_Science/Projects/data/{grand_tour}.log"

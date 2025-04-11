@@ -1,7 +1,9 @@
 import sqlite3
 
 # Paths for databases
-old_db_path = "/Users/deniz/iCloud/Research/Data_Science/Projects/data/training.db"  # Existing database (DO NOT MODIFY)
+old_db_path = (
+    "/Users/deniz/iCloud/Research/Data_Science/Projects/data/training_v3.db"  # Existing database (DO NOT MODIFY)
+)
 new_db_path = "/Users/deniz/iCloud/Research/Data_Science/Projects/data/training_merged.db"  # New database
 
 # SQL Queries
